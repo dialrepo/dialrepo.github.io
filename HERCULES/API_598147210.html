@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="RPA_598147226.html">RPA</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147224.html">Módulo de Automatización y Gestión</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147223.html">Análisis y Procesos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147222.html">Sistema de Orquestación</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Juan Tardón Martínez</span>, last modified by <span class='editor'> Usuario genérico para HERCULES</span> on oct 10, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p class="auto-cursor-target">El sistema contará con una API REST desde la que se podrán controlar todas y cada unas de sus funcionalidades, facilitando así la construcción de cualquier cuadro de mando ya que su desarrollo estará totalmente desacoplado de la Interfaz de usuario. Dicha API se desarrollará en Python como una aplicación web mediante el framework <strong>Flask </strong>y se introducirán blueprints que se construirán mediante la librería flask-restful, para una fácil organización de los endpoints y métodos de la aplicación web. También se proporcionará un <strong>Swagger </strong>que facilitará la legibilidad de la documentación realizada.</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Método</th><th class="confluenceTh">Url</th><th class="confluenceTh">Parámetros</th><th class="confluenceTh">Respuesta</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><code>/api/orchestrator/statistics/maindashboard</code></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Datos estadísticos del sistema</td><td class="confluenceTd">Devuelve los datos estadísticos del sistema para rellenar un dashboard.</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><code>/api/orchestrator/robots</code></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[Robot]</td><td class="confluenceTd">Obtiene la lista de robots que hay en el sistema.</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><p><code>/api/orchestrator/robots/problems</code></p></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[Problem]</td><td class="confluenceTd">Obtiene todos los problemas de ejecución que ha habido.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/robots/{robotId}</code></td><td colspan="1" class="confluenceTd">robotId: identificador del robot</td><td colspan="1" class="confluenceTd">Robot</td><td colspan="1" class="confluenceTd">Obtiene la información de un robot.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/robots/{robotId}/problems</code></td><td colspan="1" class="confluenceTd">robotId: identificador del robot</td><td colspan="1" class="confluenceTd">Lista[Problem]</td><td colspan="1" class="confluenceTd">Obtiene la lista de problemas de ejecución que ha tenido un robot.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/robots/{robotId}/logs</code></td><td colspan="1" class="confluenceTd">robotId: identificador del robot</td><td colspan="1" class="confluenceTd">Lista[Log]</td><td colspan="1" class="confluenceTd">Obtiene la lista de logs de todos los procesos que ha ejecutado un robot.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/process/</code></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Lista[Proceso]</td><td colspan="1" class="confluenceTd">Obtiene la lista de procesos que se pueden llevar a cabo en ese instante dependiendo de los robots que estén conectados.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/process/{id}</code></td><td colspan="1" class="confluenceTd">id: identificador del proceso</td><td colspan="1" class="confluenceTd">Proceso</td><td colspan="1" class="confluenceTd">Obtiene la información completa del proceso.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/process/{id}/form</code></td><td colspan="1" class="confluenceTd">id: identificador del proceso</td><td colspan="1" class="confluenceTd">JSON</td><td colspan="1" class="confluenceTd">Devuelve una especificación para realizar un formulario dinámico en una interfaz.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/schedules/</code></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Lista[Schedule]</td><td colspan="1" class="confluenceTd">Obtiene la lista de planificaciones que hay en el orquestador.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/schedules/{id}</code></td><td colspan="1" class="confluenceTd">id: identificador de la planificación (schedule)</td><td colspan="1" class="confluenceTd">Schedule</td><td colspan="1" class="confluenceTd">Obtiene un schedule indicado por un identificador.</td></tr><tr><td colspan="1" class="confluenceTd">PATCH</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/schedules/{id}</code></td><td colspan="1" class="confluenceTd"><p>id: identificador de la planificación (schedule)</p><p>JSON</p></td><td colspan="1" class="confluenceTd">Control para saber si se ha editado la planificación</td><td colspan="1" class="confluenceTd">Edición de schedule.</td></tr><tr><td colspan="1" class="confluenceTd">DELETE</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/schedules/{id}</code></td><td colspan="1" class="confluenceTd">id: identificador de la planificación (schedule)</td><td colspan="1" class="confluenceTd">Control para saber que se ha borrado correctamente</td><td colspan="1" class="confluenceTd">Eliminación de schedule.</td></tr><tr><td colspan="1" class="confluenceTd">POST</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/schedules/execute</code></td><td colspan="1" class="confluenceTd">JSON</td><td colspan="1" class="confluenceTd">Control para saber que se ha creado correctamente</td><td colspan="1" class="confluenceTd">Crea una planificación de proceso, con este endpoint se ejecutarán los procesos.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/schedules/{id}/logs</code></td><td colspan="1" class="confluenceTd">id: identificador de la planificación (schedule)</td><td colspan="1" class="confluenceTd">Lista[Log]</td><td colspan="1" class="confluenceTd">Obtiene todos los logs que ha producido una planificación de proceso.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/robots/{robotId}/schedules/{scheduleId}</code></td><td colspan="1" class="confluenceTd"><p>robotId: identificador del robot</p><p>scheduleId: identificador de la planificación</p></td><td colspan="1" class="confluenceTd">Lista[Schedule]</td><td colspan="1" class="confluenceTd">Obtiene la lista de planificaciones (schedules) que tiene un robot.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/logs</code></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Lista[Log]</td><td colspan="1" class="confluenceTd">Obtiene todos los reportes de ejecución de todos los procesos que se han ejecutado.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/logs/{id}</code></td><td colspan="1" class="confluenceTd">id: identificador del log</td><td colspan="1" class="confluenceTd">Log</td><td colspan="1" class="confluenceTd">Obtiene el reporte de ejecución de un proceso.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/reload</code></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Refresca el sistema.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/restart</code></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Reinicia el sistema.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/files</code></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Lista[Files]</td><td colspan="1" class="confluenceTd">Obtiene una lista de ficheros que hay en los CDNs con su respectiva URL.</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/files/</code>{id}</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">File</td><td colspan="1" class="confluenceTd">Obtiene la información de un fichero que se encuentra en algún CDN.</td></tr><tr><td colspan="1" class="confluenceTd">POST</td><td colspan="1" class="confluenceTd"><code>/api/orchestrator/files</code></td><td colspan="1" class="confluenceTd">File</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Proporciona una URL del CDN para subir un fichero.</td></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 12:02</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : REP-CSP-0027 - Exportación presupuesto de solicitud - Formato rtf</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="GEN---Aspectos-generales_597853747.html">GEN - Aspectos generales</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853257.html">INT - Requisitos de integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852801.html">REQ-INT-0150-SGREP - Integración con Sistema de Generación de Reportes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Informes-predefinidos_597852502.html">CSP - Informes predefinidos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="_deprecated_779190501.html">_deprecated</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : REP-CSP-0027 - Exportación presupuesto de solicitud - Formato rtf
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified on ene 10, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup> <col/> <col/> </colgroup><tbody><tr><th class="confluenceTh">Cod. REP</th><td class="confluenceTd"><p><strong>REP-CSP-0027 - Exportación presupuesto de solicitud - Formato rtf</strong></p></td></tr><tr><th class="confluenceTh">Ver. Objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Ver. REP</th><td colspan="1" class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><span class="status-macro aui-lozenge conf-macro output-inline">PENDIENTE</span></div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Frecuencia</th><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div></div><h2 id="REPCSP0027ExportaciónpresupuestodesolicitudFormatortf-DiseñoInforme">Diseño Informe </h2><p><span style="letter-spacing: 0.0px;">Se debe de generar un informe en formato RTF compatible con DOCX <span style="color: rgb(23,43,77);">que reciba como parámetro de entrada el título del informe</span>. </span></p><p><span style="letter-spacing: 0.0px;">Se incluirá el parámetro de entrada &quot;título&quot; como título del informe.</span></p><p>El formato del informe será en líneas de dos columnas, donde la primera columna será una etiqueta y la segunda el valor recuperado del SGI. <span style="letter-spacing: 0.0px;">A continuación se indica el mapeo de los nombres de columnas del fichero de salida con la tabla y campo del SGI desde el que deben ser recuperadas. </span></p><p><br/></p><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 60.3993%;"><colgroup><col style="width: 22.6103%;"/><col style="width: 77.3897%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Columna informe</th><th class="confluenceTh">Campo SGI</th></tr><tr><td colspan="1" class="confluenceTd">Anualidad</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Se corresponde con el campo &quot;anualidad&quot; de la tabla  &quot;solicitud proyecto presupuesto&quot;.</span></td></tr><tr><td colspan="1" class="confluenceTd">Concepto de gasto</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Campo &quot;nombre&quot; de la tabla &quot;concepto gasto&quot; correspondiente  al campo &quot;concepto gasto&quot; de la tabla  &quot;solicitud proyecto presupuesto&quot;.</span></td></tr><tr><td colspan="1" class="confluenceTd">Importe presupuestado</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Campo &quot;importe presupuestado&quot; de la tabla  &quot;solicitud proyecto presupuesto&quot;.</span></td></tr><tr><td colspan="1" class="confluenceTd">Importe solicitado</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Campo &quot;importe solicitado&quot; de la tabla  &quot;solicitud proyecto presupuesto&quot;.</span></td></tr></tbody></table></div><p><span style="letter-spacing: 0.0px;"><br/><br/></span></p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REPCSP0027ExportaciónpresupuestodesolicitudFormatortf-Interfacesdeusuariorelacionados"><span style="letter-spacing: -0.008em;">Interfaces de usuario relacionados</span></h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REPCSP0027ExportaciónpresupuestodesolicitudFormatortf-Casosdeusorelacionados">Casos de uso relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup> <col/> <col/> </colgroup><tbody><tr><th class="confluenceTh">ACT-CPS-003-Gestor</th><td class="confluenceTd">CSP-SOL-E_UO</td></tr><tr><th colspan="1" class="confluenceTh">ACT-CSP-004-Administrador</th><td colspan="1" class="confluenceTd">CSP-SOL-E_UO</td></tr><tr><th class="confluenceTh">ACT-CSP-005-Visor</th><td class="confluenceTd">CSP-SOL-V_UO</td></tr></tbody></table></div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:26</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

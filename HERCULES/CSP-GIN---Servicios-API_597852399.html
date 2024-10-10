@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CSP-GIN - Servicios API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853279.html">Diseño</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Componentes_597853271.html">Componentes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---CSP_597852400.html">SGI - CSP</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852811.html">CSP-GIN: Grupos de investigación</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CSP-GIN - Servicios API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified by <span class='editor'> Usuario desconocido (ivan.salas)</span> on may 18, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p class="content-wrapper"><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728466669905 {padding: 0px;}
+div.rbtoc1728466669905 ul {margin-left: 0px;}
+div.rbtoc1728466669905 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728466669905'>
+<ul class='toc-indentation'>
+<li><a href='#CSPGINServiciosAPI-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#CSPGINServiciosAPI-Grupo'>Grupo</a></li>
+<li><a href='#CSPGINServiciosAPI-GrupoEquipo'>GrupoEquipo</a></li>
+<li><a href='#CSPGINServiciosAPI-GrupoLineaClasificacion'>GrupoLineaClasificacion</a></li>
+<li><a href='#CSPGINServiciosAPI-GrupoPalabraClave'>GrupoPalabraClave</a></li>
+<li><a href='#CSPGINServiciosAPI-LineaInvestigacion'>LineaInvestigacion</a></li>
+</ul>
+</li>
+<li><a href='#CSPGINServiciosAPI-Servicios'>Servicios</a>
+<ul class='toc-indentation'>
+<li><a href='#CSPGINServiciosAPI-Grupo.1'>Grupo</a></li>
+<li><a href='#CSPGINServiciosAPI-GrupoEquipo.1'>GrupoEquipo</a></li>
+<li><a href='#CSPGINServiciosAPI-GrupoLineaInvestigacion'>GrupoLineaInvestigacion</a></li>
+<li><a href='#CSPGINServiciosAPI-GrupoLineaClasificacion.1'>GrupoLineaClasificacion</a></li>
+<li><a href='#CSPGINServiciosAPI-LineaInvestigacion.1'>LineaInvestigacion</a></li>
+</ul>
+</li>
+</ul>
+</div></p><h3 class="content-wrapper" id="CSPGINServiciosAPI-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="CSPGINServiciosAPI-Grupo">Grupo</h4><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoInput</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"nombre": "Grupo investigación 1",
+	"fechaInicio": "2021-10-07T23:00:00Z",
+	"fechaFin": "2022-01-01T22:59:59Z",
+	"proyectoSgeRef": "34123",
+	"solicitudId": null,
+	"codigo": "U006-1",
+	"tipo": "EMERGENTE",		// EMERGENTE, CONSOLIDADO, PRECOMPETITIVO, ALTO_RENDIMIENTO
+	"especialInvestigacion": true,
+ 	"departamentoOrigenRef": "U006"
+ }</pre>
+ </div>
+</div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoOutput</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id": 1,
+	"nombre": "Grupo investigación 1",
+	"fechaInicio": "2021-10-07T23:00:00Z",
+	"fechaFin": "2022-01-01T22:59:59Z",
+	"proyectoSgeRef": "34123",
+	"solicitudId": null,
+	"codigo": "U006-1",
+	"tipo": "EMERGENTE",
+	"especialInvestigacion": true,
+	"activo": true
+}</pre>
+ </div>
+</div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoDto</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id": 4,
+	"nombre": "Grupo investigación 4",
+	"fechaInicio": "2022-02-28T23:00:00Z",
+	"fechaFin": "2023-04-29T22:00:00Z"
+}</pre>
+ </div>
+</div><h4 id="CSPGINServiciosAPI-GrupoEquipo">GrupoEquipo</h4><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoEquipoInput</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"personaRef": "22932567",
+	"fechaInicio": "2021-10-07T23:00:00Z",
+	"fechaFin": "2022-01-01T22:59:59Z",
+	"rolId": 1,
+	"dedicacion": "COMPLETA", 	// COMPLETA, PARCIAL
+	"participacion": 100.00
+}</pre>
+ </div>
+</div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoEquipoOutput</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id": 16,
+	"personaRef": "22932567",
+	"fechaInicio": "2021-10-07T23:00:00Z",
+	"fechaFin": "2022-01-01T22:59:59Z",
+	"rol": {
+		 "id": 1,
+		 "nombre": "Investigador/a principal"
+         "abreviatura": "IP",
+         "rolPrincipal": true,
+         "orden": "PRIMARIO",
+         "equipo": "INVESTIGACION",
+         "activo": true &nbsp;
+     },
+	"dedicacion": "COMPLETA",
+	"participacion": 100.00
+}</pre>
+ </div>
+</div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoEquipoDto</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id": 23,
+	"personaRef": "22932567",
+	"fechaInicio": "2022-02-28T23:00:00Z",
+	"fechaFin": null,
+	"participacion": 100.00
+}</pre>
+ </div>
+</div><h4 id="CSPGINServiciosAPI-GrupoLineaClasificacion">GrupoLineaClasificacion</h4><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoLineaClasificacionInput</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"grupoLineaInvestigacionId": 1,
+	"clasificacionRef": "666"
+}</pre>
+ </div>
+</div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoLineaClasificacionOutput</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id": 1,
+	"clasificacionRef": "666"
+}</pre>
+ </div>
+</div><h4 id="CSPGINServiciosAPI-GrupoPalabraClave">GrupoPalabraClave</h4><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoPalabraClaveInput</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"palabraClaveRef": "palabra"
+}</pre>
+ </div>
+</div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoPalabraClaveOutput</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id": 1,
+	"palabraClaveRef": "palabra"
+}</pre>
+ </div>
+</div><h4 id="CSPGINServiciosAPI-LineaInvestigacion">LineaInvestigacion</h4><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">LineaInvestigacionInput</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"nombre": "Psicología Laboral u Organizacional"
+}</pre>
+ </div>
+</div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">LineaInvestigacionOutput</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id": 1,
+	"nombre": "Psicología Laboral u Organizacional",
+	"activo": true
+}</pre>
+ </div>
+</div><h3 id="CSPGINServiciosAPI-Servicios">Servicios</h3><h4 id="CSPGINServiciosAPI-Grupo.1">Grupo</h4><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 99.9189%;"><colgroup><col style="width: 2.97015%;"/><col style="width: 15.1363%;"/><col style="width: 9.09766%;"/><col style="width: 9.21951%;"/><col style="width: 19.9742%;"/><col style="width: 43.6021%;"/></colgroup><tbody><tr><th class="confluenceTh">Método</th><th class="confluenceTh">URL</th><th class="confluenceTh">Parámetros</th><th class="confluenceTh">Respuesta</th><th colspan="1" class="confluenceTh">Permisos</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd">/grupos/modificados-ids</td><td colspan="1" class="confluenceTd"><p>q+s</p><p>La query estará formada por:</p><ul><li>fechaModificacion</li></ul></td><td colspan="1" class="confluenceTd">Lista[Long]</td><td colspan="1" class="confluenceTd">CSP-GIN-E, CSP-GIN-V</td><td colspan="1" class="confluenceTd"><p>Listado de Identificadores de Grupo que han sido modificados en los datos generales (tabla Grupo), en el equipo (tabla GrupoEquipo) o en las palabras claves (tabla GrupoPalabraClave)</p><p>Se utilizarán los siguiente parámetros en la llamada al servicio</p><ul><li>fechaModificacion: se le pasará la fecha a partir de la cual se quieren ver los cambios</li></ul><p>Ejemplo:</p><ul><li>fechaModificacion=ge=<span>&quot;2021-08-18T22:00:00Z&quot;</span></li></ul></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,51,102);">GET</span></td><td class="confluenceTd">/grupos</td><td class="confluenceTd">q + s</td><td class="confluenceTd">Lista[GrupoOutput]</td><td colspan="1" class="confluenceTd"><p>CSP-GIN-PRC-V, CSP-SOL-C, CSP-SOL-E, CSP-SOL-V, CSP-SOL-INV-C, CSP-SOL-INV-ER</p></td><td colspan="1" class="confluenceTd">Listado de grupos (sólo devuelve los activos)</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">POST</span></td><td colspan="1" class="confluenceTd">/grupos</td><td colspan="1" class="confluenceTd">GrupoInput</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">CSP-GIN-C</td><td colspan="1" class="confluenceTd">Crea un grupo</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">GET</span></td><td colspan="1" class="confluenceTd">/grupos/todos</td><td colspan="1" class="confluenceTd">q + s</td><td colspan="1" class="confluenceTd">Lista[GrupoOutput]</td><td colspan="1" class="confluenceTd"><p>CSP-GIN-B, CSP-GIN-E, CSP-GIN-R, CSP-GIN-V</p></td><td colspan="1" class="confluenceTd">Listado de grupos (devuelve todos)</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">GET </span></td><td colspan="1" class="confluenceTd">/grupos/{id}</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">GrupoOutput</td><td colspan="1" class="confluenceTd"><p>CSP-GIN-E, CSP-GIN-V, CSP-SOL-C, CSP-SOL-E, CSP-SOL-INV-C</p></td><td colspan="1" class="confluenceTd">Detalle del grupo</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">HEAD</span></td><td colspan="1" class="confluenceTd">/grupos/{id}</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><p>HTTP 200 / HTTP 204</p></td><td colspan="1" class="confluenceTd">CSP-GIN-E, CSP-GIN-V</td><td colspan="1" class="confluenceTd">Comprueba si existe el grupo</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">PUT</span></td><td colspan="1" class="confluenceTd">/grupos/{id}</td><td colspan="1" class="confluenceTd">GrupoInput</td><td colspan="1" class="confluenceTd">GrupoOutput</td><td colspan="1" class="confluenceTd">CSP-GIN-E</td><td colspan="1" class="confluenceTd">Modifica el grupo (datos generales)</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">PATCH</span></td><td colspan="1" class="confluenceTd">/grupos/{id}/activar</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">GrupoOutput</td><td colspan="1" class="confluenceTd"><p>CSP-GIN-R</p></td><td colspan="1" class="confluenceTd">Activa el grupo</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">HEAD</span></td><td colspan="1" class="confluenceTd">/grupos/{id}/codigoduplicado</td><td colspan="1" class="confluenceTd"><p>grupoId (opcional)</p><p>codigo</p></td><td colspan="1" class="confluenceTd">HTTP 200 / HTTP 204</td><td colspan="1" class="confluenceTd">CSP-GIN-C, CSP-GIN-E, CSP-SOL-E</td><td colspan="1" class="confluenceTd"><p>Comprueba si ya existe un grupo (u otro grupo si se indica un grupoId) con el código indicado</p></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">PATCH</span></td><td colspan="1" class="confluenceTd">/grupos/{id}/desactivar</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">GrupoOutput</td><td colspan="1" class="confluenceTd"><p>CSP-GIN-B</p></td><td colspan="1" class="confluenceTd">Desactiva el grupo</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">GET</span></td><td colspan="1" class="confluenceTd">/grupos/{id}/nextcodigo</td><td colspan="1" class="confluenceTd"><p>departamentoRef</p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>CSP-GIN-C, CSP-GIN-E, CSP-SOL-E</p></td><td colspan="1" class="confluenceTd">Siguiente código de grupo disponible para el departamento</td></tr><tr><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">GET</span></td><td colspan="1" class="confluenceTd">/grupos/{id}/investigadoresprincipales</td><td colspan="1" class="confluenceTd"><p><br/></p></td><td colspan="1" class="confluenceTd">Lista[String]</td><td colspan="1" class="confluenceTd"><p>CSP-EJEC-V, CSP-EJEC-E, CSP-EJEC-INV-VR</p></td><td colspan="1" class="confluenceTd"><p>Lista de investigadores principales del grupo en el momento actual.</p></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">GET</span></td><td colspan="1" class="confluenceTd">/grupos/{id}/investigadoresprincipalesmaxparticipacion</td><td colspan="1" class="confluenceTd"><p><br/></p></td><td colspan="1" class="confluenceTd">Lista[String]</td><td colspan="1" class="confluenceTd"><p>CSP-GIN-V, CSP-GIN-E, CSP-GIN-PRC-V</p></td><td colspan="1" class="confluenceTd">Lista de investigadores principales con mayor participación del grupo en el momento actual.</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">GET</span></td><td colspan="1" class="confluenceTd">/grupos/{id}/miembrosequipo</td><td colspan="1" class="confluenceTd"><p>q + s</p></td><td colspan="1" class="confluenceTd">Lista[GrupoEquipoOutput]</td><td colspan="1" class="confluenceTd"><p>CSP-GIN-V, CSP-GIN-E</p></td><td colspan="1" class="confluenceTd">Listado de miembros del grupo</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">GET</span></td><td colspan="1" class="confluenceTd">/grupos/{id}/palabrasclave</td><td colspan="1" class="confluenceTd"><p>q + s</p></td><td colspan="1" class="confluenceTd">Lista[GrupoPalabraClaveOutput<span style="letter-spacing: 0.0px;">]</span></td><td colspan="1" class="confluenceTd"><p>CSP-GIN-E, CSP-GIN-V, CSP-GIN-C</p></td><td colspan="1" class="confluenceTd">Listado de palabras clave del grupo</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">PATCH</span></td><td colspan="1" class="confluenceTd">/grupos/{id}/palabrasclave</td><td colspan="1" class="confluenceTd"><p>Lista[GrupoPalabraClaveInput]</p><p><br/></p></td><td colspan="1" class="confluenceTd">Lista[GrupoPalabraClaveOutput]</td><td colspan="1" class="confluenceTd"><p>CSP-GIN-E, CSP-GIN-V, CSP-GIN-C</p></td><td colspan="1" class="confluenceTd">Actualiza la lista de palabras clave del grupo con la lista enviada</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">HEAD</span></td><td colspan="1" class="confluenceTd">/grupos/grupo-baremable/{grupoId}/{anio}</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">HTTP 200 / HTTP 204</td><td colspan="1" class="confluenceTd">CSP-PRO-PRC-V, <span style="color: rgb(0,51,102);">SCOPE_sgi-csp</span></td><td colspan="1" class="confluenceTd">Comprueba si el grupo es baremable en el año indicado</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">GET</span></td><td colspan="1" class="confluenceTd">/grupos/baremables/{anio}</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><p>Lista[GrupoDto]</p></td><td colspan="1" class="confluenceTd"><p>CSP-PRO-PRC-V, <span style="color: rgb(0,51,102);">SCOPE_sgi-csp</span></p></td><td colspan="1" class="confluenceTd">Lista de grupos que son baremables en el año indicado</td></tr></tbody></table></div><p><br/></p><h4 id="CSPGINServiciosAPI-GrupoEquipo.1">GrupoEquipo</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 2.96774%;"/><col style="width: 15.9471%;"/><col style="width: 3.9982%;"/><col style="width: 8.33122%;"/><col style="width: 21.8985%;"/><col style="width: 46.8572%;"/></colgroup><tbody><tr><th class="confluenceTh">Método</th><th class="confluenceTh">URL</th><th class="confluenceTh">Parámetros</th><th class="confluenceTh">Respuesta</th><th colspan="1" class="confluenceTh">Permisos</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">POST</td><td colspan="1" class="confluenceTd">/gruposequipos</td><td colspan="1" class="confluenceTd">GrupoInput</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><p>CSP-GIN-C, CSP-GIN-E</p></td><td colspan="1" class="confluenceTd">Crea un miembro del equipo del grupo</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd">/gruposequipos/{id}</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">GrupoEquipoOutput</span></td><td colspan="1" class="confluenceTd"><p>CSP-GIN-E, CSP-GIN-V</p></td><td colspan="1" class="confluenceTd">Recupera un miembro del equipo del grupo</td></tr><tr><td colspan="1" class="confluenceTd">PUT </td><td colspan="1" class="confluenceTd">/gruposequipos/{id}</td><td colspan="1" class="confluenceTd">GrupoInput</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">GrupoEquipoOutput</span></td><td colspan="1" class="confluenceTd"><p>CSP-GIN-E</p></td><td colspan="1" class="confluenceTd">Actualiza un miembro del equipo del grupo</td></tr><tr><td colspan="1" class="confluenceTd">HEAD</td><td colspan="1" class="confluenceTd">/gruposequipos<span class="mtk11"><span class="mtk11">/</span></span>baremables/{grupoId}/{anio}</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><p>Lista[<span style="color: rgb(23,43,77);">GrupoEquipoOutput</span>]</p></td><td colspan="1" class="confluenceTd">CSP-PRO-PRC-V, <span style="color: rgb(0,51,102);">SCOPE_sgi-csp</span></td><td colspan="1" class="confluenceTd">Listado de miembros del equipo del grupo baramables en el año indicado</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd">/gruposequipos<span class="mtk11">/persona-baremable/{personaRef}/{anio}</span></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">HTTP 200 / HTTP 204</td><td colspan="1" class="confluenceTd"><p>CSP-PRO-PRC-V, <span style="color: rgb(0,51,102);">SCOPE_sgi-csp</span></p></td><td colspan="1" class="confluenceTd">Comprueba si la persona es baremable en el año indicado</td></tr></tbody></table></div><h4 id="CSPGINServiciosAPI-GrupoLineaInvestigacion">GrupoLineaInvestigacion</h4><div class="table-wrap"><table class="relative-table confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 2.96774%;"/><col style="width: 15.9471%;"/><col style="width: 3.9982%;"/><col style="width: 8.33122%;"/><col style="width: 21.8985%;"/><col style="width: 46.8572%;"/></colgroup><tbody><tr><th class="confluenceTh">Método</th><th class="confluenceTh">URL</th><th class="confluenceTh">Parámetros</th><th class="confluenceTh">Respuesta</th><th colspan="1" class="confluenceTh">Permisos</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><p><br/></p></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td><td class="highlight-#deebff confluenceTd" title="Color de fondo: 35 % azul claro" colspan="1" data-highlight-colour="#deebff"><br/></td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd">/gruposlineasinvestigacion<span style="letter-spacing: 0.0px;">/{id}/clasificaciones</span></td><td colspan="1" class="confluenceTd">q + s</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Lista[GrupoLineaClasificacionOutput]</span></td><td colspan="1" class="confluenceTd"><p>CSP-GIN-E, CSP-GIN-V</p></td><td colspan="1" class="confluenceTd">Listado de clasificaciones de una linea investigación de un grupo</td></tr></tbody></table></div><h4 id="CSPGINServiciosAPI-GrupoLineaClasificacion.1">GrupoLineaClasificacion</h4><div class="table-wrap"><table class="relative-table confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 2.96774%;"/><col style="width: 15.9471%;"/><col style="width: 3.9982%;"/><col style="width: 8.33122%;"/><col style="width: 21.8985%;"/><col style="width: 46.8572%;"/></colgroup><tbody><tr><th class="confluenceTh">Método</th><th class="confluenceTh">URL</th><th class="confluenceTh">Parámetros</th><th class="confluenceTh">Respuesta</th><th colspan="1" class="confluenceTh">Permisos</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">POST</td><td colspan="1" class="confluenceTd">/gruposlineasclasificaciones</td><td colspan="1" class="confluenceTd">GrupoLineaClasificacionInput</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">GrupoLineaClasificacionOutput</span></td><td colspan="1" class="confluenceTd"><p>CSP-GIN-E</p></td><td colspan="1" class="confluenceTd">Añade una clasificación a la linea investigación de un grupo</td></tr><tr><td colspan="1" class="confluenceTd">DELETE</td><td colspan="1" class="confluenceTd">/gruposlineasclasificaciones/{id}</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><p>CSP-GIN-E</p></td><td colspan="1" class="confluenceTd">Elimina una clasificación de una linea investigación de un grupo</td></tr></tbody></table></div><h4 id="CSPGINServiciosAPI-LineaInvestigacion.1">LineaInvestigacion</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 2.96774%;"/><col style="width: 15.9471%;"/><col style="width: 3.9982%;"/><col style="width: 8.33122%;"/><col style="width: 21.8985%;"/><col style="width: 46.8572%;"/></colgroup><tbody><tr><th class="confluenceTh">Método</th><th class="confluenceTh">URL</th><th class="confluenceTh">Parámetros</th><th class="confluenceTh">Respuesta</th><th colspan="1" class="confluenceTh">Permisos</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">POST</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">/lineasinvestigacion</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">LineaInvestigacionInput</span></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">CSP-LIN-C</span></p></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">Crea una linea de investigación</span></td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">/lineasinvestigacion</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">q + s</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">Lista[LineaInvestigacionOutput]</span></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">CSP-LIN-C, CSP-LIN-E, CSP-LIN-B</span></p></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">Listado de lineas de investigación (sólo devuelve los activos)</span></td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">/lineasinvestigacion/todos</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">q + s</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">Lista[LineaInvestigacionOutput]</span></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">CSP-LIN-C, CSP-LIN-E, CSP-LIN-B, CSP-LIN-R</span></p></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">Listado de lineas de investigación (devuelve todos)</span></td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">/lineasinvestigacion/{id}</span></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">LineaInvestigacionOutput</span></td><td colspan="1" class="confluenceTd"><p><br/></p></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">Recupera una linea de investigación</span></td></tr><tr><td colspan="1" class="confluenceTd">PUT </td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">/lineasinvestigacion/{id}</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">LineaInvestigacionInput</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">LineaInvestigacionOutput</span></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">CSP-LIN-E</span></p></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">Actualiza una linea de investigación</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">PATCH</span></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">/lineasinvestigacion/{id}/desactivar</span></p></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">LineaInvestigacionOutput</span></p></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">CSP-LIN-B</span></p></td><td colspan="1" class="confluenceTd">Desactiva la linea de investigación</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,51,102);">PATCH</span></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">/lineasinvestigacion/{id}/reactivar</span></p></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">LineaInvestigacionOutput</span></p></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">CSP-LIN-R</span></p></td><td colspan="1" class="confluenceTd">Activa la linea de investigación</td></tr></tbody></table></div><p><br/></p><p><br/><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:37</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

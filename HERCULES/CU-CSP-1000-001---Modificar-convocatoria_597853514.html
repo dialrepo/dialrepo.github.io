@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-1000-001 - Modificar convocatoria</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853679.html">CU-CSP-1000 - Gestión de convocatorias</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-1000-001 - Modificar convocatoria
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified on sep 23, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong><strong><strong><strong><strong><strong><strong><strong>CU-CSP-1000-002 - Modificar </strong></strong></strong></strong>convocatoria - Registrar<br/></strong></strong></strong></strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-CSP-003-Gestor, ACT-CSP-004-Administrador</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Media</td></tr></tbody></table></div></div><h2 id="CUCSP1000001Modificarconvocatoria-Descripción">Descripción</h2><p><span style="letter-spacing: 0.0px;">Modificación de los datos de convocatoria. Solo disponible para <span>ACT-CSP-003-Gestor, ACP-CSP-004-Administrador que pertenezcan a la unidad de gestión de la convocatoria. Los <span>ACT-CSP-005-Visor o  ACT-CSP-001-Investigador no podrán modificar datos de la convocatoria.</span></span></span></p><p><span style="letter-spacing: 0.0px;"><br/></span></p><p><span style="font-size: 20.0px;letter-spacing: 0.0px;">Actores</span></p><h3 id="CUCSP1000001Modificarconvocatoria-Actorprincipal">Actor principal</h3><p>ACT-CSP-003-Gestor de las unidades de gestión UGI, OTRI u OPE.</p><p><span>ACP-CSP-004-Administrador de las unidades de gestión UGI, OTRI u OPE.</span></p><h3 id="CUCSP1000001Modificarconvocatoria-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><p>ACT-CSP-001-Investigador que  precisan que las convocatorias estén registradas para poder presentar solicitudes sobre las mismas.</p><p><br/></p><h2 id="CUCSP1000001Modificarconvocatoria-Precondiciones">Precondiciones</h2><p><span>El usuario ACT-CSP-003-Gestor, ACP-CSP-004-Administrador se autentica</span> a través del usuario de dominio corporativo  y tiene asociada una Unidad de gestión para las que está habilitado el permiso de modificación de convocatoria.</p><p>Se podrá modificar cualquier campo de cada una de las pestañas de la Convocatoria (y añadir, modificar o eliminar en los listados) <u>excepto los siguientes campos</u>:</p><ul><li><strong>Pantalla Datos generales</strong><ul><li><strong>Tipo solicitud SGI: </strong><u>No se podrá modificar si el estado es &quot;Registrada&quot; y existan solicitudes, proyectos o grupos vinculados a la convocatoria</u>. Añadir icono de información a nivel de vista cuando no se pueda modificar con el siguiente texto: &quot;No se puede modificar el campo porque existen solicitudes y/o proyectos vinculados a la convocatoria&quot;</li><li><strong>Unidad de gestión</strong>: <u>No se podrá modificar el valor en caso que existan registros en las pantallas de</u>:<ul><li>Enlaces</li><li>Fases</li><li>Hitos</li><li>Documentos</li></ul></li><li><strong>Modelo de ejecución</strong>: <u>No se podrá modificar el valor en caso que existan registros en las pantallas de</u><ul><li>Enlaces</li><li>Fases</li><li>Hitos</li><li>Documentos</li></ul></li><li><strong>Duración: </strong><u>No se podrá modificar si el estado es &quot;Registrada&quot; y existan solicitudes o proyectos vinculados a la convocatoria</u>. <span><span class="confluence-link">Mostrar icono de información a nivel de vista cuando no se pueda modificar con el siguiente texto: &quot;No se puede modificar el campo porque existen solicitudes y/o proyectos vinculados a la convocatoria&quot;</span></span></li><li><strong>Régimen concurrencia: </strong><u>No se podrá modificar si el estado de la convocatoria es &quot;Registrada&quot; y existan solicitudes o proyectos vinculados a la convocatoria</u>. Añadir icono de información a nivel de vista cuando no se pueda modificar con el siguiente texto: &quot;No se puede modificar el campo porque existen proyectos vinculados a la convocatoria&quot;</li><li><strong>Clasificación Producción científica CVN</strong>: <u>No se podrá modificar el valor en caso de que existan proyectos asociados a la convocatoria</u>. Añadir icono de información a nivel de vista cuando no se pueda modificar con el siguiente texto: &quot;No se puede modificar el campo porque existen proyectos vinculados a la convocatoria&quot;</li><li><strong>Área temática</strong>: <u>No se podrá añadir, modificar ni eliminar área temática si el estado es &quot;Registrada&quot; y existan solicitudes o proyectos vinculados a la convocatoria</u>. En vez de mostrar el icono de modificar y eliminar mostrar el icono de información indicando &quot;No se puede modificar ni eliminar <span><span class="confluence-link">porque existen solicitudes y/o proyectos vinculados a la convocatoria</span></span>&quot;</li><li><strong>Entidad gestora</strong>: <u>No se podrá modificar, eliminar ni añadir la entidad gestora si el estado es &quot;Registrada&quot; y existan solicitudes o proyectos vinculados a la convocatoria</u>. Añadir icono de información a nivel de vista cuando no se pueda modificar con el siguiente texto: &quot;No se puede modificar el campo porque existen <span><span class="confluence-link">existen solicitudes y/o proyectos vinculados a la convocatoria</span></span>&quot;</li></ul></li><li><strong>Entidades convocantes</strong><ul><li><u><span style="color: rgb(0,51,102);">No se podrán modificar, eliminar ni añadir entidades convocantes si el estado es &quot;Registrada&quot; y existan solicitudes o proyectos vinculados a la convocatoria</span></u>.</li></ul></li><li><strong>Entidades financiadoras</strong><ul><li><u>No se podrán modificar, eliminar ni añadir entidades convocantes si el estado es &quot;Registrada&quot; y existan solicitudes o proyectos vinculados a la convocatoria</u>.</li></ul></li><li><strong>Fases</strong><ul><li>Se podrán añadir, modificar/eliminar las fases disponibles independientemente del estado de la convocatoria <u>a excepción de la fase vinculada al campo &quot;fase presentación solicitudes&quot; de la tabla &quot;configuración solicitud&quot;</u>. En este caso en vez de mostrar los iconos de editar y eliminar mostrar el icono de información indicando &quot;No se puede modificar ni eliminar la fase porque es la fase de presentación de solicitudes&quot;</li></ul></li><li><strong>Partidas presupuestarias</strong><ul><li><u>No se podrá modificar y eliminar  partidas presupuestarias si existen proyectos asociados que ya estén utilizando la partida presupuestaria</u> (en las tablas &quot;anualidad gasto&quot; y &quot;anualidad ingreso&quot; de los proyectos asociados a la convocatoria usan la partida presupuestaria). En vez de mostrar el icono de modificar y eliminar mostrar el icono de información indicando &quot;No se puede modificar ni eliminar la partida porque esta siendo usada en uno de los presupuestos de los proyectos vinculados a la convocatoria&quot;</li></ul></li></ul><p><br/></p><p><span style="font-size: 20.0px;letter-spacing: 0.0px;">Garantías de éxito (postcondiciones)</span></p><p>Se modifican los datos de la convocatoria.</p><h2 id="CUCSP1000001Modificarconvocatoria-Escenarioprincipal">Escenario principal</h2><ol><li>El usuario pulsa el botón &quot;Modificar&quot; desde el listado de convocatorias</li><li>Se aplican restricciones de edición indicadas en el apartado de Precondiciones</li><li>El usuario pulsa el botón Guardar aplicando los cambios de acuerdo a las modificaciones permitidas. El estado de la convocatoria no varía.</li></ol><p><br/></p><h2 id="CUCSP1000001Modificarconvocatoria-"> </h2><p><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

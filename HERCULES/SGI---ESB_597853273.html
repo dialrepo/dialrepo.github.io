@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : SGI - ESB</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853279.html">Diseño</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Componentes_597853271.html">Componentes</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : SGI - ESB
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (pelayo.menendez)</span>, last modified on may 11, 2020
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="SGIESB-Introducción">Introducción</h1><h2 id="SGIESB-WSO2EnterpriseIntegrator">WSO2 Enterprise Integrator</h2><p>WSO2 Enterprise Integrator (WSO2 EI) es una solución de integración que permite la comunicación entre varias aplicaciones dispares. Evita que las aplicaciones se comuniquen directamente entre sí en todos sus diversos formatos, cada aplicación simplemente se comunica con WSO2 EI, que actúa principalmente como un ESB para manejar las transformaciones de los mensajes, y encamina los mensajes a sus destinos apropiados. WSO2 EI  puede utilizarse para gestionar flujos de integración sin estado a corto plazo (utilizando el perfil ESB), así como procesos empresariales con estado a largo plazo (utilizando el perfil Business Process).  Además incluye un perfil de Análisis separado para supervisar las estadísticas del ESB, un perfil de Broker de Mensajes (WSO2 MB ) que puede utilizarse para una mensajería fiable.</p><p>El perfil ESB proporciona sus servicios fundamentales a través de un motor de mensajería basado en eventos y estándares (el bus), que permite a los arquitectos de integración explotar el valor de la mensajería sin necesidad de escribir código. Este perfil ESB proporciona capacidades de integración de datos dentro del mismo tiempo de ejecución. Esto elimina la necesidad de usar un servidor de servicios de datos separado para sus procesos de integración.</p><h2 id="SGIESB-Requisitos">Requisitos</h2><div class="table-wrap"><table class="confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Memoria</th><td class="confluenceTd"><p>~ 2 GB mínimo<br/>~ 1 GB tamaño heap. Por lo general, esto es suficiente para procesar los típicos mensajes SOAP, pero los requisitos varían con los tamaños de los mensajes más grandes y el número de mensajes procesados</p></td></tr><tr><th class="confluenceTh">Disco</th><td class="confluenceTd">~ 1 GB  excluyendo el espacio asignado para los archivos de registro y las bases de datos.</td></tr></tbody></table></div><h3 id="SGIESB-Compatibilidaddelentorno">Compatibilidad del entorno</h3><ul><li>Todos los productos basados en el WSO2 Carbon  son aplicaciones Java que se pueden ejecutar en cualquier plataforma que sea compatible con Oracle JDK 1.8.*.</li><li>Todos los productos basados en WSO2 Carbon son generalmente compatibles con la mayoría de los SGBD comunes. La base de datos H2 incorporada es adecuada para el desarrollo, las pruebas y algunos entornos de producción. Sin embargo, para la mayoría de los entornos de producción de las empresas, se utilizar un SGBD estándar de la industria como Oracle, PostgreSQL, MySQL, MS SQL, etc. </li><li>No se recomienda utilizar el Apache DS en un entorno de producción debido a problemas de escalabilidad. En su lugar, utilice un LDAP como OpenLDAP para la gestión de usuarios.</li></ul><h4 id="SGIESB-JDK">JDK</h4><div class="table-wrap"><table class="confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Producto</th><th class="confluenceTh">Versión</th><th colspan="1" class="confluenceTh">JDK</th><th colspan="1" class="confluenceTh">S.O.</th></tr><tr><td class="confluenceTd"><p>WSO2 Enterprise Integrator (EI) <br/><br/><br/></p></td><td class="confluenceTd"><span>6.6.0 </span></td><td colspan="1" class="confluenceTd"><span>CorrettoJDK 8</span><br/><span>AdoptOpenJDK 8</span><br/><span>AdoptOpenJDK 11</span><br/><span>OpenJDK 8</span><br/><span>Oracle JDK 8</span><br/><span>Oracle JDK 11</span></td><td colspan="1" class="confluenceTd"><span>Ubuntu 18.04</span><br/><span>CentOS 7.4, 7.5</span><br/><span>Red Hat Enterprise Linux 7.0</span><br/><span>SUSE Linux 12</span><br/><span>Windows Server 2016</span></td></tr></tbody></table></div><p><strong>SGBD</strong></p><div class="table-wrap"><table class="confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Producto</th><th class="confluenceTh">Versión</th><th colspan="1" class="confluenceTh">JDK</th></tr><tr><td class="confluenceTd"><p>WSO2 Enterprise Integrator (EI) <br/><br/><br/></p></td><td class="confluenceTd"><p>6.6.0</p><p>6.5.0</p><p>6.4.0</p></td><td colspan="1" class="confluenceTd"><p>Oracle 12c<br/>MySQL 5.7<br/>Microsoft SQL Server 2016</p></td></tr><tr><td colspan="1" class="confluenceTd"><span>WSO2 Enterprise Integrator (EI) </span></td><td colspan="1" class="confluenceTd"><span>6.3.0</span></td><td colspan="1" class="confluenceTd"><p>Oracle 11g/12c</p><p>MySQL 5.6/5.7</p><p>Microsoft SQL Server 2014</p></td></tr></tbody></table></div><p><a class="external-link" href="https://docs.wso2.com/display/EI600/Installation+Prerequisites" rel="nofollow"><br/>https://docs.wso2.com/display/EI600/Installation+Prerequisites</a></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:37</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

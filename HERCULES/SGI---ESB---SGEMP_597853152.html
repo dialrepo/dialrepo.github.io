@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : SGI - ESB - SGEMP</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853279.html">Diseño</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Componentes_597853271.html">Componentes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---ESB_597853273.html">SGI - ESB</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : SGI - ESB - SGEMP
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified by <span class='editor'> Usuario desconocido (alicia.alvarez)</span> on jun 23, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728466684953 {padding: 0px;}
+div.rbtoc1728466684953 ul {margin-left: 0px;}
+div.rbtoc1728466684953 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728466684953'>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEMP-Sistemadegestióndeempresas'>Sistema de gestión de empresas</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEMP-Entidades'>Entidades</a></li>
+<li><a href='#SGIESBSGEMP-Modelológico'>Modelo lógico</a></li>
+<li><a href='#SGIESBSGEMP-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEMP-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEMP-Empresa'>Empresa</a></li>
+<li><a href='#SGIESBSGEMP-TipoIdentificador'>TipoIdentificador</a></li>
+<li><a href='#SGIESBSGEMP-DatosContacto'>DatosContacto</a></li>
+</ul>
+</li>
+<li><a href='#SGIESBSGEMP-Servicios'>Servicios</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEMP-Métodosimprescindiblesparaelfuncionamientodelosmódulosygestionesqueutilicenempresas.'>Métodos imprescindibles para el funcionamiento de los módulos y gestiones que utilicen empresas.</a></li>
+<li><a href='#SGIESBSGEMP-MétodosúnicamentenecesariossiserequieregestionarempresasdesdeelSGI(Alta,Baja,ModificaciónyDetalle).'>Métodos únicamente necesarios si se requiere gestionar empresas desde el SGI (Alta, Baja, Modificación y Detalle).</a></li>
+<li><a href='#SGIESBSGEMP-MétodosdondeelSGIsolohacedepasarelaentreUniversidadyelsistemadetercerosllamante(NosonnecesariosparaelfuncionamientodelSGI)'>Métodos donde el SGI solo hace de pasarela entre Universidad y el sistema de terceros llamante (No son necesarios para el funcionamiento del SGI)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><hr/><h1 id="SGIESBSGEMP-Sistemadegestióndeempresas">Sistema de gestión de empresas</h1><h2 id="SGIESBSGEMP-Entidades">Entidades</h2><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 76.4223%;"><colgroup><col style="width: 23.1375%;"/><col style="width: 76.8625%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Entidad</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">Empresa</td><td class="confluenceTd">Contiene los datos básicos de una empresa.</td></tr><tr><td colspan="1" class="confluenceTd">DatosContacto</td><td colspan="1" class="confluenceTd">Contiene los datos de contacto de la empresa.</td></tr><tr><td colspan="1" class="confluenceTd">TipoIdentificador</td><td colspan="1" class="confluenceTd">Listado con los tipos de identificador fiscal (CIF, VAT, ...).</td></tr><tr><td colspan="1" class="confluenceTd">EmpresaClasificacion</td><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>Listado de relaciones entre empresas y clasificaciones. Las empresas se relacionarán únicamente con las clasificaciones del tipo &quot;Sector Industrial&quot;. Ver definición de clasificaciones en <a href="SGI---ESB---SGO_597853249.html">SGI - ESB - SGO</a>.</p><div class="confluence-information-macro confluence-information-macro-information"><p class="title conf-macro-render">IMPORTANTE</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>La relación entre empresas y clasificaciones de tipo &quot;Sector industrial&quot; se considera algo que puede generalizarse a cualquier empresa y no algo específico de las empresas con las que se relaciona UM, es por ello que se ha modelado a nivel lógico en el diagrama.</p><p>Al no haberse identificado por el momento necesidad de gestionar en ningún punto del SGI como producto, sino solamente en los formularios específicos de UM, la clasificación de una empresa no se ha modelado a nivel de objetos de transferencia del API ni tiene servicios específicos para su gestión.</p></div></div></div></td></tr></tbody></table></div><h2 id="SGIESBSGEMP-Modelológico">Modelo lógico</h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="650" src="attachments/597853152/597884381.png" data-image-src="attachments/597853152/597884381.png" data-unresolved-comment-count="0" data-linked-resource-id="597884381" data-linked-resource-version="7" data-linked-resource-type="attachment" data-linked-resource-default-alias="ESB SGEMP Logical Model.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="597853152" data-linked-resource-container-version="23" alt=""></span></p><h2 id="SGIESBSGEMP-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a href="https://confluence.um.es/confluence/display/HERCULES/Consultas+filtradas+y+paginadas" rel="nofollow">Consultas filtradas y paginadas</a></li><li><a href="Formatos-de-datos-API_597853494.html">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="SGIESBSGEMP-Definicióndelosobjetos">Definición de los objetos</h3><h4 class="content-wrapper" id="SGIESBSGEMP-Empresa">Empresa</h4><div class="content-wrapper"><p><br/></p><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 80.0479%;"><colgroup><col style="width: 9.61174%;"/><col style="width: 7.18976%;"/><col style="width: 83.2047%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Nombre</th><th colspan="1" class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la empresa.</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre de la empresa.</td></tr><tr><td colspan="1" class="confluenceTd">tipoIdentificador</td><td colspan="1" class="confluenceTd">TipoIdentificador</td><td colspan="1" class="confluenceTd">Tipo de identificador fiscal de la empresa. Se devuelve la entidad TipoIdentificador con todos sus campos.</td></tr><tr><td colspan="1" class="confluenceTd">numeroIdentificacion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Número de identificación fiscal de la empresa del tipo indicado en &quot;tipoIdentificador&quot;.</td></tr><tr><td class="confluenceTd">razonSocial</td><td class="confluenceTd">String</td><td class="confluenceTd">Razón social de la empresa.</td></tr><tr><td colspan="1" class="confluenceTd">datosEconomicos</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indicador de si se trata de una empresa con datos económicos (está dada de alta en GENTE y en JUSTO) o sin datos económicos (está dada de alta solo en GENTE).</td></tr><tr><td colspan="1" class="confluenceTd">padreId</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la empresa padre o entidad principal. Estará informado en el caso de empresas que son subentidad de otra.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Empresa</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+    "id": "ent-002",
+    "nombre": "Empresa de Prueba",
+    "tipoIdentificador": {
+          "id":"tp-1",
+          "nombre":"CIF"
+     },
+    "numeroIdentificacion": "H11111111",
+    "razonSocial": "Empresa que es mayoritariamente de prueba del SGI",
+	"datosEconomicos": false,
+    "padreId": "ent-001"
+}</pre>
+ </div>
+</div><h4 id="SGIESBSGEMP-TipoIdentificador">TipoIdentificador</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 74.0px;"/><col style="width: 59.0px;"/><col style="width: 314.0px;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la entidad TipoIdentificador.</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre (Posibles valores: CIF, VAT, ...).</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">TipoIdentificador</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{ 
+    "id":"tp-1",
+    "nombre": "CIF"   
+}</pre>
+ </div>
+</div><p><br/></p></div><div class="content-wrapper"><h4 id="SGIESBSGEMP-DatosContacto">DatosContacto</h4></div><div class="content-wrapper"><p><br/></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 63.4573%;"><colgroup><col style="width: 15.5349%;"/><col style="width: 13.805%;"/><col style="width: 70.6601%;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">direccion</td><td class="confluenceTd">String</td><td class="confluenceTd">Dirección de contacto de la empresa.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">DatosContacto</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"direccion": "C/ Uría, número 4, puerta A, 33002, Oviedo, Asturias, España"
+}</pre>
+ </div>
+</div><p><br/></p></div><h3 class="content-wrapper" id="SGIESBSGEMP-Servicios">Servicios</h3><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">Para componer la URL llamada completa, se debe anteponer a lo indicado en la columna URL lo siguiente: <strong>{HOST}/api/sgemp</strong>, donde <strong>{HOST}</strong> de deberá sustituir el dominio correspondiente al entorno al que se está accediendo y dicho acceso será por http o https según el caso.</div></div><p><h4 id="SGIESBSGEMP-Métodosimprescindiblesparaelfuncionamientodelosmódulosygestionesqueutilicenempresas.">Métodos imprescindibles para el funcionamiento de los módulos y gestiones que utilicen empresas.</h4><p><div class="table-wrap"><table class="aui metadata-summary-macro null" data-cql="label = &quot;servicios&quot; and space = currentSpace() and ancestor = currentContent()" data-details-space-key="HERCULES"  data-details-content-id="597852998"  data-headings="Método, URL, Parámetros, Respuesta, Descripción" data-first-column-heading="Servicio" data-count-comments="false" data-count-likes="false" data-total-pages="1" data-page-size="1000" data-sort-by="null" data-reverse-sort="false" data-blueprint-present="false"><thead><tr><th class="sorter-text">Servicio</th><th>M&eacute;todo</th><th>URL</th><th>Par&aacute;metros</th><th>Respuesta</th><th>Descripci&oacute;n</th></tr></thead><tbody><tr><td class="title" data-content-id="597853021"><a href="/confluence/pages/viewpage.action?pageId=597853021">SGI - ESB - SGEMP - Empresas - Consultar detalle (Datos generales)</a></td><td>GET</td><td>/empresas/{id}</td><td><br/></td><td><a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP#SGIESBSGEMP-Empresa" rel="nofollow">Empresa</a></td><td>Detalle de los datos generales de una empresa.</td></tr><tr><td class="title" data-content-id="597853020"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP+-+Empresas+-+Buscar">SGI - ESB - SGEMP - Empresas - Buscar</a></td><td>GET</td><td>/empresas</td><td><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>id</li><li>nombre</li><li>razonSocial</li><li>numeroIdentificacion</li></ul></td><td>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP#SGIESBSGEMP-Empresa" rel="nofollow">Empresa</a>]</td><td><p>Listado de Empresa.</p><p><em>Ejemplo</em>:</p><p>nombre=like=(Tree);(razonSocial=like=SL)</p></td></tr><tr><td class="title" data-content-id="597853022"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP+-+Empresas+-+Consultar+datos+contacto">SGI - ESB - SGEMP - Empresas - Consultar datos contacto</a></td><td>GET</td><td>/datos-contacto/empresa/{id}</td><td><br/></td><td><a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP#SGIESBSGEMP-DatosContacto" rel="nofollow">DatosContacto</a></td><td>Contiene los datos de contacto de una empresa.</td></tr><tr><td class="title" data-content-id="597853016"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP+-+Empresas+-+Listar+tipos+de+identificador">SGI - ESB - SGEMP - Empresas - Listar tipos de identificador</a></td><td>GET</td><td>/tipos-identificador</td><td><br/></td><td>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP#SGIESBSGEMP-TipoIdentificador" rel="nofollow">TipoIdentificador</a>]</td><td>Listado de tipos de identificador fiscal para las empresas ordenados alfabéticamente de forma ascendente.</td></tr></tbody></table></div></p></p><p><h4 id="SGIESBSGEMP-MétodosúnicamentenecesariossiserequieregestionarempresasdesdeelSGI(Alta,Baja,ModificaciónyDetalle).">Métodos únicamente necesarios si se requiere gestionar empresas desde el SGI (Alta, Baja, Modificación y Detalle).</h4><hr/><p><div class="table-wrap"><table class="aui metadata-summary-macro null" data-cql="label = &quot;servicios&quot; and space = currentSpace() and ancestor = currentContent()" data-details-space-key="HERCULES"  data-details-content-id="597853017"  data-headings="Método, URL, Parámetros, Respuesta, Descripción" data-first-column-heading="Servicio" data-count-comments="false" data-count-likes="false" data-total-pages="1" data-page-size="1000" data-sort-by="null" data-reverse-sort="false" data-blueprint-present="false"><thead><tr><th class="sorter-text">Servicio</th><th>M&eacute;todo</th><th>URL</th><th>Par&aacute;metros</th><th>Respuesta</th><th>Descripci&oacute;n</th></tr></thead><tbody><tr><td class="title" data-content-id="597853362"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP+-+Empresas+-+Consultar+campos+ver+detalle">SGI - ESB - SGEMP - Empresas - Consultar campos ver detalle</a></td><td>GET</td><td>/empresas/formly/view</td><td><p><br/></p></td><td>Formly</td><td>Devuelve el formulario (formly) a pintar para la pantalla de ver detalle de empresa.</td></tr><tr><td class="title" data-content-id="597853359"><a href="/confluence/pages/viewpage.action?pageId=597853359">SGI - ESB - SGEMP - Empresas - Consultar campos modificación</a></td><td>GET</td><td>/empresas/formly/update</td><td><p><br/></p></td><td>Formly</td><td>Devuelve el formulario (formly) a pintar para la pantalla de solicitar modificación empresa, pestaña &quot;Datos generales&quot;. Ver <a class="createlink" href="null/pages/createpage.action?spaceKey=HERCULES&amp;title=IU-GEN-0082+-+Ver+detalle+-+Solicitar+modificaci%C3%B3n+de+empresa&amp;linkCreation=true&amp;fromPageId=597853359">IU-GEN-0082 - Ver detalle - Solicitar modificaci&oacute;n de empresa</a>.</td></tr><tr><td class="title" data-content-id="597853025"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP+-+Empresas+-+Consultar+detalle">SGI - ESB - SGEMP - Empresas - Consultar detalle</a></td><td>GET</td><td>/empresas/formly/{id}</td><td><p><br/></p></td><td>JSON</td><td>Devuelve los datos a pintar en el formulario de Ver Detalle/Actualizar en el SGI (formly).</td></tr><tr><td class="title" data-content-id="597853024"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP+-+Empresas+-+Modificar">SGI - ESB - SGEMP - Empresas - Modificar</a></td><td>PUT</td><td>/empresas</td><td><p>JSON</p></td><td><p>id</p><p>Vendrá relleno si la creación es síncrona y no vendrá si es asíncrona.</p></td><td>Recibe como parámetro la respuesta del usuario del formulario de datos de modificación (formly) con los campos necesarios para actualizar una empresa.</td></tr><tr><td class="title" data-content-id="597853019"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP+-+Empresas+-+Dar+de+alta">SGI - ESB - SGEMP - Empresas - Dar de alta</a></td><td>POST</td><td>/empresas</td><td><p>JSON</p></td><td><br/></td><td>Recibe como parámetro la respuesta del usuario del formulario de datos de alta (formly) con los campos necesarios para crear una empresa.</td></tr><tr><td class="title" data-content-id="597853018"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP+-+Empresas+-+Consultar+campos+alta">SGI - ESB - SGEMP - Empresas - Consultar campos alta</a></td><td>GET</td><td>/empresas/formly/create </td><td><p><br/></p></td><td>Formly</td><td>Devuelve el formulario (formly) a pintar para la pantalla de solicitar alta empresa, pestaña &quot;Datos generales&quot;. Ver <a href="https://confluence.um.es/confluence/display/HERCULES/IU-GEN-0081+-+Solicitar+alta+de+empresa">IU-GEN-0081 - Solicitar alta de empresa.</a></td></tr></tbody></table></div></p></p><p><h4 id="SGIESBSGEMP-MétodosdondeelSGIsolohacedepasarelaentreUniversidadyelsistemadetercerosllamante(NosonnecesariosparaelfuncionamientodelSGI)">Métodos donde el SGI solo hace de pasarela entre Universidad y el sistema de terceros llamante (No son necesarios para el funcionamiento del SGI)</h4><p><div class="table-wrap"><table class="aui metadata-summary-macro null" data-cql="label = &quot;servicios&quot; and space = currentSpace() and ancestor = currentContent()" data-details-space-key="HERCULES"  data-details-content-id="597852999"  data-headings="Método, URL, Parámetros, Respuesta, Descripción" data-first-column-heading="Servicio" data-count-comments="false" data-count-likes="false" data-total-pages="1" data-page-size="1000" data-sort-by="null" data-reverse-sort="false" data-blueprint-present="false"><thead><tr><th class="sorter-text">Servicio</th><th>M&eacute;todo</th><th>URL</th><th>Par&aacute;metros</th><th>Respuesta</th><th>Descripci&oacute;n</th></tr></thead><tbody><tr><td class="title" data-content-id="597853241"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGEMP+-+Empresas+-+Consultar+empresas+modificadas">SGI - ESB - SGEMP - Empresas - Consultar empresas modificadas</a></td><td>GET</td><td>/empresas/modificadas-ids</td><td><p title="">q+s</p><p title="">La query estará formada por:</p><ul title=""><li>fechaModificacion</li></ul></td><td>Lista[String]</td><td>Listado de los identificadores de empresas que han sufrido cambios en los datos de identificativos de la empresa o en sus datos de contacto.</td></tr></tbody></table></div></p></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853152/597884369.png">ESB SGEMP Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853152/597884670.png">ESB SGEMP Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853152/597858537.png">ESB SGEMP Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853152/597858536.epgz">SGEMP_maquetaIU.epgz</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853152/597859727.png">ESB SGEMP Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853152/597859718.png">ESB SGEMP Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853152/597859719.png">ESB SGEMP Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853152/597884381.png">ESB SGEMP Logical Model.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:38</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

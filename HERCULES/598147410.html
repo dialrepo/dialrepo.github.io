@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Extracción de convocatorias</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="RPA_598147226.html">RPA</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147224.html">Módulo de Automatización y Gestión</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147223.html">Análisis y Procesos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147205.html">Proceso 3 : Automatización de procesos de gestiones documentales parametrizables</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Extracción de convocatorias
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span>, last modified on nov 15, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/598147410/598147828.jpg" data-image-src="attachments/598147410/598147828.jpg" data-unresolved-comment-count="0" data-linked-resource-id="598147828" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="bpmnp3.jpg" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="598147410" data-linked-resource-container-version="5" alt=""></span></p><h3 id="Extraccióndeconvocatorias-Descripcióngeneraldelsubproceso"><span style="color: rgb(0,0,0);">Descripción general del subproceso</span></h3><p style="text-align: left;">Este subproceso se planifica automáticamente para hacer la extracción de convocatorias con el objetivo de incorporarlas al SGI. </p><p style="text-align: left;">En primer lugar, se hará una extracción en crudo de las convocatorias disponibles en las fuentes facilitadas.</p><p style="text-align: left;">Si la extracción ha sido satisfactoria, se continuará con el tratamiento de los datos obtenidos. Seguidamente, se introducirán las convocatorias procesadas en una base de datos interna para su almacenamiento. Este aspecto tendrá especial relevancia a la hora de recuperar convocatorias anteriores que no se hayan incluido en el SGI debido a alguna situación de error. </p><p style="text-align: left;">Respecto al tratamiento de las convocatorias hay que diferenciar que hay dos casos:</p><ol><li><u>Convocatorias obtenidas de BDNS:</u> estas convocatorias se insertarán en el SGI después de su tratamiento, en base al título,  se insertarán con la unidad de gestión &quot;UGI&quot; aquellas que contengan la palabra &quot;investigación o I+D&quot; y &quot;OTRI&quot; aquellas que contengan &quot;transferencia&quot;. Al finalizar el tratamiento de las convocatorias, se comprobará si en la anterior invocación del subproceso se inyectaron satisfactoriamente los resultados en el SGI. Este control de errores en la inclusión de información se deriva de la dependencia con la API facilitada por el SGI, ya que podrá darse el caso de que no se encuentre disponible, en un momento dado, para llevar a cabo la inyección de datos. En caso de que no se hayan incluido se recuperarán, junto a la colección actualmente procesada, las convocatorias anteriores. Lo que resultará en una colección de convocatorias preparadas para su inyección.  Una vez procesada toda la información y comprobadas las convocatorias anteriores, se comprobará si se ha obtenido un resultado satisfactorio en el proceso de inyección al SGI. En caso negativo, se marcará esa colección de convocatorias en la base de datos del proceso a fin de poder introducir, en ejecuciones posteriores, la información y se generará un informe de estado finalizando así este proceso. En el caso de que se haya inyectado adecuadamente la información, se notificará a los interesados del resultado.</li><li><u>Convocatorias obtenidas de la Comisión Europea (Funding &amp; tenders):</u> estas convocatorias no se insertarán en el SGI, se enviará un correo electrónico con el título de la convocatoria y el enlace a ésta. El formato del correo electrónico será el siguiente:<ol><li>Identificador de la convocatoria: se pondrá el identificador único de la convocatoria como nombre de la misma.</li><li>URL de la convocatoria: URL a la página europea donde se puede encontrar toda la información de la convocatoria.</li><li>Fecha de publicación: fecha de publicación de la convocatoria en la página.</li><li>Fecha de Fin: fecha deadline que la página de convocatorias muestra para la convocatoria.</li></ol></li></ol><pre class="moz-quote-pre">        Ejemplo:<br/>         Convocatoria con nombre: AMIF-2022-AG-CALL-THB
+	     URL: <a class="external-link" href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/amif-2022-ag-call-thb" rel="nofollow">https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/amif-2022-ag-call-thb</a>. 
+	     Fecha de publicación: 10/02/2022. 
+	     Fecha Fin: 19/05/2022</pre><p style="margin-left: 40.0px;"><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147410/598148133.png">image2022-8-3_19-13-37.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147410/598147828.jpg">bpmnp3.jpg</a> (image/jpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 12:02</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

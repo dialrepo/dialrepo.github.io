@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Convocatorias</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147612.html">APIs de Integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147535.html">SGI: Servicios propios que expone</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Convocatorias
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span>, last modified on sep 03, 2024
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728467811949 {padding: 0px;}
+div.rbtoc1728467811949 ul {margin-left: 0px;}
+div.rbtoc1728467811949 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728467811949'>
+<ul class='toc-indentation'>
+<li><a href='#Convocatorias-SistemadeGestiónInvestigación'>Sistema de Gestión Investigación</a>
+<ul class='toc-indentation'>
+<li><a href='#Convocatorias-Entidades'>Entidades</a></li>
+<li><a href='#Convocatorias-Modelológico'>Modelo lógico</a></li>
+<li><a href='#Convocatorias-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#Convocatorias-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#Convocatorias-AreaTematica'>AreaTematica</a></li>
+</ul>
+</li>
+<li><a href='#Convocatorias-Servicios'>Servicios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><hr/><h1 id="Convocatorias-SistemadeGestiónInvestigación">Sistema de Gestión Investigación</h1><h2 id="Convocatorias-Entidades">Entidades</h2><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 66.1926%;"><colgroup><col style="width: 17.7833%;"/><col style="width: 82.2167%;"/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">AreaTematica</td><td class="confluenceTd"><p>Contiene los datos generales de las áreas temáticas que se pueden relacionar con las convocatorias.</p></td></tr></tbody></table></div><h2 id="Convocatorias-Modelológico"><span style="color: rgb(255,0,255);">Modelo lógico</span></h2><p><span style="color: rgb(255,255,0);"><a class="external-link" href="https://confluence.treelogic.com/pages/viewpage.action?pageId=96209958" rel="nofollow" style="color: rgb(255,255,0);">CSP - CONV - Modelo lógico</a></span></p><p><br/></p><h2 id="Convocatorias-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Consultas+filtradas+y+paginadas">Consultas filtradas y paginadas</a></li><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Formatos+de+datos+API">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="Convocatorias-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="Convocatorias-AreaTematica">AreaTematica</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único del área temática.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del área temática a presentar por pantalla en los componentes visuales árbol o selector.</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción del área temática.</td></tr><tr><td colspan="1" class="confluenceTd">padre</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del área temática de la que depende jerárquicamente, del padre. Si está nulo, se entiende que el área temática es raíz o de primer nivel, no tiene área temática padre.</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><span>Indica si el área temática está activa o no. <br/></span></td></tr></tbody></table></div><h3 id="Convocatorias-Servicios">Servicios</h3><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 99.8801%;"><colgroup><col style="width: 7.80243%;"/><col style="width: 18.0308%;"/><col style="width: 13.9657%;"/><col style="width: 16.9162%;"/><col style="width: 43.274%;"/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span>/areatematicas</span></td><td class="confluenceTd"><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>padreId</li></ul></td><td class="confluenceTd">List[AreasTematica]</td><td class="confluenceTd"><p>Listado de AreaTematica  (sólo devuelve los registros activos).</p><p>Nota: en el caso de no recibirse un padreId en la query, se devolverán todas las áreas temáticas y en caso de indicarse en la query que se quieren solo las que tengan un padreId con valor &quot;null&quot; se devolverán únicamente las de primer nivel o nivel raíz.</p><p><em>Ejemplo de query para obtener solo áreas de conocimiento raíz (su padre es null)</em>:</p><p style="margin-left: 30.0px;">padreId=na=</p></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span><span class="url-filename">/areatematicas/{id}</span></span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">AreasTematica</td><td class="confluenceTd">Datos de un área temática específica.</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/convocatorias/eliminadas-ids</td><td class="confluenceTd"><p>q+s</p><p>La query estará formada por:</p><ul><li>fechaEliminacion</li></ul></td><td class="confluenceTd">Lista[Long]</td><td class="confluenceTd"><p>Listado de Identificadores de Convocatoria que han sido eliminadas (campo activo = false) a partir de una fecha.</p><p>Se utilizará el siguiente parámetro en la llamada al servicio:</p><ul><li>fechaEliminacion: se le pasará la fecha a partir de la cual se quieren ver las convocatorias eliminadas o bien un rango entre las que se quiere buscar</li></ul><p>Ejemplo1:</p><ul><li>fechaEliminacion=ge=<span>&quot;2024-01-01T22:00:00Z&quot;</span>;</li></ul><p>Ejemplo2:</p><ul><li>fechaEliminacion=ge=<span>&quot;2024-01-01T22:00:00Z&quot;</span>;fechaEliminacion=le=<span>&quot;2024-12-31T22:00:00Z&quot;</span></li></ul></td></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:56</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

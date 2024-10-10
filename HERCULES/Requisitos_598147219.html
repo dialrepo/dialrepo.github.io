@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Requisitos</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="RPA_598147226.html">RPA</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147224.html">Módulo de Automatización y Gestión</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147223.html">Análisis y Procesos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147205.html">Proceso 3 : Automatización de procesos de gestiones documentales parametrizables</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Requisitos
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Juan Tardón Martínez</span>, last modified by <span class='editor'> Usuario genérico para HERCULES</span> on nov 15, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h2 id="Requisitos-ObtenciónBasesReguladoras.">Obtención Bases Reguladoras.</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh"><strong>Fuente</strong></th><th class="confluenceTh"><strong>Descripción/Características/Observaciones</strong></th></tr><tr><td class="confluenceTd">BOE</td><td class="confluenceTd"><ul><li style="text-align: left;">En el BOE se publican las bases reguladoras de las convocatorias.</li><li style="text-align: left;">Las bases reguladoras se publican antes de la resolución de la convocatoria, con lo que no será necesario añadirlas al SGI.</li><li style="text-align: left;">Se obtendrán y se enviarán por correo electrónico.</li><li style="text-align: left;">Se podrán obtener de forma diaria o seleccionando un rango de fechas.</li></ul><ul><li style="text-align: left;">Criterios de búsqueda:<ul><li style="text-align: left;">El título contendrá los siguientes patrones:<ol><li>&quot;bases reguladoras&quot; + &quot;investigación / transferencia / I+D&quot;</li><li>&quot;decreto&quot; + &quot;regula&quot; + &quot;investigación / transferencia / I+D&quot;</li></ol></li></ul></li><li>Las bases reguladoras relacionadas con &quot;transferencia&quot; se enviarán a la OTRI y las relacionadas con &quot;investigación&quot; a la UGI.</li></ul></td></tr></tbody></table></div><h2 id="Requisitos-ObtencióndeConvocatorias.">Obtención de Convocatorias.</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Fuente</th><th class="confluenceTh"><strong>Descripción/Características/Observaciones</strong></th></tr><tr><td class="confluenceTd"><p>Base de Datos Nacional de</p><p>Subvenciones (BDNS)</p></td><td class="confluenceTd"><ul><li><p style="text-align: left;" align="center">Se debe filtrar la búsqueda de subvenciones a las orientadas a investigación a nivel nacional.</p></li><li><p style="text-align: left;" align="center">El parámetro de &quot;región impacto&quot; debe ser informado como: ES-ESPAÑA, REGIÓN DE MURCIA y MURCIA.</p></li><li><p style="text-align: left;" align="center">De esta base de datos se obtendrán las convocatorias y las bases reguladoras para, posteriormente, añadirlas al SGI.</p></li><li>Se debe filtrar también la búsqueda de subvenciones con la palabra clave transferencia, donde la entidad gestora será la OTRI.</li></ul></td></tr><tr><td class="confluenceTd"><p>Funding &amp; tender opportunities</p><p>(proyectos europeos)</p></td><td style="text-align: left;" class="confluenceTd"><ul><li>Se obtendrán accediendo a la web: <a class="external-link" href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" rel="nofollow">https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home</a></li><li>Se notificarán convocatorias nuevas aquellas que tengan el parámetro GRANTS.</li><li>Se enviarán por correo electrónico.</li></ul></td></tr></tbody></table></div><p style="text-align: left;" align="center">Estructura general para enriquecer el SGI con una nueva convocatoria:</p><ul style="text-align: left;"><li><p>Título: el formato de este campo será: ROBOT + título extraído. </p></li><li><p>Tipo solicitud SGI: PROYECTO.</p></li><li><p>Unidad de Gestión: si el título de la convocatoria contiene &quot;investigación o I+D&quot; será &quot;UGI&quot;, si contiene &quot;transferencia&quot; será &quot;OTRI&quot;. Si no cumple ninguno de estos criterios se creará una convocatoria por cada unidad de gestión disponible.</p></li><li><p>Modelo de Ejecución: [subvención, préstamo, facturación]. Para configurar este campo se buscará en el título de la convocatoria los siguientes patrones:</p><ul style="text-align: left;"><li>Subvención: ayuda/subvención.</li><li>Préstamo: préstamo.</li><li>Facturación: presentación factura/facturación.</li></ul></li></ul><p style="margin-left: 40.0px;">A las convocatorias obtenidas utilizando la BDNS se le asignará &quot;subvención&quot;.</p><ul style="text-align: left;"><li>Entidades convocantes.</li><li><p>Entidad gestora: es la entidad que se designa como gestora de los fondos en la convocatoria. Normalmente viene mencionado explícitamente en la convocatoria (entidad gestora o entidad que gestiona). Este campo se rellenará con los mismos datos que las entidades convocantes.</p></li><li><p>Lista de áreas temáticas: no se rellenará al no tener un patrón definido para la identificación de áreas.</p></li></ul><p>Cualquier campo que no pueda ser añadido se deberá indicar en observaciones.</p><h2 id="Requisitos-ObtencióndeConcesiones.">Obtención de Concesiones.</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Fuente</th><th class="confluenceTh">Descripción/Características/Observaciones</th></tr><tr><td class="confluenceTd"><p>Base de Datos Nacional de Subvenciones (BDNS)</p></td><td class="confluenceTd"><ul><li style="text-align: left;">Se deberá consultar BDNS para obtener los resultados de las concesiones (únicamente las de la Agencia Estatal de Investigación).</li><li style="text-align: left;">Se deberán consultar aquellas concesiones cuyo estado en el SGI sea distinta de “borrador/concedida/denegada/desistida/excluida” dentro de un rango de fechas.</li><li style="text-align: left;">Se enviarán por correo electrónico los resultados del estado de las concesiones, para que el personal de la UM pueda actualizar el estado de la concesión en el SGI.</li><li style="text-align: left;">Se deberá rellenar el campo &quot;código de registro en entidad convocante&quot; con el identificador del proyecto al que se está asociado, p.e. PID2019-103993GB-I00</li></ul></td></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 12:02</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

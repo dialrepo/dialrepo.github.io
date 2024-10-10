@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Generación informe acreditación</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147612.html">APIs de Integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147338.html">RPA: Servicios propios que expone</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Generación informe acreditación
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span>, last modified on oct 27, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="Generacióninformeacreditación-Sistemadegeneracióndeinformesdeacreditación">Sistema de generación de informes de acreditación</h1><h2 id="Generacióninformeacreditación-Entidades">Entidades</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">Acreditacion</td><td class="confluenceTd"><p>Contiene los datos para poder generar una solicitud de acreditación. De esta entidad se pueden obtener los campos:</p><ul><li>Identificador: define el tipo de acreditación, puede ser:<ul><li>&quot;1&quot;: Titularidad.</li><li>&quot;2&quot;: Cátedra.</li></ul></li></ul></td></tr><tr><td colspan="1" class="confluenceTd">CategoriaAcreditacion</td><td colspan="1" class="confluenceTd"><p>Define la categoría a la que pertenece la acreditación, en este caso, solo será necesaria para la comisión con identificador &quot;21&quot;. De esta entidad se pueden obtener los campos:</p><ul><li>Identificador: define la categoría, puede ser:<ul><li>&quot;1&quot;: Investigación.</li><li>&quot;2&quot;: Docencia.</li></ul></li></ul></td></tr><tr><td colspan="1" class="confluenceTd">Comision</td><td colspan="1" class="confluenceTd"><p>Contiene la información relacionada con la comisión que evaluará la solicitud de acreditación. De esta entidad se pueden consultar:</p><ul><li>Identificador.</li></ul></td></tr></tbody></table></div><h2 id="Generacióninformeacreditación-API"><span>API</span></h2><p>La forma en la que se solicitará que se inicie el proceso será utilizando la API del orquestador RPA.</p><h2 class="auto-cursor-target" id="Generacióninformeacreditación-Servicios"><span style="font-size: 16.0px;letter-spacing: -0.006em;font-weight: 600;">Servicios</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" title="Color de fondo: "><strong>Método</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" title="Color de fondo: "><strong>URL</strong></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey" title="Color de fondo: "><strong>Parámetros</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey">Tipo</td><td class="highlight-grey confluenceTd" data-highlight-colour="grey" title="Color de fondo: "><strong>Descripción</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey">Respuesta</td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd">/api/orchestrator/acreditaciones/comisiones</td><td colspan="1" class="confluenceTd">ninguno</td><td colspan="1" class="confluenceTd">ninguno</td><td colspan="1" class="confluenceTd">Devuelve un mapa con las comisiones implementadas y su id</td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">{</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;2&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Física&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;3&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Química&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;4&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Ciencias de la naturaleza&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;5&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Biología Celular y Molecular&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;7&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Medicina clínica y especialidades clínicas&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;8&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Otras especialidades sanitarias&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;11&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Ingeniería eléctrica y de las telecomunicaciones&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;12&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Ingeniería informática&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;15&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Ciencias económicas&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;16&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Ciencias empresariales&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;18&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Ciencias del comportamiento&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;19&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Ciencias sociales&quot;</span><br/><span style="color: rgb(0,0,0);">    },</span><br/><span style="color: rgb(0,0,0);">    </span><span style="color: rgb(163,21,21);">&quot;21&quot;</span><span style="color: rgb(0,0,0);">: {</span><br/><span style="color: rgb(0,0,0);">        </span><span style="color: rgb(163,21,21);">&quot;name&quot;</span><span style="color: rgb(0,0,0);">: </span><span style="color: rgb(4,81,165);">&quot;Filología y lingüística&quot;</span><br/><span style="color: rgb(0,0,0);">    }</span><br/><span style="color: rgb(0,0,0);">}</span></p></td></tr><tr><td rowspan="9" class="confluenceTd">POST</td><td rowspan="9" class="confluenceTd">/<span style="color: rgb(33,33,33);">api/orchestrator/schedules/execute</span></td><td class="confluenceTd">time_schedule</td><td colspan="1" class="confluenceTd">int</td><td class="confluenceTd">Sirve para indicar una planificación, por si se quiere hacer periódicamente, en este caso será<span style="color: inherit;"> </span><strong>null</strong><span style="color: inherit;"> </span>ya que querremos que sea instantáneo</td><td rowspan="6" class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">id_process</td><td colspan="1" class="confluenceTd">int</td><td class="confluenceTd">id del proceso a ejecutar, en este caso (acreditaciones) será 22</td></tr><tr><td class="confluenceTd"><span style="color: rgb(237,92,87);">process</span></td><td colspan="1" class="confluenceTd"><br/></td><td class="confluenceTd">Objeto que tiene los parámetros generales y específicos del proceso</td></tr><tr><td class="confluenceTd"><span style="color: rgb(237,92,87);">process</span>.priority</td><td colspan="1" class="confluenceTd">int</td><td class="confluenceTd">prioridad del proceso, en este caso 1</td></tr><tr><td class="confluenceTd"><span style="color: rgb(237,92,87);">process</span>.id_robot</td><td colspan="1" class="confluenceTd">String</td><td class="confluenceTd">robot que queremos que ejecute el proceso, en este caso como nos dará igual que robot lo ejecute, lo dejaremos a<span style="color: inherit;"> </span><strong>null</strong></td></tr><tr><td rowspan="4" class="confluenceTd"><span style="color: rgb(237,92,87);">process</span>.parameters</td><td colspan="1" class="confluenceTd"><br/></td><td rowspan="4" class="confluenceTd"><p>objeto que tendrá los parámetros específicos del proceso:</p><ul style="text-align: left;"><li><strong>comision</strong>: id de la comisión evaluadora de la acreditación cuyo tipo es un string.</li><li><strong>tipo_acreditacion</strong>: id de la acreditación.</li><li><strong>categoria_acreditacion</strong>: id de la categoría acreditación, solo será necesario cuando el id de la comisión tenga el valor &quot;21&quot;.</li></ul><ul style="text-align: left;"><li><strong>investigador</strong>: identificador escogido. Puede ser:<ul style="text-align: left;"><li>PersonaRef</li><li>Email</li><li>ORCID</li></ul></li></ul><p>El tipo de todos estos parámetros es String.</p></td></tr></tbody></table></div><p class="auto-cursor-target"><span style="color: inherit;"><br/></span></p><p>Ejemplo de json de la petición:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: json; gutter: false; theme: DJango" data-custom-language-resource="com.atlassian.confluence.ext.code.custom.JSON.2159564286376668345:custom-code-syntax-resources" data-theme="DJango">{
+    &quot;time_schedule&quot;:null,
+    &quot;process&quot;: {
+        &quot;id_robot&quot;:null,
+        &quot;priority&quot;: 1,
+        &quot;parameters&quot;: { 
+            &quot;comision&quot;: &quot;6&quot;, 
+            &quot;tipo_acreditacion&quot;: &quot;2&quot;,    
+            &quot;investigador&quot;: &quot;28710458&quot;,
+        },
+        &quot;id_process&quot;: 22
+    }
+}</pre>
+</div></div><p class="auto-cursor-target">Listado de comisiones implementadas para el proceso de acreditaciones:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: json; gutter: false; theme: DJango" data-custom-language-resource="com.atlassian.confluence.ext.code.custom.JSON.2159564286376668345:custom-code-syntax-resources" data-theme="DJango">{                                  
+    &quot;2&quot;: &quot;Física&quot;,
+    &quot;3&quot;: &quot;Química&quot;,
+    &quot;4&quot;: &quot;Ciencias de la naturaleza &quot;,
+    &quot;5&quot;: &quot;Biología Celular y Molecular&quot;,
+    &quot;7&quot;: &quot;Medicina clínica y especialidades clínicas&quot;,
+    &quot;8&quot;: &quot;Otras especialidades sanitarias&quot;,
+    &quot;11&quot;: &quot;Ingeniería eléctrica y de las telecomunicaciones&quot;,
+    &quot;12&quot;: &quot;Ingeniería informática&quot;,
+    &quot;15&quot;: &quot;Ciencias económicas&quot;,
+    &quot;16&quot;: &quot;Ciencias empresariales&quot;,
+    &quot;18&quot;: &quot;Ciencias del comportamiento&quot;,
+    &quot;19&quot;: &quot;Ciencias sociales&quot;,
+    &quot;21&quot;: &quot;Filología y lingüística&quot;
+}</pre>
+</div></div><p class="auto-cursor-target">Tipos de acreditaciones disponibles:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: json; gutter: false; theme: DJango" data-custom-language-resource="com.atlassian.confluence.ext.code.custom.JSON.2159564286376668345:custom-code-syntax-resources" data-theme="DJango">{
+    &quot;1&quot;: &quot;Titularidad&quot;,
+    &quot;2&quot;: &quot;Cátedra&quot;
+}</pre>
+</div></div><p class="auto-cursor-target">Categorías de acreditación disponibles para la comisión &quot;21&quot;:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: json; gutter: false; theme: DJango" data-custom-language-resource="com.atlassian.confluence.ext.code.custom.JSON.2159564286376668345:custom-code-syntax-resources" data-theme="DJango">{
+    &quot;1&quot;: &quot;Docencia&quot;,
+    &quot;2&quot;: &quot;Investigación&quot;
+}</pre>
+</div></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:57</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

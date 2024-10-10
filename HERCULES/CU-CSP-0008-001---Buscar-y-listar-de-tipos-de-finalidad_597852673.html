@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-0008-001 - Buscar y listar de tipos de finalidad</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852669.html">CU-CSP-0008 - Gestión de tipos de finalidad</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-0008-001 - Buscar y listar de tipos de finalidad
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified on mar 18, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong>CU-CSP-0008-001 - Buscar y listar de tipos de enlaces</strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline">LIBERADO_</span></div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-CSP-004-Administrador</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Baja</td></tr></tbody></table></div></div><h2 id="CUCSP0008001Buscarylistardetiposdefinalidad-Descripción">Descripción</h2><p>Se listan los tipos de finalidad de acuerdo a los valores introducidos en el buscador.</p><h2 id="CUCSP0008001Buscarylistardetiposdefinalidad-Actores">Actores</h2><h3 id="CUCSP0008001Buscarylistardetiposdefinalidad-Actorprincipal">Actor principal</h3><p>ACT-CSP-004-Administrador</p><h3 id="CUCSP0008001Buscarylistardetiposdefinalidad-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><p>Personal gestor (ACT-CSP-003-Gestor) de las unidades de gestión con acceso al módulo CSP, que requieren disponer de los tipos de finalidad para poder clasificar de acuerdo al tipo de acción a desarrollar las convocatorias y proyectos.</p><p>Personal investigador (ACT- CSP-001-Investigador, ACT-CSP-002-InvestigadorExterno) que requiere que ver toda la información de las convocatorias  y proyectos.</p><h2 id="CUCSP0008001Buscarylistardetiposdefinalidad-Precondiciones">Precondiciones</h2><p>El usuario ACT-CSP-004-Administrador se autentica a través del usuario de dominio corporativo.</p><p>A través del servicio de integración con el directorio activo y de la información del usuario almacenada en el propio SGI, se obtiene su rol y  la unidades de gestión sobre las que tiene disponible el rol. El usuario está autorizado sobre la funcionalidad asociada a esta operación.</p><h2 id="CUCSP0008001Buscarylistardetiposdefinalidad-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>El listado de tipos de finalidad se muestra correctamente de acuerdo a los filtros introducidos. Para cada registro se muestran las acciones permitidas sobre el mismo.</p><h2 id="CUCSP0008001Buscarylistardetiposdefinalidad-Escenarioprincipal(flujobásico)-Noseaplicanfiltrosdebúsqueda">Escenario principal (flujo básico) - No se aplican filtros de búsqueda</h2><ol><li>El usuario accede a la opción Tipos de finalidad del menú de configuración del módulo CSP</li><li>El usuario pulsa Buscar, sin modificar los filtros por defecto del buscador</li><li>Se muestra el listado de Tipos de finalidad incluyendo solamente aquellas que tengan el campo &quot;activo&quot; a &quot;true&quot;.</li></ol><p><br/></p><h2 id="CUCSP0008001Buscarylistardetiposdefinalidad-Extensiones(flujosalternativos)-Seaplicanfiltrosdebúsqueda">Extensiones (flujos alternativos) - Se aplican filtros de búsqueda</h2><ol><li>El usuario accede a la opción Tipos de finalidad del menú de configuración del módulo CSP</li><li>El usuario pulsa Buscar, indicando algún valor en los campos disponibles</li><li>Se muestra el listado de Tipos de finalidad de acuerdo a los filtros introducidos</li></ol><h2 id="CUCSP0008001Buscarylistardetiposdefinalidad-Requisitosespeciales">Requisitos especiales</h2><p>N/A</p><h2 id="CUCSP0008001Buscarylistardetiposdefinalidad-Listadetecnologíayvariacionesdedatos">Lista de tecnología y variaciones de datos</h2><p>N/A</p><p><br/><br/><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

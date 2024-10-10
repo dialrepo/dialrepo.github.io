@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : IU-CSP-0304-007 - Modificar solicitud - Cambiar estado - Investigador</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Interfaz-de-usuario_597853755.html">CSP - Interfaz de usuario</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853730.html">IU-CSP-0300 - Gestión de solicitudes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="IU-CSP-0304---Modificar-Solicitud_597853417.html">IU-CSP-0304 - Modificar Solicitud</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : IU-CSP-0304-007 - Modificar solicitud - Cambiar estado - Investigador
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified by <span class='editor'> Usuario desconocido (covadonga.garcia)</span> on oct 10, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. IU</th><td colspan="1" class="confluenceTd"><p><strong><strong><strong><strong>IU-CSP-0304-007 - Modificar solicitud - Cambiar estado - Investigador<br/></strong></strong></strong></strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. IU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><div class="content-wrapper"><p><br/></p></div></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd"><p><span>ACT-CSP-001-Investigador, ACT-CSP-001-Investigador-Externo</span></p></td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Media</td></tr></tbody></table></div></div><h1 class="western" id="IUCSP0304007ModificarsolicitudCambiarestadoInvestigador-FormularioCambiarestado">Formulario Cambiar estado</h1><p><span>El ACT- CSP-001-Investigador solo tendrá activa la opción &quot;Cambiar estado&quot; cuando:</span></p><ul><li><span> la solicitud es de tipo &quot;Proyecto&quot; o &quot;Grupo&quot; y hubiera sido creada por el propio ACT-CSP-001-Investigador:</span><ul><li><span>campo &quot;creador&quot; de la tabla &quot;solicitud&quot; y campo &quot;solicitante&quot; de la misma tabla coinciden y son el propio ACT-CSP-001-Investigador</span></li><li><span>campo &quot;formularioSolicitud&quot; es &quot;Proyecto&quot; o &quot;Grupo&quot;</span></li></ul></li><li><span><span>la solicitud es de tipo &quot;RRHH&quot; y hubiera sido creada por el propio ACT-CSP-001-Investigador o ACT-CSP-003-InvestigadorExterno<br/></span></span><ul><li><span><span>campo &quot;creador&quot; de la tabla &quot;solicitud&quot; y campo &quot;solicitante&quot; de la misma tabla coinciden y son el propio ACT-CSP-001-Investigador o campo &quot;creador&quot; es vacío si un usuario externo<br/></span></span></li><li><span><span>campo &quot;formularioSolicitud&quot; es &quot;RRHH&quot;</span></span></li></ul></li><li><span>la solicitud es de tipo &quot;RRHH&quot; y se trata del tutor/a de la solicitud:</span><ul><li><span>campo &quot;formularioSolicitud&quot; es &quot;RRHH&quot;</span></li><li><span>campo &quot;tutorRef&quot; de la tabla &quot;SolicitudRRHH&quot; es el propio ACT-CSP-001-Investigador</span></li></ul></li></ul><p>Las solicitudes asociadas a ACT-CSP-001-Investigador pero creadas por ACT-CSP-003-Gestor y/o ACT-CSP-004-Administrador, no pueden ser modificadas por ACT-CSP-001-Investigador que tampoco podrá cambiar el estado de las mismas.</p><p>Las solicitudes asociadas a ACT-CSP-002-InvestigadorExterno pero creadas por ACT-CSP-003-Gestor y/o ACT-CSP-004-Administrador, no pueden ser modificadas por ACT-CSP-002-InvestigadorExterno que tampoco podrá cambiar el estado de las mismas.</p><p>Los cambios de estado permitidos para <span>ACT-CSP-001-Investigador cuando la solicitud ha sido creada por él mismo</span> son:</p><ul><li>De &quot;Borrador&quot; a &quot;Solicitada&quot; o &quot;Desistida&quot;.</li><li>De &quot;En subsanación&quot; a &quot;Presentada subsanación&quot; o &quot;Desistida&quot;.</li><li>De &quot;Excluida provisional&quot; a &quot;Alegación fase admisión&quot; o &quot;Desistida&quot;.</li><li>De &quot;Excluida definitiva&quot; a &quot;Recurso fase admisión&quot; o &quot;Desistida&quot;.</li><li>De &quot;Denegada provisional&quot; a &quot;Alegación fase provisional&quot; o &quot;Desistida&quot;.</li><li>De &quot;Denegada&quot; a &quot;Recurso fase concesión&quot; o &quot;Desistida&quot;.</li></ul><p><br/></p><p>Los cambios de estado permitidos para <span>ACT-CSP-002-InvestigadorExterno cuando la solicitud ha sido creada por él mismo</span> son:</p><ul><li>De &quot;Borrador&quot; a &quot;Solicitada&quot; o &quot;Desistida&quot;.</li><li>De &quot;En subsanación&quot; a &quot;Presentada subsanación&quot; o &quot;Desistida&quot;.</li><li>De &quot;Excluida provisional&quot; a &quot;Alegación fase admisión&quot; o &quot;Desistida&quot;.</li><li>De &quot;Excluida definitiva&quot; a &quot;Recurso fase admisión&quot; o &quot;Desistida&quot;.</li><li>De &quot;Denegada provisional&quot; a &quot;Alegación fase provisional&quot; o &quot;Desistida&quot;.</li><li>De &quot;Denegada&quot; a &quot;Recurso fase concesión&quot; o &quot;Desistida&quot;</li></ul><p><br/></p><p>Los cambios de estado permitidos para <span>ACT-CSP-001-Investigador cuando es el &quot;tutor&quot;  son:<br/></span></p><ul><li><span>De &quot;Solicitada&quot; a &quot;Validada&quot; o &quot;Rechazada&quot;</span></li></ul><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="letter-spacing: 0.0px;width: 99.8051%;"><colgroup><col style="width: 14.0922%;"/><col style="width: 39.245%;"/><col style="width: 33.1831%;"/><col style="width: 13.4861%;"/></colgroup><tbody><tr><td colspan="4" style="width: 99.8051%;" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/597853651/597876637.png" data-image-src="attachments/597853651/597876637.png" data-unresolved-comment-count="0" data-linked-resource-id="597876637" data-linked-resource-version="4" data-linked-resource-type="attachment" data-linked-resource-default-alias="43_Solicitud_INV_CambioEstado.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="597853651" data-linked-resource-container-version="35" alt=""></span></p><p><br/></p></div></td></tr><tr><th style="width: 14.0351%;" class="confluenceTh"><div class="content-wrapper"><p>Acciones</p></div></th><th style="width: 39.1813%;" class="confluenceTh"><div class="content-wrapper"><p>Descripción</p></div></th><th style="width: 33.1384%;" class="confluenceTh"> Enlace CU.</th><th style="width: 13.4503%;" class="confluenceTh">Permisos</th></tr><tr><td style="width: 14.0351%;" class="confluenceTd">Cambiar estado solicitud</td><td style="width: 39.1813%;" class="confluenceTd"><p>Se abre una pantalla emergente para seleccionar el nuevo estado y añadir en caso necesario el comentario</p></td><td style="width: 33.1384%;" class="confluenceTd"><p style="text-align: left;">El botón solo estará habilitado si:</p><ul><li style="text-align: left;">no se han realizado cambios en los datos de la solicitud que estén pendientes de guardar.</li><li style="text-align: left;">la solicitud ha sido creada por ACT-CSP-001-Investigador (o por ACT-CSP-002-InvestigadorExterno cuando corresponda) y no por ACT-CSP-003-Gestor o ACT-CSP-004-Administrador ( para realizar esta comprobación deberá comprobarse que el campo &quot;solicitante&quot; de la tabla &quot;solicitud&quot; y el campo &quot;creador&quot; de la misma tabla referencian a la misma persona ) o el ACT-CSP-001-Investigador es el &quot;tutor ref&quot; de la tabla &quot;solicitud RRHH&quot;</li></ul><p style="text-align: left;">El botón dispondrá de un tooltip que se mostrará al pasar el ratón por encima. El contenido de este tooltip mostrará el estado actual de la solicitud. El formato de la información será &quot;Estado actual: &quot; + valor del estado. El estado actual se recuperará a través del campo &quot;estado&quot; de la tabla &quot;solicitud&quot;.</p><p style="text-align: left;">Al pulsar sobre el botón &quot;Cambiar estado solicitud&quot; se mostrará la pantalla <a href="IU-CSP-0304-008---Cambiar-estado_597853203.html">IU-CSP-0304-008 - Cambiar estado</a></p><p>Ver condiciones y comprobaciones en <a href="CU-CSP-1100-002---Modificar-solicitud---Cambio-de-estado_597853516.html">CU-CSP-1100-002 - Modificar solicitud - Cambio de estado</a></p></td><td style="width: 13.4503%;" class="confluenceTd"><p>CSP-SOL-INV-ER</p><p>ETI-PEV-MOD-C</p></td></tr><tr><td style="width: 14.0351%;" class="confluenceTd">Cancelar</td><td style="width: 39.1813%;" class="confluenceTd">Retorna al formulario de la solicitud, sin salvar los posibles cambios.</td><td style="width: 33.1384%;" class="confluenceTd"><br/></td><td style="width: 13.4503%;" class="confluenceTd"><br/></td></tr></tbody></table></div><h2 id="IUCSP0304007ModificarsolicitudCambiarestadoInvestigador-Permisosdeaccesoalapantalla">Permisos de acceso a la pantalla</h2><h3 id="IUCSP0304007ModificarsolicitudCambiarestadoInvestigador-Poractor">Por actor</h3><div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 70.6098%;"><colgroup><col style="width: 35.9365%;"/><col style="width: 64.0808%;"/></colgroup><tbody><tr><th class="confluenceTh"><p><span>ACT-CSP-001-Investigador</span></p></th><td class="confluenceTd">CSP-SOL-INV-ER, ETI-PEV-MOD-C</td></tr><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" title="Color de fondo: "><strong>Usuario externo</strong></td><td colspan="1" class="confluenceTd">Sin permisos</td></tr></tbody></table></div></div><h3 id="IUCSP0304007ModificarsolicitudCambiarestadoInvestigador-Todoslospermisosdeacceso">Todos los permisos de acceso</h3><div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 70.3044%;"><colgroup><col style="width: 36.1797%;"/><col style="width: 63.8377%;"/></colgroup><tbody><tr><th class="confluenceTh">Permisos</th><td class="confluenceTd">CSP-SOL-INV-ER, <span class="inline-comment-marker" data-ref="297c4a58-bc0e-43b6-bb38-f82db961fa13">CSP-SOL-INV-VR, ETI-PEV-MOD-C<br/></span></td></tr></tbody></table></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Se aplican las mismas restricciones para todos los elementos del árbol de navegación bajo este path.</p></div></div></div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597877554.png">200102solicitudinvestigadorcreardatosgeneralesprogramaaniadirmenu.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/598835271.png">2100solicitudinvestigadormodificarcambioestadocomentario.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597884899.png">2100solicitudinvestigadormodificarcambioestado.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597879270.png">2100solicitudinvestigadormodificarcambioestado.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/598835265.png">2100solicitudinvestigadormodificarcambioestado.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597884646.png">32_01_Solicitud_Investigador_Modificar_CambioEstado.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597884520.png">32_01_Solicitud_Investigador_Modificar_CambioEstado.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597858083.png">3201solicitudinvestigadormodificarcambioestado.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597874276.png">41_01_Solicitud_INV_DatosProyecto_FichaGeneral.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597874273.png">41_10_Solicitud_INV_CambioEstado.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597865905.png">43_Solicitud_INV_CambioEstado.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597865789.png">43_Solicitud_INV_CambioEstado.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597865725.png">43_Solicitud_INV_CambioEstado.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853651/597876637.png">43_Solicitud_INV_CambioEstado.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:28</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

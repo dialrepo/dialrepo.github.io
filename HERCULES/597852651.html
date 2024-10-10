@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-0080-001 - Buscar y listar tipos de financiación</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852639.html">CU-CSP-0080 - Gestión de tipos de financiación</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-0080-001 - Buscar y listar tipos de financiación
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified on mar 18, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong>CU-CSP-0080-001 - Buscar y listar de tipos de financiación</strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline">LIBERADO_</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-CSP-004-Administrador</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Baja</td></tr></tbody></table></div></div><h2 id="CUCSP0080001Buscarylistartiposdefinanciación-Descripción">Descripción</h2><p>Se listan los tipos de financiación de acuerdo a los valores introducidos en el buscador.</p><h2 id="CUCSP0080001Buscarylistartiposdefinanciación-Actores">Actores</h2><h3 id="CUCSP0080001Buscarylistartiposdefinanciación-Actorprincipal">Actor principal</h3><p>ACT-CSP-004-Administrador</p><h3 id="CUCSP0080001Buscarylistartiposdefinanciación-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><p>ACT- CSP-003-Gestor que requiere que los tipos de financiación estén configurados y vinculados a los modelos de ejecución para poder realizar la gestión de convocatorias y proyectos</p><h2 id="CUCSP0080001Buscarylistartiposdefinanciación-Precondiciones">Precondiciones</h2><p>El usuario ACT-CSP-004-Administrador se autentica a través del usuario de dominio corporativo.</p><p>A través del servicio de integración con el directorio activo y de la información del usuario almacenada en el propio SGI, se obtiene su rol y  la unidades de gestión sobre las que tiene disponible el rol. El usuario está autorizado sobre la funcionalidad asociada a esta operación.</p><h2 id="CUCSP0080001Buscarylistartiposdefinanciación-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>Los tipos de financiación se listan correctamente de acuerdo al filtro/filtros de búsqueda introducidos. A través del listado se da opción a las acciones permitidas sobre cada registro.</p><h2 id="CUCSP0080001Buscarylistartiposdefinanciación-Escenarioprincipal(flujobásico)-Noseaplicanfiltrosdebúsqueda">Escenario principal (flujo básico) - No se aplican filtros de búsqueda</h2><ol><li>El usuario accede a la opción Tipos de financiación del menú de configuración del módulo CSP</li><li>El usuario pulsa Buscar, sin modificar los filtros por defecto del buscador</li><li>Se muestra el listado de Tipos de financiación incluyendo solamente aquellas que tengan el campo &quot;activo&quot; a &quot;true&quot;.</li></ol><p><br/></p><h2 id="CUCSP0080001Buscarylistartiposdefinanciación-Extensiones(flujosalternativos)-Seaplicanfiltrosdebúsqueda">Extensiones (flujos alternativos) - Se aplican filtros de búsqueda</h2><ol><li>El usuario accede a la opción Tipos de financiación del menú de configuración del módulo CSP</li><li>El usuario pulsa Buscar, indicando algún valor en los campos disponibles</li><li>Se muestra el listado de Tipos de financiación de acuerdo a los filtros introducidos</li></ol><h2 id="CUCSP0080001Buscarylistartiposdefinanciación-Requisitosespeciales">Requisitos especiales</h2><p>N/A</p><p><br/><br/><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

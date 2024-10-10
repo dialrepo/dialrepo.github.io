@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (hector.suarez)</span>, last modified by <span class='editor'> Usuario desconocido (covadonga.garcia)</span> on may 04, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h2 id="CSPMódulodeconvocatorias,ayudas,solicitudes,proyectosycontratosygruposdeinvestigación-Introducción">Introducción</h2><p>Módulo principal del SGI que implementará el ciclo de gestión de convocatorias (ayudas a la investigación y becas), solicitudes, proyectos (incluyendo contratos y convenios) y grupos de investigación.</p><p>La filosofía de base del SGI será la homogeneización  y unificación de entidades y flujos. Esto permitirá el diseño de un sistema que permita dar cobertura de manera horizontal  a las necesidades de las diferentes unidades de gestión y a los diferentes criterios organizativos que marquen la existencia de éstas dentro de cada Universidad particular.</p><p>En base a esta premisa, el  flujo principal del módulo CSP responde al siguiente esquema:</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-content-image-border" draggable="false" height="400" src="attachments/597853832/597871826.jpg" data-image-src="attachments/597853832/597871826.jpg" data-unresolved-comment-count="0" data-linked-resource-id="597871826" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CSP_modeloproceso.jpg" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="597853832" data-linked-resource-container-version="42" alt=""></span></p><p><br/></p><p>Las convocatorias serán registradas en el SGI por el personal de administración y servicios de las diferentes unidades de gestión que estarán estructurados atendiendo a la definición de perfiles especificada en <a href="CSP---Actores_597853764.html">CSP - Actores</a> que toma como base la estructura general del SGI <a href="GEN---Actores_597853745.html">GEN - Actores</a>.  Sobre las convocatorias se registrarán las solicitudes. Este registro será realizado por el personal investigador o en su defecto, si no se habilita esta opción, por el personal de las unidades de gestión. El proceso de registro de las solicitudes en el SGI, a excepción de las de plan propio, será independiente del proceso de tramitación de las solicitudes en los organismos convocantes.</p><p>Las solicitudes concedidas darán lugar a los proyectos. Los proyectos podrán crearse en el SGI sin necesidad de que exista el flujo previo de creación de la convocatoria y registro de solicitudes.</p><p>La gestión económica de los proyectos será realizada en el Sistema de Gestión Económica propio de cada Universidad. El SGI deberá recibir del SGE el listado de operaciones contables, a modo informativo, vinculados a cada proyecto, así como todo el detalle de las facturas y gastos. Cualquier operación contable y/o factura/gasto deberá ser registrada desde el propio SGE. </p><p>La premisa de homogeneización ha de mantenerse a lo largo del diseño de todo el SGI, en el caso del módulo CSP se materializa en evitar la particularización de las entidades convocatorias, solicitudes y proyectos de acuerdo a la naturaleza de las mismas. Se debe de tener en cuenta que las particularizaciones minimizarán la posibilidad de adaptación a modelos futuros. Por ello, la propuesta es disponer de una entidad común &quot;proyecto&quot; que englobe cualquier modalidad bajo la que se pueda desarrollar la actividad (proyecto de investigación financiado, ayuda de contratación de RRHH, contrato artículo 83, convenio, contrato de licenciamiento, acuerdo de colaboración, etc.).</p><p><br/></p><p>El modelo de dominio, a alto nivel, al que responderá este módulo es:</p><p><span style="letter-spacing: 0.0px;"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1200" src="attachments/597853832/597856967.bmp" data-image-src="attachments/597853832/597856967.bmp" data-unresolved-comment-count="0" data-linked-resource-id="597856967" data-linked-resource-version="5" data-linked-resource-type="attachment" data-linked-resource-default-alias="CSP Domain Model.bmp" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/bmp" data-linked-resource-container-id="597853832" data-linked-resource-container-version="42" alt=""></span><br/></span></p><p><span style="letter-spacing: 0.0px;"><br/></span></p><p><span style="letter-spacing: 0.0px;">Se unificarán bajo la entidad Convocatoria todas las tipologías de las mismas, independientemente de su naturaleza, con la correspondiente clasificación atendiendo a diferentes criterios pero compartiendo todas ellas la misma estructura de información. Como ejemplo:</span></p><ul><li>Clasificación según modelo de ejecución (ayuda, contrato, convenio)  <a href="597853566.html">CSP - Modelo de ejecuci&oacute;n</a></li><li>Clasificación  según la finalidad del proyecto o actividad resultante a desarrollar (ejemplo: proyecto I+D, asesoría, servicio ténico,  royalties, infraestructuras, congresos, contratación de RRHH, etc.). Esta clasificación queda implícita en   <a href="597853566.html">CSP - Modelo de ejecuci&oacute;n</a></li><li>Clasificación según la unidad de gestión que coordinará la gestión del proyecto (ejemplo: UGI, OTRI, OPE, etc). Esta clasificación, queda también implícita en  <a href="597853566.html">CSP - Modelo de ejecuci&oacute;n</a></li></ul><p><br/></p><p><span style="letter-spacing: 0.0px;">Cada convocatoria registrada quedará vinculada a una unidad de gestión (UGI, OTRI, OPE, etc.) de forma que se limite la visibilidad de la misma al personal de gestión perteneciente a dicha unidad (o cuyo usuario de acceso al SGI esté asociado a la unidad de gestión).</span></p><p><span style="letter-spacing: 0.0px;">En el proceso de registro de la convocatoria se configurará la posibilidad o no de habilitar el registro de solicitudes en el SGI para el personal investigador.</span></p><p><span style="letter-spacing: 0.0px;">Las solicitudes quedarán asociadas a la convocatoria y aquellas que resulten concedidas quedarán trazadas con el proyecto resultante. </span></p><p>Los proyectos tendrán asociado un equipo de proyecto, donde cada miembro tendrá un rol dentro del equipo de investigación y unas fechas de pertenencia al equipo. </p><p>La producción científica derivada de la ejecución del proyecto quedará vinculada al mismo y a sus autores, desde el módulo de PRC (Producción científica).</p><p>La configuración de los proyectos permitirá activar o no el registro de las horas de trabajo por parte de cada miembro del equipo de investigación.</p><p><br/></p><p>El módulo CSP contará con las siguientes opciones de menú:</p><ul><li>Convocatorias</li><li>Solicitudes</li><li>Proyectos</li><li>Participación en proyectos externos</li><li>Grupos de investigación</li><li>Ejecución económica</li><li>Notificación de presupuestos a SGE</li><li>Configuración</li></ul><p><br/></p><h2 id="CSPMódulodeconvocatorias,ayudas,solicitudes,proyectosycontratosygruposdeinvestigación-Descripción">Descripción</h2><p><ul class='childpages-macro'><li><a href="CSP---Actores_597853764.html">CSP - Actores</a></li><li><a href="597853566.html">CSP - Modelo de ejecuci&oacute;n</a></li><li><a href="CSP---Convocatorias_597853534.html">CSP - Convocatorias</a></li><li><a href="CSP---Solicitudes_597852891.html">CSP - Solicitudes</a></li><li><a href="597852939.html">CSP Proyectos, contratos, becas y ayudas</a></li><li><a href="597853266.html">CSP - Participaci&oacute;n proyectos externos</a></li><li><a href="597852830.html">CSP - Grupos de investigaci&oacute;n</a></li><li><a href="597853103.html">CSP - Notificaci&oacute;n presupuesto SGE</a></li><li><a href="597853804.html">CSP - Ejecuci&oacute;n econ&oacute;mica</a></li><li><a href="CSP---Timesheet_597853751.html">CSP - Timesheet</a></li><li><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></li><li><a href="CSP---Interfaz-de-usuario_597853755.html">CSP - Interfaz de usuario</a></li><li><a href="CSP---Comunicados_597852925.html">CSP - Comunicados</a></li><li><a href="597853756.html">CSP - Glosario de t&eacute;rminos</a></li></ul></p><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597870249.bmp">Convocatorias Domain Model.bmp</a> (image/bmp)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597871826.jpg">CSP_modeloproceso.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597872094.jpg">CSP_modelodominio.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597871774.jpg">logos-ministerio-hecules.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597871775.jpg">lema-hercules.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597871776.jpg">union-europea.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597871783.jpg">CSP_modelodominio.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597874088.jpg">CSP_modelodominio_documentacion.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597874087.jpg">CSP_modelodominio_documentacion.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597868166.jpg">CSP_modelodominio.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597857945.jpg">CSP_modelodominio.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597860502.jpg">CSP_convocatoria_modelodominio.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597860304.jpg">CSP_modelodominio.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597855786.jpg">CSP_convocatoria_modelodominio.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597859935.jpg">CSP_modelodominio.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597859148.jpg">CSP_modelodominio.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597862440.jpg">CSP_modelodominio.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597871836.jpg">CSP_modelodominio.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597873824.bmp">CSP Domain Model.bmp</a> (image/bmp)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597876607.bmp">CSP Domain Model.bmp</a> (image/bmp)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597876593.bmp">CSP Domain Model.bmp</a> (image/bmp)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597876664.bmp">CSP Domain Model.bmp</a> (image/bmp)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853832/597856967.bmp">CSP Domain Model.bmp</a> (image/bmp)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-597882201"></a>
+                                    <font class="smallfont"><p><span style="color: rgb(0,51,102);"><u>Reflexión de Anton Romo</u></span></p><p>Al margen de lo que se pueda añadir en los diferentes apartados del módulo de convocatorias, me surge la duda de si, se ha dejado de considerar la cuestión de que los diferentes catálogos de modelos de ejecución, tipos de fase de gestión, tipos de documentos, tipos de enlace, tipos de finalidad, unidades de gestión, tipos de hitos de convocatoria, tipos de hitos de solicitudes, tipos de hitos de proyectos, etc., pudieran ser compartidos entre los diferentes SGI que vayan instalándose en el Estado.</p><p>La necesidad que me surge, es consecuencia de que por todas partes se hace un gran esfuerzo para estandarizar estructuras que sin embargo, si no hace nada al respecto, puede ocurrir que, por ejemplo en la tabla de tipos de documentos, cada Universidad les llame como se le ocurra, aunque esos tipos de documentos sean perfectamente homologables a los de otras Universidades.</p><p>Quizá deba pensarse en que en un SGI cualquiera debería existir, bien la posibilidad de importar tablas de estructuras ya predefinidas en otra Universidad o bien de que se pueda indicar en un SGI operativo que sus estructuras son consultables desde otros sistemas SGI.</p><p>Esa posibilidad implicaría un grandísimo esfuerzo de definición de estructuras y de rebote, una gran estandarización a nivel Estatal entre los diferentes SGI que se pongan en marcha.</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by hercules.ehu.anton.romo at sep 21, 2020 11:27
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-597859641"></a>
+                                    <font class="smallfont"><p><span style="color: rgb(0,51,102);">Hola. </span></p><p><span style="color: rgb(0,51,102);">Haría una pequeña indicación y es que en la app de gestión de la Universidad de Murcia, un proyecto (Ayuda) podía tener antes n códigos UNESCO asociados, pero ahora sólo puede tener uno. </span><span style="color: rgb(0,51,102);">No sé si es que con el análisis se ha llegado a esa conclusión o no, pero me da la impresión de que es una diferencia de HERCULES con GINVES y aquí os la dejo por si os sirve. </span><br/><br/><br/></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by jesus.ruiz.ticarum at oct 06, 2020 13:08
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-597859629"></a>
+                                    <font class="smallfont"><p>Gracias, <a class="confluence-userlink user-mention" data-username="jesus.ruiz.ticarum" href="https://confluence.um.es/confluence/display/~jesus.ruiz.ticarum" data-linked-resource-id="114163740" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluence.um.es/confluence">Usuario desconocido (jesus.ruiz.ticarum)</a>. En las reuniones de análisis deduje que cada proyecto solo se vinculará a un código UNESCO. <a class="confluence-userlink user-mention" data-username="hercules.juana.menchon" href="https://confluence.um.es/confluence/display/~hercules.juana.menchon" data-linked-resource-id="103677989" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluence.um.es/confluence">Usuario desconocido (hercules.juana.menchon)</a> ¿Podríais, por favor, poner un caso funcional en el que un proyecto pueda tener más de un código UNESCO? ¿Cual es la situación que conlleva a que un proyecto puede tener más de un código UNESCO? ¿Ocurriría lo mismo con el código NABS? </p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by covadonga.garcia at oct 06, 2020 13:19
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:26</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

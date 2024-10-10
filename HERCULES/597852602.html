@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-1200-008 - Ver ejecución económica - Investigador (rol responsable económico)</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853317.html">CU-CSP-1200 - Gestión de proyectos</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-1200-008 - Ver ejecución económica - Investigador (rol responsable económico)
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified on jun 14, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong>CU-CSP-1200-008 - Ver ejecución económica - Investigador (rol responsable económico)<br/></strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd"><span>ACT-CSP-001-Investigador </span></td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Alta</td></tr></tbody></table></div></div><h2 id="CUCSP1200008VerejecucióneconómicaInvestigador(rolresponsableeconómico)-Descripción">Descripción</h2><p>Acceso al detalle de la ejecución económica de un proyecto económico en modo solo lectura.</p><p>Los ACP-CSP-001-Investigador sólo podrán acceder en modo lectura a los datos de los proyectos de los que forma parte del equipo o ha formado parte (y su rol tenga a &quot;true&quot; el flag &quot;rol responsable económico&quot;). A partir del proyecto económico se podrá saber con que proyecto del SGI se relaciona (tabla &quot;ProyectoIdentificadorSGE&quot; ) y a partir de éste sacar su equipo (tabla &quot;ProyectoEquipo&quot;)</p><h2 id="CUCSP1200008VerejecucióneconómicaInvestigador(rolresponsableeconómico)-Actores">Actores</h2><h3 id="CUCSP1200008VerejecucióneconómicaInvestigador(rolresponsableeconómico)-Actorprincipal">Actor principal</h3><p>El ACT-CSP-001-Investigador y su rol tenga a &quot;true&quot; el flag &quot;rol responsable económico&quot;&quot;</p><h3 id="CUCSP1200008VerejecucióneconómicaInvestigador(rolresponsableeconómico)-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><p>ACT-CSP-001-Investigador que requiere que sus proyectos estén actualizados para su correcto seguimiento.</p><h2 id="CUCSP1200008VerejecucióneconómicaInvestigador(rolresponsableeconómico)-Precondiciones">Precondiciones</h2><p><span>ACP-CSP-001-Investigador se autentica</span> a través del usuario de dominio corporativo. El proyecto cumple los siguientes requisitos:</p><ul><li><span>Proyecto activo (campo &quot;activo&quot; a &quot;true&quot;) (tabla &quot;Proyecto&quot;)<br/></span></li><li><span>Estado actual del proyecto que no sea &quot;Borrador&quot;</span></li><li><span>ACT-CSP-001-Investigador debe de ser el responsable económico del proyecto actual (exista en la tabla &quot;ProyectoResponsableEconomico&quot; en un rango de fechas que incluya la fecha actual)<br/></span></li><li><span>El proyecto esta relacionado con el proyecto económico (tabla &quot;ProyectoIdentificadorSGE&quot;)</span></li></ul><p><br/></p><h2 id="CUCSP1200008VerejecucióneconómicaInvestigador(rolresponsableeconómico)-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>Se muestra el detalle del proyecto económico.</p><h2 id="CUCSP1200008VerejecucióneconómicaInvestigador(rolresponsableeconómico)-Escenarioprincipal(flujobásico)">Escenario principal (flujo básico)</h2><ul><li>El usuario pulsa el botón  Ver asociado al proyecto económico, desde el listado de proyectos económicos.</li><li><p>Se carga el detalle del proyecto económico, mostrando los siguientes apartados:</p><ul><li>Listado de proyectos</li><li>Ejecución presupuestaria:<ul><li>Anualidades</li><li>Gastos</li><li>Ingresos</li></ul></li><li>Detalle de operaciones<ul><li>Gastos</li><li>Ingresos</li><li>Modificaciones</li></ul></li><li>Facturas y justificaciones<ul><li>Facturas y gastos</li><li>Viajes y dietas</li><li>Personal contratado</li></ul></li><li>Validación de gastos: Listado y con acceso a:<ul><li>Edición del gasto</li><li>Histórico de gastos</li><li>Detalle del gasto</li></ul></li><li>Periodos de justificación: Listado de periodos, con acceso a su detalle en modo consulta:<ul><li>Datos generales</li><li>Histórico de estados</li><li>Documentación: solo visualización y descarga de documentos.</li><li>Facturas y justificaciones: Listado en modo consulta (sin poder añadir, editar ni eliminar)</li><li>Viajes y dietas: Listado en modo consulta (sin poder añadir, editar ni eliminar)</li><li>Personal contratado: Listado en modo consulta (sin poder añadir, editar ni eliminar)</li><li>Horas timesheet: Listado en modo consulta (sin poder añadir, editar ni eliminar)</li></ul></li><li>Facturas emitidas</li></ul></li></ul>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

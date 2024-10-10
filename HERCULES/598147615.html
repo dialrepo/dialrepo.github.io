@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : SGI: Servicios de terceros que expone</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147612.html">APIs de Integración</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : SGI: Servicios de terceros que expone
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Isabel Martinez Hernandez</span>, last modified by <span class='editor'> Usuario genérico para HERCULES</span> on mar 28, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/598147615/598148444.png" data-image-src="attachments/598147615/598148444.png" data-unresolved-comment-count="0" data-linked-resource-id="598148444" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Diagrama APIs Integración.ServicosTerceros.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147615" data-linked-resource-container-version="13" alt=""></span></p><p>Dentro del Sistema de Gestión de la Investigación <strong>se gestiona un Bus de Integración que permite centralizar las comunicaciones</strong>, el objetivo es que a través de este bus otras aplicaciones de la Universidad o de terceros puedan exponer sus métodos y centralizar de esta forma todas las comunicaciones en un único punto.</p><p>En las siguientes páginas se describen funcionalmente los requisitos de integración del SGI: <a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=INT+-+Requisitos+de+integraci%C3%B3n">Requisitos de integraci&oacute;n</a></p><p>A continuación se detalla la relación de métodos implementados en el bus de integración del SGI y agrupados por módulos/funcionalidades, en este apartado se muestran los métodos sobre los que el SGI hace de pasarela a través de su Bus de Integración y que exponen otras aplicaciones:</p><p><br/></p><p><ul class='childpages-macro'><li><a href="598147545.html">Sistema de gesti&oacute;n econ&oacute;mica</a></li><li><a href="598147544.html">Sistema de gesti&oacute;n econ&oacute;mica de protecci&oacute;n industrial e intelectual</a></li><li><a href="598147539.html">Sistema de gesti&oacute;n de personas</a></li><li><a href="598147536.html">Sistema de gesti&oacute;n de empresas</a></li><li><a href="598147533.html">Sistema de la gesti&oacute;n de la estructura org&aacute;nica</a></li></ul></p><p><br/></p><p>Además de estos métodos que se podrían denominar de terceros, el SGI expone una serie de métodos propios que se encuentran detallados en <a href="598147535.html">estas p&aacute;ginas</a>.</p><h1 id="SGI:Serviciosdetercerosqueexpone-IntroducciónalESB">Introducción al ESB</h1><h2 id="SGI:Serviciosdetercerosqueexpone-WSO2EnterpriseIntegrator">WSO2 Enterprise Integrator</h2><p>WSO2 Enterprise Integrator (WSO2 EI) es una solución de integración que permite la comunicación entre varias aplicaciones dispares. Evita que las aplicaciones se comuniquen directamente entre sí en todos sus diversos formatos, cada aplicación simplemente se comunica con WSO2 EI, que actúa principalmente como un ESB para manejar las transformaciones de los mensajes, y encamina los mensajes a sus destinos apropiados. WSO2 EI  puede utilizarse para gestionar flujos de integración sin estado a corto plazo (utilizando el perfil ESB), así como procesos empresariales con estado a largo plazo (utilizando el perfil Business Process).  Además incluye un perfil de Análisis separado para supervisar las estadísticas del ESB, un perfil de Broker de Mensajes (WSO2 MB ) que puede utilizarse para una mensajería fiable.</p><p>El perfil ESB proporciona sus servicios fundamentales a través de un motor de mensajería basado en eventos y estándares (el bus), que permite a los arquitectos de integración explotar el valor de la mensajería sin necesidad de escribir código. Este perfil ESB proporciona capacidades de integración de datos dentro del mismo tiempo de ejecución. Esto elimina la necesidad de usar un servidor de servicios de datos separado para sus procesos de integración.</p><h2 id="SGI:Serviciosdetercerosqueexpone-Requisitos">Requisitos</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Memoria</th><td class="confluenceTd"><p>~ 2 GB mínimo<br/>~ 1 GB tamaño heap. Por lo general, esto es suficiente para procesar los típicos mensajes SOAP, pero los requisitos varían con los tamaños de los mensajes más grandes y el número de mensajes procesados</p></td></tr><tr><th class="confluenceTh">Disco</th><td class="confluenceTd">~ 1 GB  excluyendo el espacio asignado para los archivos de registro y las bases de datos.</td></tr></tbody></table></div><h3 id="SGI:Serviciosdetercerosqueexpone-Compatibilidaddelentorno">Compatibilidad del entorno</h3><ul><li>Todos los productos basados en el WSO2 Carbon  son aplicaciones Java que se pueden ejecutar en cualquier plataforma que sea compatible con Oracle JDK 1.8.*.</li><li>Todos los productos basados en WSO2 Carbon son generalmente compatibles con la mayoría de los SGBD comunes. La base de datos H2 incorporada es adecuada para el desarrollo, las pruebas y algunos entornos de producción. Sin embargo, para la mayoría de los entornos de producción de las empresas, se utilizar un SGBD estándar de la industria como Oracle, PostgreSQL, MySQL, MS SQL, etc. </li><li>No se recomienda utilizar el Apache DS en un entorno de producción debido a problemas de escalabilidad. En su lugar, utilice un LDAP como OpenLDAP para la gestión de usuarios.</li></ul><h4 id="SGI:Serviciosdetercerosqueexpone-JDK">JDK</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Producto</th><th class="confluenceTh">Versión</th><th colspan="1" class="confluenceTh">JDK</th><th colspan="1" class="confluenceTh">S.O.</th></tr><tr><td class="confluenceTd"><p>WSO2 Enterprise Integrator (EI) <br/><br/><br/></p></td><td class="confluenceTd"><span>6.6.0 </span></td><td colspan="1" class="confluenceTd"><span>CorrettoJDK 8</span><br/><span>AdoptOpenJDK 8</span><br/><span>AdoptOpenJDK 11</span><br/><span>OpenJDK 8</span><br/><span>Oracle JDK 8</span><br/><span>Oracle JDK 11</span></td><td colspan="1" class="confluenceTd"><span>Ubuntu 18.04</span><br/><span>CentOS 7.4, 7.5</span><br/><span>Red Hat Enterprise Linux 7.0</span><br/><span>SUSE Linux 12</span><br/><span>Windows Server 2016</span></td></tr></tbody></table></div><p><strong>SGBD</strong></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Producto</th><th class="confluenceTh">Versión</th><th colspan="1" class="confluenceTh">JDK</th></tr><tr><td class="confluenceTd"><p>WSO2 Enterprise Integrator (EI) <br/><br/><br/></p></td><td class="confluenceTd"><p>6.6.0</p><p>6.5.0</p><p>6.4.0</p></td><td colspan="1" class="confluenceTd"><p>Oracle 12c<br/>MySQL 5.7<br/>Microsoft SQL Server 2016</p></td></tr><tr><td colspan="1" class="confluenceTd"><span>WSO2 Enterprise Integrator (EI) </span></td><td colspan="1" class="confluenceTd"><span>6.3.0</span></td><td colspan="1" class="confluenceTd"><p>Oracle 11g/12c</p><p>MySQL 5.6/5.7</p><p>Microsoft SQL Server 2014</p></td></tr></tbody></table></div><p><a class="external-link" href="https://docs.wso2.com/display/EI600/Installation+Prerequisites" rel="nofollow"><br/>https://docs.wso2.com/display/EI600/Installation+Prerequisites</a></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147615/598148444.png">Diagrama APIs Integración.ServicosTerceros.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:56</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

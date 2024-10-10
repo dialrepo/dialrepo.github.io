@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Carga inicial de datos</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147272.html">Herramienta de CV. Hércules ED - Enriquecimiento de Datos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147273.html">Análisis funcional. Herramienta de CV. Hércules ED - Enriquecimiento de Datos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147230.html">Documentación de trabajo en elaboración</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Carga inicial de datos
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Juan Tardón Martínez</span> on feb 08, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728468062698 {padding: 0px;}
+div.rbtoc1728468062698 ul {margin-left: 0px;}
+div.rbtoc1728468062698 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728468062698'>
+<ul class='toc-indentation'>
+<li><a href='#Cargainicialdedatos-Característicasgeneralesdelprocesodecargadedatos'>Características generales del proceso de carga de datos</a></li>
+<li><a href='#Cargainicialdedatos-Paso1-CargadedatosdesistemasdelaUMU'>Paso 1 - Carga de datos de sistemas de la UMU</a></li>
+<li><a href='#Cargainicialdedatos-Paso2-Fuentesexternasderesultadosdeinvestigación'>Paso 2 - Fuentes externas de resultados de investigación</a></li>
+<li><a href='#Cargainicialdedatos-Paso3-FicherosCVNdelosinvestigadores'>Paso 3 - Ficheros CVN de los investigadores</a></li>
+</ul>
+</div></p><h1 id="Cargainicialdedatos-Característicasgeneralesdelprocesodecargadedatos">Características generales del proceso de carga de datos</h1><p>El proceso contará con un interfaz sencillo de ejecución de los pasos con información de su estado, accesible desde las herramientas de administración (<span style="color: rgb(255,0,0);">pendiente de diseño</span>).</p><p>Los pasos 1 y 2 del proceso de carga se intentarán organizar de modo que se puedan agrupar los investigadores de un mismo grupo en un hilo de ejecución, comenzando por el investigador con más resultados de investigación. De este modo se podrían paralelizar al menos 2 hilos de carga, para que el proceso global termine antes.</p><p>El proceso de carga inicial cuenta con 3 pasos:</p><h1 id="Cargainicialdedatos-Paso1-CargadedatosdesistemasdelaUMU">Paso 1 - Carga de datos de sistemas de la UMU</h1><p>Cargamos los siguientes datos:</p><ul><li>Proyectos, Patentes, Grupos, etc. (<span style="color: rgb(255,0,0);">completar la lista</span>). Hay que decidir si se cargan o no las publicaciones desde los XMLs disponibles actualmente o se comienza con lo que devuelvan las fuentes externas en el paso 2.<ul><li>Hasta que esté disponible el SGI, Ficheros XML exportados de los sistemas actuales de la UMU.</li></ul></li><li>Otros (<span style="color: rgb(255,0,0);">concretar</span>):<ul><li>No van a estar disponibles en SGI, Ficheros XML exportados de los sistemas actuales de la UMU.</li></ul></li></ul><h1 id="Cargainicialdedatos-Paso2-Fuentesexternasderesultadosdeinvestigación">Paso 2 - Fuentes externas de resultados de investigación</h1><p>Antes de recuperar los datos desde los CVs de los investigadores, recuperamos los resultados de investigación (papers, conference papers, ROs, etc.) desde las fuentes externas establecidas en EDMA: WoS, Scopus, OpenAire y otras fuentes para publicaciones (ver en <a href="598147254.html">Fuentes externas de publicaciones cient&iacute;ficas</a>); otras fuentes para ROs (ver en <a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Gesti%C3%B3n+FAIR+RO">Gesti&oacute;n de FAIR RO</a>).</p><p>El proceso de carga de estos datos tiene 2 pasos:</p><ul><li>Recuperación de los resultados de investigación y <a href="598147268.html">deduplicaci&oacute;n de datos</a> de investigadores y resultados de investigación, desde las fuentes primarias de información: WoS, Scopus y OpenAire (pendiente de confirmar que es posible usarla).</li><li>En un proceso batch posterior, recuperación de referencias y citas de cada resultado devuelto en el paso anterior, desde las fuentes secundarias (no es posible usar el API de WoS para esto, cada documento devuelto consume una petición de la cuota anual disponible).</li></ul><p>Consideramos que los datos obtenidos desde estas fuentes son más fiables que los provenientes de los XMLs de partida (si es que se usan), por lo que los sustituirían; y también que los que llegasen desde los CVs de los usuarios, por lo que no serían sobrescritos por lo que viniese del paso 3.</p><p>Está pendiente de actualizar el proceso descrito en <a href="598147254.html">Fuentes externas de publicaciones cient&iacute;ficas</a>, a falta de recibir información de WoS que nos permita cerrar completamente el proceso.</p><h1 id="Cargainicialdedatos-Paso3-FicherosCVNdelosinvestigadores">Paso 3 - Ficheros CVN de los investigadores</h1><p>El sistema accederá a un repositorio que contendrá los CVs de los investigadores, en formato PDF/CVN.</p><p>La carga de ítems tendrá unos márgenes de tolerancia para comparar sus contenidos y entidades relacionadas (sobre todo otros investigadores) con los obtenidos de los 2 pasos anteriores. En la carga de ítems habrá 3 opciones:</p><ul><li>Coincide con un ítem ya existente con un grado de fiabilidad suficiente. En este caso se usa el ítem para completar la información obtenida desde la fuente externa con campos adicionales existentes en el CVN.</li><li>El grado de coincidencia no permite asegurar que el ítem sea distinto a un ítem cargado. El ítem se incorpora a los datos del usuario en Hércules, marcado como dudoso y no visible, y se le informa al usuario para que lo gestione.</li><li>El ítem es nuevo. El ítem se carga como visible.</li></ul><p>En general, la información proveniente de fuentes externas es más fiable que la del CVN. Sin embargo, en el caso del tipo de publicación se hará caso a lo que haya indicado el usuario en su CVN.</p><p>En esta carga también se realizará la deduplicación de ítems y entidades relacionadas (fundamentalmente investigadores).</p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 12:01</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

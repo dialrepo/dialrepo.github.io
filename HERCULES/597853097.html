@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-1100-004 - Comprobación Requisitos equipo</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853513.html">CU-CSP-1100 - Gestión de solicitudes</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-1100-004 - Comprobación Requisitos equipo
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified on may 12, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p>CU-CSP-1100-002 - Comprobación Requisitos equipo</p><p><br/></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span></div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-CSP-001-Investigador,ACT-CSP-003-Gestor, ACT-CSP-004-Administrador</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div></div><h2 id="CUCSP1100004ComprobaciónRequisitosequipo-Descripción">Descripción</h2><p>Comprobaciones a realizar en solicitudes para validar el cumplimento de los requisitos especificados en la convocatoria en el apartado requisitos equipo.</p><h2 id="CUCSP1100004ComprobaciónRequisitosequipo-Actores">Actores</h2><h3 id="CUCSP1100004ComprobaciónRequisitosequipo-Actorprincipal">Actor principal</h3><p>ACT-CSP-001-Investigador (solicitante), ACT-CSP-003-Gestor, ACT-CSP-004-Administrador</p><h2 id="CUCSP1100004ComprobaciónRequisitosequipo-Precondiciones">Precondiciones</h2><ul><li>Se está creando o modificando una solicitud a partir de una convocatoria para la que se ha especificado alguna restricción en el apartado requisitos equipo.</li></ul><h2 id="CUCSP1100004ComprobaciónRequisitosequipo-Acciones">Acciones</h2><p><span style="color: rgb(23,43,77);">Se realizarán las comprobaciones contra los requisitos establecidos en la tabla &quot;requisito equipo&quot; de la convocatoria con la que se asocia la solicitud (ver como referencia <a href="IU-CSP-0201-011---Crear-convocatoria---Requisitos-Equipo_597852876.html">IU-CSP-0201-011 - Crear convocatoria - Requisitos Equipo</a>):</span></p><ul style="text-align: left;"><li>Si la convocatoria tiene establecidas limitaciones para el nivel académico de los miembros del equipo (existen registros en la tabla &quot;requisito equipo nivel académico&quot;): <ul><li>Se deberá obtener el nivel académico de la persona a través de <a href="597852982.html">REQ-INT-0020-SGP-0034 - Consultar datos acad&eacute;micos de persona</a><span> </span>para realizar la comprobación de que sea uno de los niveles académicos incluidos en los requisitos equipo de la convocatoria (tabla &quot;requisito equipo nivel académico&quot; de la convocatoria a la que se vincula la solicitud (campo &quot;convocatoria&quot; de la tabla &quot;solicitud&quot;)).</li><li><span style="color: rgb(23,43,77);">Si alguna de las fechas &quot;posterior a&quot; o &quot;anterior a&quot; de las restricciones de la convocatoria para el nivel académico está informada (campos &quot;fecha mínima nivel académico&quot; y &quot;fecha máxima nivel académico&quot; respectivamente de la tabla &quot;requisito equipo&quot; de la convocatoria), s</span>e deberá obtener la fecha de obtención del nivel académico de la persona, a través de <a href="597852982.html">REQ-INT-0020-SGP-0034 - Consultar datos acad&eacute;micos de persona</a> comprobando que:<ul><li>que sea mayor o igual que &quot;fecha mínima nivel académico&quot;.</li><li>que sea menor o igual que &quot;fecha máxima nivel académico&quot;.</li><li>si se establecen las dos condiciones &quot;posterior a&quot; y &quot;anterior a&quot; (es decir, ambas fechas &quot;fecha mínima nivel académico&quot; y &quot;fecha máxima nivel académico&quot; de la tabla &quot;requisito equipo&quot; están informadas), deberán cumplirse las dos condiciones antes indicadas.</li><li>si la fecha de obtención del nivel académico que se recupera para la persona a través de <a href="597852982.html">REQ-INT-0020-SGP-0034 - Consultar datos acad&eacute;micos de persona</a> no está informada, se considerará que no se cumple la condición. </li></ul></li></ul></li><li>Si la convocatoria tiene establecidas limitaciones para la categoría profesional del equipo (existen registros en la tabla &quot;requisito equipo categoría&quot;): <ul><li>Se deberá obtener la categoría profesional de la persona través de <a href="597852471.html">REQ-INT-0020-SGP-0033 - Consultar datos de vinculaci&oacute;n de persona</a> comprobando que sea una de las categorías profesionales incluidas en los requisitos equipo de la convocatoria (tabla &quot;requisito equipo categoría&quot; de la convocatoria con la que se vincula la solicitud).</li><li><span style="color: rgb(23,43,77);">Si alguna de las fechas &quot;posterior a&quot; o &quot;anterior a&quot; de las restricciones de la convocatoria para la categoría profesional está informada (campos &quot;fecha mínima categoría profesional&quot; y &quot;fecha máxima categoría profesional&quot; respectivamente de la tabla &quot;requisito IP&quot; de la convocatoria), s</span>e deberá obtener la fecha de la categoría profesional de la persona a través de <a href="597852471.html">REQ-INT-0020-SGP-0033 - Consultar datos de vinculaci&oacute;n de persona</a> comprobando:<ul><li>que sea mayor o igual que &quot;fecha mínima categoría profesional&quot;.</li><li>que sea menor o igual que &quot;fecha máxima categoría profesional&quot;.</li><li>si se establecen las dos condiciones &quot;posterior a&quot; y &quot;anterior a&quot; (es decir, ambas fechas &quot;fecha mínima categoría profesional&quot; y &quot;fecha máxima categoría profesional&quot; de la tabla &quot;requisito equipo&quot; están informadas), deberán cumplirse las dos condiciones antes indicadas.</li><li>si la fecha de obtención de la categoría profesional que se recupera para la persona a través de <a href="597852471.html">REQ-INT-0020-SGP-0033 - Consultar datos de vinculaci&oacute;n de persona</a> no está informada, se considerará que no se cumple la condición.</li></ul></li></ul></li><li>Si la convocatoria tiene establecido que no se deba tener una vinculación con la universidad, campo &quot;vinculación universidad&quot; de la tabla &quot;requisito equipo&quot; toma el valor &quot;no&quot;:<ul><li>Se deberá obtener la categoría profesional de la persona través de <a href="597852471.html">REQ-INT-0020-SGP-0033 - Consultar datos de vinculaci&oacute;n de persona</a><span> </span>comprobando que tome valor vacío.</li></ul></li><li>Si la convocatoria tiene establecida una limitación sobre la edad para los miembros del equipo (campo &quot;edad máxima&quot; de la tabla &quot;requisitos equipo&quot;):<ul><li>Se deberá obtener la fecha de nacimiento de la persona a través de <a href="REQ-INT-0020-SGP-0031---Consultar-datos-personales-de-persona_597853662.html">REQ-INT-0020-SGP-0031 - Consultar datos personales de persona</a>, calculando su edad y comprobando que sea menor o igual que la establecida por la convocatoria.</li></ul></li></ul><p><br/></p><p><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

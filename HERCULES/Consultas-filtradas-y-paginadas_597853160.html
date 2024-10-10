@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Consultas filtradas y paginadas</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853531.html">Desarrollo y configuración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853781.html">Estándares de desarrollo</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Consultas filtradas y paginadas
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (efren.fernandez)</span>, last modified by <span class='editor'> Usuario desconocido (ruben.suarez)</span> on mar 11, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>Tanto en el framework de spring, como en el de angular, se ha incorporado el soporte genérico para la consulta filtrada y ordenada de entidades.</p><h1 id="Consultasfiltradasypaginadas-Definicióndeendpoints">Definición de endpoints</h1><h2 id="Consultasfiltradasypaginadas-Paginación">Paginación</h2><p>La solicitud de paginación se realizará a través de cabeceras en la petición:</p><ul><li><strong>X-Page-Size</strong>: Número de registros por página solicitados</li><li><strong>X-Page</strong>: Indice de página solicitado (en base 0)</li></ul><p>Las cabeceras se pueden omitir en caso de no requerir paginación.</p><p>Todos los listados, retornaran información de la paginación aunque esta no se solicite. Esta información va contenida en las cabeceras de respuesta:</p><ul><li><strong>X-Page</strong>: Indice de página solicitado. 0 si no se solicita paginación.</li><li><strong>X-Page-Size</strong>: Número de registros retornados por página. Total de registros si no se solicita paginación.</li><li><strong>X-Page-Count</strong>: Número de registros retornados en la página. Total de registros si no se solicita paginación.</li><li><strong>X-Page-Total-Count</strong>: Número total de páginas en función del tamaño de página solicitado. 1 si no se solicita paginación.</li><li><strong>X-Total-Count</strong>: Número total de registros.</li></ul><h2 id="Consultasfiltradasypaginadas-Ordenación">Ordenación</h2><p>La solicitud de ordenación se  realizará a través del parámetro <strong>s</strong> en la petición. En el valor se especificará el atributo o los atributos sobre los que se quiera aplicar la ordenación junto con el criterio de ordenación.</p><ul><li>Los nombres de los atributos se corresponderán con la propiedad de la entidad consultada, en el caso  de que la entidad consultada esté relacionada con otras entidades <strong>el acceso a  las propiedades anidadas se denotará mediante el punto</strong>. Por ejemplo: &quot;propiedad.propiedadHija&quot;. Como las propiedades de las entidades no pueden contener ningún carácter especial y el separador no es un carácter reservado del protocolo HTTP no es necesario realizar ningún tipo de escapado.</li><li>El criterio de ordenación podrá ser:<ul><li><strong>asc</strong>: Orden ascendente</li><li><strong>desc</strong>: Orden descendiente</li></ul></li><li>La separación entre el atributo y el criterio de ordenación se realizará mediante el <strong>carácter de coma</strong></li></ul><p>Se podrán solicitar múltiples ordenaciones, separando cada uno de ellos mediante el <strong>carácter de punto y coma</strong></p><p>Ejemplo:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">s=propiedad,asc;propiedad.propiedadHija,desc</pre>
+</div></div><h2 id="Consultasfiltradasypaginadas-Filtrado">Filtrado</h2><p>La solicitud de filtrado se realizará a través del parámetro <strong>q</strong> en la petición. En el valor se especificará la condición o condiciones de filtrado.</p><p>Para ello se utilizará la sintaxis propuesta por <a class="external-link" href="https://github.com/jirutka/rsql-parser" rel="nofollow">RSQL</a>: <strong>&lt;CAMPO&gt;&lt;OPERADOR&gt;&lt;VALOR&gt;&lt;CONJUNCION&gt;</strong></p><h3 id="Consultasfiltradasypaginadas-Campo">Campo</h3><p>El nombre del atributo se corresponderán con la propiedad de la entidad consultada, en el caso  de que la entidad consultada esté relacionada con otras entidades <strong>el acceso a  las propiedades anidadas se denotará mediante el punto</strong>. Por ejemplo: &quot;propiedad.propiedadHija&quot;. Como las propiedades de las entidades no pueden contener ningún carácter especial y el separador no es un carácter reservado del protocolo HTTP no es necesario realizar ningún tipo de escapado.</p><h3 id="Consultasfiltradasypaginadas-Operador">Operador</h3><p>Se encuentran definidos los siguientes operadores:</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Valor</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">==</td><td class="confluenceTd">EQUALS</td></tr><tr><td class="confluenceTd">=ic=</td><td class="confluenceTd">EQUALS IGNORE CASE</td></tr><tr><td class="confluenceTd">!=</td><td class="confluenceTd">NOT EQUALS</td></tr><tr><td class="confluenceTd">=ke=</td><td class="confluenceTd">LIKE</td></tr><tr><td class="confluenceTd">=nk=</td><td class="confluenceTd">NOT LIKE</td></tr><tr><td class="confluenceTd">=ik=</td><td class="confluenceTd">LIKE IGNORE CASE</td></tr><tr><td class="confluenceTd">=ni=</td><td class="confluenceTd">NOT LIKE IGNORE CASE</td></tr><tr><td class="confluenceTd">=gt=</td><td class="confluenceTd">GREATHER THAN</td></tr><tr><td class="confluenceTd">=ge=</td><td class="confluenceTd">GREATHER  THAN OR EQUAL</td></tr><tr><td class="confluenceTd">=lt=</td><td class="confluenceTd">LESS THAN</td></tr><tr><td class="confluenceTd">=le=</td><td class="confluenceTd">LESS THAN OR EQUAL</td></tr><tr><td class="confluenceTd">=bt=</td><td class="confluenceTd">BETWEEN</td></tr><tr><td class="confluenceTd">=nb=</td><td class="confluenceTd">NOT BETWEEN</td></tr><tr><td class="confluenceTd">=na=</td><td class="confluenceTd">IS NULL</td></tr><tr><td class="confluenceTd">=nn=</td><td class="confluenceTd">IS NOT NULL</td></tr><tr><td class="confluenceTd">=in=</td><td class="confluenceTd">IN</td></tr><tr><td class="confluenceTd">=out=</td><td class="confluenceTd">NOT IN</td></tr></tbody></table></div><h3 id="Consultasfiltradasypaginadas-Valor">Valor</h3><p>Se consideran como caracteres reservados: </p><ul><li>&quot;</li><li>'</li><li>(</li><li>)</li><li>;</li><li>,</li><li>=</li><li>!</li><li>~</li><li>&lt;</li><li>&gt;</li><li>ESPACIO_EN_BLANCO</li></ul><p>Por lo que para poder ser usados en las búsquedas deberán escaparse entrecomillando todo el valor, bien con comillas simples o con comillas dobles.</p><p>Cuando se realiza este escapado, los caracteres reservados pasan a ser:</p><ul><li>\</li><li><strong>&quot;</strong> o <strong>'</strong>, dependiendo de que tipo se haya usado para escapar el valor.</li></ul><p>Por ello, si el valor contiene el mismo entrecomillado usado de escapado o la \ se deberán escapar adicionalmente preponiendo el carácter <strong>\</strong>.</p><p><strong>Se recomienda escapar siempre el valor</strong></p><p>Ejemplo:</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Valor a buscar</th><th class="confluenceTh">Valor escapado</th></tr><tr><td class="confluenceTd">mañana &gt;=&quot;(\'</td><td class="confluenceTd">&quot;mañana &gt;=\&quot;(\\'&quot;</td></tr></tbody></table></div><p>Para los operadores que soportan múltiples valores (IN, NOT IN, BETWEEN, NOT BETWEEN) el conjunto de valores irá entré paréntesis, separando cada posible valor mediante coma. Para cada valor aplica de forma independiente las reglas de escapado.</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Valores</th><th class="confluenceTh">Valor resultante</th></tr><tr><td class="confluenceTd"><ul><li><span style="letter-spacing: 0.0px;">3</span></li><li><span style="letter-spacing: 0.0px;">8</span></li></ul></td><td class="confluenceTd">(&quot;3&quot;,&quot;8&quot;)</td></tr></tbody></table></div><p><strong>Se recomienda escapar siempre el valor</strong></p><p>En el caso de que el operador a utilizar no tenga un posible valor a aplicar (NULL, NOT NULL) se deberá asignar un valor vacío entrecomillado.</p><h3 id="Consultasfiltradasypaginadas-Conjunción">Conjunción</h3><p>Es posible conjugar los filtros como AND o OR, los caracteres a utilizar son:</p><ul><li><strong>;</strong> equivalente a AND</li><li><strong>,</strong> equivalente a OR</li></ul><p><strong>Si solo se utiliza un único filtro, la conjunción se deberá omitir.</strong></p><h3 id="Consultasfiltradasypaginadas-Anidamientodefiltros">Anidamiento de filtros</h3><p>Es posible anidar filtros con diferentes conjunciones si colocamos los posibles filtros entre paréntesis.</p><h3 id="Consultasfiltradasypaginadas-Ejemplos">Ejemplos</h3><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Filtro</th><th class="confluenceTh">Equivalencia SQL</th></tr><tr><td class="confluenceTd">nombre==&quot;Pedro&quot;</td><td class="confluenceTd">nombre = 'Pedro'</td></tr><tr><td colspan="1" class="confluenceTd">nombre=ke=&quot;Pedro&quot;</td><td colspan="1" class="confluenceTd">nombre LIKE '%Pedro%'</td></tr><tr><td class="confluenceTd">nombre==&quot;Pedro&quot;,nombre==&quot;Juan&quot;</td><td class="confluenceTd">nombre = 'Pedro' OR nombre = 'Juan'</td></tr><tr><td class="confluenceTd">edad=ge=&quot;18&quot;;(nombre==&quot;Pedro&quot;,nombre==&quot;Juan&quot;)</td><td class="confluenceTd">edad &gt;= 18 AND (nombre = 'Pedro' OR nombre = 'Juan')</td></tr><tr><td colspan="1" class="confluenceTd">edad=bt=(&quot;18&quot;,&quot;20&quot;)</td><td colspan="1" class="confluenceTd">edad BETWEEN(18, 20)</td></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:38</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

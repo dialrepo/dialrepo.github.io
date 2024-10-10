@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-0080-004 - Eliminar tipo de financiación</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852639.html">CU-CSP-0080 - Gestión de tipos de financiación</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-0080-004 - Eliminar tipo de financiación
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified on mar 18, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong>CU-CSP-0080-004 - Eliminar tipo de financiación</strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline">LIBERADO_</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-CSP-004-Administrador</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Baja</td></tr></tbody></table></div></div><h2 id="CUCSP0080004Eliminartipodefinanciación-Descripción">Descripción</h2><p>Eliminación de un tipo de financiación.</p><h2 id="CUCSP0080004Eliminartipodefinanciación-Actores">Actores</h2><h3 id="CUCSP0080004Eliminartipodefinanciación-Actorprincipal">Actor principal</h3><p>ACT-CSP-004-Administrador</p><h3 id="CUCSP0080004Eliminartipodefinanciación-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><p>ACT-CSP-003-Gestor que requiere que los tipos de financiación esté correctamente configurados para poder registrar la información de financiación de convocatorias y proyectos.</p><p>ACT- CSP-001-Investigador que requiere ver el detalle de información sobre la financiación de convocatorias y proyectos .</p><h2 id="CUCSP0080004Eliminartipodefinanciación-Precondiciones">Precondiciones</h2><p>El usuario ACT-CSP-004-Administrador se autentica a través del usuario de dominio corporativo.</p><p>A través del servicio de integración con el directorio activo y de la información del usuario almacenada en el propio SGI, se obtiene su rol y las unidades de gestión sobre las que tiene disponible el rol. El usuario está autorizado sobre la funcionalidades asociadas a esta gestión.</p><h2 id="CUCSP0080004Eliminartipodefinanciación-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>El tipo de financiación se desactiva correctamente y no está disponible para la gestión de las convocatorias y de los proyectos.</p><h2 id="CUCSP0080004Eliminartipodefinanciación-Escenarioprincipal(flujobásico)">Escenario principal (flujo básico)</h2><ol><li>El usuario accede al apartado de Tipos de financiación del menú de configuración del módulo de CSP</li><li>El usuario selecciona la opción Eliminar del Listado de tipos de financiación para un registro concreto</li><li>Se muestra un mensaje de confirmación al usuario: el tipo de financiación dejará de estar disponible para la gestión de convocatorias y proyectos.</li><li>El usuario confirma la acción</li><li>El usuario es informado del resultado positivo de la acción</li><li>Se vuelve al listado de tipos de financiación</li></ol><p><br/></p><h2 id="CUCSP0080004Eliminartipodefinanciación-Escenarioprincipal(flujobásico)-Noseconfirmalaacción">Escenario principal (flujo básico) - No se confirma la acción</h2><ol><li>El usuario accede al apartado de Tipos de financiación del menú de configuración del módulo de CSP</li><li>El usuario selecciona la opción Eliminar del Listado de tipos de financiación para un registro concreto</li><li>Se muestra un mensaje de confirmación al usuario: el tipo de financiación dejará de estar disponible para la gestión de convocatorias y proyectos.</li><li>El usuario no confirma la acción</li><li>No se realiza ninguna operación en base de datos</li><li>Se vuelve al listado de tipos de financiación</li></ol><h2 id="CUCSP0080004Eliminartipodefinanciación-Requisitosespeciales">Requisitos especiales</h2><p>N/A</p><h2 id="CUCSP0080004Eliminartipodefinanciación-Listadetecnologíayvariacionesdedatos">Lista de tecnología y variaciones de datos</h2><p>N/A</p><p><br/><br/><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

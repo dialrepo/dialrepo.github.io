@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Arquitectura de la Herramienta de CV. Hércules ED - Enriquecimiento de Datos</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147532.html">Arquitectura de los proyectos Hércules</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Arquitectura de la Herramienta de CV. Hércules ED - Enriquecimiento de Datos
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para SGI HERCULES (CATOLICA VALENCIA)</span>, last modified on oct 18, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728467803551 {padding: 0px;}
+div.rbtoc1728467803551 ul {margin-left: 0px;}
+div.rbtoc1728467803551 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728467803551'>
+<ul class='toc-indentation'>
+<li><a href='#ArquitecturadelaHerramientadeCV.HérculesEDEnriquecimientodeDatos-RelacióndecomponentesHérculesEDenlaUniversidaddeMurcia'>Relación de componentes Hércules ED en la Universidad de Murcia</a></li>
+<li><a href='#ArquitecturadelaHerramientadeCV.HérculesEDEnriquecimientodeDatos-ArquitecturalógicaenlaUniversidaddeMurcia'>Arquitectura lógica en la Universidad de Murcia</a></li>
+<li><a href='#ArquitecturadelaHerramientadeCV.HérculesEDEnriquecimientodeDatos-ArquitecturaKubernetes.DespliegueenlaUniversidaddeMurcia'>Arquitectura Kubernetes. Despliegue en la Universidad de Murcia</a></li>
+</ul>
+</div></p><p>La descripción del proyecto puede consultarse en <a href="598147272.html">Herramienta de CV. H&eacute;rcules ED - Enriquecimiento de Datos</a>.</p><h1 id="ArquitecturadelaHerramientadeCV.HérculesEDEnriquecimientodeDatos-RelacióndecomponentesHérculesEDenlaUniversidaddeMurcia">Relación de componentes Hércules ED en la Universidad de Murcia</h1><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/598147668/598148308.png" data-image-src="attachments/598147668/598148308.png" data-unresolved-comment-count="0" data-linked-resource-id="598148308" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Relacion de componentes Hércules.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147668" data-linked-resource-container-version="11" alt=""></span></p><p><br/></p><ul><li>Hércules ED (Enriquecimiento de datos). Se comunica con:<ul><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Sistema+Innovador+de+Gesti%C3%B3n+de+Investigaci%C3%B3n"><strong>Hércules SGI</strong> (Sistema de Gestión de Innovación)</a>. Se pueden ver detalles de la conexión en <a href="ED-y-MA.-Integraciones._598147559.html">Servicios de integraci&oacute;n utilizados por H&eacute;rcules ED y MA</a>).<ul><li>Consulta un servicio OAI-PMH que proporciona información actualizada del SGI y de otros sistemas de la Universidad.</li><li>Envía información introducida en ED para la validación de la producción científica, la conformidad de proyectos externos y la creación de ofertas tecnológicas.</li></ul></li><li>Biblioteca de la UMU. Envío de publicaciones.</li><li>Fuentes externas de publicaciones científicas.</li><li>Fuentes externas de otros recursos de investigación (Research Objects).</li><li><strong>Hércules ASIO </strong>(Arquitectura Semántica - Infraestructura Ontológica). Servicio de datos para el servicio Linked Data Server.</li><li><a href="598147291.html"><strong>Hércules MA</strong> (Métodos de Análisis. Portal Nacional Avanzado de Investigación)</a>.<strong> </strong>Creación del grafo de conocimiento del portal de la investigación.</li></ul></li></ul><p><span style="color: rgb(23,43,77);">Hay que hacer notar que el diagrama anterior se corresponde con una implantación de ED en la que también existan el resto de componentes Hércules. En caso contrario, ED tiene la capacidad de recibir y enviar su información directamente con sistemas de la universidad, tal y como está documentado en<span> </span></span><a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=416055407" rel="nofollow" style="text-align: left;">Servicios de integración utilizados por Hércules ED y MA</a><span style="color: rgb(23,43,77);">.</span></p><h1 id="ArquitecturadelaHerramientadeCV.HérculesEDEnriquecimientodeDatos-ArquitecturalógicaenlaUniversidaddeMurcia">Arquitectura lógica en la Universidad de Murcia</h1><p><br/></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/598147668/598148309.png" data-image-src="attachments/598147668/598148309.png" data-unresolved-comment-count="0" data-linked-resource-id="598148309" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Arquitectura lógica.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147668" data-linked-resource-container-version="11" alt=""></span></p><p>Hércules ED:</p><ul><li>Despliegue de servicios web (web, edición CV, importación CVN, …)</li><li>Despliegue de otros servicios (BASE, mensajes, extracción, enriquecimiento, similitud, …)</li></ul><p>Servicios de datos:</p><ul><li>Cluster RDF. Grafo de investigadores.</li><li>SQL Database. Almacenamiento de tipo SQL para garantizar procesos transaccionales</li><li>Redis Cache. Almacenamiento de datos pregenerados (p.e. similitud)</li><li>RabbitMQ. Sistema de colas de eventos para los servicios</li></ul><h1 id="ArquitecturadelaHerramientadeCV.HérculesEDEnriquecimientodeDatos-ArquitecturaKubernetes.DespliegueenlaUniversidaddeMurcia">Arquitectura Kubernetes. Despliegue en la Universidad de Murcia</h1><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/598147668/598148771.png" data-image-src="attachments/598147668/598148771.png" data-unresolved-comment-count="0" data-linked-resource-id="598148771" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Arquitectura kubernetes 2.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147668" data-linked-resource-container-version="11" alt=""></span></p><p><br/></p><p>Cluster kubernetes con los siguientes <em>pods</em>:</p><ul><li>Servicios web abiertos al firewall de la Universidad de Murcia (web, edición CV, …)</li><li>Servicios internos (BASE, mensajes, APIs, extracción, enriquecimiento, similitud, …)</li><li>Virtuoso RDF Store</li><li>Redis Cache</li><li>RabbitMQ colas.</li></ul><p>Externos:</p><ul><li>Oracle. SQL Database (el prototipo se desplegará con un POD de PostgreSQL).</li></ul><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147668/598148311.png">Arquitectura kubernetes.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147668/598148308.png">Relacion de componentes Hércules.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147668/598148309.png">Arquitectura lógica.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147668/598148771.png">Arquitectura kubernetes 2.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:56</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

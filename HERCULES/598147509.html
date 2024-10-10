@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : SGEMP - Adaptaciones integración</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147612.html">APIs de Integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147674.html">SGI: Servicios de terceros que consume</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147605.html">Caso de uso: servicios implementados por la Universidad de Murcia</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147630.html">Sistema de Gestión de Empresas(UM - SGI - ESB - SGEMP)</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : SGEMP - Adaptaciones integración
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span> on mar 28, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="SGEMPAdaptacionesintegración-Transformacionesdeobjetos"><span style="color: rgb(0,0,0);">Transformaciones de objetos</span></h1><h2 id="SGEMPAdaptacionesintegración-ObjetoDatosContactoUM→ObjetoDatosContactoSGI"><span style="color: rgb(0,0,0);">Objeto DatosContacto  UM → Objeto DatosContacto SGI</span></h2><div class="table-wrap"><table class="relative-table confluenceTable" style="width: 86.087%;"><colgroup><col style="width: 28.6797%;"/><col style="width: 42.1352%;"/><col style="width: 29.1851%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Objeto DatosContacto UM-ESB</span></th><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Transformación a realizar UM-ESB-SGI</span></th><th class="confluenceTh"><span style="color: rgb(0,0,0);">Objeto DatosContacto ESB-SGI</span></th></tr><tr><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">pais: Pais;</span></p><p><span style="color: rgb(0,0,0);">comAutonoma: ComunidadAutonoma;</span></p><p><span style="color: rgb(0,0,0);">provincia: Provincia;</span></p><p><span style="color: rgb(0,0,0);">ciudad: String;</span></p><p><span style="color: rgb(0,0,0);">codigoPostal: String;</span></p><p><span style="color: rgb(0,0,0);">tipoVia: TipoVia;</span></p><p><span style="color: rgb(0,0,0);">nombreVia: String;</span></p><p><span style="color: rgb(0,0,0);">numero: String;</span></p><p><span style="color: rgb(0,0,0);">ampliacion: String;</span></p><p><span style="color: rgb(0,0,0);">email: String;</span></p><p><span style="color: rgb(0,0,0);">fax: String;</span></p><p><span style="color: rgb(0,0,0);">telefono: String;</span></p><p><span style="color: rgb(0,0,0);">direccionWeb: String;</span></p></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);"><strong>pais, comAutonoma, provincia, ciudad, codigoPostal, tipoVia, nombreVia, numero, ampliacion</strong><strong>  → </strong><strong> direccion<br/></strong></span></p><p><span style="color: rgb(0,0,0);">Se habrá de rellenar el campo direccion del objeto del SGI concatenando, en el orden indicado y con algún tipo de separador (&quot;,&quot;, &quot;-&quot;, ...) definido al momento de la integración, los campos indicados del objeto de UM.</span></p><p><span style="color: rgb(0,0,0);">En el caso del tipo de vía, se usará el campo descripción del objeto TipoVia para la concatenación.</span></p><p><span style="color: rgb(0,0,0);">El resto de campos no son de interés para el SGI, por lo que no se informarán en su objeto.</span></p></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">direccion: String;</span></td></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:57</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

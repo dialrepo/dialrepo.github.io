@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-1200-004 - Ver proyecto - Visor e Investigador</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853317.html">CU-CSP-1200 - Gestión de proyectos</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-1200-004 - Ver proyecto - Visor e Investigador
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified on may 03, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong>CU-1200-004 - Ver proyecto - Visor e Investigador<br/></strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd"><p>ACT-CSP-005-Visor, ACP-CSP-001-Investigador</p></td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Alta</td></tr></tbody></table></div></div><h2 id="CUCSP1200004VerproyectoVisoreInvestigador-Descripción">Descripción</h2><p>Acceso al detalle de un proyecto en modo solo lectura.</p><p>Los ACT-CSP-005-Visor solo podrán acceder en modo lectura a los datos de los proyectos de las unidades de gestión a las que estén vinculados.</p><p>Los <span>ACP-CSP-001-Investigador</span> sólo podrán acceder en modo lectura a los datos de los proyectos de los que forma parte del equipo o ha formado parte (y su rol no <span>tenga a &quot;true&quot; el flag &quot;rol principal&quot; y no es el responsable económico actual (no existe en la tabla &quot;ProyectoResponsableEconomico&quot; o si existe tiene un rango de fechas que no incluye la fecha actual)<br/></span></p><h2 id="CUCSP1200004VerproyectoVisoreInvestigador-Actores">Actores</h2><h3 id="CUCSP1200004VerproyectoVisoreInvestigador-Actorprincipal">Actor principal</h3><p>ACT-CSP-005-Visor de las unidades de gestión UGI, OTRI u OPE.</p><p><span>ACP-CSP-001-Investigador</span></p><h3 id="CUCSP1200004VerproyectoVisoreInvestigador-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><h2 id="CUCSP1200004VerproyectoVisoreInvestigador-Precondiciones">Precondiciones</h2><p><span>ACP-CSP-001-Investigador se autentica</span> a través del usuario de dominio corporativo. El proyecto cumple los siguientes requisitos:</p><ul><li><span>Proyecto activo (campo &quot;activo&quot; a &quot;true&quot;)</span></li><li><span>Estado actual del proyecto no es &quot;Borrador&quot;<br/></span></li><li><span>ACT-CSP-001-Investigador debe pertenecer al equipo de proyecto</span></li><li><span><span>El rol del ACT-CSP-001-Investigador</span> no tiene<span> a &quot;true&quot; el flag &quot;rol principal&quot; y no es el responsable económico actual (no existe en la tabla &quot;ProyectoResponsableEconomico&quot; o si existe tiene un rango de fechas que no incluye la fecha actual)</span><br/></span></li></ul><p>ACP-CSP-005-Visor se autentica a través del usuario de dominio corporativo. Solamente tiene permisos de lectura sobre la Unidad de gestión a la que pertenece el proyecto.</p><h2 id="CUCSP1200004VerproyectoVisoreInvestigador-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>Se muestra el detalle del proyecto.</p><h2 id="CUCSP1200004VerproyectoVisoreInvestigador-Escenarioprincipal(flujobásico)">Escenario principal (flujo básico)</h2><ol><li>El usuario pulsa el botón  Ver asociado al proyecto, desde el listado de proyectos.</li><li><p>Se carga el detalle del proyecto, mostrando los siguientes apartados:</p></li></ol><ul><li>Datos generales - Ficha del proyecto.</li><li>Datos generales - Contexto del proyecto.</li><li>Datos generales - Áreas conocimiento.</li><li>Datos generales - Clasificaciones.</li><li>Entidades - Entidad gestora.</li><li>Entidades - Entidades convocantes.</li><li>Entidades - Entidades financiadoras.</li><li>Equipo.</li><li>Socios. Solo al listado, sin acceso a su vista de detalle.</li><li>Seguimiento científico. Solo al listado de periodos, sin acceso a su detalle.</li><li>Prórrogas. Solo al listado, sin acceso a su detalle.</li><li>Documentos. Mostrando aquellos que estén marcados con el flag &quot;Visible al equipo de investigación&quot;. No podrá adjuntar nuevos documentos.</li><li>Paquetes de trabajo.</li><li>Configuración económica - Consulta de presupuesto.</li><li>Configuración económica - Calendario de facturación. Solo el listado.</li><li>Configuración económica - Calendario de justificación. Solo el listado.</li></ul><p>3. El usuario pulsa el botón Cancelar. Se retorna al listado de proyectos.</p><p><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

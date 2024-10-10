@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Gestión de errores en el API Rest</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853531.html">Desarrollo y configuración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853781.html">Estándares de desarrollo</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Gestión de errores en el API Rest
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (ruben.suarez)</span>, last modified on jun 02, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>Para la gestión de errores REST, seguiremos la especificación <a class="external-link" href="https://tools.ietf.org/html/rfc7807" rel="nofollow">RFC 7807</a>, que define cómo devolver la información de errores al cliente.</p><p>Este estándar define un media type <strong>application/problem+json</strong> así como unos campos estándar:</p><ul><li><strong>type</strong>: una URI que identifica el tipo de problema.  Idealmente debería ser una URL estable a la documentación con los detalles de este tipo de error pero también puede ser una URN como <strong>urn:problem-type:not-allowed-payment-method</strong>.  En cualquier caso, la modificación del type se considera una rotura de API.</li><li><strong>title</strong>: una pequeña descripción informal del tipo general del problema, por ejemplo, <strong>Your are not allowed to use this payment method</strong>.  Se puede modificar sin romper el API.</li><li><strong>status</strong>: repite el status code de la respuesta, por ejemplo, <strong>403</strong> para <strong>Forbidden</strong>.  Podrían existir diferencias entre lo que el servidor lanzó y lo que recibe el cliente debido a que un proxy cambie el http status code.  Solamente sirve de ayuda para la depuración, de modo que se puede cambiar sin rotura de API.</li><li><strong>detail</strong>: descripción completa acerca del problema, por ejemplo, <strong>Customer 12345 has only GOLD status but needs PLATINUM to be allowed to order the sum of US 1,234.56 on account</strong>.  Se puede modificar sin romper el API.</li><li><strong>instance</strong>: una URI que identifica la aparición específica del problema.  Si es una URL, debería proporcionar detalles relativos a lo ocurrido, por ejemplo, podría apuntar al log correspondiente.  Que sea una URL no significa que deba ser accesible para todo el mundo.  Si no se desea proporcionar detalles acerca del sistema de log se puede utilizar una URN con UUID similar a <strong>urn:uuid:d294b32b-9dda-4292-b51f-35f65b4bf64</strong>.  Se puede modificar sin romper el API.</li><li>Cualquier otro campo son extensiones, es decir, campos que una máquina puede leer.  Por ejemplo, customer-status u order-sum.  Las extensiones también pueden ser tipos complejos como listas u objetos que contienen múltiples campos, siempre que sean (de)serializables.  El cliente podría mostrar estos campos al usuario.  Se pueden añadir nuevas extensiones sin romper el API, pero la eliminación de extensiones (o el cambio de semántica) se considera una rotura de API.</li></ul><p>Los campos <strong>title</strong> y <strong>detail</strong>, así como cualquier extensión donde se devuelvan mensajes destinados al usuario final, serán internacionalizables.  El idioma en el que se devuelven los mensajes vendrá determinado por la cabecera HTTP <strong>accept-language</strong> recibida en la petición HTTP.</p><h2 id="GestióndeerroresenelAPIRest-Algunosenlacesdeinterés">Algunos enlaces de interés</h2><ul><li><a class="external-link" href="https://httpstatuses.com/" rel="nofollow">HTTP Status Codes</a></li><li><a class="external-link" href="https://www.javacodegeeks.com/2019/05/http-status-code-enough-tackling-web-apis-error-reporting.html" rel="nofollow">When HTTP status code is not enough: tackling web APIs error reporting</a></li></ul>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:38</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

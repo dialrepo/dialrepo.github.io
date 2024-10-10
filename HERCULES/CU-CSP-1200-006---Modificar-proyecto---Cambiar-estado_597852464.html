@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-1200-006 - Modificar proyecto - Cambiar estado</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853317.html">CU-CSP-1200 - Gestión de proyectos</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-1200-006 - Modificar proyecto - Cambiar estado
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified on may 25, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong>CU-CSP-1200-006 - Modificar proyecto - Cambiar de estado<br/></strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh"><p>Actores</p><p><br/></p></th><td colspan="1" class="confluenceTd"><p>ACT-CSP-003-Gestor, ACT-CSP-004-Administrador</p></td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Alta</td></tr></tbody></table></div></div><h2 id="CUCSP1200006ModificarproyectoCambiarestado-Descripción">Descripción</h2><p>Cambio de estado de un proyecto</p><h2 id="CUCSP1200006ModificarproyectoCambiarestado-Actores">Actores</h2><h3 id="CUCSP1200006ModificarproyectoCambiarestado-Actorprincipal">Actor principal</h3><p>ACT-CSP-003-Gestor de las unidades de gestión UGI, OTRI u OPE.</p><p>ACP-CSP-004-Administrador de las unidades de gestión UGI, OTRI u OPE.</p><h3 id="CUCSP1200006ModificarproyectoCambiarestado-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><p>ACT-CSP-001-Investigador que requiere que sus proyectos estén en estado distinto al borrador para ver sus datos.</p><h2 id="CUCSP1200006ModificarproyectoCambiarestado-Precondiciones">Precondiciones</h2><p>El usuario ACT-CSP-003-Gestor, ACP-CSP-004-Administrador se autentica a través del usuario de dominio corporativo y tiene asociada una Unidad de gestión para las que está habilitado el permiso de modificación de convocatoria.</p><p>No hay datos sin guardar en el proyecto.</p><h2 id="CUCSP1200006ModificarproyectoCambiarestado-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>Se realiza el cambio de estado.</p><h2 id="CUCSP1200006ModificarproyectoCambiarestado-Escenarioprincipal(flujobásico)">Escenario principal (flujo básico)</h2><ul><li>El usuario accede al detalle de un proyecto y pulsa sobre el botón de cambio de estado</li><li>En el caso de que el cambio de estado sea a <strong>Concedido</strong> realizar las siguientes validaciones/comprobaciones:<ul><li><p>Campos obligatorios de la pestaña de <u>Ficha general</u> del proyecto para pasar a este estado:</p><ul><li>Finalidad</li><li>Ámbito geográfico</li><li>Confidencial</li><li>Proyecto coordinado</li><li>Coordinador externo (si Proyecto coordinado tiene valor Sí)</li><li>Paquetes de trabajo</li></ul></li><li><u>Si el proyecto procede de una solicitud (campo &quot;solicitud&quot; de la &quot;proyecto&quot; está informado) y tiene la solicitud el campo &quot;formulario&quot; con valor &quot;Proyecto&quot; se debe verificar en la pestaña Equipo:</u><br/><ul><li>Que el solicitante de la solicitud (campo &quot;solicitante&quot; de la tabla &quot;solicitud&quot;) pertenezca al equipo de proyecto (pudiendo ser el único miembro del mismo)</li></ul></li></ul></li><li>En el caso de que el cambio de estado sea a <strong>Renunciado o Rescindido </strong>poner de manera automática la &quot;fecha fin definitiva&quot; del proyecto con la fecha actual. Si existen registros en la tabla &quot;proyecto equipo&quot;:<ul><li>Si &quot;fecha fin definitiva&quot; estaba vacía (valor null en la tabla &quot;proyecto&quot;) se actualizará el campo &quot;fecha fin&quot; de la tabla &quot;proyecto equipo&quot; para todos aquellos miembros cuya &quot;fecha fin&quot; actual coincida con la &quot;fecha fin&quot; del proyecto.</li><li>Si &quot;fecha fin definitiva&quot; no estaba vacía (valor distinto a null en la tabla &quot;proyecto&quot;), se actualizará el campo &quot;fecha fin&quot; de la tabla &quot;proyecto equipo&quot; para todos aquellos miembros cuya &quot;fecha fin&quot; actual coincida con el valor original de la &quot;fecha fin definitiva&quot; del proyecto.</li></ul></li></ul><p><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

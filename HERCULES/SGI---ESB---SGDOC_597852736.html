@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : SGI - ESB - SGDOC</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853279.html">Diseño</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Componentes_597853271.html">Componentes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---ESB_597853273.html">SGI - ESB</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : SGI - ESB - SGDOC
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (pelayo.menendez)</span>, last modified by <span class='editor'> Usuario desconocido (alicia.alvarez)</span> on jun 24, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728466671573 {padding: 0px;}
+div.rbtoc1728466671573 ul {margin-left: 0px;}
+div.rbtoc1728466671573 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728466671573'>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGDOC-SistemadeGestiónDocumental'>Sistema de Gestión Documental</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGDOC-Entidades'>Entidades</a></li>
+<li><a href='#SGIESBSGDOC-Modelológico'>Modelo lógico</a></li>
+<li><a href='#SGIESBSGDOC-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGDOC-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGDOC-Documento'>Documento</a></li>
+</ul>
+</li>
+<li><a href='#SGIESBSGDOC-Servicios'>Servicios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><hr/><h1 id="SGIESBSGDOC-SistemadeGestiónDocumental">Sistema de Gestión Documental</h1><h2 id="SGIESBSGDOC-Entidades">Entidades</h2><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 21.0953%;"><colgroup><col style="width: 18.3827%;"/><col style="width: 81.6173%;"/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">Documento</td><td class="confluenceTd">Datos del documento</td></tr></tbody></table></div><h2 id="SGIESBSGDOC-Modelológico">Modelo lógico</h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" draggable="false" height="250" src="attachments/597852736/597876690.jpg" data-image-src="attachments/597852736/597876690.jpg" data-unresolved-comment-count="0" data-linked-resource-id="597876690" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="ESB SGDOC Logical Model.jpg" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="597852736" data-linked-resource-container-version="18" alt=""></span></p><h2 id="SGIESBSGDOC-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a href="https://confluence.um.es/confluence/display/HERCULES/Consultas+filtradas+y+paginadas" rel="nofollow">Consultas filtradas y paginadas</a></li><li><a href="https://confluence.um.es/confluence/display/HERCULES/Formatos+de+datos+API" rel="nofollow">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="SGIESBSGDOC-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="SGIESBSGDOC-Documento">Documento</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 26.3692%;"><colgroup><col style="width: 17.8279%;"/><col style="width: 19.1039%;"/><col style="width: 63.0682%;"/></colgroup><thead><tr><th style="text-align: left;" class="confluenceTh"><p>Nombre</p></th><th style="text-align: left;" class="confluenceTh"><p>Tipo</p></th><th colspan="1" style="text-align: left;" class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td style="text-align: left;" class="confluenceTd"><span class="line" lang="java"><span class="n">documentoRef</span></span></td><td style="text-align: left;" class="confluenceTd">String</td><td colspan="1" style="text-align: left;" class="confluenceTd">Identificador del documento</td></tr><tr><td style="text-align: left;" class="confluenceTd">nombre</td><td style="text-align: left;" class="confluenceTd">String</td><td colspan="1" style="text-align: left;" class="confluenceTd">Nombre del documento</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd"><span class="line" lang="java"><span class="n">version</span></span></td><td colspan="1" style="text-align: left;" class="confluenceTd">String</td><td colspan="1" style="text-align: left;" class="confluenceTd">Versión del documento</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd"><span class="line" lang="java"><span class="n">fechaCreacion</span></span></td><td colspan="1" style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Date</span></td><td colspan="1" style="text-align: left;" class="confluenceTd">Fecha de creación del documento</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd"><span class="line" lang="java"><span class="n">tipo</span></span></td><td colspan="1" style="text-align: left;" class="confluenceTd">String</td><td colspan="1" style="text-align: left;" class="confluenceTd">Tipo de archivo</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd"><span class="line" lang="java"><span class="n">autorRef</span></span></td><td colspan="1" style="text-align: left;" class="confluenceTd">String</td><td colspan="1" style="text-align: left;" class="confluenceTd">Identificador del autor del documento.</td></tr><tr><td colspan="1" class="confluenceTd">hash</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Hash del documento. <span class="ILfuVd" lang="es"><span class="hgKElc">SHA-256 </span></span></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Documento</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Midnight; collapse: true" data-theme="Midnight">{
+	"documentoRef": "6712829d-ea85-4b10-be25-5130dbb264fa",
+	"nombre": "archivo.pdf",
+	"version": 1,
+	"fechaCreacion": "2022-03-07T10:15:52.527",
+	"tipo": "application/pdf",
+	"autorRef": "anonymous",
+    "hash":"sdfsdfsdfsdfsdfs"
+}</pre>
+ </div>
+</div><p><br/></p><h3 id="SGIESBSGDOC-Servicios">Servicios</h3><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">Para componer la URL llamada completa, se debe anteponer a lo indicado en la columna URL lo siguiente: <strong>{HOST}/api/sgdoc</strong>, donde <strong>{HOST}</strong> de deberá sustituir el dominio correspondiente al entorno al que se está accediendo y dicho acceso será por http o https según el caso.</div></div><p><div class="table-wrap"><table class="aui metadata-summary-macro null" data-cql="label = &quot;servicios&quot; and space = currentSpace() and ancestor = currentContent()" data-details-space-key="HERCULES"  data-details-content-id="597852736"  data-headings="Método, URL, Parámetros, Respuesta, Descripción" data-first-column-heading="Servicio" data-count-comments="false" data-count-likes="false" data-total-pages="1" data-page-size="1000" data-sort-by="null" data-reverse-sort="false" data-blueprint-present="false"><thead><tr><th class="sorter-text">Servicio</th><th>M&eacute;todo</th><th>URL</th><th>Par&aacute;metros</th><th>Respuesta</th><th>Descripci&oacute;n</th></tr></thead><tbody><tr><td class="title" data-content-id="597853481"><a href="/confluence/display/HERCULES/ESB+-+SGI+-+Documentos+-+Eliminar">ESB - SGI - Documentos - Eliminar</a></td><td>DELETE</td><td>/documentos/{id}</td><td><br/></td><td><br/></td><td>Elimina el documento cuyo identificador se pasa en la URL del Sistema de Gestión Documental.</td></tr><tr><td class="title" data-content-id="597853454"><a href="/confluence/display/HERCULES/ESB+-+SGI+-+Documentos+-+Descargar+fichero">ESB - SGI - Documentos - Descargar fichero</a></td><td>GET</td><td>/documentos/{id}/archivo</td><td><p><br/></p></td><td><p>Fichero binario.</p></td><td>Devuelve el archivo binario del documento.</td></tr><tr><td class="title" data-content-id="597853456"><a href="/confluence/display/HERCULES/ESB+-+SGI+-+Documentos+-+Listar+por+identificador">ESB - SGI - Documentos - Listar por identificador</a></td><td>GET</td><td>/documentos/bydocumentorefs/{ids}</td><td><p>El parámetro pasado por URL será una lista de identificadores de documentos separados por &quot;,&quot;.</p></td><td><p>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGDOC#SGIESBSGDOC-Documento" rel="nofollow">Documento</a>]</p></td><td>Listado de documentos cuyo identificador se ha pasado por URL.</td></tr><tr><td class="title" data-content-id="597853455"><a href="/confluence/display/HERCULES/ESB+-+SGI+-+Documentos+-+Consultar+detalle">ESB - SGI - Documentos - Consultar detalle</a></td><td>GET</td><td>/documentos/{id}</td><td><p><br/></p></td><td><a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGDOC#SGIESBSGDOC-Documento" rel="nofollow">Documento</a></td><td>Devuelve el detalle del documento solicitado por la URL.</td></tr><tr><td class="title" data-content-id="597853453"><a href="/confluence/display/HERCULES/ESB+-+SGI+-+Documentos+-+Buscar">ESB - SGI - Documentos - Buscar</a></td><td>GET</td><td>/documentos</td><td><p style="text-align: left;" title=""><span style="color: rgb(0,0,0);">q+s (query + sort)</span></p><p style="text-align: left;" title=""><span style="color: rgb(0,0,0);">La query estará formada por:</span></p><ul style="text-align: left;" title=""><li><span style="color: rgb(0,0,0);"><span class="line" lang="java"><span class="n">documentoRef</span></span></span></li><li>nombre</li><li><span class="line" lang="java"><span class="n">version</span></span></li><li><span class="line" lang="java"><span class="n">fechaCreacion</span></span></li><li><span class="line" lang="java"><span class="n">tipo</span></span></li><li><span class="line" lang="java"><span class="n">autorRef</span></span></li></ul></td><td>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGDOC#SGIESBSGDOC-Documento" rel="nofollow">Documento</a>]</td><td><p>Listado de documentos.</p><p style="text-align: left;" title=""><span style="color: rgb(0,0,0);"><em>Ejemplo</em>:</span></p><p style="text-align: left;" title=""><span style="color: rgb(0,0,0);">nombre=ik=documento</span></p></td></tr><tr><td class="title" data-content-id="597853452"><a href="/confluence/display/HERCULES/ESB+-+SGI+-+Documentos+-+Dar+de+alta">ESB - SGI - Documentos - Dar de alta</a></td><td>POST</td><td>/documentos</td><td>archivo: fichero binario (multipart/form-data)</td><td><a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGDOC#SGIESBSGDOC-Documento" rel="nofollow">Documento</a></td><td>Crea un Documento y almacena el fichero.</td></tr></tbody></table></div></p><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597852736/597875170.png">ESB SGE Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597852736/597871796.png">ESB SGDOC Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597852736/597868190.png">ESB SGDOC Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597852736/597876690.jpg">ESB SGDOC Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:37</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

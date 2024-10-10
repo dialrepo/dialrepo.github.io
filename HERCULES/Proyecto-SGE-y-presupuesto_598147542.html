@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Proyecto SGE y presupuesto</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147612.html">APIs de Integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147615.html">SGI: Servicios de terceros que expone</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147545.html">Sistema de gestión económica</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Proyecto SGE y presupuesto
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span>, last modified by <span class='editor'> Isabel Martinez Hernandez</span> on oct 27, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>Recibe como parámetro la respuesta del usuario del formulario de alta proyecto (formly) con los campos necesarios para crear un proyecto en el SGE</p><hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728467822989 {padding: 0px;}
+div.rbtoc1728467822989 ul {margin-left: 0px;}
+div.rbtoc1728467822989 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728467822989'>
+<ul class='toc-indentation'>
+<li><a href='#ProyectoSGEypresupuesto-ProyectoSGEypresupuesto'>Proyecto SGE y presupuesto</a>
+<ul class='toc-indentation'>
+<li><a href='#ProyectoSGEypresupuesto-Entidades'>Entidades</a></li>
+<li><a href='#ProyectoSGEypresupuesto-Modelológico'>Modelo lógico</a></li>
+<li><a href='#ProyectoSGEypresupuesto-'></a></li>
+<li><a href='#ProyectoSGEypresupuesto-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#ProyectoSGEypresupuesto-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#ProyectoSGEypresupuesto-Proyecto'>Proyecto</a></li>
+<li><a href='#ProyectoSGEypresupuesto-PresupuestoAnualidadPartida'>PresupuestoAnualidadPartida</a></li>
+<li><a href='#ProyectoSGEypresupuesto-CodigoEconomicoGasto'>CodigoEconomicoGasto</a></li>
+<li><a href='#ProyectoSGEypresupuesto-CodigoEconomicoIngreso'>CodigoEconomicoIngreso</a></li>
+</ul>
+</li>
+<li><a href='#ProyectoSGEypresupuesto-Servicios'>Servicios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><hr/><h1 id="ProyectoSGEypresupuesto-ProyectoSGEypresupuesto">Proyecto SGE y presupuesto</h1><h2 id="ProyectoSGEypresupuesto-Entidades">Entidades</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">Proyecto</td><td colspan="1" class="confluenceTd">Es la entidad proyecto de investigación en el SGE (el proyecto económico)</td></tr><tr><td colspan="1" class="confluenceTd">ProyectoAnualidadPartida</td><td colspan="1" class="confluenceTd">Es la entidad que representa la partida presupuestaria de una anualidad para un proyecto</td></tr><tr><td colspan="1" class="confluenceTd">CodigoEconomicoGasto</td><td colspan="1" class="confluenceTd"><span>Son los códigos económicos definidos en el Sistema de Gestión Económico y con los que se relacionarán los gastos del SGE. Son los códigos </span><span>con los que se deberán relacionar cada uno de los conceptos de gasto de investigación  incluidos en convocatorias y proyectos.</span></td></tr><tr><td colspan="1" class="confluenceTd">CodigoEconomicoIngreso</td><td colspan="1" class="confluenceTd"><span>Son los códigos económicos definidos en el Sistema de Gestión Económico y con los que se relacionarán los ingresos del SGE. Son los códigos </span><span>con los que se deberán relacionar cada uno de los conceptos de ingreso de investigación  incluidos en convocatorias y proyectos.</span></td></tr></tbody></table></div><p><br/></p><h2 id="ProyectoSGEypresupuesto-Modelológico">Modelo lógico</h2><h2 id="ProyectoSGEypresupuesto-"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-external-resource" draggable="false" height="250" src="https://confluence.treelogic.com/download/attachments/103905021/ESB%20SGE%20Logical%20Model%20Proyecto%20y%20presupuesto.jpg?version=6&amp;modificationDate=1621860828052&amp;api=v2" data-image-src="https://confluence.treelogic.com/download/attachments/103905021/ESB%20SGE%20Logical%20Model%20Proyecto%20y%20presupuesto.jpg?version=6&amp;modificationDate=1621860828052&amp;api=v2"></span></h2><h2 id="ProyectoSGEypresupuesto-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a href="https://confluence.um.es/confluence/display/HERCULES/Consultas+filtradas+y+paginadas" rel="nofollow" style="">Consultas filtradas y paginadas</a></li><li><a href="https://confluence.um.es/confluence/display/HERCULES/Formatos+de+datos+API" rel="nofollow" style="">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="ProyectoSGEypresupuesto-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="ProyectoSGEypresupuesto-Proyecto">Proyecto</h4><p><br/></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del proyecto económico</td></tr><tr><td colspan="1" class="confluenceTd">proyectoSGIId</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del proyecto en el SGI</td></tr><tr><td class="confluenceTd">titulo</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Título del proyecto económico</td></tr><tr><td colspan="1" class="confluenceTd">fechaInicio</td><td colspan="1" class="confluenceTd">Fecha + hora</td><td colspan="1" class="confluenceTd">Fecha de inicio del proyecto económico</td></tr><tr><td colspan="1" class="confluenceTd">fechaFin</td><td colspan="1" class="confluenceTd">Fecha + hora</td><td colspan="1" class="confluenceTd">Fecha de fin del proyecto económico</td></tr><tr><td colspan="1" class="confluenceTd">sectorIva</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Si le aplica el IVA o no. Puede tomar los valores:</p><ul><li>true</li><li>false</li></ul></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Proyecto</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{ 
+"id": "1234566", 
+"proyectoSGIId": "12222"
+"titulo": "Título del proyecto de investigación", 
+"fechaInicio": "2020-12-15" ,
+"fechaFin": "2022-11-25",
+"sectorIva": "false"
+}</pre>
+ </div>
+</div><h4 id="ProyectoSGEypresupuesto-PresupuestoAnualidadPartida">PresupuestoAnualidadPartida</h4><p><br/></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">proyectoId</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del proyecto económico</td></tr><tr><td class="confluenceTd">anualidad</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Año de la anualidad</td></tr><tr><td class="confluenceTd">partidaPresupuestaria</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Cadena numérica o alfanumérica que identifica a la partida presupuestaria</td></tr><tr><td colspan="1" class="confluenceTd">tipo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Dos valores:</p><ul><li>Gasto</li><li>Ingreso</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">importe</td><td colspan="1" class="confluenceTd">Numérico (sin separador de miles y como separador decimal el punto)</td><td colspan="1" class="confluenceTd">Importe concedido a la partida presupuestaria para la anualidad y proyecto indicados</td></tr></tbody></table></div><p><br/></p><p><br/></p><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ProyectoAnualidadPartida</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">[
+{ 
+"proyectoId": "111111" , 
+"anualidad": "2021",
+"partidaPresupuestaria": "08 002B 541A 64406", 
+"tipoDatoEconomico": "Gasto",
+ "importe": 12000
+},
+{ 
+"proyectoId": "111111" , 
+"anualidad": "2021",
+"partidaPresupuestaria": "08 0700 541A 65000", 
+"tipoDatoEconomico": "Ingreso",
+ "importe": 12000
+}
+]</pre>
+ </div>
+</div><h4 id="ProyectoSGEypresupuesto-CodigoEconomicoGasto">CodigoEconomicoGasto</h4><p><br/></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Cadena numérica o alfanumérica que identifica al tipo de gasto en el SGE</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre o descripción del código económico en caso de que lo tenga</td></tr><tr><td colspan="1" class="confluenceTd">fechaInicio</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de inicio de la vigencia del código en caso de que la tuviese</td></tr><tr><td colspan="1" class="confluenceTd">fechaFin</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de fin de la vigencia del código en caso de que la tuviese</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">CodigoEconomicoGasto</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+"id": "VI",
+"nombre": "Viajes y dietas",  
+"fechaInicio": "" ,
+"fechaFin": ""
+}</pre>
+ </div>
+</div><h4 id="ProyectoSGEypresupuesto-CodigoEconomicoIngreso">CodigoEconomicoIngreso</h4><p><br/></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Cadena numérica o alfanumérica que identifica al tipo de ingreso en el SGE</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre o descripción del código económico en caso de que lo tenga</td></tr><tr><td colspan="1" class="confluenceTd">fechaInicio</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de inicio de la vigencia del código en caso de que la tuviese</td></tr><tr><td colspan="1" class="confluenceTd">fechaFin</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de fin de la vigencia del código en caso de que la tuviese</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">CodigoEconomicoIngreso</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+"id": "VI",
+"nombre": "Viajes y dietas",  
+"fechaInicio": "" ,
+"fechaFin": ""
+}</pre>
+ </div>
+</div><h3 id="ProyectoSGEypresupuesto-Servicios">Servicios</h3><p><p><br/></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1296.0px;"><colgroup><col/><col/><col/><col/><col/><col/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh"><p>Permisos</p></th><th class="confluenceTh">Descripción</th></tr></thead><tbody><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/proyectos</td><td class="confluenceTd"><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>id</li><li>titulo</li><li>fechaInicio</li><li>fechaFin</li></ul></td><td class="confluenceTd">Lista[Proyecto]</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p>Búsqueda de proyectos económicos, se puede buscar por el identificador del proyecto económico, por el título (o parte del título), entre un rango de fechas en las que se incluye la fecha de inicio o entre un rango de fechas entras lasque se incluye la fecha de fin del proyecto. Devuelve un listado de Proyectos económicos que cumplen los criterios de búsqueda.</p><p>Los parámetros q y s están explicados en:</p><ul><li><a class="external-link" href="https://confluence.treelogic.com/display/HERCULES/Consultas+filtradas+y+paginadas" rel="nofollow">Consultas filtradas y paginadas</a></li></ul></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/proyectos/{id}</td><td class="confluenceTd">id</td><td class="confluenceTd">Proyecto</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Detalle de los datos generales de un proyecto económico</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/proyectos/formly/create </td><td class="confluenceTd"><br/></td><td class="confluenceTd">Formly</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p>Devuelve el formulario (formly) a pintar para la pantalla de solicitar alta proyecto</p></td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd">/proyectos/formly/update</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Formly</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Devuelve el formulario (formly) a pintar para la pantalla de solicitar nueva relación con el  proyecto económico (para relacionar un nuevo proyecto SGI con el proyecto SGE)</td></tr><tr><td class="confluenceTd">POST</td><td class="confluenceTd">/proyectos/formly</td><td class="confluenceTd">JSON</td><td class="confluenceTd"><p>id</p><p>Vendrá relleno si la creación es síncrona y no vendrá si es asíncrona.</p></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Recibe como parámetro la respuesta del usuario del formulario de alta proyecto (formly) con los campos necesarios para crear un proyecto en el SGE</td></tr><tr><td colspan="1" class="confluenceTd">PUT</td><td colspan="1" class="confluenceTd">/proyectos/formly/{id}</td><td colspan="1" class="confluenceTd">JSON</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Recibe como parámetro la respuesta del usuario del formulario de modificación proyecto (formly) con los campos necesarios para crear una nueva relación de un proyecto SGI con el  proyecto SGE</td></tr><tr><td class="highlight-grey confluenceTd" colspan="6" data-highlight-colour="grey"><br/></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/codigos-economicos-gastos</td><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd">Lista[CodigoEconomicoGasto]</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Listado de CodigoEconomicoGasto de tipo gasto</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/codigos-economicos-gastos/{id}</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span>CodigoEconomicoGasto</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Detalle de CodigoEconomicoGasto</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/codigos-economicos-ingresos</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[CodigoEconomicoIngreso]</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Listado de CodigoEconomicoIngreso de tipo ingreso</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/codigos-economicos-ingresos/{id}</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span>CodigoEconomicoIngreso</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Detalle de CodigoEconomicoIngreso</td></tr><tr><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><br/></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><br/></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><br/></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><br/></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><br/></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><br/></td></tr><tr><td class="confluenceTd">POST</td><td class="confluenceTd"><p>/proyectos/anualidades/<br/><br/></p><p><br/></p></td><td class="confluenceTd"><p>Lista[ProyectoAnualidadPartida]</p></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Recibe como parámetro el listado partidas presupuestarias para una anualidad y un proyecto.</td></tr></tbody></table></div><br/></p><p><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:57</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

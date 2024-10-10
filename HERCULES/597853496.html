@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : SGI - ESB - SGE - Ejecución económica</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853279.html">Diseño</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Componentes_597853271.html">Componentes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---ESB_597853273.html">SGI - ESB</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---ESB---SGE_597852907.html">SGI - ESB - SGE</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : SGI - ESB - SGE - Ejecución económica
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified by <span class='editor'> Usuario genérico para HERCULES</span> on jul 20, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><br/></p><hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728466675924 {padding: 0px;}
+div.rbtoc1728466675924 ul {margin-left: 0px;}
+div.rbtoc1728466675924 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728466675924'>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEEjecucióneconómica-Ejecucióneconómica'>Ejecución económica</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEEjecucióneconómica-Entidades'>Entidades</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Enumerados'>Enumerados</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Modelológico'>Modelo lógico</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEEjecucióneconómica-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEEjecucióneconómica-DatoEconomico'>DatoEconomico</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-DatoEconomicoDetalle'>DatoEconomicoDetalle</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Columna'>Columna</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Documento'>Documento</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Comentario'>Comentario</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-ClasificacionSGE'>ClasificacionSGE</a></li>
+</ul>
+</li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Servicios'>Servicios</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-ColumnasEjecucióneconómica'>Columnas Ejecución económica</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEEjecucióneconómica-Ejecuciónpresupuestaria-Estadoactual'>Ejecución presupuestaria - Estado actual</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Ejecuciónpresupuestaria-Gastos'>Ejecución presupuestaria - Gastos</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Ejecuciónpresupuestaria-Ingresos'>Ejecución presupuestaria - Ingresos</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Facturasygastos'>Facturas y justificantes - Facturas y gastos</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Viajesydietas'>Facturas y justificantes - Viajes y dietas</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Personalcontratado'>Facturas y justificantes - Personal contratado</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Detalleoperaciones-Gastos'>Detalle operaciones - Gastos</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Detalleoperaciones-Ingresos'>Detalle operaciones - Ingresos</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Detalleoperaciones-Modificaciones'>Detalle operaciones - Modificaciones</a></li>
+</ul>
+</li>
+<li><a href='#SGIESBSGEEjecucióneconómica-ColumnasValidacióndegastos'>Columnas Validación de gastos</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-CamposDetalledatoeconómico'>Campos Detalle dato económico</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Facturasygastos.1'>Facturas y justificantes - Facturas y gastos</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Viajesydietas.1'>Facturas y justificantes - Viajes y dietas</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Personalcontratado.1'>Facturas y justificantes - Personal contratado</a></li>
+</ul>
+</li>
+<li><a href='#SGIESBSGEEjecucióneconómica-CamposDetalledatoeconómico-Validacióndegastos'>Campos Detalle dato económico - Validación de gastos</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Ejemplos'>Ejemplos</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGEEjecucióneconómica-Ejecuciónpresupuestaria-Estadoactual-Columnas(/ejecucion-economica/columnas)'>Ejecución presupuestaria - Estado actual - Columnas (/ejecucion-economica/columnas)</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Ejecuciónpresupuestaria-Estadoactual(/ejecucion-economica)'>Ejecución presupuestaria - Estado actual (/ejecucion-economica)</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Facturasygastos-Columnas(reducidafalse)(/ejecucion-economica/columnas)'>Facturas y justificantes - Facturas y gastos - Columnas (reducida false) (/ejecucion-economica/columnas)</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Facturasygastos(reducidaafalse)(/ejecucion-economica)'>Facturas y justificantes - Facturas y gastos (reducida a false) (/ejecucion-economica)</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Facturasygastos-Detalle(/ejecucion-economica/{id})'>Facturas y justificantes - Facturas y gastos - Detalle (/ejecucion-economica/{id})</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Validacionesdegastospendientes-Columnas(conreducidaatrue)(/gastos/columnas)'>Validaciones de gastos pendientes - Columnas (con reducida a true) (/gastos/columnas)</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Validacionesdegastospendientes-Columnas(conreducidaafalse)(/gastos/columnas)'>Validaciones de gastos pendientes - Columnas (con reducida a false) (/gastos/columnas)</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Validacionesdegastospendientes(conreducidaatrue)(/gastos)'>Validaciones de gastos pendientes (con reducida a true) (/gastos)</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Validacionesdegastospendientes(conreducidaafalse)(/gastos)'>Validaciones de gastos pendientes (con reducida a false) (/gastos)</a></li>
+<li><a href='#SGIESBSGEEjecucióneconómica-Detallegasto(/gastos/{id})'>Detalle gasto (/gastos/{id})</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><h1 id="SGIESBSGEEjecucióneconómica-Ejecucióneconómica">Ejecución económica</h1><h2 id="SGIESBSGEEjecucióneconómica-Entidades">Entidades</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">DatoEconomico</td><td colspan="1" class="confluenceTd"><p>Entidad que representa cualquier dato económico. Tendrá que venir identificado por un identificador único, por el proyecto al que pertenece, anualidad, fecha de devengo, partida presupuestaria, un código económico (opcional en algunos de los casos) y una clasificación SGE.</p><p>El resto de campos del dato económico se tratarán como columnas dinámicas. Se indicará por cada columna el identificador del campo, el nombre del campo y si es una columna sobre la que se tiene que hacer una suma para mostrarlo en el SGI como un campo totalizador.</p></td></tr><tr><td colspan="1" class="confluenceTd">Columna</td><td colspan="1" class="confluenceTd"><p>Contiene el listado de columnas que serán mostradas en las pantallas del SGI dependiendo de la pantalla en la que se esta: Ejecución presupuestaria, detalle de operaciones, validación de gastos, etc...</p><p>Por cada columna se tendrá el identificador del campo, el nombre del campo y si es una columna sobre la que se tiene que hacer una suma para mostrarlo en el SGI como un campo totalizador.</p></td></tr><tr><td colspan="1" class="confluenceTd">DatoEconomicoDetalle</td><td colspan="1" class="confluenceTd"><p>Entidad que representa el detalle de un dato económico con todos sus campos para mostrarlo en una pantalla de consulta del dato económico.</p><p>Tendrá unos campos fijos (identificador único, identificador del proyecto al que pertenece, anualidad, fecha de devengo, partida presupuestaria, un código económico y una clasificación SGE) y unos campos dinámicos. Por cada campo se detallará el nombre y el valor del campo para mostrarlo en la pantalla del SGI</p></td></tr><tr><td colspan="1" class="confluenceTd">Campo</td><td colspan="1" class="confluenceTd"><p>Contiene el listado de campos dinámicos que serán mostradas en las pantallas de detalle de un dato económico.</p><p>Por cada campo se tendrá el el nombre y el valor del campo</p></td></tr><tr><td colspan="1" class="confluenceTd">Documento</td><td colspan="1" class="confluenceTd">Entidad que representa los documentos que pueda tener relacionados un dato económico (en este caso los gastos).</td></tr><tr><td colspan="1" class="confluenceTd">ClasificacionSGE</td><td colspan="1" class="confluenceTd">Entidad que representa la clasificación de los gastos en el sistema de gestión económico.</td></tr></tbody></table></div><h2 id="SGIESBSGEEjecucióneconómica-Enumerados">Enumerados</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">TipoDatoEconomico</td><td colspan="1" class="confluenceTd"><p>Puede tomar los siguientes valores:</p><ul><li>Ingreso</li><li>Gasto</li></ul></td></tr><tr><td class="confluenceTd">TipoOperacion</td><td class="confluenceTd"><p>Puede tomar los siguientes valores:</p><ul><li>EPA</li><li>EPG</li><li>EPI</li><li>FJF</li><li>FJV</li><li>FJP</li><li>DOG</li><li>DOI</li><li>DOM</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">Estado (en validación de gastos)</td><td colspan="1" class="confluenceTd"><p>Puede tomar los siguientes valores:</p><ul><li>Pendiente</li><li>Validado</li></ul></td></tr></tbody></table></div><h2 id="SGIESBSGEEjecucióneconómica-Modelológico">Modelo lógico</h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="650" src="attachments/597853496/597858113.jpg" data-image-src="attachments/597853496/597858113.jpg" data-unresolved-comment-count="0" data-linked-resource-id="597858113" data-linked-resource-version="6" data-linked-resource-type="attachment" data-linked-resource-default-alias="ESB SGE Logical Model Ejecución económica.jpg" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="597853496" data-linked-resource-container-version="114" alt=""></span></p><h2 id="SGIESBSGEEjecucióneconómica-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a href="https://confluence.um.es/confluence/display/HERCULES/Consultas+filtradas+y+paginadas" rel="nofollow">Consultas filtradas y paginadas</a></li><li><a href="https://confluence.um.es/confluence/display/HERCULES/Formatos+de+datos+API" rel="nofollow">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="SGIESBSGEEjecucióneconómica-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="SGIESBSGEEjecucióneconómica-DatoEconomico">DatoEconomico</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del dato económico. Tiene que ser un identificador único.</td></tr><tr><td colspan="1" class="confluenceTd">proyectoId</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del proyecto económico</td></tr><tr><td class="confluenceTd">partidaPresupuestaria</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Código de la Partida presupuestaria</td></tr><tr><td colspan="1" class="confluenceTd">fechaDevengo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de devengo (fecha del gasto o del ingreso)</td></tr><tr><td colspan="1" class="confluenceTd">clasificacionSGE</td><td colspan="1" class="confluenceTd">ClasificacionSGE</td><td colspan="1" class="confluenceTd">Contiene la entidad ClasificacionSGE</td></tr><tr><td colspan="1" class="confluenceTd">codigoEconomico</td><td colspan="1" class="confluenceTd">CodigoEconomicoGasto/CodigoEconomicoIngreso</td><td colspan="1" class="confluenceTd">Contiene la entidad Código económico Gasto si se trata de un gasto (campo &quot;tipo&quot; es &quot;Gasto&quot; ) o contiene la entidad Código económico Ingreso si se trata de un ingreso (campo &quot;tipo&quot; es &quot;Gasto&quot; )</td></tr><tr><td colspan="1" class="confluenceTd">anualidad</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Anualidad</td></tr><tr><td colspan="1" class="confluenceTd">tipo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Dos valores:</p><ul><li>Gasto</li><li>Ingreso</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">columnas</td><td colspan="1" class="confluenceTd">Map[clave,valor]</td><td colspan="1" class="confluenceTd"><p>Mapa de propiedades</p><p>El valor será un String salvo en aquellas columnas que sean acumulables (se tenga que hacer sumas sobre ellas) donde será de tipo Numérico (<u>sin separador de miles y como separador decimal el punto</u>)</p></td></tr></tbody></table></div><h4 id="SGIESBSGEEjecucióneconómica-DatoEconomicoDetalle">DatoEconomicoDetalle</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del dato económico. Tiene que ser un identificador único.</td></tr><tr><td colspan="1" class="confluenceTd">proyectoId</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del proyecto económico</td></tr><tr><td class="confluenceTd">partidaPresupuestaria</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Código de la Partida presupuestaria</td></tr><tr><td colspan="1" class="confluenceTd">fechaDevengo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de devengo (fecha del gasto o del ingreso)</td></tr><tr><td colspan="1" class="confluenceTd">clasificacionSGE</td><td colspan="1" class="confluenceTd">ClasificacionSGE</td><td colspan="1" class="confluenceTd">Contiene la entidad ClasificacionSGE</td></tr><tr><td colspan="1" class="confluenceTd">codigoEconomico</td><td colspan="1" class="confluenceTd">CodigoEconomicoGasto/CodigoEconomicoIngreso</td><td colspan="1" class="confluenceTd">Contiene la entidad Código económico Gasto si se trata de un gasto o contiene la entidad Código económico Ingreso si se trata de un ingreso</td></tr><tr><td colspan="1" class="confluenceTd">anualidad</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Anualidad</td></tr><tr><td colspan="1" class="confluenceTd">campos</td><td colspan="1" class="confluenceTd">Lista[Campo]</td><td colspan="1" class="confluenceTd"><p>Lista de campos, por cada campo se define el nombre y el valor del campo</p></td></tr></tbody></table></div><h4 id="SGIESBSGEEjecucióneconómica-Columna">Columna</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la columna</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre de la columna</td></tr><tr><td colspan="1" class="confluenceTd">acumulable</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Indica si se tiene que sumar o no para mostrar los totales en la pantalla del SGI.</p><p>Dos valores:</p><ul><li>true</li><li>false</li></ul></td></tr></tbody></table></div><h4 id="SGIESBSGEEjecucióneconómica-Documento">Documento</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador único del documento</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del documento a mostrar</td></tr><tr><td class="confluenceTd"><p>nombreFichero</p></td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del fichero con extensión</td></tr></tbody></table></div><h4 id="SGIESBSGEEjecucióneconómica-Comentario">Comentario</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">comentario</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Comentario relacionado con el cambio de estado de un gasto</td></tr></tbody></table></div><p><br/></p><h4 id="SGIESBSGEEjecucióneconómica-ClasificacionSGE">ClasificacionSGE</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Cadena numérica o alfanumérica que identifica a la clasificación del gasto en el  SGE</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Nombre o descripción de la clasificación SGE</p><p><br/></p></td></tr></tbody></table></div><h3 id="SGIESBSGEEjecucióneconómica-Servicios">Servicios</h3><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">Para componer la URL llamada completa, se debe anteponer a lo indicado en la columna URL lo siguiente: <strong>{HOST}/api/sge</strong>, donde <strong>{HOST}</strong> de deberá sustituir el dominio correspondiente al entorno al que se está accediendo y dicho acceso será por http o https según el caso.</div></div><p><div class="table-wrap"><table class="aui metadata-summary-macro null" data-cql="label = &quot;servicios&quot; and space = currentSpace() and ancestor = currentContent()" data-details-space-key="HERCULES"  data-details-content-id="597853496"  data-headings="Método, URL, Parámetros, Respuesta, Descripción" data-first-column-heading="Servicio" data-count-comments="false" data-count-likes="false" data-total-pages="1" data-page-size="1000" data-sort-by="null" data-reverse-sort="false" data-blueprint-present="false"><thead><tr><th class="sorter-text">Servicio</th><th>M&eacute;todo</th><th>URL</th><th>Par&aacute;metros</th><th>Respuesta</th><th>Descripci&oacute;n</th></tr></thead><tbody><tr><td class="title" data-content-id="597852975"><a href="/confluence/pages/viewpage.action?pageId=597852975">SGI - ESB - SGE - Ejecución económica - Buscar columnas de datos económicos</a></td><td>GET</td><td>/ejecucion-economica/columnas</td><td><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>proyectoId</li><li><p>anualidad</p></li><li>tipoOperacion</li><li>reducida</li><li>fechaPago</li><li>fechaDevengo</li><li>fechaContabilizacion</li></ul><p>El campo reducida puede tomar los siguientes valores:</p><ul><li>true: sólo se envían las columnas a mostrar en la pantalla principal</li><li>false:  se envían todas las columnas (para su exportación)</li></ul><p>Si no esta informado el campo reducida se considera false.</p><p>El tipoOperacion puede tomar los siguientes valores:</p><ul><li>EPA (Ejecución presupestaria - Estado actual)</li><li>EPG (Ejecución presupestaria - Gastos)</li><li>EPI (Ejecución presupestaria - Ingresos)</li><li>FJF (Facturas y justificantes - Facturas y gastos)</li><li>FJV (Facturas y justificantes - Viajes y dietas</li><li>FJP (Facturas y justificantes - Personal contratado)</li><li>DOG (Detalle de operaciones - Gastos)</li><li>DOI (Detalle de operaciones - Ingresos)</li><li>DOM (Detalle de operaciones - Modificaciones)</li></ul></td><td>Lista[<a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=103905017#SGIESBSGEEjecuci%C3%B3necon%C3%B3mica-Columna" rel="nofollow">Columna</a>]</td><td><p>Listado con las columnas que va a devolver la llamada /ejecucion-economica</p><p>Por cada columna se indica un id, nombre, si es una columna acumulable (se va a hacer una suma de ella en el SGI)</p><p>Ver el apartado &quot;<strong>Columnas Ejecución económica</strong>&quot; para ver que columnas se deben de mostrar dependiendo del tipo de operación (campo tipoOperacion) y si es reducida o no</p></td></tr><tr><td class="title" data-content-id="597853459"><a href="/confluence/pages/viewpage.action?pageId=597853459">SGI - ESB - SGE - Ejecución económica - Buscar gastos</a></td><td>GET</td><td>/gastos</td><td><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>proyectoId</li><li>fecha</li><li>id</li><li>estado</li><li>reducida</li></ul><p>El campo estado puede tomar dos valores:</p><ul><li>Pendiente</li><li>Validado</li></ul><p>El campo reducida puede tomar los siguientes valores:</p><ul><li>true: sólo se envían las columnas a mostrar en la pantalla principal</li><li>false:  se envían todas las columnas (para su exportación)</li></ul><p>Si no esta informado el campo reducida se considera false.</p></td><td>Lista[<a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=141920117#SGIESBSGEEjecuci%C3%B3necon%C3%B3mica-DatoEconomico" rel="nofollow">DatoEconomico</a>]</td><td><p>Listado de gastos pendientes de pasar por la &quot;Validación de gastos&quot; si en el campo del filtrado estado = 'Pendiente' o listado de gastos que ya han sido validados (han pasado por la &quot;Validación de gastos&quot;) si en el campo del filtrado estado = 'Validado'</p><p>Para cada gasto se devolverán los siguientes datos:</p><ul><li>Identificador del gasto</li><li>Identificador del proyecto SGE</li><li>Partida presupuestaria a la que esta asignado el gasto</li><li>Fecha de devengo</li><li>Clasificación SGE</li><li>Código económico asignado al gasto</li><li>Anualidad</li><li>Tipo: Gasto</li><li>Mapa de columnas de clave - valor (donde la clave será los id definidos en la llamada /gastos/columnas y el valor será el valor de la columna. El valor será un String salvo en aquellas columnas que sean acumulables,se tenga que hacer sumas sobre ellas, donde será de tipo Numérico (<u>sin separador de miles y como separador decimal el punto</u>)). Ver el apartado &quot;<strong>Columnas Validación de gastos</strong>&quot; para ver los id de la columnas que se deben de mostrar dependiendo de si es reducida o no</li></ul></td></tr><tr><td class="title" data-content-id="597852972"><a href="/confluence/pages/viewpage.action?pageId=597852972">SGI - ESB - SGE - Ejecución económica - Buscar columnas de gastos</a></td><td>GET</td><td>/gastos/columnas</td><td><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>proyectoId</li><li>fecha</li><li>id</li><li>estado</li><li>reducida</li></ul><p>Si no esta informado el campo reducida se considera false.</p><p>El campo estado puede tomar dos valores:</p><ul><li>Pendiente</li><li>Validado</li></ul><p>El campo reducida puede tomar los siguientes valores:</p><ul><li>true: sólo se envían las columnas a mostrar en la pantalla principal</li><li>false:  se envían todas las columnas (para su exportación)</li></ul></td><td>Lista[<a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=103905017#SGIESBSGEEjecuci%C3%B3necon%C3%B3mica-Columna" rel="nofollow">Columna</a>]</td><td><p>Listado con las columnas que va a devolver la llamada /gastos</p><p>Por cada columna se indica un id, nombre, si es una columna acumulable (se va a hacer una suma de ella en el SGI)</p><p>Ver el apartado &quot;<strong>Columnas Validación de gastos</strong>&quot; para ver que columnas se deben de mostrar dependiendo de si es reducida o no.</p></td></tr><tr><td class="title" data-content-id="597852976"><a href="/confluence/pages/viewpage.action?pageId=597852976">SGI - ESB - SGE - Ejecución económica - Buscar datos económicos</a></td><td>GET</td><td>/ejecucion-economica</td><td><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>proyectoId</li><li>anualidad</li><li>tipoOperacion</li><li>reducida</li><li>fechaPago</li><li>fechaDevengo</li><li>fechaContabilizacion</li></ul><p>El campo reducida puede tomar los siguientes valores:</p><ul><li>true: sólo se envían las columnas a mostrar en la pantalla principal</li><li>false:  se envían todas las columnas (para su exportación)</li></ul><p>Si no esta informado el campo reducida se considera false.</p><p>El tipoOperacion puede tomar los siguientes valores:</p><ul><li>EPA (Ejecución presupestaria - Estado actual)</li><li>EPG (Ejecución presupestaria - Gastos)</li><li>EPI (Ejecución presupestaria - Ingresos)</li><li>FJF (Facturas y justificantes - Facturas y gastos)</li><li>FJV (Facturas y justificantes - Viajes y dietas</li><li>FJP (Facturas y justificantes - Personal contratado)</li><li>DOG (Detalle de operaciones - Gastos)</li><li>DOI (Detalle de operaciones - Ingresos)</li><li>DOM (Detalle de operaciones - Modificaciones)</li></ul></td><td>Lista[<a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=103905017#SGIESBSGEEjecuci%C3%B3necon%C3%B3mica-DatoEconomico" rel="nofollow">DatoEconomico</a>]</td><td><p>Listado con los datos económicos pedidos según el campo tipoOperacion. Por cada dato económico se devolverán los siguientes campos:</p><ul><li>Identificador del dato económico</li><li>Identificador del proyecto SGE</li><li>Anualidad</li><li>Partida presupuestaria</li><li>Fecha de devengo</li><li>Clasificación SGE</li><li>Código económico</li><li>Tipo (si es Gasto o Ingreso)</li><li>Mapa de columnas de clave - valor (donde la clave será los id definidos en la llamada /ejecucion-economica/columnas y el valor será el valor de la columna. El valor será un String salvo en aquellas columnas que sean acumulables,se tenga que hacer sumas sobre ellas, donde será de tipo Numérico (<u>sin separador de miles y como separador decimal el punto</u>)). Ver el apartado &quot;<strong>Columnas Ejecución económica</strong>&quot; para ver los id de la columnas que se deben de mostrar dependiendo del tipo de operación (campo tipoOperacion) y si es reducida o no.</li></ul></td></tr><tr><td class="title" data-content-id="597853069"><a href="/confluence/pages/viewpage.action?pageId=597853069">SGI - ESB - SGE - Ejecución económica - Descargar documento</a></td><td><span style="color: rgb(0,51,102);">GET</span></td><td>/documentos/{id}/archivo</td><td><br/></td><td>Binario (en la cabecera irá el contentType).</td><td>Devuelve el binario del documento.</td></tr><tr><td class="title" data-content-id="597852974"><a href="/confluence/pages/viewpage.action?pageId=597852974">SGI - ESB - SGE - Ejecución económica - Validar gasto</a></td><td><span style="color: rgb(0,51,102);">PATCH</span></td><td>/gastos/{id}/validar</td><td><a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=103905017#SGIESBSGEEjecuci%C3%B3necon%C3%B3mica-Comentario" rel="nofollow">Comentario</a></td><td><br/></td><td>Se valida el gasto y recibe como parámetro el comentario  en caso de que lo tuviese.</td></tr><tr><td class="title" data-content-id="597853067"><a href="/confluence/pages/viewpage.action?pageId=597853067">SGI - ESB - SGE - Ejecución económica - Rechazar gasto</a></td><td><span style="color: rgb(0,51,102);">PATCH</span></td><td>/gastos/{id}/rechazar</td><td><a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=103905017#SGIESBSGEEjecuci%C3%B3necon%C3%B3mica-Comentario" rel="nofollow">Comentario</a></td><td><br/></td><td>Se rechaza el gasto y recibe como parámetro el comentario  en caso de que lo tuviese.</td></tr><tr><td class="title" data-content-id="597853068"><a href="/confluence/pages/viewpage.action?pageId=597853068">SGI - ESB - SGE - Ejecución económica - Consultar detalle de documento</a></td><td><span style="color: rgb(0,51,102);">GET</span></td><td>/documentos/{id}</td><td><br/></td><td><a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=103905017#SGIESBSGEEjecuci%C3%B3necon%C3%B3mica-Documento" rel="nofollow">Documento</a></td><td>Devuelve el detalle del documento</td></tr><tr><td class="title" data-content-id="597852973"><a href="/confluence/pages/viewpage.action?pageId=597852973">SGI - ESB - SGE - Ejecución económica - Consultar detalle de gasto</a></td><td>GET</td><td>/gastos/{id}</td><td><p><br/></p></td><td><a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=103905017#SGIESBSGEEjecuci%C3%B3necon%C3%B3mica-DatoEconomicoDetalle" rel="nofollow">DatoEconomicoDetalle</a></td><td><p>Detalle de un gasto.</p><p>Para cada gasto se devolverán los siguientes datos:</p><ul><li>Identificador del gasto</li><li>Identificador del proyecto SGE</li><li>Partida presupuestaria a la que esta asignado el gasto</li><li>Fecha de devengo</li><li>Clasificación SGE</li><li>Código económico asignado al gasto</li><li>Anualidad</li><li>Listado de campos con su nombre y valor (Ver el apartado &quot;<strong>Campos Detalle dato económico</strong>&quot; para ver que campos se deben de mostrar dependiendo del tipo de operación (campo tipoOperacion). En el detalle se muestran todos la columnas o campos.)</li><li>Listado de documentos (identificador, nombre del documento y nombre del fichero, sin el contenido)</li></ul></td></tr><tr><td class="title" data-content-id="597852971"><a href="/confluence/pages/viewpage.action?pageId=597852971">SGI - ESB - SGE - Ejecución económica - Consultar detalle de dato económico</a></td><td>GET</td><td>/ejecucion-economica/{id}</td><td><p>tipoOperacion</p><p>El tipoOperacion puede tomar los siguientes valores (cuando estamos en la llamada de detalle de dato económico):</p><ul><li>FJF (Facturas y justificantes - Facturas y gastos)</li><li>FJV (Facturas y justificantes - Viajes y dietas</li><li>FJP (Facturas y justificantes - Personal contratado)</li></ul></td><td><a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=103905017#SGIESBSGEEjecuci%C3%B3necon%C3%B3mica-DatoEconomicoDetalle" rel="nofollow">DatoEconomicoDetalle</a></td><td><p>Detalle del dato económico con todas sus columnas.</p><ul><li>Identificador del dato económico</li><li>Identificador del proyecto SGE</li><li>Anualidad</li><li>Partida presupuestaria</li><li>Fecha de devengo</li><li>Clasificación SGE</li><li>Código económico</li><li>Listado de campos con su nombre y valor (Ver el apartado &quot;<strong>Campos Detalle dato económico</strong>&quot; para ver que campos se deben de mostrar dependiendo del tipo de operación (campo tipoOperacion). En el detalle se muestran todos la columnas o campos.)</li><li>Listado de documentos (identificador, nombre del documento y nombre del fichero, sin el contenido)</li></ul><p>El listado de campos a mostrar dependerá de que dato económico sea, si es una factura o gasto, un viaje o dieta o un personal contratado.</p></td></tr></tbody></table></div></p><h3 id="SGIESBSGEEjecucióneconómica-ColumnasEjecucióneconómica">Columnas Ejecución económica</h3><h4 id="SGIESBSGEEjecucióneconómica-Ejecuciónpresupuestaria-Estadoactual">Ejecución presupuestaria  - Estado actual</h4><p>Cuando <strong>tipoOperacion=='EPA' </strong> y (<strong>reducida =='true'</strong> o <strong>reducida =='false')</strong>  (independientemente del campo reducida, ya que siempre se mandan todas las columnas) las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 26.7145%;"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Importe presupuestado</td><td class="confluenceTd">true</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">Importe actual</td><td class="confluenceTd">true</td></tr><tr><td class="confluenceTd">3</td><td class="confluenceTd">Importe disponible para gastos</td><td class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Derechos</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">5</td><td colspan="1" class="confluenceTd">Cobros</td><td colspan="1" class="confluenceTd">true</td></tr></tbody></table></div><h4 id="SGIESBSGEEjecucióneconómica-Ejecuciónpresupuestaria-Gastos">Ejecución presupuestaria  - Gastos</h4><p>Cuando <strong>tipoOperacion=='EPG'</strong>  y (<strong>reducida =='true'</strong> o <strong>reducida =='false')</strong>  (independientemente del campo reducida, ya que siempre se mandan todas las columnas) las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Importe presupuestado</td><td class="confluenceTd">true</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">Importe definitivo</td><td class="confluenceTd">true</td></tr><tr><td class="confluenceTd">3</td><td class="confluenceTd">Gastos pagados</td><td class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Gastos en tramitación</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">5</td><td colspan="1" class="confluenceTd">Crédito disponible</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">6</td><td colspan="1" class="confluenceTd">Retenciones personal contratado y expedientes</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">7</td><td colspan="1" class="confluenceTd">Pedidos activos</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">8</td><td colspan="1" class="confluenceTd">Gastos pendientes de pago</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">9</td><td colspan="1" class="confluenceTd">Pagos a justificar</td><td colspan="1" class="confluenceTd">true</td></tr></tbody></table></div><h4 id="SGIESBSGEEjecucióneconómica-Ejecuciónpresupuestaria-Ingresos">Ejecución presupuestaria  - Ingresos</h4><p>Cuando <strong>tipoOperacion=='EPI'</strong> y (<strong>reducida =='true'</strong> o <strong>reducida =='false')</strong>  (independientemente del campo reducida, ya que siempre se mandan todas las columnas) las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Importe presupuestado</td><td class="confluenceTd">true</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">Importe actual</td><td class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Derechos</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Cobros</td><td colspan="1" class="confluenceTd">true</td></tr></tbody></table></div><h4 id="SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Facturasygastos">Facturas y justificantes  - Facturas y gastos</h4><p>Cuando <strong>tipoOperacion=='FJF' y reducida = &quot;true&quot;</strong> las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 23.1034%;"><colgroup><col style="width: 9.71557%;"/><col style="width: 62.1906%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Nº de registro</td><td class="confluenceTd">false</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">Concepto de la Fac./Gasto</td><td class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Fecha pago</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Importe</td><td colspan="1" class="confluenceTd">true</td></tr></tbody></table></div><p><br/></p><p>Cuando <strong>tipoOperacion=='FJF' y reducida = &quot;false&quot;</strong> las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Nº de registro</td><td class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">Tipo de operación</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Proveedor</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Nº de registro del proveedor</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td class="confluenceTd">5</td><td class="confluenceTd">Concepto de la Fac./Gasto</td><td class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">6</td><td colspan="1" class="confluenceTd">Importe</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">7</td><td colspan="1" class="confluenceTd">Importe IVA</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">8</td><td colspan="1" class="confluenceTd">Fecha contabilización</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">9</td><td colspan="1" class="confluenceTd">Fecha pago</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">10</td><td colspan="1" class="confluenceTd">Nº de documento de gasto</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">11</td><td colspan="1" class="confluenceTd">Nº de señalamiento</td><td colspan="1" class="confluenceTd">false</td></tr></tbody></table></div><h4 id="SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Viajesydietas">Facturas y justificantes  - Viajes y dietas</h4><p>Cuando <strong>tipoOperacion=='FJV'  y redudida == &quot;true&quot;</strong> las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Nº de factura</td><td class="confluenceTd">false</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">Nº de comisión de servicios</td><td class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Perceptor/proveedor</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Concepto/ motivo del viaje</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">5</td><td colspan="1" class="confluenceTd">Fecha pago</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">6</td><td colspan="1" class="confluenceTd">Importe</td><td colspan="1" class="confluenceTd">true</td></tr></tbody></table></div><p>El campo Perceptor/proveedor será el nombre y apellidos del perceptor o proveedor</p><p><br/></p><p>Cuando <strong>tipoOperacion=='FJV'  y redudida == &quot;false&quot;</strong> las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Nº de factura</td><td class="confluenceTd">false</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">Nº de comisión de servicios</td><td class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Perceptor/proveedor</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Identificador Perceptor/Proveedor</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">5</td><td colspan="1" class="confluenceTd">Concepto/ motivo del viaje</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">6</td><td colspan="1" class="confluenceTd">Fecha contabilización</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">7</td><td colspan="1" class="confluenceTd">Fecha pago</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">8</td><td colspan="1" class="confluenceTd">Itinerario viaje</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">9</td><td colspan="1" class="confluenceTd">Destino</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">10</td><td colspan="1" class="confluenceTd">Fecha salida - Fecha vuelta</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">11</td><td colspan="1" class="confluenceTd">Medio de locomoción</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">12</td><td colspan="1" class="confluenceTd">Importe locomoción</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">13</td><td colspan="1" class="confluenceTd">Importe alojamiento</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">14</td><td colspan="1" class="confluenceTd">Importe dietas</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">15</td><td colspan="1" class="confluenceTd">Otros gastos</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">16</td><td colspan="1" class="confluenceTd">Importe total</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">17</td><td colspan="1" class="confluenceTd">Observaciones locomoción</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">18</td><td colspan="1" class="confluenceTd">Observaciones alojamiento</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">19</td><td colspan="1" class="confluenceTd">Observaciones dietas</td><td colspan="1" class="confluenceTd">false</td></tr></tbody></table></div><p>El campo &quot;Perceptor/proveedor&quot; será el nombre y apellidos del perceptor o proveedor</p><p>El campo &quot;Identificador Perceptor/proveedor&quot; será el NIF/NIE/CIF del perceptor o proveedor</p><h4 id="SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Personalcontratado">Facturas y justificantes  - Personal contratado</h4><p>Cuando <strong>tipoOperacion=='FJP'  y reducida == &quot;true&quot;</strong> las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Nº documento identificación</td><td class="confluenceTd">false</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">Nombre y apellidos</td><td class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Concepto</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Fecha pago</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">5</td><td colspan="1" class="confluenceTd">Importe</td><td colspan="1" class="confluenceTd">true</td></tr></tbody></table></div><p>El campo &quot;Nº documento identificación&quot; se refiere al NIF/NIE del contratado</p><p>El campo &quot;Nombre  apellidos&quot; se refiere al nombre y apellidos del contratado</p><p>Cuando <strong>tipoOperacion=='FJP'  y reducida == &quot;false&quot;</strong> las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Nº documento identificación</td><td class="confluenceTd">false</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">Nombre y apellidos</td><td class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Concepto</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Fecha contabilización</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">5</td><td colspan="1" class="confluenceTd">Fecha pago</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">6</td><td colspan="1" class="confluenceTd">Importe</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">7</td><td colspan="1" class="confluenceTd">Fecha inicio del contrato</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">8</td><td colspan="1" class="confluenceTd">Fecha fin del contrato</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">9</td><td colspan="1" class="confluenceTd">Categoría laboral</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">10</td><td colspan="1" class="confluenceTd">Jornada semanal o diaria</td><td colspan="1" class="confluenceTd">false</td></tr></tbody></table></div><p>El campo &quot;Nº documento identificación&quot; se refiere al NIF/NIE del contratado</p><p>El campo &quot;Nombre  apellidos&quot; se refiere al nombre y apellidos del contratado</p><h4 id="SGIESBSGEEjecucióneconómica-Detalleoperaciones-Gastos">Detalle operaciones  - Gastos</h4><p>Cuando <strong>tipoOperacion=='DOG'</strong> y (<strong>reducida =='true'</strong> o <strong>reducida =='false')</strong>  (independientemente del campo reducida, ya que siempre se mandan todas las columnas) las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">F. Cons.</td><td class="confluenceTd">false</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">F. Pago</td><td class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Operación</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Descripción</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">5</td><td colspan="1" class="confluenceTd">Tercero</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">6</td><td colspan="1" class="confluenceTd">Doc/Fac</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">7</td><td colspan="1" class="confluenceTd">Créditos</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">8</td><td colspan="1" class="confluenceTd">Gastos</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">9</td><td colspan="1" class="confluenceTd">Saldo</td><td colspan="1" class="confluenceTd">true</td></tr></tbody></table></div><h4 id="SGIESBSGEEjecucióneconómica-Detalleoperaciones-Ingresos">Detalle operaciones  - Ingresos</h4><p>Cuando <strong>tipoOperacion=='DOI' </strong> y(<strong>reducida =='true'</strong> o <strong>reducida =='false')</strong>  (independientemente del campo reducida, ya que siempre se mandan todas las columnas) l las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Docum./Recibo</td><td class="confluenceTd">false</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">Operación</td><td class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Tercero</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Nombre</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">5</td><td colspan="1" class="confluenceTd">Descripción</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">6</td><td colspan="1" class="confluenceTd">Proy.</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">7</td><td colspan="1" class="confluenceTd">Consol.</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">8</td><td colspan="1" class="confluenceTd">Mater.</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">9</td><td colspan="1" class="confluenceTd">Importe</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">10</td><td colspan="1" class="confluenceTd">Importe IVA</td><td colspan="1" class="confluenceTd">true</td></tr></tbody></table></div><p>El campo &quot;Tercero&quot; NIF/NIE/CIF de la persona</p><h4 id="SGIESBSGEEjecucióneconómica-Detalleoperaciones-Modificaciones">Detalle operaciones  - Modificaciones</h4><p>Cuando <strong>tipoOperacion=='DOM'</strong> y (<strong>reducida =='true'</strong> o <strong>reducida =='false')</strong>  (independientemente del campo reducida, ya que siempre se mandan todas las columnas) l  las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Modif.</td><td class="confluenceTd">false</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">Mod. Pres</td><td class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Descripción</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Tipo</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">5</td><td colspan="1" class="confluenceTd">Fecha</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">6</td><td colspan="1" class="confluenceTd">Importe</td><td colspan="1" class="confluenceTd">true</td></tr></tbody></table></div><h3 id="SGIESBSGEEjecucióneconómica-ColumnasValidacióndegastos">Columnas Validación de gastos</h3><p>Cuando <strong>reducida = &quot;true&quot;</strong> las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Tipo documento</td><td class="confluenceTd">false</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">Importe imputado</td><td class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Proveedor</td><td colspan="1" class="confluenceTd">false</td></tr></tbody></table></div><p><br/></p><p>Cuando <strong>reducida = &quot;false&quot;</strong> las columnas a devolver en la Universidad de Murcia serán:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 9.71058%;"/><col style="width: 62.2056%;"/><col style="width: 28.1437%;"/></colgroup><tbody><tr><th class="confluenceTh">id</th><th class="confluenceTh">nombre</th><th class="confluenceTh">acumulable</th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">Tipo documento</td><td class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">Nº documento</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Importe imputado</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Importe total</td><td colspan="1" class="confluenceTd">true</td></tr><tr><td colspan="1" class="confluenceTd">5</td><td colspan="1" class="confluenceTd">Descripción</td><td colspan="1" class="confluenceTd">false</td></tr><tr><td colspan="1" class="confluenceTd">6</td><td colspan="1" class="confluenceTd">Proveedor</td><td colspan="1" class="confluenceTd">false</td></tr></tbody></table></div><h3 id="SGIESBSGEEjecucióneconómica-CamposDetalledatoeconómico">Campos Detalle dato económico<strong><br/></strong></h3><h4 id="SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Facturasygastos.1">Facturas y justificantes  - Facturas y gastos</h4><p>Cuando <strong>tipoOperacion=='FJF'</strong>  (el campo reducida dará igual porque en el detalle siempre se muestran todos los campos) los campos a devolver en la Universidad de Murcia serán:</p><ul><li>Nº de registro</li><li>Tipo de operación</li><li>Proveedor</li><li>Nº de registro del proveedor</li><li>Concepto de la Fac/Gasto</li><li>Importe</li><li>Importe IVA</li><li>Fecha contabilización</li><li>Fecha pago</li><li>Nº de documento de gasto</li><li>Nº de señalamiento</li></ul><h4 id="SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Viajesydietas.1">Facturas y justificantes  - Viajes y dietas</h4><p>Cuando t<strong>ipoOperacion=='FJV'</strong> (el campo reducida dará igual porque en el detalle siempre se muestran todos los campos) los campos a devolver en la Universidad de Murcia serán:</p><ul><li>Nº de factura</li><li>Nº de comisión de servicio</li><li>Perceptor/Proveedor</li><li>Identificador Perceptor/Proveedor</li><li>Concepto/ Motivo del viaje</li><li>Fecha contabilización</li><li>Fecha pago</li><li>Itinerario viaje</li><li>Destino</li><li>Fecha salida - Fecha vuelta</li><li>Medio de locomoción</li><li>Importe locomoción</li><li>Importe alojamiento</li><li>Importe dietas</li><li>Otros gastos</li><li>Importe total</li><li>Observaciones locomoción</li><li>Observaciones alojamiento</li><li>Observaciones dietas</li></ul><h4 id="SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Personalcontratado.1">Facturas y justificantes  - Personal contratado</h4><p>Cuando <strong>tipoOperacion=='FJP'</strong> (el campo reducida dará igual porque en el detalle siempre se muestran todos los campos) los campos a devolver en la Universidad de Murcia serán:</p><ul><li class="western">Nº documento identificación</li><li class="western">Nombre y apellidos</li><li class="western">Concepto</li><li>Fecha contabilización</li><li class="western">Fecha pago</li><li class="western">Importe</li><li class="western">Fecha inicio del contrato</li><li class="western">Fecha fin del contrato</li><li class="western">Categoría laboral</li><li class="western">Jornada semanal o diaria</li></ul><h3 id="SGIESBSGEEjecucióneconómica-CamposDetalledatoeconómico-Validacióndegastos">Campos Detalle dato económico - Validación de gastos</h3><p>Los campos a devolver en la Universidad de Murcia serán:</p><ul><li>Tipo documento</li><li>Nº documento</li><li>Importe imputado</li><li>Importe total</li><li>Descripción</li><li>Proveedor</li></ul><h3 id="SGIESBSGEEjecucióneconómica-Ejemplos">Ejemplos</h3><h4 id="SGIESBSGEEjecucióneconómica-Ejecuciónpresupuestaria-Estadoactual-Columnas(/ejecucion-economica/columnas)">Ejecución presupuestaria - Estado actual - Columnas (/ejecucion-economica/columnas)</h4><p><br/></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Parámetros</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">proyectoId==&quot;123456&quot;;anualidad=in=(&quot;2020&quot;,&quot;2021&quot;);tipoOperacion==&quot;EPA&quot;</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Respuesta </b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">[
+ {
+   &quot;id&quot;: &quot;1&quot;
+   &quot;nombre&quot;:&quot;Importe presupuestado&quot;
+   &quot;acumulable&quot;: &quot;true&quot;
+  },
+  {
+   &quot;id&quot;:&quot;2&quot;,
+   &quot;nombre&quot;:&quot;Importe actual&quot;,
+   &quot;acumulable&quot;: &quot;true&quot;
+  },
+  {
+   &quot;id&quot;:&quot;3&quot;,
+   &quot;nombre&quot;:&quot;Importe disponible para gastos&quot;,
+   &quot;acumulable&quot;: &quot;true&quot;
+  },
+  {
+   &quot;id&quot;:&quot;4&quot;,
+   &quot;nombre&quot;:&quot;Derechos&quot;,
+   &quot;acumulable&quot;: &quot;true&quot;
+  },
+  {
+   &quot;id&quot;:&quot;5&quot;,
+   &quot;nombre&quot;:&quot;Cobros&quot;,
+   &quot;acumulable&quot;: &quot;true&quot;
+  }
+
+]</pre>
+</div></div><p><br/></p><h4 id="SGIESBSGEEjecucióneconómica-Ejecuciónpresupuestaria-Estadoactual(/ejecucion-economica)">Ejecución presupuestaria - Estado actual  (/ejecucion-economica)</h4><p><br/></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Parámetros</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">proyectoId==&quot;123456&quot;;anualidad=in=(&quot;2020&quot;,&quot;2021&quot;);tipoOperacion==&quot;EPA&quot;</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Respuesta</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">[
+{
+	&quot;proyectoId&quot;:&quot;123456&quot;,
+	&quot;partidaPresupuestaria&quot;: &quot;8002B541A64406&quot;
+	&quot;anualidad&quot;:&quot;2020&quot;,
+	&quot;tipo&quot;:&quot;Gasto&quot;,
+	&quot;columnas&quot;: {
+     	&quot;1&quot;:2000,
+     	&quot;2&quot;:500,
+     	&quot;3&quot;:1000.50,
+     	&quot;4&quot;:1000.50,
+     	&quot;5&quot;:1000.50
+     	}
+ 
+},
+{
+	&quot;proyectoId&quot;:&quot;123456&quot;,
+	&quot;partidaPresupuestaria&quot;: &quot;8002B541A64406&quot;
+	&quot;anualidad&quot;:&quot;2021&quot;,
+	&quot;tipo&quot;:&quot;Gasto&quot;,
+	&quot;columnas&quot;: {
+        &quot;1&quot;:2000,
+     	&quot;2&quot;:500.50,
+     	&quot;3&quot;:1000.50,
+     	&quot;4&quot;:1000.50,
+     	&quot;5&quot;:1000.50
+         }
+}
+]
+
+</pre>
+</div></div><h4 id="SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Facturasygastos-Columnas(reducidafalse)(/ejecucion-economica/columnas)">Facturas y justificantes - Facturas y gastos - Columnas (reducida false) (/ejecucion-economica/columnas)</h4><p><br/></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Parámetros</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">proyectoId==&quot;123456&quot;;anualidad=in=(&quot;2020&quot;,&quot;2021&quot;);fechaPago=bt=(&quot;2020-12-01T00:00:00Z&quot;,&quot;2021-01-31T23:59:59Z&quot;);tipoOperacion==&quot;FJF&quot;;reducida==&quot;false&quot;</pre>
+</div></div><p><br/></p><p><br/></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Respuesta </b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">[
+ {
+   &quot;id&quot;: &quot;1&quot;
+   &quot;nombre&quot;:&quot;Nº de registro&quot;
+   &quot;acumulable&quot;: &quot;false&quot;
+   
+  },
+  {
+   &quot;id&quot;:&quot;2&quot;,
+   &quot;nombre&quot;:&quot;Tipo de operación&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  
+  },
+  {
+   &quot;id&quot;:&quot;3&quot;,
+   &quot;nombre&quot;:&quot;Proveedor&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  
+  },
+  {
+   &quot;id&quot;:&quot;4&quot;,
+   &quot;nombre&quot;:&quot;Nº de registro del proveedor&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  },
+  {
+   &quot;id&quot;:&quot;5&quot;,
+   &quot;nombre&quot;:&quot;Concepto de la Fac./Gasto&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  },
+  {
+   &quot;id&quot;:&quot;6&quot;,
+   &quot;nombre&quot;:&quot;Importe&quot;,
+   &quot;acumulable&quot;: &quot;true&quot;
+  },
+  {
+   &quot;id&quot;:&quot;7&quot;,
+   &quot;nombre&quot;:&quot;Importe IVA&quot;,
+   &quot;acumulable&quot;: &quot;true&quot;
+  },
+  {
+   &quot;id&quot;:&quot;8&quot;,
+   &quot;nombre&quot;:&quot;Fecha contabilización&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  },
+  {
+   &quot;id&quot;:&quot;9&quot;,
+   &quot;nombre&quot;:&quot;Fecha pago&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  },
+  {
+   &quot;id&quot;:&quot;10&quot;,
+   &quot;nombre&quot;:&quot;Nº documento de gasto&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  },
+  {
+   &quot;id&quot;:&quot;11&quot;,
+   &quot;nombre&quot;:&quot;Nº de señalamiento&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  }
+
+]</pre>
+</div></div><p><br/></p><h4 id="SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Facturasygastos(reducidaafalse)(/ejecucion-economica)">Facturas y justificantes - Facturas y gastos (reducida a false) (/ejecucion-economica)</h4><p><br/></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Parámetros</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">proyectoId==&quot;123456&quot;;anualidad=in=(&quot;2020&quot;,&quot;2021&quot;);fechaPago=bt=(&quot;2020-12-01&quot;,&quot;2021-01-31&quot;);ttipoOperacion==&quot;FJF&quot;;reducida==&quot;false&quot;</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Respuesta</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">[
+{
+	&quot;id&quot;:&quot;11-2020-Factura&quot;
+	&quot;proyectoId&quot;:&quot;123456&quot;,
+	&quot;partidaPresupuestaria&quot;: &quot;8002B541A64406&quot;,
+    &quot;fechaDevengo&quot;: &quot;20/12/2020&quot;,
+    &quot;clasificacionSGE&quot;: {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;nombre&quot;: &quot;Fungible&quot;,
+     } ,
+     &quot;codigoEconomico&quot;: {
+   	 	&quot;id&quot;: &quot;FU&quot;,
+    	&quot;nombre&quot;: &quot;Fungible&quot;,
+    	&quot;tipo&quot;: &quot;Gasto&quot;
+		}
+	&quot;anualidad&quot;:&quot;2020&quot;,
+	&quot;tipo&quot;:&quot;Gasto&quot;,
+	&quot;columnas&quot;: {
+     	&quot;1&quot;:&quot;1243&quot;,
+  		&quot;2&quot;:&quot;Factura&quot;,
+ 		&quot;3&quot;:&quot;Proveedor1&quot;,
+  		&quot;4&quot;:&quot;24555&quot;,
+  		&quot;5&quot;:&quot;Gasto de material inventariable&quot;,
+ 		&quot;6&quot;:500.00,
+  		&quot;7&quot;:0.00,
+  		&quot;8&quot;:&quot;20/12/2020&quot;,
+  		&quot;9&quot;:&quot;20/12/2020&quot;,
+ 		&quot;10&quot;:&quot;11222&quot;,
+  		&quot;11&quot;:&quot;4567&quot;
+  		}
+},
+{
+	&quot;id&quot;:&quot;12-2020-Factura&quot;
+	&quot;proyectoId&quot;:&quot;123456&quot;,
+	&quot;partidaPresupuestaria&quot;: &quot;8002B541A64406&quot;,
+    &quot;fechaDevengo&quot;: &quot;20/12/2020&quot;,
+    &quot;clasificacionSGE&quot;: {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;nombre&quot;: &quot;Fungible&quot;,
+     } ,   
+    &quot;codigoEconomico&quot;: {
+    	&quot;id&quot;: &quot;FU&quot;,
+    	&quot;nombre&quot;: &quot;Fungible&quot;,
+    	&quot;tipo&quot;: &quot;Gasto&quot;
+		}
+	&quot;anualidad&quot;:&quot;2020&quot;,
+	&quot;tipo&quot;:&quot;Gasto&quot;,
+	&quot;columnas&quot;:{
+     	&quot;1&quot;:&quot;1243&quot;,
+  		&quot;2&quot;:&quot;Factura&quot;,
+ 		&quot;3&quot;:&quot;Proveedor1&quot;,
+  		&quot;4&quot;:&quot;24555&quot;,
+  		&quot;5&quot;:&quot;Gasto de material inventariable&quot;,
+ 		&quot;6&quot;:500.00,
+  		&quot;7&quot;:0.00,
+  		&quot;8&quot;:&quot;20/12/2020&quot;,
+  		&quot;9&quot;:&quot;20/12/2020&quot;,
+ 		&quot;10&quot;:&quot;11222&quot;,
+  		&quot;11&quot;:&quot;4567&quot;
+  		}
+}
+]
+</pre>
+</div></div><h4 id="SGIESBSGEEjecucióneconómica-Facturasyjustificantes-Facturasygastos-Detalle(/ejecucion-economica/{id})">Facturas y justificantes - Facturas y gastos - Detalle (/ejecucion-economica/{id})</h4><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Parámetros</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">tipoOperacion==&quot;FGF&quot;</pre>
+</div></div><p><br/><br/></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Respueta</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">{
+    &quot;id&quot;:&quot;11-2020-Factura&quot;
+    &quot;proyectoId&quot;:&quot;123456&quot;,
+    &quot;partidaPresupuestaria&quot;: &quot;8002B541A64406&quot;,
+    &quot;fechaDevengo&quot;: &quot;20/12/2020&quot;,
+    &quot;clasificacionSGE&quot;: {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;nombre&quot;: &quot;Fungible&quot;,
+     } , 
+     &quot;codigoEconomico&quot;: {
+        &quot;id&quot;: &quot;FU&quot;,
+        &quot;nombre&quot;: &quot;Fungible&quot;,
+        &quot;tipo&quot;: &quot;Gasto&quot;
+        }
+    &quot;anualidad&quot;:&quot;2020&quot;,
+    &quot;tipo&quot;:&quot;Gasto&quot;,
+    &quot;campos&quot;:[
+        {
+            &quot;nombre&quot;:&quot;Nº registro&quot;,
+            &quot;valor&quot;:&quot;1243&quot;
+        },
+        {
+            &quot;nombre&quot;:&quot;Tipo operación&quot;,
+            &quot;valor&quot;:&quot;Factura&quot;
+        },
+        {
+            &quot;nombre&quot;:&quot;Proveedor&quot;,
+            &quot;valor&quot;:&quot;Proveedor1&quot;
+        },
+        {
+            &quot;nombre&quot;:&quot;Nº de registro del proveedor&quot;,
+            &quot;valor&quot;:&quot;24555&quot;
+        },
+        {
+            &quot;nombre&quot;:&quot;Concepto de la Fac/Gasto&quot;,
+            &quot;valor&quot;:&quot;Gasto de material inventariable&quot;
+        },
+        {
+            &quot;nombre&quot;:&quot;Importe&quot;,
+            &quot;valor&quot;:&quot;500.00&quot;
+        },
+        {
+            &quot;nombre&quot;:&quot;Importe IVA&quot;,
+            &quot;valor&quot;:&quot;0.00&quot;
+        },
+        {
+            &quot;nombre&quot;:&quot;Fecha contabilización&quot;,
+            &quot;valor&quot;:&quot;20/12/2020&quot;
+        },
+        {
+            &quot;nombre&quot;:&quot;Fecha pago&quot;,
+            &quot;valor&quot;:&quot;20/12/2020&quot;
+        },
+        {
+            &quot;nombre&quot;:&quot;Nº documento de gasto&quot;,
+            &quot;valor&quot;:&quot;11222&quot;
+        },
+        {
+            &quot;nombre&quot;:&quot;Nº de señalamiento&quot;,
+            &quot;valor&quot;:&quot;4567&quot;
+        }
+    ]
+     
+}</pre>
+</div></div><p><br/></p><h4 id="SGIESBSGEEjecucióneconómica-Validacionesdegastospendientes-Columnas(conreducidaatrue)(/gastos/columnas)"><strong>Validaciones de gastos pendientes - Columnas (con reducida a true) (/gastos/columnas)</strong></h4><p><br/></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Parámetros</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">proyectoId==&quot;123456&quot;;estado==&quot;Pendiente&quot;;reducida==&quot;true&quot;</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Respuesta</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">[
+ {
+   &quot;id&quot;: &quot;1&quot;
+   &quot;nombre&quot;:&quot;Tipo documento&quot;
+   &quot;acumulable&quot;: &quot;false&quot;
+  },
+  {
+   &quot;id&quot;:&quot;2&quot;,
+   &quot;nombre&quot;:&quot;Importe imputado&quot;,
+   &quot;acumulable&quot;: &quot;true&quot;
+  },
+  {
+   &quot;id&quot;:&quot;3&quot;,
+   &quot;nombre&quot;:&quot;Proveedor&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  }
+  
+]</pre>
+</div></div><h4 id="SGIESBSGEEjecucióneconómica-Validacionesdegastospendientes-Columnas(conreducidaafalse)(/gastos/columnas)"><strong>Validaciones de gastos pendientes - Columnas (con reducida a false) (/gastos/columnas)</strong></h4><p><br/></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Parámetros</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">proyectoId==&quot;123456&quot;;estado==&quot;Pendiente&quot;;reducida==&quot;false&quot;</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Respuesta</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">[
+ {
+   &quot;id&quot;: &quot;1&quot;
+   &quot;nombre&quot;:&quot;Tipo documento&quot;
+   &quot;acumulable&quot;: &quot;false&quot;
+  },
+  {
+   &quot;id&quot;:&quot;2&quot;,
+   &quot;nombre&quot;:&quot;Nº documento&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  },
+  {
+   &quot;id&quot;:&quot;3&quot;,
+   &quot;nombre&quot;:&quot;Importe imputado&quot;,
+   &quot;acumulable&quot;: &quot;true&quot;
+  },
+  {
+   &quot;id&quot;:&quot;4&quot;,
+   &quot;nombre&quot;:&quot;Importe total&quot;,
+   &quot;acumulable&quot;: &quot;true&quot;
+  },
+  {
+   &quot;id&quot;:&quot;5&quot;,
+   &quot;nombre&quot;:&quot;Descripción&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  },
+  {
+   &quot;id&quot;:&quot;6&quot;,
+   &quot;nombre&quot;:&quot;Proveedor&quot;,
+   &quot;acumulable&quot;: &quot;false&quot;
+  }
+  
+]</pre>
+</div></div><h4 id="SGIESBSGEEjecucióneconómica-Validacionesdegastospendientes(conreducidaatrue)(/gastos)"><strong>Validaciones de gastos pendientes </strong><strong>(con reducida a true)</strong> <strong>(/gastos)</strong></h4><p><strong><br/></strong></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Parámetros</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">proyectoId==&quot;123456&quot;;estado==&quot;Pendiente&quot;;reducida==&quot;true&quot;</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Respuesta</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">[
+{
+	&quot;id&quot;:&quot;1&quot;,
+	&quot;proyectoId&quot;:&quot;123456&quot;,
+	&quot;partidaPresupuestaria&quot;: &quot;08002B541A64406&quot;,
+    &quot;fechaDevengo&quot;: &quot;10/11/2021&quot;,
+    &quot;clasificacionSGE&quot;: {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;nombre&quot;: &quot;Fungible&quot;,
+     } , 
+    &quot;codigoEconomico&quot;: {
+    	&quot;id&quot;: &quot;VI&quot;,
+    	&quot;nombre&quot;: &quot;Viajes y dietas&quot;,
+    	&quot;tipo&quot;: &quot;Gasto&quot;
+		},
+	&quot;anualidad&quot;:&quot;2021&quot;,
+    &quot;tipo&quot;:&quot;Gasto&quot;,
+	&quot;columnas&quot;: {
+   		&quot;1&quot;:&quot;Factura&quot;,
+  		&quot;2&quot;:&quot;1000.50&quot;,
+  		&quot;3&quot;:&quot;Empresa S.A&quot;
+  		}
+},
+{
+	&quot;id&quot;:&quot;2&quot;,
+	&quot;proyectoId&quot;:&quot;123456&quot;,
+	&quot;partidaPresupuestaria&quot;: &quot;08002B541A64406&quot;,
+    &quot;fechaDevengo&quot;: &quot;07/11/2021&quot;,
+    &quot;clasificacionSGE&quot;: {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;nombre&quot;: &quot;Fungible&quot;,
+     } ,
+    &quot;codigoEconomico&quot;: {
+    	&quot;id&quot;: &quot;VI&quot;,
+    	&quot;nombre&quot;: &quot;Viajes y dietas&quot;,
+    	&quot;tipo&quot;: &quot;Gasto&quot;
+		}
+	&quot;anualidad&quot;:&quot;2021&quot;,
+    &quot;tipo&quot;:&quot;Gasto&quot;,
+	&quot;columnas&quot; {
+   		&quot;1&quot;:&quot;Factura&quot;,
+  		&quot;2&quot;:&quot;1000.50&quot;,
+  		&quot;3&quot;:&quot;Empresa S.A&quot;
+  		}
+}
+]</pre>
+</div></div><h4 id="SGIESBSGEEjecucióneconómica-Validacionesdegastospendientes(conreducidaafalse)(/gastos)"><strong>Validaciones de gastos pendientes </strong><strong>(con reducida a false)</strong> <strong>(/gastos)</strong></h4><p><strong><br/></strong></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Parámetros</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">proyectoId==&quot;123456&quot;;estado==&quot;Pendiente&quot;;reducida==&quot;false&quot;</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Respuesta</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">[
+{
+	&quot;id&quot;:&quot;1&quot;,
+	&quot;proyectoId&quot;:&quot;123456&quot;,
+	&quot;partidaPresupuestaria&quot;: &quot;08002B541A64406&quot;,
+    &quot;fechaDevengo&quot;: &quot;10/11/2021&quot;,
+    &quot;clasificacionSGE&quot;: {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;nombre&quot;: &quot;Fungible&quot;,
+     } ,  
+    &quot;codigoEconomico&quot;: {
+    	&quot;id&quot;: &quot;VI&quot;,
+    	&quot;nombre&quot;: &quot;Viajes y dietas&quot;,
+    	&quot;tipo&quot;: &quot;Gasto&quot;
+		},
+	&quot;anualidad&quot;:&quot;2021&quot;,
+    &quot;tipo&quot;:&quot;Gasto&quot;,
+	&quot;columnas&quot;: {
+   		&quot;1&quot;:&quot;Factura&quot;,
+  		&quot;2&quot;:&quot;122-45&quot;,
+  		&quot;3&quot;:&quot;700.00&quot;,
+        &quot;4&quot;:&quot;800.50&quot;,
+        &quot;5&quot;:&quot;Descripción del gasto&quot;,
+        &quot;6&quot;:&quot;Empresa S.A&quot;
+  		}
+},
+{
+	&quot;id&quot;:&quot;2&quot;,
+	&quot;proyectoId&quot;:&quot;123456&quot;,
+	&quot;partidaPresupuestaria&quot;: &quot;08002B541A64406&quot;,
+    &quot;fechaDevengo&quot;: &quot;10/11/2021&quot;,
+    &quot;clasificacionSGE&quot;: {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;nombre&quot;: &quot;Fungible&quot;,
+     } ,  
+  &quot;codigoEconomico&quot;: {
+    	&quot;id&quot;: &quot;VI&quot;,
+    	&quot;nombre&quot;: &quot;Viajes y dietas&quot;,
+    	&quot;tipo&quot;: &quot;Gasto&quot;
+		}
+	&quot;anualidad&quot;:&quot;2021&quot;,
+    &quot;tipo&quot;:&quot;Gasto&quot;,
+	&quot;columnas&quot; {
+   		&quot;1&quot;:&quot;Factura&quot;,
+  		&quot;2&quot;:&quot;122-46&quot;,
+  		&quot;3&quot;:&quot;600.00&quot;,
+        &quot;4&quot;:&quot;1800.50&quot;,
+        &quot;5&quot;:&quot;Descripción del gasto&quot;,
+        &quot;6&quot;:&quot;Empresa S.A&quot;
+  		}
+}
+]</pre>
+</div></div><h4 id="SGIESBSGEEjecucióneconómica-Detallegasto(/gastos/{id})"><strong>Detalle gasto (/gastos/{id})</strong></h4><p><br/></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Respuesta</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">&quot;id&quot;:&quot;2&quot;,
+&quot;proyectoId&quot;:&quot;123456&quot;,
+&quot;partidaPresupuestaria&quot;: &quot;08002B541A64406&quot;,
+&quot;fechaDevengo&quot;: &quot;10/11/2021&quot;,
+ &quot;clasificacionSGE&quot;: {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;nombre&quot;: &quot;Fungible&quot;,
+     } ,  
+ &quot;codigoEconomico&quot;: {
+    &quot;id&quot;: &quot;VI&quot;,
+    &quot;nombre&quot;: &quot;Viajes y dietas&quot;,
+    &quot;tipo&quot;: &quot;Gasto&quot;
+    }
+&quot;anualidad&quot;:&quot;2021&quot;,
+&quot;tipo&quot;:&quot;Gasto&quot;,
+&quot;campos&quot;:[
+  {
+   &quot;nombre&quot;:&quot;Tipo documento&quot;,
+   &quot;valor&quot;:&quot;Factura&quot;
+  },
+  {
+   &quot;nombre&quot;:&quot;Nº documento&quot;,
+   &quot;valor&quot;:&quot;122-46&quot;
+  },
+  {
+   &quot;nombre&quot;:&quot;Importe imputado&quot;,
+   &quot;valor&quot;:&quot;600.00&quot;
+  },
+  {
+   &quot;nombre&quot;:&quot;Importe total&quot;,
+   &quot;valor&quot;:&quot;1800.50&quot;
+  },
+  {
+   &quot;nombre&quot;:&quot;Descripción&quot;,
+   &quot;valor&quot;:&quot;Descripción del gasto&quot;
+  },
+  {
+   &quot;nombre&quot;:&quot;Proveedor&quot;,
+   &quot;valor&quot;:&quot;Empresa S.A&quot;
+  }
+]
+&quot;documentos&quot;:[
+  {
+   &quot;id&quot;: &quot;11&quot;,  
+   &quot;nombre&quot;:&quot;Factura&quot;,
+   &quot;nombreFichero&quot;:&quot;factura.pdf&quot;
+  },
+  {
+    &quot;id&quot;: &quot;12&quot;, 
+    &quot;nombre&quot;:&quot;Otro documento&quot;,
+    &quot;nombreFichero&quot;:&quot;otroDocumento.pdf&quot;
+  }
+]
+
+</pre>
+</div></div><p><br/></p><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/598835320.jpg">ESB SGE Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/598835321.jpg">ESB SGE Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/598835319.jpg">ESB SGE Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/597866158.jpg">ESB SGE Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/597866181.jpg">ESB SGE Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/597866121.jpg">ESB SGE Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/597857248.jpg">ESB SGE Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/598835322.jpg">ESB SGE Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/597860326.jpg">ESB SGE Logical Model Ejecución económica.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/597860342.jpg">ESB SGE Logical Model Ejecución económica.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/597860236.jpg">ESB SGE Logical Model Ejecución económica.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/597860228.jpg">ESB SGE Logical Model Ejecución económica.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/597868389.jpg">ESB SGE Logical Model Ejecución económica.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853496/597858113.jpg">ESB SGE Logical Model Ejecución económica.jpg</a> (image/jpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:37</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

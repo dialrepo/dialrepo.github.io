@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Tecnologías</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Tecnologías
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Reyes Hernández-Mora Martínez</span>, last modified on may 26, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h2 class="p1" id="Tecnologías-Librerías"><strong>Librerías</strong></h2><p>Para poder acceder a la información es necesario tener conocimientos básicos de programación.</p><p>Se parte de <a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=662438145" rel="nofollow">https://confluence.um.es/confluence/pages/viewpage.action?pageId=662438145</a> que es una referencia a la tecnologías del SGI Hércules y  del conocimiento de los proyectos de Spring Boot para back y de Angular para el front en el sentido de que ambos utilizan gestores de paquetes/dependencias que en un archivo te identifica todas las librerías que usa.</p><p>A continuación se proporcionan dos ejemplos de como se obtiene la información, uno de back y otro de front:</p><p style="margin-left: 40.0px;">1.- En eGithub está  el pom de csp <a class="external-link" href="https://urldefense.com/v3/__https:/github.com/HerculesCRUE/SGI/blob/main/sgi-csp-service/pom.xml__;!!D9dNQwwGXtA!Q8c7VzfC1K7ncTDJQIIdODRWYVD3WGWHHCO1bGZVxks6OqfK0zhXCr9gIUkqkT0W6jItRWZMkqwtbZ2bqsalDQg$" rel="nofollow">https://github.com/HerculesCRUE/SGI/blob/main/sgi-csp-service/pom.xml</a></p><p style="margin-left: 40.0px;">y en las  dependencias están los artefactos que usa este servicio: commons-lang3, hibernate-jpamodelgen, hibernate-validator, …</p><p style="margin-left: 40.0px;">2.- En los proyectos de angular las dependencias estan en el archivo package.json <a class="external-link" href="https://urldefense.com/v3/__https:/github.com/HerculesCRUE/SGI/blob/main/sgi-framework-angular/package.json__;!!D9dNQwwGXtA!Q8c7VzfC1K7ncTDJQIIdODRWYVD3WGWHHCO1bGZVxks6OqfK0zhXCr9gIUkqkT0W6jItRWZMkqwtbZ2brZTCjDo$" rel="nofollow">https://github.com/HerculesCRUE/SGI/blob/main/sgi-framework-angular/package.json</a></p><p style="margin-left: 40.0px;">Por ejemplo:</p><div class="table-wrap"><table class="wrapped confluenceTable" style="margin-left: 40.0px;"><colgroup><col/><col/></colgroup><tbody><tr><td class="confluenceTd"><p>    &quot;@angular/animations&quot;:~11.1.1&quot;,</p></td><td class="confluenceTd"><p><br/></p></td></tr><tr><td colspan="2" class="confluenceTd"><p>    &quot;@angular/common&quot;: &quot;~11.1.1&quot;,</p></td></tr><tr><td colspan="2" class="confluenceTd"><p>    &quot;@angular/compiler&quot;: &quot;~11.1.1&quot;,</p></td></tr><tr><td colspan="2" class="confluenceTd"><p>    &quot;@angular/core&quot;: &quot;~11.1.1&quot;,</p></td></tr><tr><td colspan="2" class="confluenceTd"><p>    &quot;@angular/forms&quot;: &quot;~11.1.1&quot;,</p></td></tr><tr><td colspan="2" class="confluenceTd"><p>    &quot;@angular/platform-browser&quot;: &quot;~11.1.1&quot;,</p></td></tr><tr><td colspan="2" class="confluenceTd"><p>    &quot;@angular/platform-browser-dynamic&quot;: &quot;~11.1.1&quot;,</p></td></tr><tr><td colspan="2" class="confluenceTd"><p>    &quot;@angular/router&quot;: &quot;~11.1.1&quot;,</p></td></tr><tr><td colspan="2" class="confluenceTd"><p>    &quot;keycloak-js&quot;: &quot;^11.0.0&quot;,</p></td></tr><tr><td colspan="2" class="confluenceTd"><p>    &quot;rxjs&quot;: &quot;^6.5.5&quot;,</p></td></tr><tr><td colspan="2" class="confluenceTd"><p>    &quot;tslib&quot;: &quot;^2.0.0&quot;,</p></td></tr><tr><td colspan="2" class="confluenceTd"><p>    &quot;zone.js&quot;: &quot;~0.10.2&quot;</p></td></tr></tbody></table></div><h2 class="p1" id="Tecnologías-Conceptosprincipales">Conceptos principales</h2><p class="p1">La filosofía del sistema está basada en tres conceptos principales:</p><ul style="list-style-type: square;"><li class="p1">Principio de DATO ÚNICO: orientado a evitar duplicidad de esfuerzos, de fuentes de datos y mantener</li></ul><p class="p1">una mejor localización de la información.</p><ul style="list-style-type: square;"><li class="p1">Principio de MODULARIDAD: el sistema se presenta como soporte para un conjunto de funcionalidades</li></ul><p class="p1">de diferente complejidad, con múltiples fases que pueden funcionar de forma autónoma.</p><ul style="list-style-type: square;"><li class="p1">Principio de EVOLUCIÓN CONTINUA: en un entorno cambiante.</li></ul><p class="p1">Nos basamos en los siguientes fundamentos:</p><ul style="list-style-type: square;"><li class="p1"> Los desarrollos llevados a cabo en este proyecto emplearán el patrón Modelo Vista Controlador (MVC)</li></ul><p class="p1">que separa los datos de una aplicación, la interfaz de usuario y la lógica de negocio en tres capas o</p><p class="p1">componentes distintos</p><p class="p1" style="margin-left: 40.0px;">Modelo: Esta es la representación específica de la información con la cual el sistema opera. Con</p><p class="p1" style="margin-left: 40.0px;">el fin de independizarse del sistema de gestión de bases de datos (SGBD) subyacente y facilitar</p><p class="p1" style="margin-left: 40.0px;">la implantación del sistema se utilizará un ORM (Object-Relational Mapping) como Hibernate.</p><p class="p1" style="margin-left: 40.0px;">De esta manera, se permite de forma transparente el uso de diferentes bases de datos (Oracle,</p><p class="p1" style="margin-left: 40.0px;">PostgreSQL, SQLServer, …) como unidad de persistencia.</p><p class="p1" style="margin-left: 40.0px;">Vista: Esta presenta el modelo en un formato adecuado para interactuar, usualmente la interfaz</p><p class="p1" style="margin-left: 40.0px;">de usuario. Para la vista web se propone usar Angular (comúnmente llamado &quot;Angular 2+&quot; o</p><p class="p1" style="margin-left: 40.0px;">&quot;Angular 2&quot;), es un framework para aplicaciones web desarrollado en TypeScript, de código</p><p class="p1" style="margin-left: 40.0px;">abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una</p><p class="p1" style="margin-left: 40.0px;">sola página. Se libera así de carga al servidor ya que este solo se encarga de procesar peticiones</p><p class="p1" style="margin-left: 40.0px;">JSON desde y hacia el explorador. El diseño del sistema se realizará de forma responsiva</p><p class="p1" style="margin-left: 40.0px;">pudiendo verse de forma correcta en diferentes dispositivos y resoluciones, fijadas al inicio.</p><p class="p1" style="margin-left: 40.0px;">o Controlador: Este responde a eventos, usualmente acciones del usuario, e invoca peticiones al</p><p class="p1" style="margin-left: 40.0px;">modelo y, probablemente, a la vista.</p><p class="p1">Arquitectura basada en microservicios, la cual permite distribuir software de calidad con mayor rapidez,</p><p class="p1">reaccionando de una manera más rápida a cambios de negocio, saturación de ciertos servicios y</p><p class="p1">minimizando posibles problemas.</p><ul style="list-style-type: square;"><li class="p1">La distribución del sistema se podrá realizar de dos maneras dependiendo de las necesidades y</li></ul><p class="p1">características de cada implantación (en ambos casos se dota al sistema de características escalables</p><p class="p1">que le permiten soportar entornos en alta disponibilidad y altamente clusterizables):</p><p class="p1">o Como aplicación J2EE que se despliegue en un clúster de servidores de aplicaciones.</p><p class="p1">o Distribuida en contenedores utilizando tecnologías como Docker (para su ejecución) y</p><p class="p1">Kubernetes (para el control y carga del sistema).</p><ul style="list-style-type: square;"><li class="p1">Diseño basado en los principios de alta capacidad, alta disponibilidad y alto rendimiento, evitando tareas</li></ul><p class="p1">que requieran corte de servicio, permitiendo incorporación en caliente nuevos registros y procedimientos</p><p class="p1">Facilidad de cambio, logrando la transparencia de la tecnología y, en la medida de lo posible, hacer uso</p><p class="p1">de estándares industriales para interfaces clave.</p><ul style="list-style-type: square;"><li class="p1">Uso de estándares abiertos, evitando formatos y protocolos privativos.</li></ul><ul style="list-style-type: square;"><li class="p1">Utilización de componentes y productos de terceros publicados bajo licencias Open Source y gratuitas.</li></ul><p class="p1">En general la arquitectura de la aplicación propuesta a alto nivel seria la siguiente:</p><p class="p1"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" draggable="false" height="250" src="attachments/662438145/662438156.png" data-image-src="attachments/662438145/662438156.png" data-unresolved-comment-count="0" data-linked-resource-id="662438156" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Captura de Pantalla 2023-02-09 a las 10.52.19.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="662438145" data-linked-resource-container-version="4" alt=""></span></p><p class="p1"><br/></p><ul style="list-style-type: square;"><li class="p1">Gateway – Puerta de entrada al sistema que se encarga de manejar el tráfico web del sistema, servir el</li></ul><p class="p1">contenido estático de la aplicación Angular.</p><ul style="list-style-type: square;"><li class="p1">Registry – Aplicación que se encarga de registrar la información de las aplicaciones (microservicios)</li></ul><p class="p1">existentes en el despliegue.</p><ul style="list-style-type: square;"><li class="p1">Servidor de autenticación y autorización - UAA - se encarga de autenticar y autorizar a los usuarios en el</li></ul><p class="p1">sistema siguiendo un protocolo OAuth2.</p><ul style="list-style-type: square;"><li class="p1">Microservicios – Son aplicaciones autocontenidas construidas con Spring Boot y dockerizadas que se</li></ul><p class="p1">encargan de manejar las peticiones de los clientes. Envían peticiones JSON y son manejados para</p><p class="p1">lanzarse en paralelo para soportar carga extra.</p><ul style="list-style-type: square;"><li class="p1">Con el fin de monitorizar, auditar y gestionar el sistema se utiliza el stack tecnológico ELK (ElastichSearch,</li></ul><p class="p1">Logstash y Kibana).</p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/662438145/662438156.png">Captura de Pantalla 2023-02-09 a las 10.52.19.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:56</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

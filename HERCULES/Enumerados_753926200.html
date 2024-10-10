@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Enumerados</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853531.html">Desarrollo y configuración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853781.html">Estándares de desarrollo</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="753926198.html">Estándares internos</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Enumerados
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span> on jun 14, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="Enumerados-Reglasgenerales">Reglas generales</h1><p>El nombre del enumerado será como el de cualquier otra clase. Se aplicará <em>camel case</em>.</p><p>Para los posibles valores aplican las siguientes reglas:</p><ul><li>Nombre en mayúsculas</li><li>Separación de palabras mediante guión bajo (_)</li><li>Sin caracteres especiales o de puntuación</li><li>Breves pero significativos, no más de 20 caracteres de longitud</li></ul><p>Si el ámbito del enumerado está acotado a una clase se declara dentro de la Clase, si es común a varias clases, entonces se declara en la parte común.</p><h1 id="Enumerados-DeclaraciónenSpring">Declaración en Spring</h1><p>Siempre deberán ser enumerados básicos, sin ningún tipo de extensión o métodos adicionles.</p><p>Cuando el ámbito del enumerado sea el de la clase, como por ejemplo el <strong>Estado</strong>, se declararía dentro de clase a continuación de cualquier constante o atributo estático.</p><p>Cuando el ámbito sea más amplio y se utilice en más de una clase, se declararía dentro del paquete <strong>org.crue.hercules.sgi.&lt;modulo&gt;.enums</strong></p><p>El mapping de un atributo de la entidad hacía el enumerado se realizará mediante la anotación  <em><span style="color: rgb(0,0,0);">@</span><span style="color: rgb(0,0,255);">Enumerated</span><span style="color: rgb(0,0,0);">(EnumType.STRING)</span></em></p><p><span style="color: rgb(0,0,0);">Ejemplo:</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">public class Entidad {
+  private static final long serialVersionUID = 1L;
+
+  public enum Estado {
+	BORRADOR,
+    REGISTRADA;
+  }
+  ...
+  @Column(name = &quot;estado&quot;, length = 20, nullable = true)
+  @Enumerated(EnumType.STRING)
+  private Estado estado;
+  ...
+}</pre>
+</div></div><h1 id="Enumerados-DeclaraciónenAngular">Declaración en Angular</h1><p>Cuando el ámbito del enumerado sea el de la clase, como por ejemplo el <strong>Estado</strong>, se declararía al final del fichero de definición de la entidad.</p><p>Cuando el ámbito sea más amplio y se utilice en más de una clase, se declararía dentro de la carpeta <strong>src/app/core/enums</strong></p><p>En la declaración se deberá asignar como valor el string que represente valor y deberá coincidir con la declaración realizada en el backend.</p><p>Adicionalmente, se deberá crear el mapping de asignación de los valores a un código de internacionalización. Esto se realiza mediante un Map&lt;T, string&gt; en donde T es el enumerado.</p><p>Para la asignación de los códigos de internacionalización, ver <a class="external-link" href="https://confluence.treelogic.com/display/HERCULES/i18n" rel="nofollow">i18n</a></p><p>Ejemplo:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: Confluence" data-theme="Confluence">export interface Entidad {
+  ...
+  estado: Estado;
+  ...
+}
+...
+export enum Estado {
+  BORRADOR = &#39;BORRADOR&#39;,
+  REGISTRADA = &#39;REGISTRADA&#39;
+}
+
+export const ESTADO_MAP: Map&lt;Estado, string&gt; = new Map([
+  [Estado.BORRADOR, marker(&#39;&lt;modulo&gt;.entidad.estado.BORRADOR&#39;)],
+  [Estado.REGISTRADA, marker(&#39;&lt;modulo&gt;.entidad.estado.REGISTRADA&#39;)]
+]);</pre>
+</div></div><p><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:38</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

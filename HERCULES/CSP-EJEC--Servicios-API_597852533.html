@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CSP-EJEC- Servicios API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853279.html">Diseño</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Componentes_597853271.html">Componentes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---CSP_597852400.html">SGI - CSP</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853498.html">CSP-EJEC: Ejecución económica</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CSP-EJEC- Servicios API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified by <span class='editor'> Usuario desconocido (covadonga.garcia)</span> on jun 09, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 6.75047%;"/><col style="width: 15.7755%;"/><col style="width: 17.2213%;"/><col style="width: 23.0088%;"/><col style="width: 37.2706%;"/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh">Descripción</th></tr></thead><tbody><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/facturas-previstas</td><td class="confluenceTd"><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>proyectoIdSGI</li><li>numeroPrevision</li></ul><p>proyectoIdSGI: identificador del proyecto en el SGI</p></td><td class="confluenceTd">Lista[FacturaPrevista]</td><td class="confluenceTd"><p>Listado de todas las facturas previstas, registradas en el SGI validadas por el IP y con fecha de conformidad (tanto si ya tienen la factura emitida creada en el SGE como sino). Es decir, registros de la tabla &quot;ProyectoFacturacion&quot; del proyecto SGI indicado por parámetro que estén en el estado &quot;Validada&quot; y  con el campo &quot;fechaConformidad&quot; distinto a null.</p><p>La relación entre el calendario de facturación del SGI y facturas emitidas se establecerá en el SGE.</p><p>Este servicio será el utilizado en el SGE en la pantalla de creación de factura emitida para mostrar el listado de items del calendario de facturación creados en el SGI (tendrán que eliminar aquellos items del calendario del SGI que ya tienen factura emitida relacionada o creada). La relación factura emitida (SGE) - número previsión (SGI) se almacenará en el SGE.</p><p>Por cada factura prevista se devolverán los siguientes campos:</p><ul><li>Número previsión (campo &quot;numeroPrevision&quot; de la tabla &quot;ProyectoFacturacion&quot;)</li><li>Identificador del proyecto en el SGI (campo &quot;id&quot; de la tabla &quot;Proyecto&quot;)</li><li>Fecha de emisión (campo &quot;fechaEmision&quot; de la tabla &quot;ProyectoFacturacion&quot;)</li><li>Importe base (campo &quot;importeBase&quot; de la tabla &quot;ProyectoFacturacion&quot;)</li><li>Comentario (campo &quot;comentario&quot; de la tabla &quot;ProyectoFacturacion&quot;)</li></ul></td></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:37</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

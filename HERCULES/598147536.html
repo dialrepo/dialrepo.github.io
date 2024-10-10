@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Sistema de gestión de empresas</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147612.html">APIs de Integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147615.html">SGI: Servicios de terceros que expone</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Sistema de gestión de empresas
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span>, last modified by <span class='editor'> Isabel Martinez Hernandez</span> on oct 27, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728467833370 {padding: 0px;}
+div.rbtoc1728467833370 ul {margin-left: 0px;}
+div.rbtoc1728467833370 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728467833370'>
+<ul class='toc-indentation'>
+<li><a href='#Sistemadegestióndeempresas-Sistemadegestióndeempresas'>Sistema de gestión de empresas</a>
+<ul class='toc-indentation'>
+<li><a href='#Sistemadegestióndeempresas-Entidades'>Entidades</a></li>
+<li><a href='#Sistemadegestióndeempresas-Modelológico'>Modelo lógico</a></li>
+<li><a href='#Sistemadegestióndeempresas-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#Sistemadegestióndeempresas-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#Sistemadegestióndeempresas-Empresa'>Empresa</a></li>
+<li><a href='#Sistemadegestióndeempresas-TipoIdentificador'>TipoIdentificador</a></li>
+<li><a href='#Sistemadegestióndeempresas-'></a></li>
+<li><a href='#Sistemadegestióndeempresas-DatosContacto'>DatosContacto</a></li>
+</ul>
+</li>
+<li><a href='#Sistemadegestióndeempresas-Servicios'>Servicios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><hr/><h1 id="Sistemadegestióndeempresas-Sistemadegestióndeempresas">Sistema de gestión de empresas</h1><h2 id="Sistemadegestióndeempresas-Entidades">Entidades</h2><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 76.4223%;"><colgroup><col style="width: 23.1375%;"/><col style="width: 76.8625%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Entidad</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">Empresa</td><td class="confluenceTd">Contiene los datos básicos de una empresa.</td></tr><tr><td colspan="1" class="confluenceTd">DatosContacto</td><td colspan="1" class="confluenceTd">Contiene los datos de contacto de la empresa.</td></tr><tr><td colspan="1" class="confluenceTd">TipoIdentificador</td><td colspan="1" class="confluenceTd">Listado con los tipos de identificador fiscal (CIF, VAT, ...).</td></tr><tr><td colspan="1" class="confluenceTd">EmpresaClasificacion</td><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>Listado de relaciones entre empresas y clasificaciones. Las empresas se relacionarán únicamente con las clasificaciones del tipo &quot;Sector Industrial&quot;. Ver definición de clasificaciones en <a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=SGI+-+ESB+-+SGO">SGI - ESB - SGO</a>.</p><div class="confluence-information-macro confluence-information-macro-information"><p class="title conf-macro-render">IMPORTANTE</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>La relación entre empresas y clasificaciones de tipo &quot;Sector industrial&quot; se considera algo que puede generalizarse a cualquier empresa y no algo específico de las empresas con las que se relaciona UM, es por ello que se ha modelado a nivel lógico en el diagrama.</p><p>Al no haberse identificado por el momento necesidad de gestionar en ningún punto del SGI como producto, sino solamente en los formularios específicos de UM, la clasificación de una empresa no se ha modelado a nivel de objetos de transferencia del API ni tiene servicios específicos para su gestión.</p></div></div></div></td></tr></tbody></table></div><h2 id="Sistemadegestióndeempresas-Modelológico">Modelo lógico</h2><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/598147536/598148462.png" data-image-src="attachments/598147536/598148462.png" data-unresolved-comment-count="0" data-linked-resource-id="598148462" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="ESB SGEMP Logical Model.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147536" data-linked-resource-container-version="7" alt=""></span></p><h2 id="Sistemadegestióndeempresas-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Consultas+filtradas+y+paginadas">Consultas filtradas y paginadas</a></li><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Formatos+de+datos+API">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="Sistemadegestióndeempresas-Definicióndelosobjetos">Definición de los objetos</h3><h4 class="content-wrapper" id="Sistemadegestióndeempresas-Empresa">Empresa</h4><div class="content-wrapper"><p><br/></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 80.0479%;"><colgroup><col style="width: 9.61174%;"/><col style="width: 7.18976%;"/><col style="width: 83.2047%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Nombre</th><th colspan="1" class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la empresa.</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre de la empresa.</td></tr><tr><td colspan="1" class="confluenceTd">tipoIdentificador</td><td colspan="1" class="confluenceTd">TipoIdentificador</td><td colspan="1" class="confluenceTd">Tipo de identificador fiscal de la empresa. Se devuelve la entidad TipoIdentificador con todos sus campos.</td></tr><tr><td colspan="1" class="confluenceTd">numeroIdentificacion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Número de identificación fiscal de la empresa del tipo indicado en &quot;tipoIdentificador&quot;.</td></tr><tr><td class="confluenceTd">razonSocial</td><td class="confluenceTd">String</td><td class="confluenceTd">Razón social de la empresa.</td></tr><tr><td colspan="1" class="confluenceTd">datosEconomicos</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indicador de si se trata de una empresa con datos económicos (está dada de alta en GENTE y en JUSTO) o sin datos económicos (está dada de alta solo en GENTE).</td></tr><tr><td colspan="1" class="confluenceTd">padreId</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la empresa padre o entidad principal. Estará informado en el caso de empresas que son subentidad de otra.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Empresa</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+    "id": "ent-002",
+    "nombre": "Empresa de Prueba",
+    "tipoIdentificador": {
+          "id":"tp-1",
+          "nombre":"CIF"
+     },
+    "numeroIdentificacion": "H11111111",
+    "razonSocial": "Empresa que es mayoritariamente de prueba del SGI",
+	"datosEconomicos": false,
+    "padreId": "ent-001"
+}</pre>
+ </div>
+</div><h4 id="Sistemadegestióndeempresas-TipoIdentificador">TipoIdentificador</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 74.0px;"/><col style="width: 59.0px;"/><col style="width: 314.0px;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la entidad TipoIdentificador.</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre (Posibles valores: CIF, VAT, ...).</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">TipoIdentificador</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{ 
+    "id":"tp-1",
+    "nombre": "CIF"   
+}</pre>
+ </div>
+</div></div><p><br/></p><h4 id="Sistemadegestióndeempresas-"><span style="color: rgb(255,0,0);"><br/></span></h4><div class="content-wrapper"><h4 id="Sistemadegestióndeempresas-DatosContacto">DatosContacto</h4></div><div class="content-wrapper"><p><br/></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 63.4573%;"><colgroup><col style="width: 15.5349%;"/><col style="width: 13.805%;"/><col style="width: 70.6601%;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">direccion</td><td class="confluenceTd">String</td><td class="confluenceTd">Dirección de contacto de la empresa.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">DatosContacto</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"direccion": "C/ Uría, número 4, puerta A, 33002, Oviedo, Asturias, España"
+}</pre>
+ </div>
+</div></div><h3 class="content-wrapper" id="Sistemadegestióndeempresas-Servicios">Servicios</h3><p><p><br/></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 6.94216%;"/><col style="width: 14.064%;"/><col style="width: 18.5495%;"/><col style="width: 16.6703%;"/><col style="width: 43.7739%;"/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/empresas</td><td class="confluenceTd"><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>id</li><li>nombre</li><li>razonSocial</li><li>numeroIdentificacion</li></ul></td><td class="confluenceTd"><p>Lista[Empresa]</p></td><td class="confluenceTd"><p>Listado de Empresa.</p><p><em>Ejemplo</em>:</p><p>nombre=like=(Tree);(razonSocial=like=SL)</p></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/empresas/{id}</td><td class="confluenceTd">id</td><td class="confluenceTd">Empresa</td><td class="confluenceTd">Detalle de los datos generales de una empresa.</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/empresas/formly/create </td><td class="confluenceTd"><br/></td><td class="confluenceTd">Formly</td><td class="confluenceTd"><p>Devuelve el formulario (formly) a pintar para la pantalla de solicitar alta empresa, pestaña &quot;Datos generales&quot;. Ver <a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=IU-GEN-0081+-+Solicitar+alta+de+empresa">IU-GEN-0081 - Solicitar alta de empresa</a><a class="external-link" href="https://confluence.treelogic.com/display/HERCULES/IU-GEN-0081+-+Solicitar+alta+de+empresa" rel="nofollow">.</a></p></td></tr><tr><td class="confluenceTd">POST</td><td class="confluenceTd">/empresas</td><td class="confluenceTd">JSON</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Recibe como parámetro la respuesta del usuario del formulario de datos de alta (formly) con los campos necesarios para crear una empresa.</td></tr><tr><td class="confluenceTd">PUT</td><td class="confluenceTd">/empresas</td><td class="confluenceTd">JSON</td><td class="confluenceTd"><p>id</p><p>Vendrá relleno si la creación es síncrona y no vendrá si es asíncrona.</p></td><td class="confluenceTd">Recibe como parámetro la respuesta del usuario del formulario de datos de modificación (formly) con los campos necesarios para actualizar una empresa.</td></tr><tr><td style="text-align: left;" class="confluenceTd">GET</td><td style="text-align: left;" class="confluenceTd">/empresas/formly/{id}</td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd">JSON</td><td style="text-align: left;" class="confluenceTd">Devuelve los datos a pintar en el formulario de Ver Detalle/Actualizar en el SGI (formly).</td></tr><tr><td class="highlight-grey confluenceTd" colspan="5" data-highlight-colour="grey"><br/></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/datos-contacto/empresa/{id}</td><td class="confluenceTd">id</td><td class="confluenceTd">DatosContacto</td><td class="confluenceTd">Contiene los datos de contacto de una empresa.</td></tr><tr><td class="highlight-grey confluenceTd" colspan="5" data-highlight-colour="grey"><br/></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/tipos-identificador</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[TipoIdentificador]</td><td class="confluenceTd">Listado de tipos de identificador fiscal para las empresas ordenados alfabéticamente de forma ascendente.</td></tr><tr><th colspan="5" class="confluenceTh"><br/></th></tr><tr><td class="highlight-#eae6ff confluenceTd" colspan="5" data-highlight-colour="#eae6ff"><strong>Métodos donde el SGI solo hace de pasarela entre Universidad y CVN (No son necesarios para el funcionamiento del SGI)<br/></strong></td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd">/empresas/modificadas-ids</td><td colspan="1" class="confluenceTd"><p title="">q+s</p><p title="">La query estará formada por:</p><ul title=""><li>fechaModificacion</li></ul></td><td colspan="1" class="confluenceTd">Lista[String]</td><td colspan="1" class="confluenceTd">Listado de los identificadores de empresas que han sufrido cambios en los datos de identificativos de la empresa o en sus datos de contacto.</td></tr></tbody></table></div></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147536/598148462.png">ESB SGEMP Logical Model.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:57</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

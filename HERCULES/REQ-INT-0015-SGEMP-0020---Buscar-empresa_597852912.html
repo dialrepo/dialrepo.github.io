@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : REQ-INT-0015-SGEMP-0020 - Buscar empresa</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="GEN---Aspectos-generales_597853747.html">GEN - Aspectos generales</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853257.html">INT - Requisitos de integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853171.html">REQ-INT-0015-SGEMP - Integración con Sistema de gestión de empresas</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : REQ-INT-0015-SGEMP-0020 - Buscar empresa
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified by <span class='editor'> Usuario desconocido (alicia.alvarez)</span> on jun 23, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Cod. REQ</th><td class="confluenceTd"><p><strong>REQ- INT-0015-SGEMP-0020 - Buscar empresa</strong></p></td></tr><tr><th class="confluenceTh">Ver. Objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Ver. REQ</th><td colspan="1" class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Frecuencia</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Características</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh"><span>M. Consumidor</span></th><td colspan="1" class="confluenceTd">ESB (Empresa), CSP, PII, RCL</td></tr></tbody></table></div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0015SGEMP0020Buscarempresa-Definiciónyobjetivos">Definición y objetivos</h2><p>El SGI requiere disponer de información de las Empresas con las se requiera establecer algún tipo de relación. El SGI tratará la entidad Empresa de forma centralizada de manera que todos los módulos que requieran de la misma (CSP, RCL, PII, ETI, CAT, etc.) la utilicen de forma común. El SGI no dispondrá  de una gestión directa de Empresas sino que éstas deberán proceder de la integración con el o los sistemas universitarios correspondientes donde se centralice la gestión de las mismas. Como en el resto de integraciones, se persigue la gestión unificada de los datos de las empresas evitando así la duplicidad de la gestión y asegurando la integridad de los datos.</p><p>El ESB del SGI será el encargado de derivar la invocación del servicio de búsqueda a uno u otro sistema universitario si fuese necesario en función de alguna tipología concreta (que en este caso sería determinada por algún parámetro de identificación interno al SGI y ESB).</p><p>El mecanismo de operación en todos los módulos del SGI será homogéneo: se dispondrá de un buscador de Empresa, que a través del interface de integración con el SGEMP, devolverá los datos de la Empresa que estuviesen disponibles en el SGEMP. </p><h2 id="REQINT0015SGEMP0020Buscarempresa-Descripcióntécnicaintegración">Descripción técnica integración</h2><p>Parámetros de entrada:</p><ul><li>Cadena de texto que podrá contener indistintamente:<ul><li>Nombre de la empresa</li><li>Razón social </li><li>Número de identificación fiscal</li></ul></li></ul><p>El SGI proveerá el interface gráfico para recoger los parámetros de búsqueda <a href="597852553.html">IU-GEN-0100-0080 - B&uacute;squeda de empresa.</a></p><p>Salida: el resultado será el listado de todas las empresas que cumplan con los criterios establecidos, incluyendo para cada una de ellas:</p><ul><li>Identificador/Referencia (código interno entre ESB y SGI que permitirá referenciar de forma única a la empresa tanto en la comunicación SGI-ESB como en el modelo de datos del SGI)</li><li>Nombre</li><li>Tipo de identificador fiscal (CIF, VAT, ...)</li><li>Número de identificación fiscal</li><li>Razón social<br/><br/></li></ul><p>El SGI mostrará los resultados devueltos en un listado sobre el que se podrá seleccionar el registro concreto que vaya a ser utilizado en el caso de uso que invoca al buscador. Ver <a href="597852553.html">IU-GEN-0080 - B&uacute;squeda de empresa</a>. El SGI facilitará el interface para recoger la solicitud de alta de una empresa en el sistema externo, a través de <a href="IU-GEN-0081---Solicitar-alta-de-empresa_597852554.html">IU-GEN-0081 - Solicitar alta de empresa</a> que hará uso del servicio de integración <a href="REQ-INT-0015-SGEMP-0040---Solicitar-alta-de-empresa_597853240.html">REQ-INT-0015-SGEMP-0040 - Solicitar alta de empresa</a>.</p><h2 id="REQINT0015SGEMP0020Buscarempresa-Diseñotécnico">Diseño técnico</h2><p>En el siguiente enlace se muestra el diseño del modelo lógico y el diseño de la API del Sistema de Gestión de Empresas y, en concreto, de los Servicios Básicos: <a href="597852998.html">SGI - ESB - SGEMP - Servicios B&aacute;sicos</a>.</p><p>El servicio concreto del API que cubre este requisito es <a href="SGI---ESB---SGEMP---Empresas---Buscar_597853020.html">SGI - ESB - SGEMP - Empresas - Buscar</a>.</p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout three-equal" data-layout="three-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0015SGEMP0020Buscarempresa-Interfacesdeusuariorelacionados">Interfaces de usuario relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0015SGEMP0020Buscarempresa-Informesrelacionados">Informes relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0015SGEMP0020Buscarempresa-Casosdeusorelacionados">Casos de uso relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-597868922"></a>
+                                    <font class="smallfont"><p>Pregunta de Jorge Carrillo Lova (jorgecl@um.es): ¿este requisito tiene tres parámetros de entrada o solamente uno?</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by jesus.ruiz.ticarum at dic 16, 2020 09:40
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:26</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

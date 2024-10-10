@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Amortización fondos (UM - SGI - ESB - SGE)</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147612.html">APIs de Integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147674.html">SGI: Servicios de terceros que consume</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147605.html">Caso de uso: servicios implementados por la Universidad de Murcia</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147632.html">Sistema de Gestión Económico(UM - SGI - ESB - SGE)</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Amortización fondos (UM - SGI - ESB - SGE)
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Isabel Martinez Hernandez</span>, last modified on oct 27, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><br/></p><hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728467848203 {padding: 0px;}
+div.rbtoc1728467848203 ul {margin-left: 0px;}
+div.rbtoc1728467848203 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728467848203'>
+<ul class='toc-indentation'>
+<li><a href='#Amortizaciónfondos(UMSGIESBSGE)-Ejecucióneconómica'>Ejecución económica</a>
+<ul class='toc-indentation'>
+<li><a href='#Amortizaciónfondos(UMSGIESBSGE)-Entidades'>Entidades</a></li>
+<li><a href='#Amortizaciónfondos(UMSGIESBSGE)-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#Amortizaciónfondos(UMSGIESBSGE)-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#Amortizaciónfondos(UMSGIESBSGE)-PeriodoAmortizacion'>PeriodoAmortizacion</a></li>
+<li><a href='#Amortizaciónfondos(UMSGIESBSGE)-TipoFinanciacion'>TipoFinanciacion</a></li>
+<li><a href='#Amortizaciónfondos(UMSGIESBSGE)-FuenteFinanciacion'>FuenteFinanciacion</a></li>
+</ul>
+</li>
+<li><a href='#Amortizaciónfondos(UMSGIESBSGE)-Servicios'>Servicios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><h1 id="Amortizaciónfondos(UMSGIESBSGE)-Ejecucióneconómica">Ejecución económica</h1><h2 id="Amortizaciónfondos(UMSGIESBSGE)-Entidades">Entidades</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">PeriodoAmortizacion</td><td colspan="1" class="confluenceTd"><p>Entidad que representa un periodo de amortización de un proyecto.</p></td></tr><tr><td colspan="1" class="confluenceTd">FuenteFinanciacion</td><td colspan="1" class="confluenceTd">Entidad que representa una fuente de financiación. Las fuentes de financiación son configuradas en el SGI.</td></tr><tr><td colspan="1" class="confluenceTd">TipoFinanciacion</td><td colspan="1" class="confluenceTd">Entidad que representa un tipo de financiación. Los tipos de financiación son configurados en el SGI.</td></tr></tbody></table></div><h2 id="Amortizaciónfondos(UMSGIESBSGE)-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Consultas+filtradas+y+paginadas">Consultas filtradas y paginadas</a></li><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Formatos+de+datos+API">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="Amortizaciónfondos(UMSGIESBSGE)-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="Amortizaciónfondos(UMSGIESBSGE)-PeriodoAmortizacion">PeriodoAmortizacion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><span>Identificador interno del SGI del periodo de amortización. Debe de ser único.<br/></span></td></tr><tr><td colspan="1" class="confluenceTd">proyectoId</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Identificación del proyecto SGE</span></p></td></tr><tr><td colspan="1" class="confluenceTd">anualidad</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Anualidad</td></tr><tr><td colspan="1" class="confluenceTd"><p>empresaRef</p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Referencia de la entidad financiadora. Es el identificador único de la empresa en el sistema de gestión de empresas de la Universidad</p></td></tr><tr><td colspan="1" class="confluenceTd">tipoFinanciacion</td><td colspan="1" class="confluenceTd">TipoFinanciacion</td><td colspan="1" class="confluenceTd"><p>Entidad Tipo de financiación.</p></td></tr><tr><td colspan="1" class="confluenceTd">fuenteFinanciacion</td><td colspan="1" class="confluenceTd">FuenteFinanciacion</td><td colspan="1" class="confluenceTd">Entidad Fuente de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">fecha</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Fecha límite del periodo de amortización</span></p></td></tr><tr><td colspan="1" class="confluenceTd">importe</td><td colspan="1" class="confluenceTd">Número</td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Importe del periodo de amortización</span></p></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>PeriodoAmortizacion</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark" data-theme="RDark">{
+&quot;id&quot;: &quot;1234566&quot;,
+&quot;proyectoId&quot;: &quot;25888&quot;
+&quot;anualidad&quot;: &quot;2021&quot;,
+&quot;empresaRef&quot;: &quot;2855466 ,
+&quot;tipoFinanciacion&quot;: {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;nombre&quot;: &quot;Subvención&quot;
+        },
+&quot;fuenteFinanciacion&quot;:  {
+        &quot;id&quot;: &quot;2&quot;,
+        &quot;nombre&quot;: &quot;Plan propio 2020-2025&quot;
+        }, 
+&quot;fecha&quot;: &quot;01/02/2021&quot;,
+&quot;importe&quot;: 15000 
+}</pre>
+</div></div><h4 id="Amortizaciónfondos(UMSGIESBSGE)-TipoFinanciacion">TipoFinanciacion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><span>Identificador interno del SGI del tipo de financiación.<br/></span></td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Nombre del tipo de financiación<br/></span></p></td></tr></tbody></table></div><h4 id="Amortizaciónfondos(UMSGIESBSGE)-FuenteFinanciacion">FuenteFinanciacion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><span>Identificador interno del SGI de la fuente de financiación.<br/></span></td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Nombre de la fuente de financiación</span></p></td></tr></tbody></table></div><h3 id="Amortizaciónfondos(UMSGIESBSGE)-Servicios">Servicios</h3><p><br/></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 6.75047%;"/><col style="width: 15.7755%;"/><col style="width: 17.2213%;"/><col style="width: 23.0088%;"/><col style="width: 37.2706%;"/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td class="confluenceTd"><p>POST</p></td><td class="confluenceTd"><p>/periodos-amortizacion</p></td><td class="confluenceTd"><p>PeriodoAmortizacion</p></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Crea un periodo de amortización</td></tr><tr><td colspan="1" class="confluenceTd">PUT</td><td colspan="1" class="confluenceTd">/periodos-amortizacion/{id}</td><td colspan="1" class="confluenceTd">PeriodoAmortizacion</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Modifica un periodo de amortización. Se pasa por url el identificador del periodo de amortización.</td></tr><tr><td colspan="1" class="confluenceTd">DELETE</td><td colspan="1" class="confluenceTd">/periodos-amortizacion/{id}</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Elimina un periodo de amortización. Se pasa por url el identificador del periodo de amortización.</td></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:57</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

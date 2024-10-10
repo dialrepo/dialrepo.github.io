@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : REQ-INT-0020-SGP-0050 - Solicitar alta de persona</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="GEN---Aspectos-generales_597853747.html">GEN - Aspectos generales</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853257.html">INT - Requisitos de integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852797.html">REQ-INT-0020-SGP - Integración con Sistema de gestión de personas</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : REQ-INT-0020-SGP-0050 - Solicitar alta de persona
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (carmen.cueto)</span>, last modified by <span class='editor'> Usuario desconocido (alicia.alvarez)</span> on jun 22, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Cod. REQ</th><td class="confluenceTd"><p><strong>REQ-INT-0020-SGP-0050 - Solicitar alta persona de persona<br/></strong></p></td></tr><tr><th class="confluenceTh">Ver. Objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Ver. REQ</th><td colspan="1" class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Frecuencia</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Características</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh"><span>M. Consumidor</span></th><td colspan="1" class="confluenceTd">CSP, PRC, INV, GIN, PII, ETI</td></tr></tbody></table></div></div><h2 id="REQINT0020SGP0050Solicitaraltadepersona-Definiciónyobjetivos"><span style="color: rgb(0,0,0);">Definición y objetivos</span></h2><p><span style="color: rgb(0,0,0);">El ESB proporcionará el interface de integración para que desde el SGI se solicite a los sistemas de gestión de personas universitarios el alta de aquellas personas que se quieran vincular con la Universidad a través de una vía por la que actualmente no lo estén o que directamente no estaban previamente vinculadas con la Universidad. A través del formulario correspondiente el SGI recogerá los campos necesarios y/o de interés para la creación de la persona en el sistema de gestión de personas universitario. </span></p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0020SGP0050Solicitaraltadepersona-Descripciónintegración"><span style="color: rgb(0,0,0);">Descripción integración</span></h2><p><span style="color: rgb(0,0,0);">El SGI no dispondrá de un formulario propio para recoger los datos de creación de una persona sino uno específico por implantación/universidad tal y como se describe en <a href="IU-GEN-0061--Solicitar-alta-de-persona_597852549.html">IU-GEN-0061- Solicitar alta de persona</a>.</span></p><p><span style="color: rgb(0,0,0);">Los parámetros de entrada y salida a la hora de integrarse con los sistemas universitarios para el alta de personas serán definidos en cada implantación/universidad en particular, puesto que dependen de las necesidades y restricciones tanto de sus usuarios finales como de sus sistemas de gestión de la información de personas.</span></p><p><span style="color: rgb(0,0,0);">Los parámetros de entrada de la integración vendrán determinados por el contenido del formulario de alta específico para una implantación, más las información adicional no visible por pantalla que se pudiese necesitar enviar.</span></p><p><span style="color: rgb(0,0,0);">Como salida se tratará de tender a tener una respuesta más estandarizada o común, como un mensaje con el resultado de la operación, por ejemplo, en caso de que se haya podido crear la persona, que se devuelva un mensaje &quot;Persona creada correctamente&quot; (o similar) y en caso de fallo en la creación &quot;No se ha podido dar de alta la Persona en este momento&quot; (o similar).<br/></span></p><h2 id="REQINT0020SGP0050Solicitaraltadepersona-Diseñotécnico"><span style="color: rgb(0,0,0);">Diseño técnico</span></h2><p>En el siguiente enlace se muestra el diseño del modelo lógico y el diseño de la API del Sistema de Gestión de Personas y, en concreto, de la relativa a servicios Formly: <a href="SGI---ESB---SGP---Servicios-Formly_597853003.html">SGI - ESB - SGP - Servicios Formly</a>.</p><p>Los servicios concretos del API que cubren este requisito son:</p><ul><li><a href="SGI---ESB---SGP---Personas---Consultar-campos-alta_597853038.html">SGI - ESB - SGP - Personas - Consultar campos alta</a><ul><li>Se ha de llamar en primer lugar para poder pintar por pantalla el formulario de introducción de datos de alta.</li></ul></li><li><a href="SGI---ESB---SGP---Personas---Dar-de-alta_597853041.html">SGI - ESB - SGP - Personas - Dar de alta</a><br/><ul><li>Se llamará una vez el usuario completa los datos del formulario de alta.</li></ul></li></ul><p><span style="color: rgb(0,0,0);">Para cada implantación en particular se implementará un API específico o a medida, pero tendiendo a que sea igual o compatible en la medida de lo posible al propio del SGI, para así poder agilizar las integraciones.</span></p><p><span style="color: rgb(0,0,0);">El dinamismo o adaptación de los formularios dinámicos de solicitud de alta para las personas se logrará mediante una definición del interface de comunicación entre el ESB del SGI y las APIs universitarias donde se intercambien mensajes en formato JSON, manteniendo así la firma de los servicios constante aunque el contenido del mensaje pudiese variar.</span></p><p><span style="color: rgb(0,0,0);">En el siguiente enlace se muestra el diseño del modelo lógico y el diseño de la API del Sistema de Gestión de Personas para la implantación específica en la Universidad de Murcia: <a href="597853162.html">Sistema de gesti&oacute;n de Personas (RRHH) (UM - SGI - ESB - SGP)</a>.</span></p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout three-equal" data-layout="three-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0020SGP0050Solicitaraltadepersona-Interfacesdeusuariorelacionados"><span style="color: rgb(0,0,0);">Interfaces de usuario relacionados</span></h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0020SGP0050Solicitaraltadepersona-Informesrelacionados"><span style="color: rgb(0,0,0);">Informes relacionados</span></h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0020SGP0050Solicitaraltadepersona-Casosdeusorelacionados"><span style="color: rgb(0,0,0);">Casos de uso relacionados</span></h2><p><span style="color: rgb(0,0,0);"><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:26</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

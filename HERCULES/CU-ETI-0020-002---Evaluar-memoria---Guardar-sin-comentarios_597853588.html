@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-ETI-0020-002 - Evaluar memoria - Guardar sin comentarios</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853840.html">ETI - Módulo de ética</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="ETI---Casos-de-Uso_597853670.html">ETI - Casos de Uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853581.html">CU-ETI-0020 - Gestión de Evaluaciones</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-ETI-0020-002 - Evaluar memoria - Guardar sin comentarios
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified on sep 30, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong><strong><strong><strong>CU-ETI-0020-002 - Evaluar memoria - Guardar sin comentarios<br/></strong></strong></strong></strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><p><span class="status-macro aui-lozenge aui-lozenge-current">LIBERADO_</span></p></div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-ETI-001-Gestor</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Media</td></tr></tbody></table></div></div><h2 id="CUETI0020002EvaluarmemoriaGuardarsincomentarios-Descripción">Descripción</h2><p>Se muestra una pantalla con tres pestañas. Una pestaña para almacenar el dictamen de la evaluación, otra para añadir comentarios y otra para ver la documentación adjuntada a la memoria.</p><p>Una vez acabada la evaluación (botón Guardar) se guardará el dictamen y los comentarios en caso necesario y dependiendo de si la evaluación es de revisión mínima o no se tendrán tres situaciones</p><ul><li>Si la evaluación es de tipo memoria y no es de revisión mínima  se mantendrá el estado &quot;En evaluación&quot; mientras que el acta asociada a la convocatoria de la reunión siga en estado &quot;Creación&quot;. </li><li>Si la evaluación es de tipo memoria y de revisión mínima en ese momento ya se cambia el estado de la memoria al correspondiente dependiendo del dictamen.</li><li>Si la evaluación es de tipo retrospectiva se mantendrá el estado de la retrospectiva &quot;En evaluación&quot; mientras que el acta asociada a la convocatoria de la reunión siga en estado &quot;Creación&quot;. Cuando se cambie el estado del acta a &quot;Finalizada&quot; se cambiará el estado de la retrospectiva  a &quot;Fin evaluación&quot;.</li></ul><h2 id="CUETI0020002EvaluarmemoriaGuardarsincomentarios-Actores">Actores</h2><h3 id="CUETI0020002EvaluarmemoriaGuardarsincomentarios-Actorprincipal">Actor principal</h3><p>ACT-ETI-001-Gestor</p><h2 id="CUETI0020002EvaluarmemoriaGuardarsincomentarios-Precondiciones">Precondiciones</h2><p>Usuario logado en el sistema con el rol adecuado dentro del módulo ETI.</p><p>Existan memorias en estado &quot;En evaluación&quot; .</p><p>Haber accedido a la opción de  menú Evaluaciones y pulsar sobre una de las memorias del listado.</p><h2 id="CUETI0020002EvaluarmemoriaGuardarsincomentarios-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>Asignar un dictamen a la memoria y dependiendo del dictamen un informe favorable (dictamen es &quot;Favorable&quot;) o un informe evaluación (dictamen &quot;Favorable pendiente de revisión mínima&quot; o &quot;Pendiente de correcciones&quot;).</p><h2 id="CUETI0020002EvaluarmemoriaGuardarsincomentarios-Escenarioprincipal(flujobásico)-Dictamen&quot;Favorable&quot;-evaluaciónnoesderevisiónmínima">Escenario principal (flujo básico) - Dictamen &quot;Favorable&quot; - evaluación no es de revisión mínima</h2><ol><li>Se presenta la pantalla Evaluaciones con el listado de todas las memorias en estado &quot;En evaluación&quot; o &quot;En secretaria revisión mínima&quot; que cumplan con el filtro.</li><li>El gestor selecciona una memoria.</li><li>Se presenta la pantalla de Evaluar memoria - Evaluación</li><li>El usuario rellena el dictamen con valor &quot;Favorable&quot;</li><li>El usuario podrá acceder al informe favorable (generado automáticamente a partir de una plantilla).</li><li>El usuario selecciona la acción Guardar.</li><li>Se realizan las validaciones en cuanto a formato, obligatoriedad habituales.<span style="color: rgb(23,43,77);"><br/></span></li><li>El usuario es informado del resultado positivo de la acción.</li><li>Se presenta el listado de Evaluaciones con dictamen favorable y accesible el  informe favorable.</li></ol><h2 id="CUETI0020002EvaluarmemoriaGuardarsincomentarios-Extensiones(flujosalternativos)-Dictamen&quot;Favorable&quot;-evaluaciónesderevisiónmínima">Extensiones (flujos alternativos)  - Dictamen &quot;Favorable&quot; - evaluación es de revisión mínima</h2><ol><li>Se presenta la pantalla Evaluaciones con el listado de todas las memorias en estado &quot;En evaluación&quot; o &quot;En secretaria revisión mínima&quot; que cumplan con el filtro.</li><li>El gestor selecciona una memoria.</li><li>Se presenta la pantalla de Evaluar memoria - Evaluación</li><li>El usuario rellena el dictamen con valor &quot;Favorable&quot;</li><li>El usuario podrá acceder al informe favorable (generado automáticamente a partir de una plantilla).</li><li>El usuario selecciona la acción Guardar.</li><li>Se realizan las validaciones en cuanto a formato, obligatoriedad habituales.</li><li>Se cambia el estado a la memoria.</li><li>Se notifica  al investigador/solicitante de que ya tiene disponible el informe favorable <a class="createlink" href="/confluence/pages/createpage.action?spaceKey=HERCULES&amp;title=__NO+USAR+CU-COM-0020+-+Generar+comunicado+autom%C3%A1tico+-+Original+con+enlaces+de+AFs+fuera+de+PMV&amp;linkCreation=true&amp;fromPageId=597853588">__NO USAR CU-COM-0020 - Generar comunicado autom&aacute;tico - Original con enlaces de AFs fuera de PMV</a>.</li><li>El usuario es informado del resultado positivo de la acción.</li><li>Se presenta el listado de Evaluaciones sin la evaluación que se acaba de Evaluar, porque ya ha cambiado de estado.</li></ol><h2 id="CUETI0020002EvaluarmemoriaGuardarsincomentarios-Extensiones(flujosalternativos)-Dictamen&quot;Favorablependientederevisiónmínima&quot;o&quot;Pendientedecorrecciones&quot;">Extensiones (flujos alternativos) - Dictamen &quot;Favorable pendiente de revisión mínima&quot; o &quot;Pendiente de correcciones&quot;</h2><ol><li>Se presenta la pantalla Evaluaciones con el listado de todas las memorias en estado &quot;En evaluación&quot; o &quot;En secretaria revisión mínima&quot; que cumplan con el filtro.</li><li>El gestor selecciona una memoria.</li><li>Se presenta la pantalla de Evaluar memoria - Evaluación</li><li>El usuario rellena el dictamen con valor &quot;Favorable pendiente de revisión mínima&quot; o &quot;Pendiente de correcciones&quot;</li><li>El usuario selecciona la acción Guardar.</li><li>Se informa de que es necesario que al menos introduzca un comentario en la pestaña de Comentarios para poder generar el informe de evaluación (con los comentarios) y no se deja Guardar.</li></ol><h2 id="CUETI0020002EvaluarmemoriaGuardarsincomentarios-Extensiones(flujosalternativos)-Dictamen&quot;Noprocedeevaluar&quot;">Extensiones (flujos alternativos) - Dictamen &quot;No procede evaluar&quot;</h2><ol><li>Se presenta la pantalla Evaluaciones con el listado de todas las memorias en estado &quot;En evaluación&quot; o &quot;En secretaria revisión mínima&quot; que cumplan con el filtro.</li><li>El gestor selecciona una memoria.</li><li>Se presenta la pantalla de Evaluar memoria - Evaluación</li><li>El usuario rellena el dictamen con valor &quot;No procede evaluar&quot;</li><li>El usuario no podrá acceder al informe favorable o de evaluación porque no existe dicho informe.</li><li>El usuario selecciona la acción Guardar.</li><li>Se realizan las validaciones en cuanto a formato, obligatoriedad habituales.</li><li>El usuario es informado del resultado positivo de la acción.</li><li>Se presenta el listado de Evaluaciones con dictamen no procede evaluar y sin ningún informe asociado.</li></ol><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="CUETI0020002EvaluarmemoriaGuardarsincomentarios-Casosdeusorelacionados">Casos de uso relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="CUETI0020002EvaluarmemoriaGuardarsincomentarios-Interfacesrelacionados">Interfaces relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:37</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

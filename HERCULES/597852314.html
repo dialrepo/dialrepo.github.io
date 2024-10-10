@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-PRC-0000-001 - Clonar convocatoria de baremación</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852527.html">PRC - Módulo de producción científica</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PRC---Casos-de-uso_597852312.html">PRC - Casos de uso</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-PRC-0000-001 - Clonar convocatoria de baremación
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified on feb 18, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong><strong><strong><strong><strong><strong><strong><strong>CU-PRC-0000-001 - Clonar </strong></strong></strong></strong>convocatoria  de baremación<br/></strong></strong></strong></strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-PRC-003-Gestor</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Media</td></tr></tbody></table></div></div><h2 id="CUPRC0000001Clonarconvocatoriadebaremación-Descripción">Descripción</h2><p>Se realiza una nueva convocatoria de baremación con los datos de otra, se hace una copia de la todos los datos de la convocatoria relacionados con la configuración de la misma.</p><h2 id="CUPRC0000001Clonarconvocatoriadebaremación-Actores">Actores</h2><h3 id="CUPRC0000001Clonarconvocatoriadebaremación-Actorprincipal">Actor principal</h3><p>ACT-PRC-003-Gestor</p><h3 id="CUPRC0000001Clonarconvocatoriadebaremación-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><p>ACT-PRC-003-Gestor para reducir el tiempo de creación de una convocatoria.</p><p><br/></p><h2 id="CUPRC0000001Clonarconvocatoriadebaremación-Precondiciones">Precondiciones</h2><p><span>ACT-PRC-003-Gestor se autentica</span> a través del usuario de dominio corporativo y tiene el permiso de PRC-CON-C</p><p>La convocatoria de origen tiene el campo &quot;activo&quot; a true</p><p><br/></p><p><span style="font-size: 20.0px;letter-spacing: 0.0px;">Garantías de éxito (postcondiciones)</span></p><p>Se crea un nueva convocatoria de baremación a partir de la convocatoria seleccionada para su clonación.</p><p><br/></p><h2 id="CUPRC0000001Clonarconvocatoriadebaremación-Escenarioprincipal">Escenario principal</h2><p>1. El usuario pulsa el botón  Clonar sobre una de las convocatorias disponibles.</p><p>2. Se crea un nueva convocatoria de baremación  y con los siguientes datos:</p><ul><li><strong>Datos generales</strong>. Se copian los siguientes campos de la tabla &quot;ConvocatoriaBaremaccion&quot; de la convocatoria seleccionada.<ul><li>Nombre: Se concatena por delante del campo &quot;nombre&quot; el texto &quot;Clonada - &quot;, de tal manera que si la convocatoria seleccionada tiene en el campo &quot;nombre&quot; del valor &quot;Convocatoria ACI 2021&quot; quedaría &quot;Clonada - Convocatoria ACI 2021&quot;</li><li>Año: Se busca la convocatoria del último año y se le suma uno. Es decir, se pone una año más de la convocatoria con último año.</li><li>Años que son baremables: se pone lo del campo &quot;anioBaremables&quot; de la convocatoria seleccionada.</li><li>Último año a considerar: se pone lo del campo &quot;ultimoAnio&quot; de la convocatoria seleccionada.</li><li>Importe total: se pone lo del campo &quot;importeTotal&quot; de la convocatoria seleccionada.</li><li>Partida presupuestaria: se pone lo del campo &quot;partidaPresupuestaria&quot; de la convocatoria seleccionada.</li><li>Restos de campos a null: campos &quot;puntoProduccion&quot;, &quot;puntoSexenio&quot;, &quot;puntoCosteIndirectos&quot; y &quot;fechaEjecución&quot;</li></ul></li><li><strong>Baremos y puntuaciones:</strong> Se copian todos los baremos seleccionados en la convocatoria seleccionada: Se crean tantos registros en la tabla &quot;Baremo&quot; como tenga la convocatoria que se esta clonando y con los mismos datos en los campos &quot;configuracionBaremo&quot; , &quot;peso&quot;, &quot;puntos&quot;, &quot;cuantia&quot; y &quot;tipoCuantia, la &quot;convocatoriaBaremacion&quot; será el identificador de la convocatoria que se esta creando)</li><li><strong>Modulador:</strong> Se copian los datos de los moduladores de la convocatoria seleccionada: Se crean tantos registros en la tabla &quot;Modulador&quot; como tenga la convocatoria que se esta clonando y con los mismos datos en los campos &quot;tipo&quot; , &quot;areaRef&quot;, &quot;valor1&quot;, &quot;valor2&quot;, &quot;valor3&quot;, &quot;valor4&quot; y &quot;valor5, la &quot;convocatoriaBaremacion&quot; será el identificador de la convocatoria que se esta creando.</li><li><strong>Rango:</strong> Se copian los datos de los rangos de la convocatoria seleccionada: Se crean tantos registros en la tabla &quot;Rango&quot; como tenga la convocatoria que se esta clonando y con los mismos datos en los campos &quot;tipoRango&quot; , &quot;tipoTemporalidad&quot;, &quot;puntos&quot;, &quot;desde&quot; y &quot;hasta, la &quot;convocatoriaBaremacion&quot; será el identificador de la convocatoria que se esta creando.</li></ul><p>3. Una vez creada la convocatoria, se mostrará el mensaje de &quot;Convocatoria clonada correctamente&quot; y se irá a la edición de la convocatoria creada.</p><h2 id="CUPRC0000001Clonarconvocatoriadebaremación-"> </h2><p><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:31</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

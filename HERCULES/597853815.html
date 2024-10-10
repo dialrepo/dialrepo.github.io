@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : COM - Módulo de Comunicados</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="GEN---Aspectos-generales_597853747.html">GEN - Aspectos generales</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : COM - Módulo de Comunicados
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (hector.suarez)</span>, last modified by <span class='editor'> Usuario desconocido (alicia.alvarez)</span> on mar 11, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728465988782 {padding: 0px;}
+div.rbtoc1728465988782 ul {margin-left: 0px;}
+div.rbtoc1728465988782 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728465988782'>
+<ul class='toc-indentation'>
+<li><a href='#COMMódulodeComunicados-Introducción'>Introducción</a></li>
+<li><a href='#COMMódulodeComunicados-Modelodedominio'>Modelo de dominio</a></li>
+<li><a href='#COMMódulodeComunicados-Descripciónfuncional'>Descripción funcional</a>
+<ul class='toc-indentation'>
+<li><a href='#COMMódulodeComunicados-Tiposdecomunicados'>Tipos de comunicados</a></li>
+<li><a href='#COMMódulodeComunicados-Configuracióndecomunicados'>Configuración de comunicados</a></li>
+<li><a href='#COMMódulodeComunicados-Destinatarios'>Destinatarios</a></li>
+</ul>
+</li>
+<li><a href='#COMMódulodeComunicados-Modelológico'>Modelo lógico</a></li>
+</ul>
+</div></p><h2 id="COMMódulodeComunicados-Introducción">Introducción</h2><p>El sistema SGI va a disponer de un módulo trasversal a todo el sistema mediante se podrán enviar distintos tipos de comunicados por email.</p><p>Los actores que podrán generar comunicados serán los identificados en cada caso como actores de la funcionalidad específica que lo necesita generar o bien el propio sistema SGI.</p><p>El envío de comunicados, salvo en el caso de aquellos en los que el usuario decide a demanda, a través de la pantalla correspondiente, activar o desactivar (Hitos, Fases, ...) no se podrá desactivar dentro del SGI, sino que irá preconfigurado en el sistema el catálogo de eventos o acciones y funcionalidades que dispararán el envío de comunicados y no será algo opcional el que se envíen o no. Solo en el caso de que no se logren resolver destinatarios para el envío del comunicado porque no se hayan configurado, se podría asimilar que no se quiere configurar el envío del mismo.</p><h2 id="COMMódulodeComunicados-Modelodedominio">Modelo de dominio</h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/597853815/597855887.png" data-image-src="attachments/597853815/597855887.png" data-unresolved-comment-count="0" data-linked-resource-id="597855887" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="Comunicados Domain Model.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="597853815" data-linked-resource-container-version="48" alt=""></span></p><h2 id="COMMódulodeComunicados-Descripciónfuncional">Descripción funcional</h2><p>Dentro del SGI, los comunicados consistirán en cierta información que será enviada a un conjunto de destinatarios con el objeto de notificarles sobre tareas o gestiones concretas a realizar en el SGI y que están pendientes o bien notificarles de eventos que ya han ocurrido o bien avisarles de eventos futuros que ocurrirán, de ahí que opcionalmente también podamos referirnos a ellos indistintamente como <strong>Notificaciones o Avisos</strong>. Los comunicados pueden tener opcionalmente una fecha límite estipulada para su realización, si bien este módulo no es responsable del seguimiento de la realización de la tarea, solo de notificar los comunicados emitidos sobre la misma por la gestión correspondiente. Las recibirán por email todos los destinatarios configurados, salvo que su dirección sea incorrecta, no en formato, sino incorrectamente introducida por el usuario, o que se haya dado de baja, cuestiones ambas que no serán responsabilidad de este módulo comprobar.</p><p>Los comunicados tendrán en general la siguiente información:</p><ul><li><strong>Tipo</strong>: indicará el tipo de comunicado. Tendrá un valor único en el sistema y representativo de la gestión específica que lo genera comunicado. Será un dato interno y no visible para el usuario.</li><li><strong>Asunto</strong>: título, resumen del comunicado. Para todos los comunicados deberá estar configurado un asunto por defecto, que el usuario después podrá modificar para los casos en los que el comunicado se presente por pantalla (ej. Hitos y Fases en CSP).</li><li><strong>Fecha envío</strong>: fecha en la que se produce o se debe producir el envío del comunicado.</li><li><strong>Contenido</strong>: texto explicativo más detallado del comunicado que constituirá el cuerpo del email de aviso. Para todos los comunicados deberá estar configurado un contenido por defecto, que el usuario después podrá modificar para los casos en los que el comunicado se presente por pantalla (ej. Hitos y Fases en CSP).</li><li><strong>Destinatarios</strong>: lista de destinatarios del comunicado. Para todos los comunicados podrá estar configurada una lista de destinatarios por defecto, que podrá ser distinta por unidad de gestión, que el usuario después podrá modificar para los casos en los que el comunicado se presente por pantalla (ej. Hitos y Fases en CSP).</li></ul><h3 id="COMMódulodeComunicados-Tiposdecomunicados">Tipos de comunicados</h3><p>Existirá dos grandes tipos de comunicados:</p><ul><li><strong>De envío inmediato</strong>: el comunicado se enviará inmediatamente a continuación de que se produzca el evento que lo genera.</li><li><strong>De envío programado</strong>: el comunicado se enviará en una fecha y hora concreta programada bien por el usuario (Hitos y Fases en CSP) bien por el propio sistema (Calendario de justificación de un proyecto).</li></ul><p>Cada tipo de comunicado, que será identificado de manera única en todo el SGI, tendrá sus propias plantillas de asunto y contenido y su propia lista de destinatarios por defecto, que podrán además ser diferentes por unidad de gestión.</p><p>En principio, los comunicados de envío inmediato no dispondrán de interfaz de usuario específica del comunicado, toda su gestión será transparente al usuario final.</p><p>En el caso de los envíos programados, dispondrán de interfaz de usuario los avisos de Hitos y Fases del módulo de CSP, siendo este interfaz integrado en las propias pantallas de Hito o Fase según el caso. En estos casos, el usuario podrá modificar los datos del comunicado que se hayan cargado por defecto de plantillas y configuración de destinatarios.</p><h3 id="COMMódulodeComunicados-Configuracióndecomunicados">Configuración de comunicados</h3><p><br/></p><p><br/></p><p><br/></p><p><br/></p><h3 id="COMMódulodeComunicados-Destinatarios">Destinatarios</h3><p>Existirán dos grandes tipos de destinatarios:</p><ul><li><strong>Resueltos en el instante</strong>: se usarán tanto para los comunicados de envío inmediato como para los programados para contemplar aquellas personas que recibirán el email y que son las que en ese instante concreto se hayan definido funcionalmente y/o configurado por defecto para ese comunicado y no cambiarán entre ese momento y el programado para el envío.</li><li><strong>Resueltos en diferido</strong>: se usarán para los comunicados programados, donde puede haber casos en los que se contempla que ciertos destinatarios definidos funcionalmente puedan variar entre el momento en el que se genera el comunicado y el instante programado para el envío. En estos casos, estos destinatarios se resolverán justo al instante programado para el envío y pueden ser los únicos o añadirse a la lista que estuviese configurada previamente para ese comunicado.</li></ul><h2 id="COMMódulodeComunicados-Modelológico">Modelo lógico</h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/597853815/597865760.png" data-image-src="attachments/597853815/597865760.png" data-unresolved-comment-count="0" data-linked-resource-id="597865760" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="SGI COM Logical Model.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="597853815" data-linked-resource-container-version="48" alt=""></span></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853815/597874105.png">Comunicados Domain Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853815/597855887.png">Comunicados Domain Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853815/597865760.png">SGI COM Logical Model.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:26</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

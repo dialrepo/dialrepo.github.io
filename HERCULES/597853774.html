@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : IU-CSP-0550-002 - Validación de gastos - Modificar estado (versión básica)</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Interfaz-de-usuario_597853755.html">CSP - Interfaz de usuario</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853553.html">IU-CSP-0500 - Ejecución económica</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853166.html">IU-CSP-0550 - Validación de gastos</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : IU-CSP-0550-002 - Validación de gastos - Modificar estado (versión básica)
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (ana.perez)</span>, last modified by <span class='editor'> Usuario desconocido (covadonga.garcia)</span> on feb 03, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. IU</th><td colspan="1" class="confluenceTd"><p><strong><strong><strong><strong>IU-CSP-0550-002 - Validación de gastos - Modificar estado<br/></strong></strong></strong></strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd">0.4.0</td></tr><tr><th class="confluenceTh">Ver. IU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><div class="content-wrapper"><p><br/></p></div></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-CSP-003-Gestor, ACT-CSP-004-Administrador, ACT-CSP-001-Investigador</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Media</td></tr></tbody></table></div></div><h1 class="western" id="IUCSP0550002ValidacióndegastosModificarestado(versiónbásica)-FormularioEjecucióneconómica-Validacióndegastos-Modificarestado">Formulario Ejecución económica - Validación de gastos - Modificar estado</h1><p>Formulario que permite modificar el estado del gasto pendiente de contabilizar y añadir un comentario asociado al cambio de estado. En función de estado será necesario notificar dicho cambio al SGE ( a través de la integración <a href="REQ-INT-0010-SGE-0101---Validar-gasto_597852940.html">REQ-INT-0010-SGE-0101 - Validar gasto</a> o <a href="REQ-INT-0010-SGE-0102---Rechazar-gasto_597852435.html">REQ-INT-0010-SGE-0102 - Rechazar gasto</a>)</p><p>Los datos del gasto se obtienen de la integración con el SGE <a href="https://confluence.um.es/confluence/display/HERCULES/REQ-INT-0010-SGE-0103+-+Detalle+gasto" rel="nofollow">REQ-INT-0010-SGE-0103 - Detalle gasto</a> y con los datos propios del SGI (tabla &quot;gasto proyecto&quot; - modelo lógico &quot;validación de gastos&quot;).</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 10.3878%;"/><col style="width: 13.2964%;"/><col style="width: 76.3158%;"/></colgroup><tbody><tr><td style="width: 100.0%;" colspan="3" class="confluenceTd"><div class="content-wrapper"><p class="western"><br/></p><p class="western"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1200" src="attachments/597853774/597876649.png" data-image-src="attachments/597853774/597876649.png" data-unresolved-comment-count="0" data-linked-resource-id="597876649" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="71_12_EjecucionEc_Validacion_Edicion_basica.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="597853774" data-linked-resource-container-version="41" alt=""></span></p><p class="western"><br/></p></div></td></tr><tr><th style="width: 11.4804%;" class="confluenceTh">Nombre</th><th style="width: 13.1923%;" class="confluenceTh"><div class="content-wrapper"><p>Tipo</p></div></th><th style="width: 75.3273%;" class="confluenceTh"><p>Características / Notas</p></th></tr><tr><td style="width: 11.4804%;" class="confluenceTd"><div class="content-wrapper"><p>Estado actual</p></div></td><td style="width: 13.1923%;" class="confluenceTd">Texto corto</td><td style="width: 75.3273%;" class="confluenceTd"><div class="content-wrapper"><p>Estado actual del gasto pendiente de contabilización</p><p>Modo consulta. Se saca del tipo de filtro que se hizo para realizar la búsqueda.</p></div></td></tr><tr><td colspan="1" class="confluenceTd">Clasificación SGE</td><td colspan="1" class="confluenceTd">Texto corto</td><td colspan="1" class="confluenceTd"><p>Clasificación del gasto en el SGE. </p><p>Modo consulta.</p></td></tr><tr><td style="width: 11.4804%;" class="confluenceTd">Aplicación presupuestaria</td><td style="width: 13.1923%;" class="confluenceTd">Texto corto</td><td style="width: 75.3273%;" class="confluenceTd"><div class="content-wrapper"><p>Aplicación presupuestaria asociada al gasto</p><p>Modo consulta. Se recupera de los datos del SGE.</p></div></td></tr><tr><td style="width: 11.4804%;" class="confluenceTd">Código económico</td><td style="width: 13.1923%;" class="confluenceTd">Texto corto</td><td style="width: 75.3273%;" class="confluenceTd"><p>Código económico asociado al gasto</p><p>Modo consulta. Se recupera de los datos del SGE.</p></td></tr><tr><td style="width: 11.4804%;" class="confluenceTd">Anualidad</td><td style="width: 13.1923%;" class="confluenceTd">Texto corto</td><td style="width: 75.3273%;" class="confluenceTd"><p>Anualidad</p><p>Modo consulta. Se recupera de los datos del SGE.</p></td></tr><tr><td colspan="1" class="confluenceTd">Fecha</td><td colspan="1" class="confluenceTd">Fecha</td><td colspan="1" class="confluenceTd"><p>Fecha del gasto.</p><p>Modo consulta. Se recupera de los datos del SGE.</p></td></tr><tr><td class="highlight-blue confluenceTd" style="width: 100.0%;" title="Background colour : Blue" colspan="3" data-highlight-colour="blue">Listado de campos nombre - valor</td></tr><tr><td style="width: 11.4804%;" class="confluenceTd">Nombre - valor</td><td style="width: 13.1923%;" class="confluenceTd">Texto</td><td style="width: 75.3273%;" class="confluenceTd"><p>Se muestra el campo nombre que indica el nombre del campo y el campo valor que es el valor del campo. </p><p>Modo consulta. Se recuperan de los datos del SGE.</p></td></tr><tr><td class="highlight-blue confluenceTd" style="width: 11.4804%;" title="Background colour : Blue" data-highlight-colour="blue"><br/></td><td class="highlight-blue confluenceTd" style="width: 13.1923%;" title="Background colour : Blue" data-highlight-colour="blue"><br/></td><td class="highlight-blue confluenceTd" style="width: 75.3273%;" title="Background colour : Blue" data-highlight-colour="blue"><br/></td></tr><tr><td style="width: 11.4804%;" class="confluenceTd">Proyecto SGI</td><td style="width: 13.1923%;" class="confluenceTd"><p>Selector</p><p>Texto</p><p>Obligatorio si el estado es Validado</p></td><td style="width: 75.3273%;" class="confluenceTd"><p>Listado de proyectos SGI vinculados al identificador SGE (en caso de que hubiese más de uno). Si solo existe un proyecto SGI vinculado al identificador SGE el combo tomará este valor por defecto</p><p>En el combo mostrar una cadena de texto formada por el título del proyecto junto a la fecha inicio y fin del proyecto (PRO-112 01/01/2020 -31/12/2023</p><p>Obligatorio si el estado es Validado</p></td></tr><tr><td style="width: 11.4804%;" class="confluenceTd">Conceptos de gastos permitidos</td><td style="width: 13.1923%;" class="confluenceTd">Radio</td><td style="width: 75.3273%;" class="confluenceTd"><div class="content-wrapper"><p>Opción marcada por defecto que carga en el campo &quot;Concepto de gasto&quot; el listado de conceptos de gasto incluidos como gastos permitidos en el apartado &quot;Elegibilidad&quot; (los conceptos gastos se sacan de la tabla &quot;ProyectoConceptoGasto&quot; con permitido = true. En caso de que el mismo concepto este dos veces, porque este presente en fechas distintas, únicamente se mostrará una sola vez en el combo.</p></div></td></tr><tr><td style="width: 11.4804%;" class="confluenceTd">Todos los conceptos de gasto</td><td style="width: 13.1923%;" class="confluenceTd">Radio</td><td style="width: 75.3273%;" class="confluenceTd">Si se selecciona esta opción se cargarán en el campo &quot;Concepto de gasto&quot; todos los conceptos de gasto configurados en el SGI en <a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=87822689" rel="nofollow">IU-CSP-0090 - Gestión de conceptos de gasto</a> (tabla &quot;ConceptoGasto&quot;)</td></tr><tr><td style="width: 11.4804%;" class="confluenceTd">Concepto de gasto</td><td style="width: 13.1923%;" class="confluenceTd"><p>Selector</p><p>Texto corto</p><p>Obligatorio si el estado es Validado</p></td><td style="width: 75.3273%;" class="confluenceTd"><p>Listado de los conceptos de gasto en función del radio seleccionado. Este listado puede incluir solamente los conceptos de gasto incluidos como gastos permitidos en el apartado &quot;Elegibilidad&quot;  (los conceptos gastos se sacan de la tabla &quot;ProyectoConceptoGasto&quot; con permitido = true) o todos los conceptos de gasto configurados en el SGI (tabla &quot;ConceptoGasto&quot;). Se muestra el nombre del concepto de gasto. El concepto de gasto se obtendrá de la tabla &quot;ProyectoConceptoGasto&quot; o &quot;ConceptoGasto&quot; dependiendo de la opción elegida en el radiobutton.</p><p>Obligatorio si el estado es Validado</p></td></tr><tr><td class="highlight-blue confluenceTd" title="Background colour : Blue" colspan="3" data-highlight-colour="blue"><br/></td></tr><tr><td colspan="1" class="confluenceTd">Estado</td><td colspan="1" class="confluenceTd"><p>Selector</p><p>Texto</p><p>Obligatorio</p></td><td colspan="1" class="confluenceTd"><p>Combo con los valores:</p><ul><li>Validado</li><li>Bloquedado</li><li>Rechazado</li></ul><p>Si el estado es Validado no se podrá cambiar de estado.</p><p>Si el estado es Bloqueado se podrá modificar de estado.</p><p>(Nunca se editará un estado Rechazado, porque ni se consultan al SGE ni se guardan en el SGI)</p></td></tr><tr><td class="highlight-blue confluenceTd" title="Color de fondo: Azul" colspan="3" data-highlight-colour="blue">Datos congreso SGI (Solo se muestra si el estado seleccionado es Validado)</td></tr><tr><td colspan="1" class="confluenceTd">Fecha congreso</td><td colspan="1" class="confluenceTd"><p>Fecha (sin hora)</p><p>Opcional</p></td><td colspan="1" class="confluenceTd"><p>Fecha del congreso en caso de ser un gasto relacionado con un congreso.</p><p>Solo se muestra si el estado seleccionado es Validado</p></td></tr><tr><td colspan="1" class="confluenceTd">Importe inscripción</td><td colspan="1" class="confluenceTd"><p>Decimal</p><p>Opcional</p></td><td colspan="1" class="confluenceTd"><p>Importe inscripción en caso de ser un gasto relacionado con un congreso</p><p>Solo se muestra si el estado seleccionado es Validado</p></td></tr><tr><td colspan="1" class="confluenceTd">Observaciones</td><td colspan="1" class="confluenceTd"><p>Opcional</p><p>Texto largo</p></td><td colspan="1" class="confluenceTd"><p>Observaciones en caso de ser un gasto relacionado con un congreso</p><p>Solo se muestra si el estado seleccionado es Validado</p></td></tr><tr><td class="highlight-blue confluenceTd" title="Color de fondo: Azul" colspan="1" data-highlight-colour="blue"><br/></td><td class="highlight-blue confluenceTd" title="Color de fondo: Azul" colspan="1" data-highlight-colour="blue"><br/></td><td class="highlight-blue confluenceTd" title="Color de fondo: Azul" colspan="1" data-highlight-colour="blue"><br/></td></tr><tr><td style="width: 11.4804%;" class="confluenceTd">Comentario asociado al estado</td><td style="width: 13.1923%;" class="confluenceTd">Texto largo</td><td style="width: 75.3273%;" class="confluenceTd"><p>Comentario asociado al cambio de estado.</p><p>Sólo se muestra si se selecciona un estado del combo de Estado</p></td></tr></tbody></table></div><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 82.3764%;"><colgroup><col style="width: 7.66473%;"/><col style="width: 42.936%;"/><col style="width: 34.6964%;"/><col style="width: 14.7319%;"/></colgroup><tbody><tr><th class="confluenceTh">Acciones</th><th colspan="1" class="confluenceTh">Descripción</th><th class="confluenceTh"> Enlace CU.</th><th colspan="1" class="confluenceTh">Permisos</th></tr><tr><td colspan="1" class="confluenceTd">Guardar</td><td colspan="1" class="confluenceTd"><p>Modifica el gasto pendiente de contabilización en la tabla &quot;GastoProyecto&quot;  y en caso de que haya una cambio de estado lo añade junto al comentario al histórico de estados (tabla &quot;EstadoGastoProyecto&quot;).</p></td><td colspan="1" class="confluenceTd"><p>Si el gasto no tiene ningún estado (es Pendiente) será obligatorio introducir un estado:</p><ul><li>Si se selecciona <strong>Validado</strong>: el gasto se almacenará en la tabla &quot;GastoProyecto&quot;, el campo estado, proyecto SGI y concepto de gasto serán campos obligatorios y los campos fecha congreso, importe inscripción y observaciones son opcionales. Se enviará una notificación al SGE <a href="REQ-INT-0010-SGE-0101---Validar-gasto_597852940.html">REQ-INT-0010-SGE-0101 - Validar gasto</a></li><li>Si se selecciona <strong>Rechazado</strong>: el gasto se no se almacenará en al tabla &quot;&quot;GastoProyecto&quot;. Se enviará una notificación al SGE <a href="REQ-INT-0010-SGE-0102---Rechazar-gasto_597852435.html">REQ-INT-0010-SGE-0102 - Rechazar gasto</a></li></ul><p><br/></p><ul><li>Si se selecciona <strong>Bloquedado</strong>: el gasto se almacenará en la tabla &quot;GastoProyecto&quot; con el estado, el  resto de campos son opcionales. NO se notifica nada al SGE, para el SGE seguirá en estado Pendiente.</li></ul><p>En caso de que sea una edición:</p><ul><li>El gasto podrá estar en estado <strong>Validado</strong>: en este caso no se permite cambiar el estado, porque ya se ha notificado al SGE, únicamente se dejan modificar los propios datos del SGI (el resto de campos de la tabla &quot;GastoProyecto&quot;</li><li>El gasto podrá estar en estado <strong>Bloquedado</strong>: en este caso podrá cambiar de estado:<ul><li>Si se selecciona <strong>Validado</strong>: el gasto cambiará de estado y se almacenará en la tabla  almacenará en la tabla &quot;EstadoGastoProyecto&quot;, se modificara el registro de la tabla &quot;GastoProyecto&quot;con los campos estado, proyecto SGI y concepto de gasto que serán campos obligatorios y los campos fecha congreso, importe inscripción y observaciones son opcionales. Se enviará una notificación al SGE <a href="REQ-INT-0010-SGE-0101---Validar-gasto_597852940.html">REQ-INT-0010-SGE-0101 - Validar gasto</a></li><li>Si se selecciona <strong>Rechazado</strong>: el gasto se eliminará de la tabla  &quot;&quot;GastoProyecto&quot;. Se enviará una notificación al SGE <a href="REQ-INT-0010-SGE-0102---Rechazar-gasto_597852435.html">REQ-INT-0010-SGE-0102 - Rechazar gasto</a></li><li>Si no modifica el estado, se guardarán el resto de campos en la tabla &quot;GastoProyecto&quot;</li></ul></li></ul><p>NOTA: Todos estos cambios tanto en el propio SGI como el envío al SGE se hace en el botón Guardar del poppup, por lo que al volver al listados de validación de gastos, si se ha hecho un cambio de estado se eliminará la fila correspondiente del listado (porque ya no cumplirá con el filtrado por estado).</p></td><td colspan="1" class="confluenceTd"><ul><li>CSP-EJEC-E</li></ul><p>CSP-EJEC-E_UO</p><p>CSP-EJEC-INV-ER</p></td></tr><tr><td colspan="1" class="confluenceTd">Cancelar</td><td colspan="1" class="confluenceTd"><p>Retorna al formulario de gastos pendientes de contabilización, sin salvar los posibles cambios</p></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div><h2 id="IUCSP0550002ValidacióndegastosModificarestado(versiónbásica)-Permisosdeaccesoalapantalla">Permisos de acceso a la pantalla</h2><h3 id="IUCSP0550002ValidacióndegastosModificarestado(versiónbásica)-Poractor">Por actor</h3><div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 84.1871%;"><colgroup><col style="width: 15.6188%;"/><col style="width: 35.5394%;"/><col style="width: 48.8418%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh"><p>ACT-CSP-003-Gestor</p></th><td colspan="1" class="confluenceTd">CSP-EJEC-E, CSP-EJEC-E_UO</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh"><p><strong>ACT-CSP-004-Administrador</strong></p></th><td colspan="1" class="confluenceTd">CSP-EJEC-E, CSP-EJEC-E_UO</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh"><strong>ACT-CSP-001-Investigador</strong></th><td colspan="1" class="confluenceTd">CSP-EJEC-INV-ER</td><td colspan="1" class="confluenceTd"><p>Ver documentación en <a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=108593251" rel="nofollow">CU-CSP-1200-008 - Ver ejecución económica - Investigador (rol responsable económico)</a></p></td></tr></tbody></table></div></div><h3 id="IUCSP0550002ValidacióndegastosModificarestado(versiónbásica)-Todoslospermisosdeacceso">Todos los permisos de acceso</h3><div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 84.2428%;"><colgroup><col style="width: 19.5767%;"/><col style="width: 80.4233%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Permisos</th><td colspan="1" class="confluenceTd">CSP-EJEC-E, CSP-EJEC-E_UO, CSP-EJEC-INV-ER</td></tr></tbody></table></div></div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597866478.png">7112ejecucionecvalidacionedicion.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/598835297.png">7112ejecucionecvalidacionedicion.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597858675.png">71_12_EjecucionEc_Validacion_Edicion.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597858676.png">71_12_EjecucionEc_Validacion_Edicion.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/598835295.png">7112ejecucionecvalidacionedicion.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597866123.png">7112ejecucionecvalidacionedicion.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597866115.png">7112ejecucionecvalidacionedicion.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597866116.png">7112ejecucionecvalidacionedicion.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597854253.png">7112ejecucionecvalidacionedicion.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597854099.png">6_validacionGastos.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597854289.png">7112ejecucionecvalidacionedicion.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597854285.png">7112ejecucionecvalidaciondetallegasto.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597869579.png">7112ejecucionecvalidacionedicion.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597859204.png">7112ejecucionecvalidacionedicionv3sencilla.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597859206.png">7112ejecucionecvalidacionedicionv2.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597861571.png">7112ejecucionecvalidacionedicionv3sencilla.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597857969.png">7112ejecucionecvalidacionedicionv2.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597856984.png">7112ejecucionecvalidacionedicionv3sencilla.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597857966.png">7112ejecucionecvalidacionedicionv3sencilla.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597868456.png">71_12_EjecucionEc_Validacion_Edicion_V3_basica.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597876669.png">71_12_EjecucionEc_Validacion_Edicion_basica.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853774/597876649.png">71_12_EjecucionEc_Validacion_Edicion_basica.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-597876513"></a>
+                                    <font class="smallfont"><p>(Álvaro Martínez de Ticarum): Esta funcionalidad no está en Goliat.</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by jesus.ruiz.ticarum at abr 23, 2021 14:25
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:30</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Cuadro de mandos</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="RPA_598147226.html">RPA</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147224.html">Módulo de Automatización y Gestión</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Cuadro de mandos
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span>, last modified on dic 15, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>El desarrollo de esta interfaz se llevará a cabo mediante el Framework Vue.js y se realizará en formato de interfaz web, consumiendo los datos directamente utilizando el API Rest que se proporciona como backend. Con él liberamos la carga del servidor, ya que este solo se encargará de procesar las peticiones JSON desde y hacia el explorador. Se desarrollará utilizando Vue.js<strong> </strong>por su versatilidad, adaptabilidad y escalabilidad.</p><p>La interfaz será de tipo <em>Dashboard, c</em>uadro de mando o panel de control, donde el usuario tendrá el control de todo el servicio a su disposición y percibirá todos los eventos que ocurran en el sistema en el momento en el que se produzcan. La interfaz dispondrá de una barra lateral con un menú donde se podrá elegir cualquier vista definida en la aplicación. Dentro de la definición, se establecen una serie de vistas agrupadas por funcionalidad.</p><p>Para facilitar la visualización del dashboard se ha adjuntado, a cada una de las secciones definidas, una figura que contiene un maquetado preliminar.</p><p>Enlace a GitHub: <a class="external-link" href="https://github.com/hercules-rpa/dashboard" rel="nofollow">https://github.com/hercules-rpa/dashboard</a></p><h2 id="Cuadrodemandos-VistaPrincipalDashboard"><strong>Vista </strong><strong>P</strong><strong>rincipal </strong><strong>Dashboard</strong></h2><p>La ventana principal dispone de una visualización general de la información más relevante del sistema. Se mostrarán las estadísticas de funcionamiento en distintos rangos de tiempo, información de los robots que actualmente se encuentran conectados, listado de errores, procesos completados y últimas ejecuciones de procesos entre otros campos. Cada componente dispone de un acceso directo a su sección concreta al que se accederá mediante un sistema de routing transparente a los usuarios de la interfaz. A continuación, se muestra un ejemplo de la vista principal:</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148056.png" data-image-src="attachments/598147510/598148056.png" data-unresolved-comment-count="0" data-linked-resource-id="598148056" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-3-38.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><h2 id="Cuadrodemandos-VistadeNuevoProceso"><strong>Vista de Nuevo Proceso</strong></h2><p>Esta vista ofrece la información de todos los procesos disponibles para ser ejecutados por los robots incluyendo el listado de robots capacitados para ejecutar cada uno de los procesos. Al seleccionar alguno de los elementos de este listado, se redirige al usuario a la siguiente sección del proceso, donde se mostrará un formulario, adaptado a las necesidades concretas de cada uno de los procesos, para poder parametrizar y facilitar la información necesaria, si procede, para llevar a cabo la ejecución del proceso. A continuación, se muestra un ejemplo de esta vista:</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148055.png" data-image-src="attachments/598147510/598148055.png" data-unresolved-comment-count="0" data-linked-resource-id="598148055" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-5-47.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><h2 class="western" id="Cuadrodemandos-VistaFormulariodeProceso">Vista Formulario de Proceso</h2><p class="western">Esta vista mostrará un formulario para rellenar los datos de entrada que va a necesitar el proceso. Además, se deberá establecer la planificación de detalles, como su periodicidad o prioridad. Esta ventana será fundamental ya que, con ella, el usuario será capaz de ejecutar procesos o planificarlos para que se ejecuten más adelante.</p><p class="western">En la imagen que podemos observar a continuación se muestra un ejemplo del formulario asociado al <a href="598147218.html">proceso 4</a> de Hércules-RPA:</p><p class="western"><br/></p><p class="western"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148054.png" data-image-src="attachments/598147510/598148054.png" data-unresolved-comment-count="0" data-linked-resource-id="598148054" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-7-12.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><h2 class="western" id="Cuadrodemandos-VistaInformacióndeRobots">Vista Información de Robots</h2><p class="western">Esta sección mostrará los robots disponibles, en forma de lista o de tarjetas. Cada elemento mostrará la información general, como el nombre, su identificador unívoco o su estado. Haciendo clic en cualquiera de los elementos podremos ir hacia la vista completa del robot, que mostrará información más detallada del mismo.  A continuación, se muestra un ejemplo de esta vista:</p><p class="western"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148068.png" data-image-src="attachments/598147510/598148068.png" data-unresolved-comment-count="0" data-linked-resource-id="598148068" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-9-56.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><h2 class="western" id="Cuadrodemandos-VistaenDetalledeRobot">Vista en Detalle de Robot</h2><p class="western">En esta vista se localiza toda la información asociada al robot y su estado en tiempo real. Se puede comprobar:</p><ul><li class="western">Si está ejecutando un proceso.</li><li class="western">Si se encuentra activo</li><li class="western">Si ha tenido problemas de ejecución recientemente.</li><li class="western">Los procesos que tiene en cola de ejecución.</li><li class="western">Eliminar procesos asociados al robot o modificar su prioridad.</li></ul><p class="western">Se dispone también de información referente al sistema general, como el histórico de ejecuciones, estadísticas de CPU o memoria y disco usado por el robot.</p><p class="western">A continuación, se muestra un ejemplo de esta vista:</p><p class="western"><br/></p><p class="western"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/622952452.png" data-image-src="attachments/598147510/622952452.png" data-unresolved-comment-count="0" data-linked-resource-id="622952452" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-12-15_9-2-13.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><p class="western"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148066.png" data-image-src="attachments/598147510/598148066.png" data-unresolved-comment-count="0" data-linked-resource-id="598148066" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-11-10.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><p class="western"><br/></p><h2 class="western" id="Cuadrodemandos-VistaHistorialdeEjecuciones">Vista Historial de Ejecuciones</h2><p class="western">Esta vista contendrá una tabla con el histórico de todos los procesos que se han ejecutado hasta la fecha en el sistema. El usuario será capaz de filtrar los datos usando la barra de búsqueda disponible en el encabezado. Adicionalmente, contiene información relevante sobre la ejecución, como, por ejemplo, el inicio, finalización, robot ejecutor o resultado final.</p><p class="western">Haciendo doble clic sobre el proceso, el usuario será direccionado hacia la vista que contendrá la información completa de esa ejecución. Asimismo, también podrá hacer clic sobre los router-links marcados en azul para ir directamente a la ventana pertinente del elemento seleccionado, como el robot o schedule. A continuación, se muestra un ejemplo de esta vista:</p><p class="western"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148065.png" data-image-src="attachments/598147510/598148065.png" data-unresolved-comment-count="0" data-linked-resource-id="598148065" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-11-45.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><h2 class="western" id="Cuadrodemandos-VistaLogdeEjecución">Vista Log de Ejecución</h2><p class="western">Esta vista contiene la información correspondiente a la ejecución de un proceso, independientemente de si ha finalizado o se encuentra en ejecución. Contendrá una barra de progreso que se irá actualizando según avanza la ejecución. El usuario dispondrá de un cuadro de texto para poder visualizar todos los eventos que han ido transcurriendo en el tiempo desde que se ejecuta el proceso hasta que termina, este cuadro de texto se denomina log de proceso. Por último, dispone de un botón que permite descargar en un fichero el log generado por la ejecución del proceso y la posibilidad también de recuperar ficheros de salida del proceso, si existieran. A continuación, se muestra un ejemplo de esta vista:</p><p class="western"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148064.png" data-image-src="attachments/598147510/598148064.png" data-unresolved-comment-count="0" data-linked-resource-id="598148064" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-12-24.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><h2 class="western" id="Cuadrodemandos-VistaPlanificacionesActivas">Vista Planificaciones Activas</h2><p class="western">Esta vista mostrará, en formato de tabla, las planificaciones que actualmente están activas en el sistema, es decir, aquellas que no se han borrado, cancelado o terminado. El usuario dispondrá de información relevante sobre la planificación, como qué robot la llevará a cabo, la fecha de creación, a qué proceso pertenece y cuál es la siguiente ejecución programada.</p><p class="western">Adicionalmente, el usuario podrá borrar o editar la planificación usando los botones correspondientes desde la misma ventana y hacer doble clic para dirigirse a la ventana en la que se muestra toda la información de la planificación en cuestión. A continuación, se muestra un ejemplo de esta vista:</p><p class="western"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148063.png" data-image-src="attachments/598147510/598148063.png" data-unresolved-comment-count="0" data-linked-resource-id="598148063" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-12-51.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><h2 class="western" id="Cuadrodemandos-VistaPlanificaciónIndividual">Vista Planificación Individual</h2><p class="western">Esta vista mostrará al usuario toda la información derivada de una planificación concreta. Se dispone de una tabla donde se localizan todas las ejecuciones que se han llevado a cabo dentro de esa planificación. Para ofrecer una forma rápida e intuitiva de consultarlo, el usuario podrá hacer clic sobre las ejecuciones de la tabla y así consultar el log de ese caso concreto. Asimismo, será capaz de dirigirse a la ventana de “log de ejecución” haciendo doble clic sobre la ejecución. Finalmente, el usuario podrá filtrar, mediante la barra de entrada de texto en el encabezado, para poder consultar la ejecución. A continuación, se muestra un ejemplo de esta vista: </p><p class="western"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148062.png" data-image-src="attachments/598147510/598148062.png" data-unresolved-comment-count="0" data-linked-resource-id="598148062" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-13-35.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><p class="western"><br/></p><h2 class="western" id="Cuadrodemandos-VistaProblemasyErrores">Vista Problemas y Errores</h2><p class="western">En la vista el usuario podrá visualizar toda la información relativa a los distintos avisos y errores que se hayan producido dentro del sistema durante su funcionamiento. A continuación, se muestra un ejemplo de esta vista:</p><p class="western"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148061.png" data-image-src="attachments/598147510/598148061.png" data-unresolved-comment-count="0" data-linked-resource-id="598148061" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-14-15.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><h2 class="western" id="Cuadrodemandos-VistaConfiguradoresdeprocesos">Vista Configuradores de procesos</h2><p>Esta vista contiene una lista con todos los configuradores de los procesos que existen en el sistema. A continuación, se muestra un ejemplo de esta vista:</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148060.png" data-image-src="attachments/598147510/598148060.png" data-unresolved-comment-count="0" data-linked-resource-id="598148060" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-14-47.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><h2 class="western" id="Cuadrodemandos-VistaEdicióndeconfiguradoresdeprocesos">Vista Edición de configuradores de procesos</h2><p>Con esta vista podemos editar los configuradores de los procesos, mostrando las propiedades una a una. Además, también dispone una opción para editar la configuración por completo. A continuación, se muestra un ejemplo de esta vista con la configuración de los comités del proceso de acreditaciones:</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148059.png" data-image-src="attachments/598147510/598148059.png" data-unresolved-comment-count="0" data-linked-resource-id="598148059" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-16-22.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148877.png" data-image-src="attachments/598147510/598148877.png" data-unresolved-comment-count="0" data-linked-resource-id="598148877" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-7-29_19-30-8.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148876.png" data-image-src="attachments/598147510/598148876.png" data-unresolved-comment-count="0" data-linked-resource-id="598148876" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-7-29_19-30-34.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><h2 class="western" id="Cuadrodemandos-Vistadeconfiguracióngeneraldelaaplicación">Vista de configuración general de la aplicación</h2><p>En esta vista se puede editar y comprobar la configuración de los distintos ajustes globales que tiene la aplicación, como direcciones de bases de datos, configuración AMQP, etc. A continuación, se muestra un ejemplo de esta vista:</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147510/598148058.png" data-image-src="attachments/598147510/598148058.png" data-unresolved-comment-count="0" data-linked-resource-id="598148058" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-9-27_18-18-16.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147510" data-linked-resource-container-version="19" alt=""></span></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598149265.png">image2022-3-11_9-42-46.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598149271.png">image2022-3-11_9-43-53.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598149267.png">image2022-3-11_9-44-32.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598149268.png">image2022-3-11_9-45-19.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598149277.png">image2022-3-11_9-45-49.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598149279.png">image2022-3-11_9-46-44.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598149273.png">image2022-3-11_9-47-16.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598149275.png">image2022-3-11_9-49-15.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148388.png">image2022-3-11_9-49-51.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148389.png">image2022-3-11_9-50-21.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148386.png">image2022-3-11_9-50-52.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148906.png">image2022-7-29_17-20-19.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148929.png">image2022-7-29_17-21-23.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148927.png">image2022-7-29_17-22-29.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148925.png">image2022-7-29_19-18-3.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148923.png">image2022-7-29_19-18-41.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148920.png">image2022-7-29_19-19-47.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148918.png">image2022-7-29_19-21-8.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148915.png">image2022-7-29_19-23-40.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148882.png">image2022-7-29_19-24-9.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148880.png">image2022-7-29_19-24-41.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148879.png">image2022-7-29_19-26-11.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148878.png">image2022-7-29_19-29-37.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148877.png">image2022-7-29_19-30-8.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148876.png">image2022-7-29_19-30-34.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148056.png">image2022-9-27_18-3-38.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148055.png">image2022-9-27_18-5-47.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148054.png">image2022-9-27_18-7-12.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148053.png">image2022-9-27_18-7-53.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148068.png">image2022-9-27_18-9-56.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148067.png">image2022-9-27_18-10-33.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148066.png">image2022-9-27_18-11-10.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148065.png">image2022-9-27_18-11-45.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148064.png">image2022-9-27_18-12-24.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148063.png">image2022-9-27_18-12-51.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148062.png">image2022-9-27_18-13-35.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148061.png">image2022-9-27_18-14-15.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148060.png">image2022-9-27_18-14-47.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148059.png">image2022-9-27_18-16-22.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/598148058.png">image2022-9-27_18-18-16.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147510/622952452.png">image2022-12-15_9-2-13.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 12:02</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

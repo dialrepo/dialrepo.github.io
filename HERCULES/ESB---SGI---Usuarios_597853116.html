@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : ESB - SGI - Usuarios</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853279.html">Diseño</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Componentes_597853271.html">Componentes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---ESB_597853273.html">SGI - ESB</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="ESB---SGI_597852552.html">ESB - SGI</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : ESB - SGI - Usuarios
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (alicia.alvarez)</span>, last modified on jun 24, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728466697569 {padding: 0px;}
+div.rbtoc1728466697569 ul {margin-left: 0px;}
+div.rbtoc1728466697569 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728466697569'>
+<ul class='toc-indentation'>
+<li><a href='#ESBSGIUsuarios-SistemadeGestiónInvestigación'>Sistema de Gestión Investigación</a>
+<ul class='toc-indentation'>
+<li><a href='#ESBSGIUsuarios-Entidades'>Entidades</a></li>
+<li><a href='#ESBSGIUsuarios-Modelológico'>Modelo lógico</a></li>
+<li><a href='#ESBSGIUsuarios-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#ESBSGIUsuarios-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#ESBSGIUsuarios-Unidad'>Unidad</a></li>
+</ul>
+</li>
+<li><a href='#ESBSGIUsuarios-Servicios'>Servicios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><hr/><h1 id="ESBSGIUsuarios-SistemadeGestiónInvestigación">Sistema de Gestión Investigación</h1><h2 id="ESBSGIUsuarios-Entidades">Entidades</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">Unidad</td><td colspan="1" class="confluenceTd">Unidad de gestión</td></tr></tbody></table></div><h2 id="ESBSGIUsuarios-Modelológico">Modelo lógico</h2><p><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=HERCULES&amp;title=USR+-+Modelo+l%C3%B3gico&amp;linkCreation=true&amp;fromPageId=597853116">USR - Modelo l&oacute;gico</a></p><h2 id="ESBSGIUsuarios-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a href="Consultas-filtradas-y-paginadas_597853160.html">Consultas filtradas y paginadas</a></li><li><a href="Formatos-de-datos-API_597853494.html">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="ESBSGIUsuarios-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="ESBSGIUsuarios-Unidad">Unidad</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al usuario creador del registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al último usuario que modificó el registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único de la Unidad de gestión.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre de la unidad de gestión.</td></tr><tr><td colspan="1" class="confluenceTd">acronimo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Acrónimo de la unidad de gestión.</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción de la unidad de gestión.</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Flag con el que se da cobertura al borrado lógico de los registros de esta tabla.</td></tr></tbody></table></div><h3 id="ESBSGIUsuarios-Servicios">Servicios </h3><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">Para componer la URL llamada completa, se debe anteponer a lo indicado en la columna URL lo siguiente: <strong>{HOST}/api/sgiusr</strong>, donde <strong>{HOST}</strong> de deberá sustituir el dominio correspondiente al entorno al que se está accediendo y dicho acceso será por http o https según el caso.</div></div><p><div class="table-wrap"><table class="aui metadata-summary-macro null" data-cql="label = &quot;servicios&quot; and space = currentSpace() and ancestor = currentContent()" data-details-space-key="HERCULES"  data-details-content-id="597853116"  data-headings="Método, URL, Parámetros, Respuesta, Descripción" data-first-column-heading="Servicio" data-count-comments="false" data-count-likes="false" data-total-pages="1" data-page-size="1000" data-sort-by="null" data-reverse-sort="false" data-blueprint-present="false"><thead><tr><th class="sorter-text">Servicio</th><th>M&eacute;todo</th><th>URL</th><th>Par&aacute;metros</th><th>Respuesta</th><th>Descripci&oacute;n</th></tr></thead><tbody><tr><td class="title" data-content-id="597853419"><a href="/confluence/display/HERCULES/ESB+-+SGI+-+Usuarios+-+Unidades+-+Consultar+detalle">ESB - SGI - Usuarios - Unidades - Consultar detalle</a></td><td>GET</td><td>/unidades/{id}</td><td><p><br/></p></td><td><a href="https://confluence.um.es/confluence/display/HERCULES/ESB+-+SGI+-+Usuarios#ESBSGIUsuarios-Unidad" rel="nofollow">Unidad</a></td><td>Retorna el detalle de una Unidad de gestión.</td></tr><tr><td class="title" data-content-id="597853418"><a href="/confluence/display/HERCULES/ESB+-+SGI+-+Usuarios+-+Unidades+-+Buscar">ESB - SGI - Usuarios - Unidades - Buscar</a></td><td>GET</td><td>/unidades</td><td><p title="">q+s (query + sort)</p><p title="">La query estará formada por:</p><ul title=""><li>cualquiera de los campos del objeto Unidad</li></ul></td><td>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/ESB+-+SGI+-+Usuarios#ESBSGIUsuarios-Unidad" rel="nofollow">Unidad</a>]</td><td>Busca / Lista Unidades de gestión.</td></tr></tbody></table></div></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853116/597862658.png">SGI USR Logical Model.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:38</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

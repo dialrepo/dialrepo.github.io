@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : SGI - ESB - SGP - Servicios Pasarela</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853279.html">Diseño</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Componentes_597853271.html">Componentes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---ESB_597853273.html">SGI - ESB</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---ESB---SGP_597852909.html">SGI - ESB - SGP</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : SGI - ESB - SGP - Servicios Pasarela
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (alicia.alvarez)</span>, last modified on jun 22, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h4 id="SGIESBSGPServiciosPasarela-MétodosdondeelSGIsolohacedepasarelaentreUniversidadyelsistemadetercerosllamante(NosonnecesariosparaelfuncionamientodelSGI)">Métodos donde el SGI solo hace de pasarela entre Universidad y el sistema de terceros llamante (No son necesarios para el funcionamiento del SGI)</h4><hr/><p><div class="table-wrap"><table class="aui metadata-summary-macro null" data-cql="label = &quot;sgp&quot; and space = currentSpace() and ancestor = currentContent()" data-details-space-key="HERCULES"  data-details-content-id="597853001"  data-headings="Método, URL, Parámetros, Respuesta, Descripción" data-first-column-heading="Servicio" data-count-comments="false" data-count-likes="false" data-total-pages="1" data-page-size="1000" data-sort-by="null" data-reverse-sort="false" data-blueprint-present="false"><thead><tr><th class="sorter-text">Servicio</th><th>M&eacute;todo</th><th>URL</th><th>Par&aacute;metros</th><th>Respuesta</th><th>Descripci&oacute;n</th></tr></thead><tbody><tr><td class="title" data-content-id="597853213"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGP+-+Personas+-+Actividad+docente+-+Consultar+detalle">SGI - ESB - SGP - Personas - Actividad docente - Consultar detalle</a></td><td>GET</td><td><span title="">/actividad-docente/<span class="url-filename">{id}</span></span></td><td><ul title=""><li>tipoActividad: tipo de actividad docente que se quiere recuperar, usando los códigos de CVN</li></ul></td><td><p title="">Lista[Actividad docente (del tipo solicitado)]</p><p title="">Ver entidades en <a class="external-link" href="https://confluence.um.es/confluence/display/HERCULES/Actividad+docente+-+CVN" rel="nofollow">https://confluence.um.es/confluence/display/HERCULES/Actividad+docente+-+CVN</a></p></td><td><p>Detalle sobre los datos de la Actividad Docente, dependiendo del ID de la persona y el tipo de actividad.</p><p>Ejemplo:</p><ul><li><span><span style="color: rgb(33,33,33);">actividad-docente/23019512?tipoActividad=&quot;030.040.000.000&quot;</span></span></li></ul></td></tr><tr><td class="title" data-content-id="597853221"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGP+-+Personas+-+Consultar+personas+con+modificaciones+en+actividad+docente">SGI - ESB - SGP - Personas - Consultar personas con modificaciones en actividad docente</a></td><td>GET</td><td>/actividad-docente/modificados-ids</td><td><p title="">q+s</p><p title="">La query estará formada por:</p><ul title=""><li>fechaModificacion: fecha a partir de la cual se quieren ver los cambios</li><li>tipoActividad: tipo de actividad docente que se quiere recuperar, usando los códigos de CVN</li></ul></td><td><p title="">Lista[String]</p></td><td><p>Listado de identificadores de las personas que han tenido modificaciones en la actividad docente.</p><p>Ejemplo:</p><ul><li><span style="color: rgb(33,33,33);">actividad-docente/modificados-ids?q=fechaModificacion=ge=&quot;2022-01-01T00:00:00Z&quot;;tipoActividad=&quot;030.040.000.000&quot;</span></li></ul></td></tr><tr><td class="title" data-content-id="597853217"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGP+-+Personas+-+Consultar+personas+modificadas">SGI - ESB - SGP - Personas - Consultar personas modificadas</a></td><td>GET</td><td>/personas/modificadas-ids</td><td><p title="">q+s</p><p title="">La query estará formada por:</p><ul title=""><li>fechaModificacion</li></ul></td><td>Lista[String]</td><td>Listado de los identificadores de personas que han sufrido cambios en los datos identificativos (nombre, apellidos, sexo, número de documento y tipo de documento) y/o en los datos personales (fecha de nacimiento, país de nacimiento, comunidad autónoma de nacimiento y ciudad de nacimiento) y/o en datos de contacto (país de contacto, comunidad autónoma de contacto, provincia de contacto, ciudad de contacto, dirección de contacto, código postal, listado de teléfonos y listado de emails) y/o en la fotografía a partir de la fecha de modificación pasada por parámetro y/o en los sexenios.</td></tr><tr><td class="title" data-content-id="597853222"><a href="/confluence/pages/viewpage.action?pageId=597853222">SGI - ESB - SGP - Personas - Formación - Consultar detalle</a></td><td>GET</td><td><span title="">/formacion/<span class="url-filename">{id}</span></span></td><td><ul title=""><li>tipoFormacion: tipo de formación que se quiere recuperar, usando los códigos de CVN</li></ul></td><td><p title="">Lista[Formación (del tipo solicitado)]</p><p title="">Ver entidades en <a class="external-link" href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=397534658" rel="nofollow">https://confluence.um.es/confluence/pages/viewpage.action?pageId=397534658</a></p></td><td><p>Detalle sobre los datos de la Formación Recibida, dependiendo del ID de la persona y el tipo de formación.</p><p>Ejemplo:</p><ul><li><span style="color: rgb(36,36,36);">/formacion/22468643?tipoFormacion=&quot;020.050.000.000&quot;</span></li></ul></td></tr><tr><td class="title" data-content-id="597853218"><a href="/confluence/pages/viewpage.action?pageId=597853218">SGI - ESB - SGP - Personas - Consultar personas con modificaciones en formación</a></td><td>GET</td><td>/formacion/modificados-ids</td><td><p title="">q+s</p><p title="">La query estará formada por:</p><ul title=""><li>fechaModificacion: fecha a partir de la cual se quieren ver los cambios</li><li>tipoFormacion: tipo de formación que se quiere recuperar, usando los códigos de CVN</li></ul></td><td>Lista[String]</td><td><p>Listado de identificadores de las personas que han tenido modificaciones en formación realizada.</p><p>Ejemplo:</p><ul><li><span style="color: rgb(36,36,36);">/formacion/modificados-ids?q=fechaModificacion=ge=&quot;2022-01-01T00:00:00Z&quot;;tipoFormacion=&quot;020.010.020.000&quot;</span></li></ul></td></tr><tr><td class="title" data-content-id="597853220"><a href="/confluence/pages/viewpage.action?pageId=597853220">SGI - ESB - SGP - Personas - Consultar número de sexenios</a></td><td>GET</td><td>/sexenios/persona/{id}</td><td>fecha</td><td><a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGP#SGIESBSGP-Sexenio" rel="nofollow">Sexenio</a></td><td><p>Devuelve el número de sexenios de la persona. Si se le pasa el parámetro de la fecha devuelve el número de sexenios en esa fecha, sino se devuelve el número de sexenios a la fecha actual.</p><p>Ejemplo:</p><ul><li>fecha=&quot;<span>2021-08-18T22:00:00Z</span>&quot;</li></ul></td></tr></tbody></table></div></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:38</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

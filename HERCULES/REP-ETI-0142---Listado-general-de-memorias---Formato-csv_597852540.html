@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : REP-ETI-0142 - Listado general de memorias - Formato csv</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="GEN---Aspectos-generales_597853747.html">GEN - Aspectos generales</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853257.html">INT - Requisitos de integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852801.html">REQ-INT-0150-SGREP - Integración con Sistema de Generación de Reportes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="ETI---Informes-Predifinidos_597853335.html">ETI - Informes Predifinidos</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : REP-ETI-0142 - Listado general de memorias - Formato csv
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified on mar 25, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup> <col/> <col/> </colgroup><tbody><tr><th class="confluenceTh">Cod. REP</th><td class="confluenceTd"><p><strong>REP-ETI-0142 - Listado general de memorias - Formato csv</strong></p></td></tr><tr><th class="confluenceTh">Ver. Objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Ver. REP</th><td colspan="1" class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><span class="status-macro aui-lozenge conf-macro output-inline">PENDIENTE</span></div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Frecuencia</th><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div></div><h2 id="REPETI0142ListadogeneraldememoriasFormatocsv-DiseñoInforme">Diseño Informe </h2><p><span style="letter-spacing: 0.0px;">Se debe de generar un informe en formato csv que reciba como parámetro de entrada la lista de bloques de datos a incluir. A continuación se indica el mapeo de los nombres de columnas del fichero csv de salida con la tabla y campo del SGI desde el que deben ser recuperadas. Se indica también el bloque de datos al que pertenece cada columna. Las columnas que disponen de un bloque de datos se mostrarán en el informe solo si el bloque de datos está incluido en la lista recibida como parámetro de entrada. Las columnas que no disponen de un bloque de datos se incluirán siempre en el informe.</span></p><p>Los nombres de las columnas en el fichero csv que formen parte de un bloque que se repita, deberán llevar en su nombre un número cardinal representativo del número de repetición, de forma que se permita la distinción del título de la columna. En la siguiente tabla se identifican también los bloques de datos susceptibles de repetirse. El fichero resultante contendrá las columnas necesarias, sobre cada bloque de repetición, de acuerdo a la memoria que más elementos contenga para ese bloque. Para las memorias que no contengan tantos elementos sobre cada bloque como marque el máximo, se mostrarán las columnas sin contenido.</p><p>Ejemplo:<a href="attachments/597852540/597874093.csv" data-linked-resource-id="597874093" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="memoria_with_columns_repeated.csv" data-linked-resource-content-type="text/csv" data-linked-resource-container-id="597852540" data-linked-resource-container-version="8">memoria_with_columns_repeated.csv</a></p><p><br/></p><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 85.4472%;"><colgroup><col style="width: 12.3857%;"/><col style="width: 24.2016%;"/><col style="width: 49.7349%;"/><col style="width: 13.7206%;"/></colgroup><tbody><tr><th class="confluenceTh">Bloque de datos</th><th colspan="1" class="confluenceTh">Columna informe</th><th class="confluenceTh">Campo SGI</th><th colspan="1" class="confluenceTh">Repetición</th></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Referencia</td><td colspan="1" class="confluenceTd">Campo &quot;numReferencia&quot; de la tabla &quot;Memoria&quot;</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Comité</td><td class="confluenceTd"><p>Campo &quot;comite&quot; perteneciente al campo &quot;comite&quot; de la tabla &quot;<span class="confluence-link"><span style="color: rgb(23,43,77);">Memoria</span></span>&quot;</p></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Estado</td><td colspan="1" class="confluenceTd">Valor del enumerado &quot;EstadoMemoria&quot; para el registro de la tabla &quot;EstadoMemoria&quot; referenciado desde el campo &quot;estadoActual&quot; de la tabla &quot;Memoria&quot;</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Fecha evaluación</td><td colspan="1" class="confluenceTd"><p>Dependiendo del estado de la memoria se obtendrá de una forma u otra, a continuación se explica la forma dependiendo del estado:</p><ul><li><strong>Completada</strong>,  <strong>En secretaria</strong>: La fecha de evaluación se sacará de la próxima convocatoria de reunión de tipo &quot;Ordinaria&quot; o &quot;Extraordinaria&quot; que haya del mismo comité que la memoria, que no tenga el acta asociada a finalizada, y que la fecha límite de la convocatoria sea mayor a la fecha actual y si existe dos o mas, se cogerá la primera, la que tenga la fecha de evaluación menor.</li><li><strong>En evaluación, Pendiente de correcciones, No procede evaluar, Favorable pendiente de revisión mínima, En secretaria revisión mínima, Fin evaluación</strong>: La fecha de evaluación se sacará de la convocatoria de reunión asociada a la evaluación asignada a la memoria de tipo &quot;Memoria&quot; y que sea la última versión (versión mayor)</li><li><strong>Completada seguimiento anual</strong>,  <strong>En secretaria seguimiento anual</strong>: La fecha de evaluación se sacaránde la próxima convocatoria de reunión de tipo &quot;Seguimiento&quot; que haya del mismo comité que la memoria, que no tenga el acta asociada a finalizada, y que la fecha límite de la convocatoria sea mayor a la fecha actual y si existe dos o mas, se cogerá la primera, la que tenga la fecha de evaluación menor.</li><li><strong>En evaluación seguimiento anual, Solicitud modificación, Fin evaluación seguimiento anual</strong>: La fecha de evaluación se sacará de la convocatoria de reunión asociada a la evaluación asignada a la memoria de tipo &quot;Seguimiento anual&quot; y que sea la última versión (versión mayor)</li><li><strong>Completada seguimiento final</strong>,  <strong>En secretaria seguimiento final</strong>: La fecha de evaluación se sacará de la próxima convocatoria de reunión de tipo &quot;Seguimiento&quot; que haya del mismo comité que la memoria, que no tenga el acta asociada a finalizada, y que la fecha límite de la convocatoria sea mayor a la fecha actual y si existe dos o mas, se cogerá la primera, la que tenga la fecha de evaluación menor.</li><li><strong>En evaluación seguimiento final, En secretaria seguimiento final aclaraciones, En aclaración seguimiento final, Fin evaluación seguimiento final</strong>: La fecha de evaluación se sacará de la convocatoria de reunión asociada a la evaluación asignada a la memoria de tipo &quot;Seguimiento final&quot; y que sea la última versión (versión mayor)</li><li><strong>Archivado</strong>: se deja vacía</li></ul></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Solicitante: Nombre</td><td colspan="1" class="confluenceTd"><p><span class="confluence-link"><span style="color: rgb(23,43,77);"><span>Campo &quot;nombre&quot; recuperado a través de <a href="https://confluence.um.es/confluence/display/HERCULES/REQ-INT-0020-SGP-0030+-+Consultar+datos+generales+de+persona" rel="nofollow">REQ-INT-0020-SGP-0030 - Consultar datos generales de persona</a> para la referenciada indicada en el campo &quot;personaRef&quot; de la tabla &quot;PeticionEvaluacion&quot; refenciado por el campo &quot;peticionEvaluacion&quot; de la tabla &quot;Memoria&quot;</span></span><span style="color: rgb(23,43,77);"><br/></span></span></p></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Solicitante: Apellidos</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);"><span class="confluence-link"><span>Campo &quot;apellidos&quot; recuperado a través de <a href="https://confluence.um.es/confluence/display/HERCULES/REQ-INT-0020-SGP-0030+-+Consultar+datos+generales+de+persona" rel="nofollow">REQ-INT-0020-SGP-0030 - Consultar datos generales de persona</a> para la referenciada indicada en el campo &quot;personaRef&quot; de la tabla &quot;PeticionEvaluacion&quot; refenciado por el campo &quot;peticionEvaluacion&quot; de la tabla &quot;Memoria&quot;</span></span></span></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Responsable: Nombre</td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Campo &quot;nombre&quot; recuperado a través de <a href="https://confluence.um.es/confluence/display/HERCULES/REQ-INT-0020-SGP-0030+-+Consultar+datos+generales+de+persona" rel="nofollow">REQ-INT-0020-SGP-0030 - Consultar datos generales de persona</a></span><span style="color: rgb(23,43,77);"><span> </span>para la referenciada indicada en el campo &quot;usuarioRef&quot; de la tabla &quot;Memoria&quot;.</span></p></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Responsable: Apellidos</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Campo &quot;apellidos&quot; recuperado a través de <a href="https://confluence.um.es/confluence/display/HERCULES/REQ-INT-0020-SGP-0030+-+Consultar+datos+generales+de+persona" rel="nofollow">REQ-INT-0020-SGP-0030 - Consultar datos generales de persona</a></span><span style="color: rgb(23,43,77);"><span> </span>para la referenciada indicada en el campo &quot;usuarioRef&quot; de la tabla &quot;Memoria&quot;.</span></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">Evaluaciones</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><p>Se mostrará las distintas evaluaciones que ha tenido la memoria (tabla &quot;Evaluacion&quot;) (Primero se mostrarán las de Tipo Memoria, luego Seguimiento anual, luego Seguimiento Final y luego las de Retrospectiva y ordenador de menor a mayor versión dentro del mismo tipo)</p></td><td colspan="1" class="confluenceTd">Sí</td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">EvaluaciónX: Tipo</td><td colspan="1" class="confluenceTd">Campo &quot;nombre&quot; de la tabla &quot;TipoEvaluacion&quot; referenciado desde el campo &quot;tipoEvaluacion&quot; de la tabla &quot;Evaluacion&quot;</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">EvaluaciónX: Versión</td><td colspan="1" class="confluenceTd">Campo &quot;version&quot; de la tabla &quot;Evaluacion&quot;</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">EvaluaciónX: Dictamen</td><td colspan="1" class="confluenceTd"><p>Campo &quot;nombre&quot; de la tabla &quot;Dictamen&quot; referenciado desde el campo &quot;dictamen&quot; de la tabla &quot;Evaluacion&quot; si ya esta finalizada la evaluación y disponible para el investigador, es decir, si no es de revisión mínima cuando el acta este finalizada.</p><p>Sólo se mostrará el dictamen en los siguientes casos:</p><ul><li>la evaluación es de revisión mínima  (campo &quot;esRevMinima&quot; es true)</li><li>la evaluación no es de revisión mínima (campo &quot;esRevMinima&quot; es true) y el acta asociada a la convocatoria de reunión de la evaluación esta en estado &quot;Finalizada&quot;. Si esta &quot;En elaboración&quot; no se muestra el dictamen.</li></ul></td><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div><p><span style="letter-spacing: 0.0px;"><br/><br/></span></p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REPETI0142ListadogeneraldememoriasFormatocsv-Interfacesdeusuariorelacionados"><span style="letter-spacing: -0.008em;">Interfaces de usuario relacionados</span></h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REPETI0142ListadogeneraldememoriasFormatocsv-Casosdeusorelacionados">Casos de uso relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup> <col/> <col/> </colgroup><tbody><tr><th class="confluenceTh">ACT-ETI-001-Gestor</th><td class="confluenceTd">ETI-MEM-V</td></tr><tr><th colspan="1" class="confluenceTh">ACT-ETI-002-Investigador</th><td colspan="1" class="confluenceTd">ETI-MEM-INV-ER</td></tr><tr><th colspan="1" class="confluenceTh">ACT-ETI-003-Solicitante</th><td colspan="1" class="confluenceTd">ETI-MEM-INV-ER</td></tr><tr><th colspan="1" class="confluenceTh">ACT-ETI-006-Responsable memoria</th><td colspan="1" class="confluenceTd">ETI-MEM-INV-ER</td></tr></tbody></table></div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597852540/597874085.csv">memoria_with_columns_repeated.csv</a> (text/csv)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597852540/597874093.csv">memoria_with_columns_repeated.csv</a> (text/csv)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:26</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

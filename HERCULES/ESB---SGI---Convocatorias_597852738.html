@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : ESB - SGI - Convocatorias</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853279.html">Diseño</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Componentes_597853271.html">Componentes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---ESB_597853273.html">SGI - ESB</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="ESB---SGI_597852552.html">ESB - SGI</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : ESB - SGI - Convocatorias
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (alicia.alvarez)</span>, last modified on may 16, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728466695062 {padding: 0px;}
+div.rbtoc1728466695062 ul {margin-left: 0px;}
+div.rbtoc1728466695062 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728466695062'>
+<ul class='toc-indentation'>
+<li><a href='#ESBSGIConvocatorias-SistemadeGestiónInvestigación'>Sistema de Gestión Investigación</a>
+<ul class='toc-indentation'>
+<li><a href='#ESBSGIConvocatorias-Entidades'>Entidades</a></li>
+<li><a href='#ESBSGIConvocatorias-Modelológico'>Modelo lógico</a></li>
+<li><a href='#ESBSGIConvocatorias-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#ESBSGIConvocatorias-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#ESBSGIConvocatorias-Convocatoria'>Convocatoria</a></li>
+<li><a href='#ESBSGIConvocatorias-AreaTematica'>AreaTematica</a></li>
+<li><a href='#ESBSGIConvocatorias-ConvocatoriaAreaTematica'>ConvocatoriaAreaTematica</a></li>
+<li><a href='#ESBSGIConvocatorias-ConvocatoriaDocumento'>ConvocatoriaDocumento</a></li>
+<li><a href='#ESBSGIConvocatorias-ConvocatoriaEntidadConvocante'>ConvocatoriaEntidadConvocante</a></li>
+<li><a href='#ESBSGIConvocatorias-ConvocatoriaEntidadFinanciadora'>ConvocatoriaEntidadFinanciadora</a></li>
+<li><a href='#ESBSGIConvocatorias-PalabraClave'>PalabraClave</a></li>
+<li><a href='#ESBSGIConvocatorias-Documento'>Documento</a></li>
+<li><a href='#ESBSGIConvocatorias-FuenteFinanciacion'>FuenteFinanciacion</a></li>
+<li><a href='#ESBSGIConvocatorias-ModeloEjecucion'>ModeloEjecucion</a></li>
+<li><a href='#ESBSGIConvocatorias-ModeloTipoDocumento'>ModeloTipoDocumento</a></li>
+<li><a href='#ESBSGIConvocatorias-ModeloTipoFase'>ModeloTipoFase</a></li>
+<li><a href='#ESBSGIConvocatorias-ModeloUnidad'>ModeloUnidad</a></li>
+<li><a href='#ESBSGIConvocatorias-Programa'>Programa</a></li>
+<li><a href='#ESBSGIConvocatorias-TipoFinanciacion'>TipoFinanciacion</a></li>
+<li><a href='#ESBSGIConvocatorias-UnidadGestion'>UnidadGestion</a></li>
+</ul>
+</li>
+<li><a href='#ESBSGIConvocatorias-Servicios'>Servicios</a>
+<ul class='toc-indentation'>
+<li><a href='#ESBSGIConvocatorias-Crearconvocatoria'>Crear convocatoria</a></li>
+<li><a href='#ESBSGIConvocatorias-Asociarentidadesconvocantes'>Asociar entidades convocantes</a></li>
+<li><a href='#ESBSGIConvocatorias-Asociarentidadesfinanciadoras'>Asociar entidades financiadoras</a></li>
+<li><a href='#ESBSGIConvocatorias-Asociardocumentos'>Asociar documentos</a></li>
+<li><a href='#ESBSGIConvocatorias-Consultarconvocatorias'>Consultar convocatorias</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><hr/><h1 id="ESBSGIConvocatorias-SistemadeGestiónInvestigación">Sistema de Gestión Investigación</h1><h2 id="ESBSGIConvocatorias-Entidades">Entidades</h2><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 66.1926%;"><colgroup><col style="width: 17.7833%;"/><col style="width: 82.2167%;"/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">Convocatoria</td><td colspan="1" class="confluenceTd">Contiene los datos generales de una convocatoria.</td></tr><tr><td class="confluenceTd">AreaTematica</td><td class="confluenceTd"><p>Contiene los datos generales de las áreas temáticas que se pueden relacionar con las convocatorias.</p></td></tr><tr><td colspan="1" class="confluenceTd">ConvocatoriaAreaTematica</td><td colspan="1" class="confluenceTd">Contiene los datos de la asociación de un área temática con una convocatoria.</td></tr><tr><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">ConvocatoriaDocumento</span></p></td><td colspan="1" class="confluenceTd">Contiene los datos de la asociación de un documento con una convocatoria.</td></tr><tr><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">ConvocatoriaEntidadConvocante</span></p></td><td colspan="1" class="confluenceTd">Contiene los datos de la asociación de una entidad convocante con una convocatoria.</td></tr><tr><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">ConvocatoriaEntidadFinanciadora</span></p></td><td colspan="1" class="confluenceTd">Contiene los datos de la asociación de una entidad financiadora con una convocatoria.</td></tr><tr><td colspan="1" class="confluenceTd">Documento</td><td colspan="1" class="confluenceTd">Contiene los datos de un documento.</td></tr><tr><td colspan="1" class="confluenceTd">FuenteFinanciacion</td><td colspan="1" class="confluenceTd">Contiene los datos de una fuente de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">ModeloEjecucion</td><td colspan="1" class="confluenceTd">Contiene los datos de un modelo de ejecución.</td></tr><tr><td colspan="1" class="confluenceTd">ModeloTipoDocumento</td><td colspan="1" class="confluenceTd">Contiene los datos de la asociación de un tipo de documento con un modelo de ejecución.</td></tr><tr><td colspan="1" class="confluenceTd">ModeloTipoFase</td><td colspan="1" class="confluenceTd">Contiene los datos de la asociación de un tipo de fase con un modelo de ejecución.</td></tr><tr><td colspan="1" class="confluenceTd">ModeloUnidad</td><td colspan="1" class="confluenceTd">Contiene los datos de la asociación de una unidad de gestión con un modelo de ejecución.</td></tr><tr><td colspan="1" class="confluenceTd">Programa</td><td colspan="1" class="confluenceTd">Contiene los datos de un programa.</td></tr><tr><td colspan="1" class="confluenceTd">TipoFinanciacion</td><td colspan="1" class="confluenceTd">Contiene los datos de un tipo de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">UnidadGestion</td><td colspan="1" class="confluenceTd">Contiene los datos de una unidad de gestión.</td></tr></tbody></table></div><h2 id="ESBSGIConvocatorias-Modelológico">Modelo lógico</h2><p><a href="597852500.html">CSP - CONV - Modelo l&oacute;gico</a></p><h2 id="ESBSGIConvocatorias-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a href="Consultas-filtradas-y-paginadas_597853160.html">Consultas filtradas y paginadas</a></li><li><a href="Formatos-de-datos-API_597853494.html">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="ESBSGIConvocatorias-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="ESBSGIConvocatorias-Convocatoria">Convocatoria</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Requerido (alta/modificación)<br/></strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">unidadGestionRef</span></p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><img class="emoticon emoticon-tick" src="images/icons/emoticons/check.svg" data-emoticon-name="tick" alt="(tic)" data-emoji-short-name=":tick:"/></p></td><td colspan="1" class="confluenceTd">Identificador de la unidad de gestión</td></tr><tr><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">titulo</span></p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><img class="emoticon emoticon-tick" src="images/icons/emoticons/check.svg" data-emoticon-name="tick" alt="(tic)" data-emoji-short-name=":tick:"/></td><td colspan="1" class="confluenceTd">Titulo de la convocatoria</td></tr><tr><td class="confluenceTd">formularioSolicitud</td><td class="confluenceTd">String [PROYECTO, GRUPO]</td><td colspan="1" class="confluenceTd"><img class="emoticon emoticon-tick" src="images/icons/emoticons/check.svg" data-emoticon-name="tick" alt="(tic)" data-emoji-short-name=":tick:"/></td><td colspan="1" class="confluenceTd">Tipo de solicitud SGI</td></tr><tr><td colspan="1" class="confluenceTd">modeloEjecucion</td><td colspan="1" class="confluenceTd">ModeloEjecucion</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Modelo de ejecución</td></tr><tr><td colspan="1" class="confluenceTd">fechaProvisional</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Fecha provisional</td></tr><tr><td colspan="1" class="confluenceTd">observaciones</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Observaciones de la convocatoria</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Convocatoria request datos mínimos</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"unidadGestionRef": "1",
+	"titulo": "Titulo",
+	"formularioSolicitud": "PROYECTO",
+    "modeloEjecucion": {
+        "id": 2
+    },
+    "fechaProvisional": "2022-03-18T23:00:00Z",
+    "observaciones": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus leo, aliquam consectetur elementum at, iaculis ac nunc."
+}</pre>
+ </div>
+</div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Convocatoria response</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+    "createdBy": "03839481",
+    "creationDate": "2022-03-30T14:29:13.529Z",
+    "lastModifiedBy": "03839481",
+    "lastModifiedDate": "2022-03-30T14:29:13.529Z",
+    "id": 8,
+    "unidadGestionRef": "1",
+    "modeloEjecucion": {
+        "createdBy": null,
+        "creationDate": null,
+        "lastModifiedBy": null,
+        "lastModifiedDate": null,
+        "id": 2,
+        "nombre": "Facturación",
+        "descripcion": "Facturación",
+        "activo": true,
+        "externo": false,
+        "contrato": true
+    },
+    "codigo": null,
+    "fechaPublicacion": null,
+    "fechaProvisional": "2022-03-18T23:00:00Z",
+    "fechaConcesion": null,
+    "titulo": "Titulo",
+    "objeto": null,
+    "observaciones": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus leo, aliquam consectetur elementum at, iaculis ac nunc.",
+    "finalidad": null,
+    "regimenConcurrencia": null,
+    "estado": "BORRADOR",
+    "duracion": null,
+    "ambitoGeografico": null,
+    "clasificacionCVN": null,
+    "activo": true,
+    "excelencia": null,
+    "formularioSolicitud": "PROYECTO"
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-AreaTematica">AreaTematica</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd"><span class="inline-comment-marker" data-ref="b8687e66-1890-4031-bce6-464da52d1f1c">id</span></td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único del área temática.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del área temática a presentar por pantalla en los componentes visuales árbol o selector.</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción del área temática.</td></tr><tr><td colspan="1" class="confluenceTd">padre</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del área temática de la que depende jerárquicamente, del padre. Si está nulo, se entiende que el área temática es raíz o de primer nivel, no tiene área temática padre.</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><span>Indica si el área temática está activa o no. <br/></span></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">AreaTematica</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": null,
+	"creationDate": null,
+	"lastModifiedBy": null,
+	"lastModifiedDate": null,
+	"id": 10,
+	"nombre": "EYA",
+	"descripcion": "Economía y sus aplicaciones",
+	"padre": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 9,
+		"nombre": "ECO",
+		"descripcion": "Economía",
+		"padre": {
+			"createdBy": null,
+			"creationDate": null,
+			"lastModifiedBy": null,
+			"lastModifiedDate": null,
+			"id": 1,
+			"nombre": "AEI",
+			"descripcion": "Estructura de áreas y paneles científico técnicos de la Agencia Estatal de Investigación",
+			"padre": null,
+			"activo": true
+		},
+		"activo": true
+	},
+	"activo": true
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-ConvocatoriaAreaTematica">ConvocatoriaAreaTematica</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 114.0px;"/><col style="width: 195.0px;"/><col style="width: 253.0px;"/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Long</span></td><td colspan="1" class="confluenceTd">Identificador</td></tr><tr><td colspan="1" class="confluenceTd"><p>convocatoriaId</p></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Long</span></td><td colspan="1" class="confluenceTd">Identificador de la convocatoria</td></tr><tr><td colspan="1" class="confluenceTd"><p>areaTematica</p></td><td colspan="1" class="confluenceTd">AreaTematica</td><td colspan="1" class="confluenceTd">Área temática</td></tr><tr><td class="confluenceTd">observaciones</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Observaciones</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ConvocatoriaAreaTematica</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": "03839481",
+	"creationDate": "2022-03-28T15:58:44.678Z",
+	"lastModifiedBy": "03839481",
+	"lastModifiedDate": "2022-03-28T15:58:44.678Z",
+	"id": 3,
+	"convocatoriaId": 5,
+	"areaTematica": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 10,
+		"nombre": "EYA",
+		"descripcion": "Economía y sus aplicaciones",
+		"padre": {
+			"createdBy": null,
+			"creationDate": null,
+			"lastModifiedBy": null,
+			"lastModifiedDate": null,
+			"id": 9,
+			"nombre": "ECO",
+			"descripcion": "Economía",
+			"padre": {
+				"createdBy": null,
+				"creationDate": null,
+				"lastModifiedBy": null,
+				"lastModifiedDate": null,
+				"id": 1,
+				"nombre": "AEI",
+				"descripcion": "Estructura de áreas y paneles científico técnicos de la Agencia Estatal de Investigación",
+				"padre": null,
+				"activo": true
+			},
+			"activo": true
+		},
+		"activo": true
+	},
+	"observaciones": null
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-ConvocatoriaDocumento">ConvocatoriaDocumento</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 114.0px;"/><col style="width: 195.0px;"/><col style="width: 90.0px;"/><col style="width: 253.0px;"/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Requerido</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd"><p>convocatoriaId</p></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Long</span></td><td colspan="1" class="confluenceTd"><p><img class="emoticon emoticon-tick" src="images/icons/emoticons/check.svg" data-emoticon-name="tick" alt="(tic)" data-emoji-short-name=":tick:"/></p></td><td colspan="1" class="confluenceTd">Identificador de la convocatoria</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><img class="emoticon emoticon-tick" src="images/icons/emoticons/check.svg" data-emoticon-name="tick" alt="(tic)" data-emoji-short-name=":tick:"/></td><td colspan="1" class="confluenceTd">Nombre del documento</td></tr><tr><td colspan="1" class="confluenceTd">documentoRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><img class="emoticon emoticon-tick" src="images/icons/emoticons/check.svg" data-emoticon-name="tick" alt="(tic)" data-emoji-short-name=":tick:"/></td><td colspan="1" class="confluenceTd">Identificador del documento en el sgdoc</td></tr><tr><td colspan="1" class="confluenceTd"><p>tipoFase</p></td><td colspan="1" class="confluenceTd">TipoFase</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Tipo de fase</td></tr><tr><td class="confluenceTd">tipoDocumento</td><td class="confluenceTd">TipoDocumento</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Tipo de documento</td></tr><tr><td colspan="1" class="confluenceTd">publico</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Indica si es un documento publico</td></tr><tr><td colspan="1" class="confluenceTd">observaciones</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Observaciones del documento</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ConvocatoriaDocumento</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"convocatoriaId": 5,
+	"nombre": "Documento",
+	"documentoRef": "f86ec1c0-5f9d-4dc7-8a51-a6c5aa306ada",
+	"tipoFase": {
+		"id": 1
+	},
+	"tipoDocumento": {
+		"id": 13
+	},
+	"publico": true,
+	"observaciones": "Observaciones"
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-ConvocatoriaEntidadConvocante"><span>ConvocatoriaEntidadConvocante</span></h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 114.0px;"/><col style="width: 195.0px;"/><col style="width: 90.0px;"/><col style="width: 253.0px;"/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Requerido</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Long</span></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Identificador</td></tr><tr><td colspan="1" class="confluenceTd"><p>convocatoriaId</p></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Long</span></td><td colspan="1" class="confluenceTd"><p><img class="emoticon emoticon-tick" src="images/icons/emoticons/check.svg" data-emoticon-name="tick" alt="(tic)" data-emoji-short-name=":tick:"/></p></td><td colspan="1" class="confluenceTd">Identificador de la convocatoria</td></tr><tr><td colspan="1" class="confluenceTd"><p>entidadRef</p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><img class="emoticon emoticon-tick" src="images/icons/emoticons/check.svg" data-emoticon-name="tick" alt="(tic)" data-emoji-short-name=":tick:"/></td><td colspan="1" class="confluenceTd">Identificador de la empresa</td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,51,102);">programa</span></p></td><td class="confluenceTd">Programa</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Programa</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ConvocatoriaEntidadConvocante</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+    "createdBy": "03839481",
+    "creationDate": "2022-03-04T08:26:13.329Z",
+    "lastModifiedBy": "03839481",
+    "lastModifiedDate": "2022-03-04T08:26:13.329Z",
+    "id": 65,
+    "convocatoriaId": 97,
+    "entidadRef": "00071039",
+    "programa": {
+        "createdBy": null,
+        "creationDate": null,
+        "lastModifiedBy": null,
+        "lastModifiedDate": null,
+        "id": 82,
+        "nombre": "msca",
+        "descripcion": null,
+        "padre": {
+            "createdBy": null,
+            "creationDate": null,
+            "lastModifiedBy": null,
+            "lastModifiedDate": null,
+            "id": 81,
+            "nombre": "ciencia excelente",
+            "descripcion": null,
+            "padre": {
+                "createdBy": null,
+                "creationDate": null,
+                "lastModifiedBy": null,
+                "lastModifiedDate": null,
+                "id": 80,
+                "nombre": "H2020",
+                "descripcion": "",
+                "padre": null,
+                "activo": true
+            },
+            "activo": true
+        },
+        "activo": true
+    }
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-ConvocatoriaEntidadFinanciadora">ConvocatoriaEntidadFinanciadora</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 114.0px;"/><col style="width: 195.0px;"/><col style="width: 90.0px;"/><col style="width: 253.0px;"/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Requerido</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd"><p>convocatoriaId</p></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Long</span></td><td colspan="1" class="confluenceTd"><p><img class="emoticon emoticon-tick" src="images/icons/emoticons/check.svg" data-emoticon-name="tick" alt="(tic)" data-emoji-short-name=":tick:"/></p></td><td colspan="1" class="confluenceTd">Identificador de la convocatoria</td></tr><tr><td colspan="1" class="confluenceTd"><p>entidadRef</p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><img class="emoticon emoticon-tick" src="images/icons/emoticons/check.svg" data-emoticon-name="tick" alt="(tic)" data-emoji-short-name=":tick:"/></td><td colspan="1" class="confluenceTd">Identificador de la empresa</td></tr><tr><td class="confluenceTd">fuenteFinanciacion</td><td class="confluenceTd">FuenteFinanciacion</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Fuente de financiación</td></tr><tr><td colspan="1" class="confluenceTd">tipoFinanciacion</td><td colspan="1" class="confluenceTd">TipoFinanciacion</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Tipo de financiación</td></tr><tr><td colspan="1" class="confluenceTd">porcentajeFinanciacion</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Long</span></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Porcentaje de financiación</td></tr><tr><td colspan="1" class="confluenceTd">importeFinanciacion</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Long</span></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Importe de financiación</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ConvocatoriaEntidadFinanciadora</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"entidadRef": "00071039",
+	"convocatoriaId": 1,
+	"fuenteFinanciacion": {
+		"id": 4
+	},
+	"tipoFinanciacion": {
+		"id": 3
+	},
+	"porcentajeFinanciacion": 50,
+	"importeFinanciacion": 60000
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-PalabraClave">PalabraClave</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 18.512%;"/><col style="width: 16.5633%;"/><col style="width: 64.9247%;"/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único autogenerado de la palabra clave.</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">convocatoriaId</span></td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la convocatoria a la que se asocia la palabra clave.</td></tr><tr><td class="confluenceTd">palabraClaveRef</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia a la palabra clave. Coincide con el texto de la palabra clave por ser único en el diccionario de todo el SGI.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">PalabraClave</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id": 12,	
+	"convocatoriaId": 1,
+	"palabraClaveRef": "Tratamiento experimental"
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-Documento">Documento</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 114.0px;"/><col style="width: 195.0px;"/><col style="width: 253.0px;"/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd"><p>documentoRef</p></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">String</span></td><td colspan="1" class="confluenceTd">Identificador del documento</td></tr><tr><td colspan="1" class="confluenceTd"><p>nombre</p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del documento</td></tr><tr><td class="confluenceTd">version</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Versión del documento</td></tr><tr><td colspan="1" class="confluenceTd">fechaCreacion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de creación</td></tr><tr><td colspan="1" class="confluenceTd">tipo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Tipo de fichero</td></tr><tr><td colspan="1" class="confluenceTd">autorRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Autor</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Documento</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+    "documentoRef": "6712829d-ea85-4b10-be25-5130dbb264fa",
+    "nombre": "archivo4.pdf",
+    "version": 1,
+    "fechaCreacion": "2022-03-07T10:15:52.527",
+    "tipo": "application/pdf",
+    "autorRef": "anonymous"
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-FuenteFinanciacion">FuenteFinanciacion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 114.0px;"/><col style="width: 195.0px;"/><col style="width: 253.0px;"/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd"><p>id</p></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Long</span></td><td colspan="1" class="confluenceTd">Identificador de la fuente de financiación</td></tr><tr><td colspan="1" class="confluenceTd"><p>nombre</p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre de la fuente de financiación</td></tr><tr><td class="confluenceTd">descripcion</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción de la fuente de financiación</td></tr><tr><td colspan="1" class="confluenceTd">fondoEstructural</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si es un fondo estructural</td></tr><tr><td colspan="1" class="confluenceTd">tipoAmbitoGeografico</td><td colspan="1" class="confluenceTd">TipoAmbitoGeografico</td><td colspan="1" class="confluenceTd">Tipo de ámbito geográfico</td></tr><tr><td colspan="1" class="confluenceTd">tipoOrigenFuenteFinanciacion</td><td colspan="1" class="confluenceTd">TipoOrigenFuenteFinanciacion</td><td colspan="1" class="confluenceTd">Tipo de origen de la fuente de financiación</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Indica si esta activo o no</span></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">FuenteFinanciacion</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id": 4,
+	"nombre": "Horizonte 2020",
+	"descripcion": null,
+	"fondoEstructural": true,
+	"tipoAmbitoGeografico": {
+		"id": 5,
+		"nombre": "Europeo"
+	},
+	"tipoOrigenFuenteFinanciacion": {
+		"id": 1,
+		"nombre": "Público"
+	},
+	"activo": true
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-ModeloEjecucion">ModeloEjecucion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del modelo de ejecución.</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd"><p>nombre</p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre</td></tr><tr><td colspan="1" class="confluenceTd"><p>descripcion</p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descricpión</td></tr><tr><td colspan="1" class="confluenceTd">externo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Indica si <label class="mat-checkbox-layout" for="mat-checkbox-1-input"><span class="mat-checkbox-label">la participación del personal investigador del <label class="mat-checkbox-layout" for="mat-checkbox-1-input">proyecto o contrato</label> se realizará a través de una entidad externa</span></label></p></td></tr><tr><td colspan="1" class="confluenceTd">contrato</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si es un modelo de ejecución para <span>Contrato / Convenio</span></td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Indica si esta activo o no</span></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ModeloEjecucion</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": null,
+	"creationDate": null,
+	"lastModifiedBy": null,
+	"lastModifiedDate": null,
+	"id": 2,
+	"nombre": "Facturación",
+	"descripcion": "Facturación",
+	"activo": true,
+	"externo": false,
+	"contrato": true
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-ModeloTipoDocumento">ModeloTipoDocumento</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del modelo tipo documento.</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd"><p>tipoDocumento</p></td><td colspan="1" class="confluenceTd">TipoDocumetno</td><td colspan="1" class="confluenceTd">Tipo de documento</td></tr><tr><td colspan="1" class="confluenceTd"><p>modeloEjecucion</p></td><td colspan="1" class="confluenceTd">ModeloEjecucion</td><td colspan="1" class="confluenceTd">El modelo de ejecución</td></tr><tr><td colspan="1" class="confluenceTd">modeloTipoFase</td><td colspan="1" class="confluenceTd">ModeloTipoFase</td><td colspan="1" class="confluenceTd">El modelo tipo fase</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Indica si esta activo o no</span></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ModeloTipoDocumento</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">    {
+    	"createdBy": null,
+    	"creationDate": null,
+    	"lastModifiedBy": null,
+    	"lastModifiedDate": null,
+    	"id": 12,
+    	"tipoDocumento": {
+    		"createdBy": null,
+    		"creationDate": null,
+    		"lastModifiedBy": null,
+    		"lastModifiedDate": null,
+    		"id": 13,
+    		"nombre": "CVA",
+    		"descripcion": null,
+    		"activo": true
+    	},
+    	"modeloEjecucion": {
+    		"createdBy": null,
+    		"creationDate": null,
+    		"lastModifiedBy": null,
+    		"lastModifiedDate": null,
+    		"id": 1,
+    		"nombre": "Subvención",
+    		"descripcion": "Subvención",
+    		"activo": true,
+    		"externo": false,
+    		"contrato": false
+    	},
+    	"modeloTipoFase": {
+    		"createdBy": null,
+    		"creationDate": null,
+    		"lastModifiedBy": null,
+    		"lastModifiedDate": null,
+    		"id": 2,
+    		"tipoFase": {
+    			"createdBy": null,
+    			"creationDate": null,
+    			"lastModifiedBy": null,
+    			"lastModifiedDate": null,
+    			"id": 1,
+    			"nombre": "Presentación interna solicitudes",
+    			"descripcion": null,
+    			"activo": true
+    		},
+    		"modeloEjecucion": {
+    			"createdBy": null,
+    			"creationDate": null,
+    			"lastModifiedBy": null,
+    			"lastModifiedDate": null,
+    			"id": 1,
+    		},
+    		"solicitud": false,
+    		"convocatoria": true,
+    		"proyecto": false,
+    		"activo": true
+    	},
+    	"activo": true
+    }</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-ModeloTipoFase">ModeloTipoFase</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del modelo tipo fase.</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd"><p>tipoFase</p></td><td colspan="1" class="confluenceTd">TipoFase</td><td colspan="1" class="confluenceTd">Tipo fase</td></tr><tr><td colspan="1" class="confluenceTd"><p>modeloEjecucion</p></td><td colspan="1" class="confluenceTd">ModeloEjecucion</td><td colspan="1" class="confluenceTd">El modelo de ejecución</td></tr><tr><td colspan="1" class="confluenceTd">solicitud</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si se puede usar en solicitudes</td></tr><tr><td colspan="1" class="confluenceTd">convocatoria</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si se puede usar en convocatorias</td></tr><tr><td colspan="1" class="confluenceTd">proyecto</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si se puede usar en proyectos</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Indica si esta activo o no</span></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ModeloTipoFase</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": null,
+	"creationDate": null,
+	"lastModifiedBy": null,
+	"lastModifiedDate": null,
+	"id": 2,
+	"tipoFase": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 1,
+		"nombre": "Presentación interna solicitudes",
+		"descripcion": null,
+		"activo": true
+	},
+	"modeloEjecucion": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 1,
+		"nombre": "Subvención",
+		"descripcion": "Subvención",
+		"activo": true,
+		"externo": false,
+		"contrato": false
+	},
+	"solicitud": false,
+	"convocatoria": true,
+	"proyecto": false,
+	"activo": true
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-ModeloUnidad">ModeloUnidad</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del modelo unidad.</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">unidadGestionRef</span></p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la unidad de gestión</td></tr><tr><td colspan="1" class="confluenceTd"><p>modeloEjecucion</p></td><td colspan="1" class="confluenceTd">ModeloEjecucion</td><td colspan="1" class="confluenceTd">El modelo de ejecución</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Indica si esta activo o no</span></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ModeloUnidad</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": null,
+	"creationDate": null,
+	"lastModifiedBy": null,
+	"lastModifiedDate": null,
+	"id": 4,
+	"unidadGestionRef": "1",
+	"modeloEjecucion": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 2,
+		"nombre": "Facturación",
+		"descripcion": "Facturación",
+		"activo": true,
+		"externo": false,
+		"contrato": true
+	},
+	"activo": true
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-Programa">Programa</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><thead><tr><th style="text-align: left;" class="confluenceTh"><p>Nombre</p></th><th style="text-align: left;" class="confluenceTh"><p>Tipo</p></th><th style="text-align: left;" colspan="1" class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td style="text-align: left;" class="confluenceTd">id</td><td style="text-align: left;" class="confluenceTd">Long</td><td style="text-align: left;" colspan="1" class="confluenceTd">Identificador del programa.</td></tr><tr><td style="text-align: left;" class="confluenceTd">createdBy</td><td style="text-align: left;" class="confluenceTd">String</td><td style="text-align: left;" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td style="text-align: left;" class="confluenceTd">creationDate</td><td style="text-align: left;" class="confluenceTd">String</td><td style="text-align: left;" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td style="text-align: left;" class="confluenceTd">lastModifiedBy</td><td style="text-align: left;" class="confluenceTd">String</td><td style="text-align: left;" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td style="text-align: left;" class="confluenceTd">lastModifiedDate</td><td style="text-align: left;" class="confluenceTd">String</td><td style="text-align: left;" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">nombre</td><td style="text-align: left;" colspan="1" class="confluenceTd">String</td><td style="text-align: left;" colspan="1" class="confluenceTd">Nombre del programa.</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">descripcion</td><td style="text-align: left;" colspan="1" class="confluenceTd">String</td><td style="text-align: left;" colspan="1" class="confluenceTd">Descripción del programa.</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">padre</td><td style="text-align: left;" colspan="1" class="confluenceTd">Programa</td><td style="text-align: left;" colspan="1" class="confluenceTd">Entidad que representa el programa padre</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Convocatoria</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": null,
+	"creationDate": null,
+	"lastModifiedBy": null,
+	"lastModifiedDate": null,
+	"id": 81,
+	"nombre": "ciencia excelente",
+	"descripcion": null,
+	"padre": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 80,
+		"nombre": "H2020",
+		"descripcion": "",
+		"padre": null,
+		"activo": true
+	},
+	"activo": true
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-TipoFinanciacion">TipoFinanciacion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del tipo de financiacion.</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd"><p>nombre</p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del tipo de financiación</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción del tipo de financiación</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Indica si esta activo o no</span></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">TipoFinanciacion</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": null,
+	"creationDate": null,
+	"lastModifiedBy": null,
+	"lastModifiedDate": null,
+	"id": 3,
+	"nombre": "Facturación",
+	"descripcion": null,
+	"activo": true
+}</pre>
+ </div>
+</div><h4 id="ESBSGIConvocatorias-UnidadGestion">UnidadGestion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la unidad de gestión.</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd"><p>nombre</p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre de la unidad de gestión</td></tr><tr><td colspan="1" class="confluenceTd"><p>acronimo</p></td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Acronimo de la unidad de gestión</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción de la unidad de gestión</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Indica si esta activa o no</span></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">UnidadGestion</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": null,
+	"creationDate": null,
+	"lastModifiedBy": null,
+	"lastModifiedDate": null,
+	"id": 1,
+	"nombre": "OTRI",
+	"acronimo": "OTRI",
+	"descripcion": "Oficina de Transferencia de Resultados de Investigación",
+	"activo": true
+}</pre>
+ </div>
+</div><h3 id="ESBSGIConvocatorias-Servicios">Servicios</h3><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Para componer la URL llamada completa, se debe anteponer a lo indicado en la columna URL lo siguiente: <strong>{HOST}/api/sgicsp</strong>, donde <strong>{HOST}</strong> de deberá sustituir el dominio correspondiente al entorno al que se está accediendo y dicho acceso será por http o https según el caso.</p></div></div><p>Se definen en primer lugar una lista de servicios organizados paso a paso para llevar a cabo el proceso de dar de alta e una convocatoria en el SGI con los datos generales mínimos por parte de terceros y de modificarla a continuación para asociarle el resto de información.</p><p>Finalmente, se incluye el listado de aquellos métodos de consulta que no fueron descritos en los apartados anteriores.</p><h4 id="ESBSGIConvocatorias-Crearconvocatoria">Crear convocatoria</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 95.8972%;"><colgroup><col style="width: 6.44977%;"/><col style="width: 13.4132%;"/><col style="width: 16.9521%;"/><col style="width: 13.6986%;"/><col style="width: 49.4863%;"/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><p>Servicio /unidades del API de Usuarios.</p><p>Ver URL en <a href="ESB---SGI---Usuarios_597853116.html">ESB - SGI - Usuarios</a></p></td><td class="confluenceTd"><p>q+s (query + sort)</p></td><td class="confluenceTd">Lista[UnidadGestion]</td><td class="confluenceTd"><p>Listado de unidades de gestión</p></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/modelounidades</td><td class="confluenceTd"><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>unidadGestionRef</li></ul></td><td class="confluenceTd"><span>ModeloUnidad</span></td><td class="confluenceTd"><p>Listado de <span>ModeloUnidad de la unidad de gestión indicada</span></p><p style="text-align: left;"><em>Ejemplo</em>:</p><p style="text-align: left;">unidadGestionRef==&quot;1&quot;</p></td></tr><tr><td colspan="1" class="confluenceTd">POST</td><td colspan="1" class="confluenceTd">/convocatorias</td><td colspan="1" class="confluenceTd">Convocatoria</td><td colspan="1" class="confluenceTd">Convocatoria</td><td colspan="1" class="confluenceTd"><p>Crea la convocatoria.</p><p>Los siguientes campos se rellenan con los datos obtenidos de los endpoints anteriores:</p><ul><li>unidadGestionRef: Se corresponde con el campo id de UnidadGestion obtenida de /sgiusr/unidades </li><li>modeloEjecucion: Se corresponde con el campo modeloEjecucion obtenida de /modelounidades filtrando por la unidad gestión que se indique en el campo unidadGestionRef de la convocatoria</li></ul><p><br/></p></td></tr></tbody></table></div><h4 id="ESBSGIConvocatorias-Asociarentidadesconvocantes">Asociar entidades convocantes</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 96.6083%;"><colgroup><col style="width: 6.00378%;"/><col style="width: 13.3399%;"/><col style="width: 16.5977%;"/><col style="width: 14.56%;"/><col style="width: 49.4986%;"/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><p>Servicio /empresas del API del Sistema de Gestión de Empresas.</p><p>Ver URL en <a href="SGI---ESB---SGEMP_597853152.html">SGI - ESB - SGEMP</a></p></td><td class="confluenceTd"><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>nombre</li><li>razonSocial</li><li>numeroIdentificacion</li></ul></td><td class="confluenceTd">Lista[Empresas]</td><td class="confluenceTd"><p style="text-align: left;">Listado de Empresa.</p><p style="text-align: left;"><em>Ejemplo</em>:</p><p style="text-align: left;">numeroIdentificacion=ik=&quot;123&quot;,nombre=ik=&quot;123&quot;,razonSocial=ik=&quot;123&quot;</p></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/programas/plan</td><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd"><span>Programa</span></td><td class="confluenceTd">Listado de <span>planes (programas sin padre)</span></td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd">/programas/{id}/hijos</td><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd"><span>Programa</span></td><td colspan="1" class="confluenceTd">Listado de programas que tienen como padre el programa indicado</td></tr><tr><td colspan="1" class="confluenceTd">POST</td><td colspan="1" class="confluenceTd">/convocatoriaentidadconvocantes</td><td colspan="1" class="confluenceTd">ConvocatoriaEntidadConvocante</td><td colspan="1" class="confluenceTd">ConvocatoriaEntidadConvocante</td><td colspan="1" class="confluenceTd"><p>Crea la entidad convocante de la convocatoria.</p><p>Los siguientes campos se rellenan con los datos obtenidos de los endpoints anteriores:</p><ul><li>convocatoriaId: Identificador de una convocatoria creada previamente mediante /convocatorias</li><li>entidadRef: Se corresponde con el campo id de una Empresa obtenida de /sgemp/empresas </li><li>programa: Programa obtenido con /programas/plan o con /programas/{id}/hijos</li></ul><p><br/></p></td></tr></tbody></table></div><h4 id="ESBSGIConvocatorias-Asociarentidadesfinanciadoras">Asociar entidades financiadoras</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 91.6024%;"><colgroup><col style="width: 6.7346%;"/><col style="width: 8.86132%;"/><col style="width: 18.2543%;"/><col style="width: 14.3553%;"/><col style="width: 51.7944%;"/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><p>Servicio /empresas del API del Sistema de Gestión de Empresas.</p><p>Ver URL en <a href="SGI---ESB---SGEMP_597853152.html">SGI - ESB - SGEMP</a></p></td><td class="confluenceTd"><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>nombre</li><li>razonSocial</li><li>numeroIdentificacion</li></ul></td><td class="confluenceTd">Lista[Empresas]</td><td class="confluenceTd"><p style="text-align: left;">Listado de Empresa.</p><p style="text-align: left;"><em>Ejemplo</em>:</p><p style="text-align: left;">numeroIdentificacion=ik=&quot;123&quot;,nombre=ik=&quot;123&quot;,razonSocial=ik=&quot;123&quot;</p></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/tipofinanciaciones</td><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd"><span>TipoFinanciacion</span></td><td class="confluenceTd">Listado de <span>planes (programas sin padre)</span></td></tr><tr><td colspan="1" class="confluenceTd">GET</td><td colspan="1" class="confluenceTd">/fuentesfinanciacion</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><span>FuenteFinanciacion</span></td><td colspan="1" class="confluenceTd">Listado de programas que tienen como padre el programa indicado</td></tr><tr><td colspan="1" class="confluenceTd">POST</td><td colspan="1" class="confluenceTd">/convocatoriaentidadconvocantes</td><td colspan="1" class="confluenceTd">ConvocatoriaEntidadFinanciadora</td><td colspan="1" class="confluenceTd">ConvocatoriaEntidadFinanciadora</td><td colspan="1" class="confluenceTd"><p>Crea la entidad financiadora de la convocatoria.</p><p>Los siguientes campos se rellenan con los datos obtenidos de los endpoints anteriores:</p><ul><li>convocatoriaId: Identificador de una convocatoria creada previamente mediante /convocatorias</li><li>entidadRef: Se corresponde con el campo id de una Empresa obtenida de /sgemp/empresas </li><li>fuenteFinanciacion: Fuente de financiación obtenida con /fuentesfinanciacion</li><li>tipoFinanciacion: Tipo obtenido con /tipofinanciaciones</li></ul><p><br/></p></td></tr></tbody></table></div><h4 id="ESBSGIConvocatorias-Asociardocumentos">Asociar documentos</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 91.5619%;"><colgroup><col style="width: 6.16135%;"/><col style="width: 16.7553%;"/><col style="width: 10.9929%;"/><col style="width: 10.3723%;"/><col style="width: 55.7181%;"/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/modeloejecuciones/{id}/modelotipofases</td><td class="confluenceTd"><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>tipoFase.activo</li><li>convocatoria</li></ul></td><td class="confluenceTd">Lista[ModeloTipoFase]</td><td class="confluenceTd"><p style="text-align: left;">Listado de tipos de fase del modelo de ejecución de la convocatoria.</p><p style="text-align: left;"><em>Ejemplo</em>:</p><p style="text-align: left;">tipoFase.activo==&quot;true&quot;;convocatoria==&quot;true&quot;</p></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/modeloejecuciones/{id}/modelotipodocumentos</td><td class="confluenceTd"><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>tipoDocumento.activo</li><li>modeloTipoFase.tipoFase.id</li></ul></td><td class="confluenceTd"><span>Lista[ModeloTipoDocumento]</span></td><td class="confluenceTd"><p style="text-align: left;">Listado de tipos de documento del modelo de ejecución de la convocatoria y del tipo de fase si se selecciona una.</p><p style="text-align: left;"><em>Ejemplo</em>:</p><p style="text-align: left;">tipoDocumento.activo==&quot;true&quot;;modeloTipoFase.tipoFase.id==&quot;1&quot;</p></td></tr><tr><td colspan="1" class="confluenceTd">POST</td><td colspan="1" class="confluenceTd"><p>Servicio<strong> </strong>/documentos del API del Sistema de Gestión de Documentos.</p><p>Ver URL en <a href="SGI---ESB---SGDOC_597852736.html">SGI - ESB - SGDOC</a>.</p><p><br/></p></td><td colspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">(multipart/form-data) </span></p><ul><li><span style="color: rgb(23,43,77);">archivo: ficherobinario</span></li></ul></td><td colspan="1" class="confluenceTd"><span>Documento</span></td><td colspan="1" class="confluenceTd">Guarda el documento en el sgdoc</td></tr><tr><td colspan="1" class="confluenceTd">POST</td><td colspan="1" class="confluenceTd">/convocatoriadocumentos</td><td colspan="1" class="confluenceTd">ConvocatoriaDocumento</td><td colspan="1" class="confluenceTd">ConvocatoriaDocumento</td><td colspan="1" class="confluenceTd"><p>Crea la entidad documento de la convocatoria.</p><p>Los siguientes campos se rellenan con los datos obtenidos de los endpoints anteriores:</p><ul><li>convocatoriaId: Identificador de una convocatoria creada previamente mediante /convocatorias</li><li>documentoRef: Se corresponde con el campo documentoRef obtenido al crear un nuevo documento con /sgdoc/documentos </li><li>tipoFase: Se corresponde con el campo tipoFase del ModeloTipoFase obtenido con /modeloejecuciones/{id}/modelotipofases</li><li>tipoDocumento: Se corresponde con el campo tipoDocumento del ModeloTipoDocumento obtenido con /modeloejecuciones/{id}/modelotipodocumentos</li></ul><p><br/></p></td></tr></tbody></table></div><h4 id="ESBSGIConvocatorias-Consultarconvocatorias">Consultar convocatorias</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 145.0px;"/><col style="width: 334.0px;"/><col style="width: 259.0px;"/><col style="width: 313.0px;"/><col style="width: 651.0px;"/></colgroup><thead><tr><th style="width: 7.30977%;" class="confluenceTh"><p>Método</p></th><th style="width: 16.8364%;" class="confluenceTh"><p>URL</p></th><th style="width: 13.0617%;" class="confluenceTh"><p>Parámetros</p></th><th style="width: 15.7579%;" class="confluenceTh"><p>Respuesta</p></th><th style="width: 39.0054%;" class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" data-highlight-colour="#e3fcef">GET</td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" data-highlight-colour="#e3fcef"><span style="color: rgb(0,0,0);" title="">/convocatorias</span></td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" data-highlight-colour="#e3fcef"><p title="">q+s (query + sort)</p><p title="">La query estará formada por:</p><ul title=""><li>cualquiera de los campos del objeto Convocatoria</li></ul></td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" data-highlight-colour="#e3fcef">Lista[Convocatoria]</td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" data-highlight-colour="#e3fcef"><p style="text-align: left;" title="">Listado de convocatorias.</p><p style="text-align: left;" title=""><em>Ejemplo</em>:</p><p style="text-align: left;" title="">fechaProvisional=ge=&quot;2022-02-28T23:00:00Z&quot;;fechaProvisional=le=&quot;2022-03-31T21:59:59Z&quot;</p></td></tr><tr><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" data-highlight-colour="#e3fcef">GET</td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" data-highlight-colour="#e3fcef">/convocatoria<span style="color: rgb(0,51,102);" title="">s/{id}</span>/convocatoriaareatematicas</td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" data-highlight-colour="#e3fcef"><br/></td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" data-highlight-colour="#e3fcef"><span title="">Lista[ConvocatoriaAreaTematica]</span></td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" data-highlight-colour="#e3fcef">Listado de <span title="">las asociaciones de áreas temáticas con</span><span title=""> la convocatoria.</span></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/convocatorias/{id}/<span style="color: rgb(0,51,102);">convocatoriadocumentos</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span>Lista[ConvocatoriaDocumento]</span></td><td class="confluenceTd"><p style="text-align: left;">Listado de <span>asociaciones entre documentos y la convocatoria</span></p></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/convocatorias/{id}/convocatoriaentidadconvocantes</td><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd"><span>Lista[ConvocatoriaEntidadConvocante]</span></td><td class="confluenceTd">Listado de <span>asociaciones</span><span> entre entidades convocantes y </span><span>la convocatoria</span></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/convocatoria<span style="color: rgb(0,51,102);">s/{id}</span>/<span style="color: rgb(0,51,102);">convocatoriaentidadfinanciadoras</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span>Lista[ConvocatoriaEntidadFinanciadora]</span></td><td class="confluenceTd"><p>Listado de <span>asociaciones</span><span> entre entidades financiadoras y</span><span> la convocatoria</span></p><p><br/></p></td></tr><tr><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef">GET</td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef">/convocatorias/{id}/palabrasclave</td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef"><br/></td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef">Lista[PalabraClave]</td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef">Listado de <span title="">palabras clave</span><span title=""> de la convocatoria</span></td></tr><tr><td class="highlight-#f4f5f7 confluenceTd" title="Color de fondo: 100 % gris claro" colspan="5" data-highlight-colour="#f4f5f7"><br/></td></tr><tr><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef">GET</td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef"><span title="">/areatematicas</span></td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef"><p title="">q+s (query + sort)</p><p title="">La query estará formada por:</p><ul title=""><li>padreId</li></ul></td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef">Lista[AreaTematica]</td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef"><p title="">Listado de AreaTematica  (sólo devuelve los registros activos).</p><p title="">Nota: en el caso de no recibirse un padreId en la query, se devolverán todas las áreas temáticas y en caso de indicarse en la query que se quieren solo las que tengan un padreId con valor &quot;null&quot; se devolverán únicamente las de primer nivel o nivel raíz.</p><p title=""><em>Ejemplo de query para obtener solo áreas de conocimiento raíz (su padre es null)</em>:</p><p style="margin-left: 30.0px;" title="">padreId=na=</p></td></tr><tr><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef">GET</td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef"><span title=""><span class="url-filename">/areatematicas/{id}</span></span></td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef"><br/></td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef">AreaTematica</td><td class="highlight-#e3fcef confluenceTd" title="Color de fondo: 35 % verde claro" colspan="1" data-highlight-colour="#e3fcef">Datos de un área temática específica.</td></tr></tbody></table></div><p><br/></p><p><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:38</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

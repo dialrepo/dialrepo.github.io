@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Instalación con borrado de datos</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853447.html">Guia de Implantación - Checklist</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="UM----Universidad-de-Murcia_597853451.html">UM -  Universidad de Murcia</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Instalación con borrado de datos
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (jesus.alvarez)</span>, last modified by <span class='editor'> Lucía Soto Crespo</span> on abr 05, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><strong><span style="color: rgb(0,0,0);">Opción 1</span></strong></p><p><span style="color: rgb(0,0,0);">En caso de querer realizar una instalación de la aplicación reiniciando los datos (con borrado de datos), s</span><span style="color: rgb(0,0,0);">e ha de ejecutar el script &quot;<strong>cleanSchema.sql</strong>&quot; <strong>ANTES</strong> de realizar la actualización, y <strong>POR CADA ESQUEMA QUE SE QUIERA LIMPIAR</strong>. </span></p><p><span style="color: rgb(0,0,0);"><span class="confluence-embedded-file-wrapper"><a class="confluence-embedded-file" href="/confluence/download/attachments/597853284/cleanSchema.sql?version=1&amp;modificationDate=1664355290000&amp;api=v2" data-nice-type="null" data-file-src="/confluence/download/attachments/597853284/cleanSchema.sql?version=1&amp;modificationDate=1664355290000&amp;api=v2" data-linked-resource-id="597871674" data-linked-resource-type="attachment" data-linked-resource-container-id="597853284" data-linked-resource-default-alias="cleanSchema.sql" data-mime-type="application/octet-stream" data-has-thumbnail="false" data-linked-resource-version="1" data-can-edit="true" aria-label="cleanSchema.sql" draggable="false"><img src="download/resources/com.atlassian.confluence.plugins.confluence-view-file-macro:view-file-macro-resources/images/placeholder-medium-file.png" height="250" alt="" draggable="false"/><span class="title">cleanSchema.sql</span></a><span class="companion-edit-button-placeholder edit-button-overlay" data-linked-resource-container-id="597853284" data-linked-resource-id="597871674" data-template-name="companionEditIcon" data-source-location="embedded-attachment"></span></span></span></p><p><span style="color: rgb(0,0,0);">Eliminará <strong>TODOS</strong> los <strong>OBJETOS</strong> del esquema (secuencias, tablas, <strong>vistas</strong>, <strong>procedimientos almacenados</strong>, etc...). Con lo cual, <strong>por seguridad</strong>, <strong>se recomienda ejecutarlo utilizando las credenciales del propietario del esquema</strong>.</span></p><p><span style="color: rgb(0,0,0);">Tener en cuenta que si dentro del esquema existieran secuencias, tablas, vistas, procedimientos almacenados, etc ... que no sean propios de la instalación del SGI habría que volver a crearlos tras la instalación.</span></p><p><span style="color: rgb(0,0,0);">El SGI ofrece la posibilidad de realizar una carga inicial de valores de prueba. Para ello hay que configurar en el archivo values.yaml del despliegue el siguiente valor:</span></p><blockquote><p><span style="color: rgb(0,0,0);">  spring:<br/>    ...<br/>    liquibaseContexts: dev</span></p></blockquote><p><br/></p><p><span style="color: rgb(0,0,0);">El parámetro <strong>liquibaseContexts </strong>puede tener los valores dev o pro. Con el valor dev los datos de ejemplo serán cargados en el despliegue de la aplicación.</span></p><p><br/></p><p><strong>Opción 2</strong></p><p>1.- Borrar todo menos ética y el modulo de keycloak.</p><p>2-,. Hacer un despliegue con el parámetro dev del values. Eso carga todos los datos de configuración, modelos de ejecución, etc... y algunos datos de solicitudes, convocatorias y proyectos de pruebas.</p><p>3.- Para borrar solo los datos de pruebas de Convocatorias, Solicitudes y Proyectos, antes de lanzar los scrips de migración hay que hacer un delete on cascade de esas 3 tablas (Convocatorias, Solicitudes y Proyectos).</p><p>4.- Lanzar la migración</p><p>5.- Recrear las vistas de goliath.</p><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853284/597871674.sql">cleanSchema.sql</a> (application/octet-stream)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:55</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

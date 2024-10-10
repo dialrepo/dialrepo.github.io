@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-ETI-0080-002 - Volver a estado anterior</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853840.html">ETI - Módulo de ética</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="ETI---Casos-de-Uso_597853670.html">ETI - Casos de Uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852508.html">CU-ETI-0080 - Peticiones de evaluación - Gestor</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-ETI-0080-002 - Volver a estado anterior
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified by <span class='editor'> Usuario desconocido (alicia.alvarez)</span> on may 12, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong><strong><strong><strong>CU-ETI-0080-002 -Volver a estado anterior<br/></strong></strong></strong></strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline">LIBERADO_</span></div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd"><p>ACT-ETI-001-Gestor</p></td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Baja</td></tr></tbody></table></div></div><h2 id="CUETI0080002Volveraestadoanterior-Descripción">Descripción</h2><p>Desde el listado de memorias de una petición de evaluación, el gestor puede cambiar el estado de las memorias a su estado anterior dependiendo del estado actual de las memorias. No se puede hacer con todos los estados</p><p>Únicamente se pueden hacer los siguientes cambios de estado:</p><ul><li>Si el estado de la memoria es  &quot;En secretaría&quot; al pulsar sobre la acción <em>Volver estado anterior</em> se volverá al estado &quot;Completada&quot; (si no tiene evaluaciones asociadas),  &quot;Pendiente de correcciones&quot; (si la última evaluación tiene un dictamen &quot;Pendiente de correcciones&quot;), o &quot;No procede evaluar&quot; (si la última evaluación tiene un dictamen &quot;No procede evaluar&quot;)</li><li>Si el estado de la memoria es &quot;En secretaría revisión mínima&quot; al pulsar sobre la acción <em>Volver estado anterior</em> se volverá al estado &quot;Favorable pendiente de revisión mínima&quot;</li><li>Si el estado de la memoria es &quot;Archivada&quot; al pulsar sobre la acción <em>Volver estado anterior</em> se volverá al estado &quot;Pendiente de correcciones&quot; (si la última evaluación tiene un dictamen &quot;Pendiente de correcciones&quot;),  o &quot;No procede evaluar&quot; (si la última evaluación tiene un dictamen &quot;No procede evaluar&quot;) o &quot;Favorable pendiente de revisión mínima&quot; (si la última evaluación tiene un dictamen &quot;Favorable pendiente de revisión mínima&quot;)</li><li>Si el estado de la memoria es  &quot;En evaluación&quot; al pulsar sobre la acción <em>Volver estado anterior</em> se volverá al estado &quot;En secretaría&quot;. Habrá que eliminar la evaluación creada.</li></ul><h2 id="CUETI0080002Volveraestadoanterior-Actores">Actores</h2><h3 id="CUETI0080002Volveraestadoanterior-Actorprincipal">Actor principal</h3><p>ACT-ETI-001-Gestor</p><h2 id="CUETI0080002Volveraestadoanterior-Precondiciones">Precondiciones</h2><p>Usuario logado en el sistema con el rol adecuado dentro del módulo ETI.</p><p>Haber accedido a la opción de menú Peticiones de evaluación y seleccionado una petición del listado para su consulta o bien desde la opción de menú Memorias.</p><p>La petición de evaluación tiene una memoria en estado &quot;Enviar secretaría&quot;.</p><h2 id="CUETI0080002Volveraestadoanterior-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>Se cambia al estado &quot;Completada&quot; (si no tiene evaluaciones asociadas), &quot;Pendiente de correcciones&quot; (si la última evaluación tiene un dictamen &quot;Pendiente de correcciones&quot;), o &quot;No procede evaluar&quot; (si la última evaluación tiene un dictamen &quot;No procede evaluar&quot;)</p><h2 id="CUETI0080002Volveraestadoanterior-Escenarioprincipal(flujobásico)">Escenario principal (flujo básico)</h2><ol><li>Se presenta la pantalla Peticiones de evaluación con el listado de todas las peticiones de evaluación dadas de alta en el sistema.</li><li>Se selecciona la petición de evaluación.</li><li>El usuario va a la pestaña de Memorias.</li><li>El usuario selecciona la acción de Volver a estado anterior en una memoria que está en estado &quot;En secretaría&quot;.</li><li>El sistema hace todos los cambios que tienen que hacer (los comentados en las postcondiciones).</li><li>El usuario es informado del resultado positivo de la acción.</li><li>Se mantienen en la pantalla de listado de memoria, donde puede verse el cambio de estado de la memoria.</li></ol>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:37</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : 1. Descripción del módulo de extracción de descriptores</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147272.html">Herramienta de CV. Hércules ED - Enriquecimiento de Datos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147273.html">Análisis funcional. Herramienta de CV. Hércules ED - Enriquecimiento de Datos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="RO-Enrichment_598147265.html">RO Enrichment</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147241.html">Extracción de descriptores y similitud</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Flujo-e-interfaces-del-enriquecimiento.-Descriptores-y-Matching_598147244.html">Flujo e interfaces del enriquecimiento. Descriptores y Matching</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147320.html">Enriquecimiento. Descriptores. Análisis y trabajos preliminares</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147239.html">Extracción de descriptores. Análisis y trabajos iniciales</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : 1. Descripción del módulo de extracción de descriptores
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Juan Tardón Martínez</span> on feb 08, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>La tarea a abordar por el sistema es la extracción de descriptores correspondientes a ROs determinados. Entendemos descriptor como espacio semántico (de granularidad arbitraria) presente en un texto, que puede expresarse léxicamente mediante etiquetas/descriptores que corresponden a sintagmas nominales representativos del descriptor. Los descriptores de grano grueso corresponderán a áreas temáticas, mientras que los descriptores de grano fino se referirán a conceptos más específicos.</p><p>El término tópico (o <em>topic</em>) en la literatura de PLN se entiende como un espacio semántico (de granularidad arbitraria) incluido en un texto que habitualmente se presenta asociado a la tarea de generación de modelos de tópicos o <em>topic modelling</em>. Estos modelos se generan a partir de una colección de textos de forma que se infiere la distribución de tópicos presentes en la colección, así como la distribución de vocabulario asociada a cada tópico. Normalmente, la tarea se centra en extraer tópicos de grano grueso. Por otro lado, la tarea de selección de descriptores o etiquetas que describan estos tópicos es suplementaria y se conoce en la literatura como <em>topic labelling</em>.</p><p>Otras tareas íntimamente relacionadas con la extracción de descriptores son las siguientes (resumen en tabla 6):</p><ul><li><em>Extracción de terminología</em>: Extraer de un texto la terminología incluida en el mismo, sin realizar ninguna discriminación de acuerdo con su relevancia en el texto. Es decir, el objetivo no es extraer los términos que mejor describan el texto, sino extraer sintagmas que correspondan a unidades terminológicas.</li><li><em>Extracción de entidades nombradas</em>: Identificar en un texto distintos tipos de entidades nombradas como pueden ser nombres de persona, lugares y organizaciones. En esta tarea tampoco se presta atención a la relevancia de cada entidad en el texto.</li><li><em>Extracción de palabras clave</em>: Identificar términos, palabras, entidades que mejor describan el contenido de un texto. No se prefija un nivel de granularidad predeterminado, pero normalmente la tarea se centra en palabras clave específicas y que estén presentes en el texto.</li><li><em>Clasificación temática de textos</em>: Identificar las áreas temáticas o los temas más relevantes en el texto a partir de una lista cerrada de áreas o temas.</li></ul><p><br/></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd"><p>Descriptores grano grueso</p></td><td class="confluenceTd"><p>Descriptores grano fino</p></td><td class="confluenceTd"><p>Relevancia descriptiva</p></td><td class="confluenceTd"><p>Datasets anotados</p></td></tr><tr><td class="confluenceTd"><p>Topic modelling + topics labelling</p></td><td class="confluenceTd"><p>V</p></td><td class="confluenceTd"><p>-</p></td><td class="confluenceTd"><p>V</p></td><td class="confluenceTd"><p>-</p></td></tr><tr><td class="confluenceTd"><p>Extracción terminología</p></td><td class="confluenceTd"><p>-</p></td><td class="confluenceTd"><p>V</p></td><td class="confluenceTd"><p>-</p></td><td class="confluenceTd"><p>-</p></td></tr><tr><td class="confluenceTd"><p>Extracción de entidades nombradas</p></td><td class="confluenceTd"><p>-</p></td><td class="confluenceTd"><p>V</p></td><td class="confluenceTd"><p>-</p></td><td class="confluenceTd"><p>V</p></td></tr><tr><td class="confluenceTd"><p>Palabras clave</p></td><td class="confluenceTd"><p>-</p></td><td class="confluenceTd"><p>V</p></td><td class="confluenceTd"><p>V</p></td><td class="confluenceTd"><p>V</p></td></tr><tr><td class="confluenceTd"><p>Clasificación temática</p></td><td class="confluenceTd"><p>V</p></td><td class="confluenceTd"><p>-</p></td><td class="confluenceTd"><p>V</p></td><td class="confluenceTd"><p>V</p></td></tr></tbody></table></div><p style="text-align: center;">Tabla: Enfoques útiles para la extracción de descriptores.</p><p><br/></p><p>Dado que el objetivo principal de la extracción de descriptores en el marco de Hércules es la generación de etiquetas descriptoras de los ROs de cara a facilitar la navegación sobre estos por parte de los usuarios, hemos optado de una estrategia mixta que combina técnicas de extracción de terminología, extracción de entidades nombradas, extracción de palabras clave y clasificación temática. Los descriptores extraídos mediante este enfoque automático se combinará, en la medida de lo posible, con los descriptores obtenidos directamente del repositorio mediante APIs o <em>scraping</em>.</p><p>Se ha determinado que para la generación de etiquetas descriptoras se deben identificar descriptores de diferente granularidad; concretamente, descriptores temáticos y descriptores específicos (Diagrama del sistema propuesto en la imagen 1). Los descriptores temáticos ayudan al usuario a comprender el área de conocimiento a la que pertenece el RO; y los específicos facilitan la exploración de los conceptos específicos más relevantes del RO.</p><p>Tanto los descriptores temáticos como los específicos serán enlazados con ítems presentes en las ontologías o taxonomías que se consideren oportunas.</p><p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" draggable="false" src="attachments/598147240/598147773.png" data-image-src="attachments/598147240/598147773.png" data-unresolved-comment-count="0" data-linked-resource-id="598147773" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2021-4-28_22-38-21.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147240" data-linked-resource-container-version="1" alt=""></span></p><p style="text-align: center;">Imagen 1: Diagrama del sistema propuesto.</p><p><br/></p><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147240/598147773.png">image2021-4-28_22-38-21.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 12:00</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

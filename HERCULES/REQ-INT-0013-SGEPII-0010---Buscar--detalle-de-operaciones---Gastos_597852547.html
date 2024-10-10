@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : REQ-INT-0013-SGEPII-0010 - Buscar  detalle de operaciones - Gastos</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="GEN---Aspectos-generales_597853747.html">GEN - Aspectos generales</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853257.html">INT - Requisitos de integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852548.html">REQ-INT-0013-SGEPII - Integración con Sistema de Gestión Económica de Protección Industrial e Intelectual</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : REQ-INT-0013-SGEPII-0010 - Buscar  detalle de operaciones - Gastos
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (alicia.alvarez)</span>, last modified on jun 16, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Cod. REQ</th><td class="confluenceTd"><p><strong>REQ-INT-0013-SGE-0010 - Buscar detalle de operaciones - Gastos<br/></strong></p></td></tr><tr><th class="confluenceTh">Ver. Objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Ver. REQ</th><td colspan="1" class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Frecuencia</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Características</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh"><span>M. Consumidor</span></th><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div></div><h2 id="REQINT0013SGEPII0010BuscardetalledeoperacionesGastos-Definiciónyobjetivos">Definición y objetivos</h2><p>Consultar el listado de operaciones de gasto asociadas a las invenciones.</p><p>El detalle de campos a recoger de cada operación de gasto asociada a una invención será común a todos ellos y deberá ser configurado en tiempo de implantación, pues esta información debe ser recuperada desde el SGEPII por medio de los mecanismos de integración disponibles.</p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0013SGEPII0010BuscardetalledeoperacionesGastos-Descripcióntécnicaintegración"><span style="letter-spacing: -0.008em;">Descripción técnica integración</span></h2><p>Parámetros de entrada:</p><ul><li>Identificador de la invención en el SGI</li><li>Tipo de operación:<ul><li>Gastos (todos los gastos que se quiere que se visualicen asociados a una invención en el SGI)</li><li>Gastos a deducir (del total de gastos asociados a la invención, serían aquellos gastos que se han de tener en cuenta para los repartos)</li></ul></li></ul><p>Parámetros de salida:</p><ul><li>Listado de operaciones de gastos, donde para cada una se muestra la siguiente información:<ul><li>Listado de columnas a mostrar de cada gasto. Las columnas serán devueltas por el SGEPII y estarán formadas por dos campos:<ul><li>Id: Indica la columna que es (previamente se llamará a otro método de la API que devuelve el listado de columnas con los valores, id, nombre, acumulable)</li><li>Valor: Valor a mostrar en dicha columna</li></ul></li></ul></li></ul><h2 id="REQINT0013SGEPII0010BuscardetalledeoperacionesGastos-Diseñotécnico">Diseño técnico</h2><p>En el siguiente enlace se muestra el diseño del modelo lógico y el diseño de la API del Sistema de Gestión Económica para la Protección Industrial e Intelectual: <a href="SGI---ESB---SGEPII_597852927.html">SGI - ESB - SGEPII</a>.</p><p>Los servicios del API que cubren este requisito son:</p><ul><li><a href="SGI---ESB---SGEPII---Buscar-columnas-gastos_597853061.html">SGI - ESB - SGEPII - Buscar columnas gastos</a><ul><li>Se llamará en primer lugar para obtener las columnas de gastos que se han de presentar por pantalla.</li></ul></li><li><a href="SGI---ESB---SGEPII---Buscar-gastos_597853062.html">SGI - ESB - SGEPII - Buscar gastos</a><ul><li>Se llamará a continuación para obtener los valores correspondientes a cada una de las columnas devueltas por el servicio anterior.</li></ul></li></ul><p>A continuación se detallan los dos casos de cómo sería el flujo de llamadas para la búsqueda de gastos por tipo de operación :</p><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><ul><li>Buscar <strong>todos los Gastos</strong> que están asociados a una invención :<br/><ul><li>al servicio de <strong>/gastos</strong> <a href="SGI---ESB---SGEPII---Buscar-gastos_597853062.html">SGI - ESB - SGEPII - Buscar gastos</a> se le debe pasar por parámetro:<ul><li>tipoOperacion = GAS (Ejecución económica - Gastos)</li></ul></li></ul></li><li>Buscar <strong>los Gastos &quot;deducibles&quot; de los ingresos</strong> generados por las invenciones, esto es, de entre todos los gastos que están asociados a una invención, los que pueden intervenir en los repartos:<br/><ul><li>al servicio de <strong>/gastos</strong> <a href="SGI---ESB---SGEPII---Buscar-gastos_597853062.html">SGI - ESB - SGEPII - Buscar gastos</a> se le debe pasar por parámetro:<ul><li>tipoOperacion = REP (Ejecución económica - Repartos - Gastos a deducir)</li></ul></li></ul></li></ul></div></div></div>
+</div>
+</div>
+<div class="columnLayout three-equal" data-layout="three-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0013SGEPII0010BuscardetalledeoperacionesGastos-Interfacesdeusuariorelacionados">Interfaces de usuario relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p><p><br/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0013SGEPII0010BuscardetalledeoperacionesGastos-Informesrelacionados">Informes relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0013SGEPII0010BuscardetalledeoperacionesGastos-Casosdeusorelacionados">Casos de uso relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:26</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

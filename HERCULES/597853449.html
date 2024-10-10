@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-ETI-0060-016 - Enviar a secretaría retrospectiva</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853840.html">ETI - Módulo de ética</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="ETI---Casos-de-Uso_597853670.html">ETI - Casos de Uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852356.html">CU-ETI-0060 - Peticiones de evaluación - Investigador</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-ETI-0060-016 - Enviar a secretaría retrospectiva
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified by <span class='editor'> Usuario desconocido (alicia.alvarez)</span> on may 12, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p> <u>Únicamente el solicitante de la petición de evaluación del proyecto podrá enviar a secretaría la retrospectiva</u>.</p><p><br/></p><div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong><strong><strong><strong>CU-ETI-0060-016 -Enviar a secretaría retrospectiva<br/></strong></strong></strong></strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline">LIBERADO_</span></div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd"><p>ACT-ETI-002-Investigador</p><p>ACT-ETI-003-Solicitante</p></td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Media</td></tr></tbody></table></div></div><h2 id="CUETI0060016Enviarasecretaríaretrospectiva-Descripción">Descripción</h2><p>Formularios de Búsqueda de peticiones de evaluación</p><h2 id="CUETI0060016Enviarasecretaríaretrospectiva-Actores">Actores</h2><h3 id="CUETI0060016Enviarasecretaríaretrospectiva-Actorprincipal">Actor principal</h3><p>ACT-ETI-002-Investigador</p><p>ACT-ETI-003-Solicitante</p><h2 id="CUETI0060016Enviarasecretaríaretrospectiva-Precondiciones">Precondiciones</h2><p>Usuario logado en el sistema con el rol adecuado dentro del módulo ETI.</p><p>Haber accedido a la opción de  menú Mis peticiones de evaluación y seleccionado una petición del listado para su edición.</p><p>Sólo se muestran las peticiones de evaluación dadas de alta en el sistema y que la persona creadora de la misma sea la persona que se está logando en el sistema</p><p>Ésta acción únicamente se muestra cuando la memoria es de tipo CEEA, requiere retrospectiva y el estado de la misma tiene el valor &quot;Completada&quot;.</p><p><br/></p><h2 id="CUETI0060016Enviarasecretaríaretrospectiva-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>En enviar a secretaría la retrospectiva se tienen que hacer las siguientes funcionalidades:</p><ul><li>Cambiar el estado de la retrospectiva a &quot;En secretaría&quot;</li><li>Se crea un un fichero en formato pdf con los datos del formulario y es subido al repositorio documental y el sistema guarda en informes el identificador del documento.</li></ul><h2 id="CUETI0060016Enviarasecretaríaretrospectiva-Escenarioprincipal(flujobásico)">Escenario principal (flujo básico)</h2><ol><li>Se presenta la pantalla Mis peticiones de evaluación con el listado de todas las peticiones de evaluación dadas de alta en el sistema y que la persona creadora de la misma sea la persona que se está logando en el sistema.</li><li>Se selecciona la petición de evaluación.</li><li>Se presenta la pantalla de edición de la petición de evaluación.</li><li>El usuario va a la pestaña de Memorias.</li><li>El usuario selecciona la acción de Enviar a secretaria retrospectiva en una memoria es de tipo CEEA, requiere retrospectiva y el estado de la misma tiene el valor &quot;Completada&quot;.</li><li>El sistema hace todos los cambios que tienen que hacer (los comentados en las postcondiciones)</li><li>El usuario es informado del resultado positivo de la acción.</li><li>Se mantienen en la pantalla de listado de memoria.</li></ol>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:37</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : REQ-INT-0010-SGE-0090 - Notificar presupuesto de proyecto económico</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="GEN---Aspectos-generales_597853747.html">GEN - Aspectos generales</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853257.html">INT - Requisitos de integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853782.html">REQ-INT-0010-SGE - Integración con Sistema de gestión económica</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : REQ-INT-0010-SGE-0090 - Notificar presupuesto de proyecto económico
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified by <span class='editor'> Usuario desconocido (lorena.alvarez)</span> on jun 20, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Cod. REQ</th><td class="confluenceTd"><p><strong>REQ-INT-0010-SGE-090 - Notificar presupuesto de proyecto económico</strong></p></td></tr><tr><th class="confluenceTh">Ver. Objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Ver. REQ</th><td colspan="1" class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Frecuencia</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Características</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh"><span>M. Consumidor</span></th><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div></div><h2 id="REQINT0010SGE0090Notificarpresupuestodeproyectoeconómico-Definiciónyobjetivos">Definición y objetivos</h2><p><span style="color: rgb(23,43,77);">En la configuración económica de los proyectos del SGI se debe de recoger el listado de aplicaciones presupuestarias (partidas presupuestarias y códigos económicos de gastos/ingresos) a partir de los que, posteriormente, se consultarán al SGE las operaciones económicas registradas. Esta información deberá ser recogida manualmente en el SGI. El SGI remitirá al ESB esta información para que pueda ser publicada y remitida al sistema de gestión económica correspondiente. Según la política de cada Universidad se hará uso de esta información para crear/actualizar directamente el proyecto en el SGE o simplemente para publicar la información a través de cualquier mecanismo propio de la Universidad.</span></p></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0010SGE0090Notificarpresupuestodeproyectoeconómico-Descripcióntécnicaintegración"><span style="letter-spacing: -0.008em;">Descripción técnica integración</span></h2><p>Parámetros de entrada:  Listado de presupuesto por anualidad de uno o varios proyectos. El presupuesto anualidad contiene:</p><ul><li>Identificador del proyecto SGE. Se corresponde con el identificador que el SGI tiene almacenado para realizar la correspondencia entre proyecto SGI y proyecto SGE.</li><li>Anualidad: expresada en formato YYYY.  En los casos de que el desglose del presupuesto en el SGI no se haga por anualidades, se enviará la anualidad del año de inicio del proyecto.</li><li>Código de partida presupuestaria</li><li>Importe concedido</li><li>Tipo: Ingreso o Gasto</li></ul><p>Parámetros de salida: sin parámetros de salida.</p><h2 id="REQINT0010SGE0090Notificarpresupuestodeproyectoeconómico-Diseñotécnico">Diseño técnico</h2><p>En el siguiente enlace se muestra el diseño del modelo lógico y el diseño de la API del Sistema de Gestión Económica y, en concreto, de la relativa a proyectos del SGE y presupuestos: <a href="SGI---ESB---SGE---Proyecto-SGE-y-presupuesto_597853497.html">SGI - ESB - SGE - Proyecto econ&oacute;mico y presupuesto</a>.</p><p>El servicio concreto del API que cubre este requisito es: <a href="SGI---ESB---SGE---Proyecto-SGE-y-presupuesto---Enviar-partidas-presupuestarias_597852970.html">SGI - ESB - SGE - Proyecto SGE y presupuesto - Enviar partidas presupuestarias</a>.</p></div>
+</div>
+</div>
+<div class="columnLayout three-equal" data-layout="three-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0010SGE0090Notificarpresupuestodeproyectoeconómico-Interfacesdeusuariorelacionados">Interfaces de usuario relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0010SGE0090Notificarpresupuestodeproyectoeconómico-Informesrelacionados">Informes relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0010SGE0090Notificarpresupuestodeproyectoeconómico-Casosdeusorelacionados">Casos de uso relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:26</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

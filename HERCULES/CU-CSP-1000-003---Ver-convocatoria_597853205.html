@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-1000-003 - Ver convocatoria</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853679.html">CU-CSP-1000 - Gestión de convocatorias</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-1000-003 - Ver convocatoria
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified on abr 12, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong><strong><strong><strong><strong><strong><strong><strong>CU-CSP-1000-003 - Ver </strong></strong></strong></strong>convocatoria<br/></strong></strong></strong></strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-CSP-005-Visor, ACP-CSP-001-Investigador</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Media</td></tr></tbody></table></div></div><h2 id="CUCSP1000003Verconvocatoria-Descripción">Descripción</h2><p>Acceso al detalle de una convocatoria en modo solo lectura. </p><h2 id="CUCSP1000003Verconvocatoria-Actores">Actores</h2><h3 id="CUCSP1000003Verconvocatoria-Actorprincipal">Actor principal</h3><p><span> ACP-CSP-001-Investigador será el actor principal.</span></p><p>También los ACT-CSP-005-Visor  de las unidades de gestión UGI, OTRI u OPE.</p><h3 id="CUCSP1000003Verconvocatoria-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><p>ACT-CSP-001-Investigador que  precisan que las convocatorias estén registradas para poder presentar solicitudes sobre las mismas.</p><p><br/></p><h2 id="CUCSP1000003Verconvocatoria-Precondiciones">Precondiciones</h2><p><span>ACP-CSP-001-Investigador se autentica</span> a través del usuario de dominio corporativo. La convocatoria está en estado &quot;Registrada&quot; y tiene habilitado en configuración de solicitud el flag &quot;tramitar sgi&quot; a &quot;true&quot;.</p><p>ACP-CSP-005-Visor se autentica a través del usuario de dominio corporativo. Solamente tiene permisos de lectura sobre la Unidad de gestión a la que pertenece la convocatoria. </p><p><br/></p><p><span style="font-size: 20.0px;letter-spacing: 0.0px;">Garantías de éxito (postcondiciones)</span></p><p>Se muestra el detalle de la convocatoria.</p><h2 id="CUCSP1000003Verconvocatoria-Escenarioprincipal">Escenario principal</h2><p>1. El usuario pulsa el botón  Ver asociado a la convocatoria, desde el listado de convocatorias.</p><p>2. Se carga el detalle de la convocatoria, mostrando los siguientes apartados. </p><ul><li>Datos generales. Todos los campos se mostrarán en modo lectura.</li><li>Entidades convocantes. Todos los campos se mostrarán en modo lectura. No se permitirá añadir una nueva entidad convocante. Sobre la tabla del listado de entidades de convocantes solo estará disponible la acción Ver. Desde este botón se mostrará el detalle del registro en modo solo lectura.</li><li>Entidades financiadoras.  Todos los campos se mostrarán en modo lectura. No se permitirá añadir una nueva entidad financiadora. Sobre la tabla del listado de entidades de financiadoras solo estará disponible la acción Ver. Desde este botón se mostrará el detalle del registro en modo solo lectura.</li><li>Enlaces. Todos los campos se mostrarán en modo lectura. No se permitirá añadir nuevos enlaces. Sobre la tabla del listado de enlaces solo estará disponible la acción Ver. Desde este botón se mostrará el detalle del registro en modo solo lectura.</li><li>Fases. Todos los campos se mostrarán en modo lectura. No se permitirá añadir una nueva fase. Sobre la tabla del listado de fases de la convocatoria solo estará disponible la acción Ver. Desde este botón se mostrará el detalle del registro en modo solo lectura.</li><li>Periodos de justificación. Todos los campos se mostrarán en modo lectura. No se permitirá añadir un nuevo periodo. Sobre la tabla del listado de periodos de justificación de la convocatoria solo estará disponible la acción Ver. Desde este botón se mostrará el detalle del registro en modo solo lectura.</li><li>Seguimiento científico. Todos los campos se mostrarán en modo lectura. No se permitirá añadir un nuevo periodo. Sobre la tabla del listado de seguimiento científico de la convocatoria solo estará disponible la acción Ver. Desde este botón se mostrará el detalle del registro en modo solo lectura.</li><li>Documentos. Se mostrará el árbol de documentos a partir de la información registrada en &quot;ConvocatoriaDocumeto&quot;, mostrando solo aquellos que  tengan el campo &quot;público&quot; a true. Toda la información se mostrará en modo de solo lectura. La única acción permitida será descarga del documento.</li><li>Requisitos IP. Todos los campos se mostrarán en modo lectura.</li><li>Requisitos Equipo. Todos los campos se mostrarán en modo lectura.</li><li>Elegibilidad.  Todos los campos se mostrarán en modo lectura. Las tablas de listados solo tendrán disponible la acción Ver. Desde este botón se mostrará el detalle correspondiente, en modo solo lectura. No se permitirá añadir nuevos conceptos de gasto, ni modificar la información relativa al concepto de gasto que representa los costes indirectos.</li></ul><p>3. El usuario pulsa el botón Cancelar. Se retorna al listado de convocatorias.</p><p><br/></p><h2 id="CUCSP1000003Verconvocatoria-"> </h2><p><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Propiedades</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147272.html">Herramienta de CV. Hércules ED - Enriquecimiento de Datos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147273.html">Análisis funcional. Herramienta de CV. Hércules ED - Enriquecimiento de Datos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147271.html">Gestión de FAIR Research Objects. FAIR RO</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147269.html">EF2-2.3. MODELOS DE METADATOS PARA LA DESCRIPCIÓN Y ANOTACIÓN DE FAIR RO v2.2</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Propiedades
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Juan Tardón Martínez</span> on feb 08, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    
+<p>En esta sección se describirán las propiedades incorporadas, de algunas ya se ha hablado en la sección anterior pero aquí se definirán sus dominios, su funcionalidad y su uso en la creación de ROs en HERCULES.</p>
+<h1 id="Propiedades-_Toc74326223Researchresulthaspart"><span class="confluence-anchor-link" id="Propiedades-_Toc74326223"></span><strong>Research result has part</strong></h1>
+<ul>
+	<li>URI                              <a class="external-link" href="http://purl.org/roh_edma#researchResultHasParth" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#researchResultHasParth+" rel="nofollow">http://w3id.org/roh#researchResultHasParth+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                        research result has part</li>
+	<li>In Data                        : researchResultHasPart</li>
+	<li><strong>Dominio:</strong>     Research Result</li>
+	<li><strong>Rango:</strong>   Unión{bibo:Document, ExperimentalProtocol, Software}</li>
+	<li><strong>Inversa:</strong>    :partOfResearchResult</li>
+	<li><strong>Tipo de propiedad:</strong>   Object Property</li>
+</ul>
+
+
+<p>Esta propiedad nos permite, dado un resultado de investigación, identificar los componentes que lo componen, los cuales deben ser instancias del rango de esta propiedad.  De este modo, si el Software, y, es un componente del <a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=_heading%3Dh.42ddq1a"><span style="color: rgb(0,0,255);"><span style="text-decoration: underline;">Research</span></span> </a><span style="color: rgb(0,0,255);"><span style="text-decoration: underline;">Result</span></span> x, entonces la tripleta del grafo de conocimiento x :researchObjectHasPart y, permite saber que es un componente de dicho resultado de investigación. Lo mismo en el caso de que la instancia y pertenezca a cualquier otra entidad que del rango de esta propiedad.</p>
+<h1 id="Propiedades-_Toc74326224Partofresearchresult"><span class="confluence-anchor-link" id="Propiedades-_Toc74326224"></span><strong>Part of research result</strong></h1>
+<ul>
+	<li>URI                                 <a class="external-link" href="http://purl.org/roh_edma#partOfResearchResult" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#partOfResearchResult+" rel="nofollow">http://w3id.org/roh#partOfResearchResult+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                          part of research result</li>
+	<li>In Data                          : partOfResearchResult</li>
+	<li><strong>Dominio</strong>:    Unión{ bibo:Document, Experimental Protocol, Software}</li>
+	<li><strong>Rango:</strong>    ResearchResult</li>
+	<li><strong>Inversa</strong>:    :researchResultHasPart</li>
+	<li><strong>Tipo de propiedad:</strong>   Object Property</li>
+</ul>
+
+
+<p>Esta propiedad nos permite, dado un componente de un objeto de investigación (los cuales deben ser instancias del dominio de esta propiedad), identificar el resultado de la investigación al que pertenece. De este modo, si el Software, y, es un componente de la aportación científica o resultado de investigación x, entonces la tripleta: y :partOfResearchObject x, permite saber que es un componente de la aportación x. Lo mismo cuando y sea una instancia de cualquier otra entidad del dominio de esta función. <br/>
+La <a href="598147259.html#ProcesoseguidoenlaespecificacióndelosmetadatosnecesariosparacadatipodeRO–versión2-bookmark=id.1pxezwc"><span style="color: rgb(0,0,255);"><span style="text-decoration: underline;">ilustración 2</span></span></a> ilustra esta propiedad. </p>
+<h1 id="Propiedades-_Toc74326225Repositoryhaspart"><span class="confluence-anchor-link" id="Propiedades-_Toc74326225"></span><strong>Repository has part</strong></h1>
+<ul>
+	<li> URI                                 <a class="external-link" href="http://purl.org/roh_edma#repositoryHasPart" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#repositoryHasPart+" rel="nofollow">http://w3id.org/roh#repositoryHasPart+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                       repository has part</li>
+	<li>In Data                          : repositoryHasPart</li>
+	<li><strong>Dominio</strong>:   Repository</li>
+	<li><strong>Rango</strong>:               Unión{bibo:Document, ExperimentalProtocol, Software}</li>
+	<li><strong>Inversa</strong>:   :partOfRepository</li>
+	<li><strong>Tipo de propiedad</strong>:  Object Property</li>
+</ul>
+
+
+<p>Esta propiedad nos permite, dado un repositorio, identificar sus componentes, los cuales deben ser instancias del rango de esta propiedad.  De este modo, si el Software y está contenido en el repositorio x, entonces la tripleta del grafo de conocimiento x :repositoryHasPart y, permite saber que dicho software está almacenado en el repositorio x.  De este modo se pueden saber todos los componentes que componen un repositorio realizando una consulta en la que se obtengan todas las instancias objeto de la tripleta anterior. </p>
+<h1 id="Propiedades-_Toc74326226Partofrepository"><span class="confluence-anchor-link" id="Propiedades-_Toc74326226"></span><strong>Part of repository</strong></h1>
+<ul>
+	<li> URI                                 <a class="external-link" href="http://purl.org/roh_edma#partOfRepository" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#partOfRepository+" rel="nofollow">http://w3id.org/roh#partOfRepository+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a>  </li>
+	<li>Label                       part of repository</li>
+	<li>In Data                          : partOfRepository</li>
+	<li><strong>Dominio</strong>:   Unión{bibo:Document, ExperimentalProtocol, Software}</li>
+	<li><strong>Rango</strong>:    Repository</li>
+	<li><strong>Inversa</strong>:   :repositoryHasPart</li>
+	<li><strong>Tipo de propiedad</strong>:  Object Property</li>
+</ul>
+
+
+<p>Esta propiedad nos permite, dada una instancia contenida en un repositorio (los cuales deben ser instancias del rango de esta propiedad), identificar el repositorio en el que está almacenado.  De este modo, si el Software, y, está contenido en el repositorio x, entonces la tripleta del grafo de conocimiento y :partOfRepository x, permite saber que dicho software está almacenado en el repositorio x.  </p>
+<h1 id="Propiedades-_Toc74326227SeqofAuthors"><span class="confluence-anchor-link" id="Propiedades-_Toc74326227"></span><strong>Seq of Authors</strong></h1>
+<ul>
+	<li>URI                                 <a class="external-link" href="http://purl.org/roh_edma#seqOfAuthors" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#seqOfAuthors+" rel="nofollow">http://w3id.org/roh#seqOfAuthors+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a> <span style="text-decoration: underline;"> </span>  </li>
+	<li>Label                       seq of authors</li>
+	<li>In Data                          : seqOfAuthors</li>
+	<li><strong>Dominio</strong>:   owl:thing</li>
+	<li><strong>Rango</strong>:   rdf:Seq</li>
+	<li><strong>Inversa</strong>:   —</li>
+	<li><strong>Tipo de propiedad</strong>:  Object Property</li>
+</ul>
+
+
+<p>Esta propiedad nos permite, dada una instancia poder relacionarla con un conjunto que debe contener las URIS de los autores de dicha instancia. De este modo, si un Software y ha sido creado por las personas que componen el conjunto x, la tripleta y :seqOfAuthor x nos permite relacionar dicho conjunto con la instancia en cuestión. <br/>
+<strong>Nota aclaratoria:</strong> la lista de autores se puede obtener mediante la object porperty roh:seqOfAuthors (en caso de que sea un documento se puede obtener también mediante la propiedad bibo:authorList).<br/>
+Ejemplo de uso:<br/>
+<span style="color: rgb(78,201,176);">&lt;<span class="nobr"><a class="external-link" href="http://w3id.org/roh/data#investigador-3-phd-thesis" rel="nofollow">http://w3id.org/roh/data#investigador-3-phd-thesis<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></span>&gt;</span><span style="color: rgb(212,212,212);"> </span><br/>
+<span style="color: rgb(212,212,212);">        </span><span style="color: rgb(197,134,192);">a</span> <span style="color: rgb(86,156,214);">:</span><span style="color: rgb(156,220,254);">PhDThesis</span> <span style="color: rgb(212,212,212);">;</span><br/>
+<span style="color: rgb(212,212,212);">        </span><span style="color: rgb(86,156,214);">dc:</span><span style="color: rgb(156,220,254);">title</span> <span style="color: rgb(206,145,120);">&quot;My fabulous PhD Thesis&quot;</span> <span style="color: rgb(212,212,212);">;</span><br/>
+<span style="color: rgb(212,212,212);">        </span><span style="color: rgb(86,156,214);">:</span><span style="color: rgb(156,220,254);">correspondingAuthor</span> <span style="color: rgb(78,201,176);">&lt;<span class="nobr"><a class="external-link" href="http://w3id.org/roh/data#investigador-3" rel="nofollow">http://w3id.org/roh/data#investigador-3<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></span>&gt;</span> <span style="color: rgb(212,212,212);">;</span><br/>
+<span style="color: rgb(212,212,212);">        </span><span style="color: rgb(86,156,214);">:seqOfAuthors</span> <span style="color: rgb(212,212,212);">[</span> <span style="color: rgb(197,134,192);">a</span> <span style="color: rgb(212,212,212);">   </span> <span style="color: rgb(86,156,214);">rdf:</span><span style="color: rgb(156,220,254);">Seq</span> <span style="color: rgb(212,212,212);">;</span><br/>
+<span style="color: rgb(212,212,212);">                          </span><span style="color: rgb(86,156,214);">rdf:</span><span style="color: rgb(156,220,254);">_1</span><span style="color: rgb(212,212,212);">       </span> <span style="color: rgb(78,201,176);">&lt;<span class="nobr"><a class="external-link" href="http://w3id.org/roh/data#investigador-3" rel="nofollow">http://w3id.org/roh/data#investigador-3<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></span>&gt;</span> <span style="color: rgb(212,212,212);">;</span><br/>
+<span style="color: rgb(212,212,212);">                          </span><span style="color: rgb(86,156,214);">rdf:</span><span style="color: rgb(156,220,254);">_2</span><span style="color: rgb(212,212,212);">       </span> <span style="color: rgb(78,201,176);">&lt;<span class="nobr"><a class="external-link" href="http://w3id.org/roh/data#investigador-1" rel="nofollow">http://w3id.org/roh/data#investigador-1<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></span>&gt;</span> <span style="color: rgb(212,212,212);">] .</span>
+<br class="atl-forced-newline"/></p>
+<h1 id="Propiedades-_Toc74326228SoftwareStatus"><span class="confluence-anchor-link" id="Propiedades-_Toc74326228"></span><strong>Software Status</strong></h1>
+<ul>
+	<li>URI                                 <a class="external-link" href="http://purl.org/roh_edma#softwareStatus" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#softwareStatus+" rel="nofollow">http://w3id.org/roh#softwareStatus+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                       software status</li>
+	<li>In Data                          : softwareStatus</li>
+	<li><strong>Dominio</strong>:   ero:Software</li>
+	<li><strong>Rango</strong>:   Unión{Final, Provisional}</li>
+	<li><strong>Inversa</strong>:   -</li>
+	<li><strong>Tipo de propiedad</strong>:  Object Property</li>
+</ul>
+
+
+<p>Esta propiedad nos permite declarar si un Software está en desarrollo (es decir es Provisional) o está finalizado. Dado un software x, que cuyo estado es y, dónde y puede ser una instancia de Final o Provisional, la tripleta x :softwareStatus y,  nos permite saber el estado de software x. </p>
+<h1 id="Propiedades-_Toc74326229RepositoryStatus"><span class="confluence-anchor-link" id="Propiedades-_Toc74326229"></span><strong>Repository Status</strong></h1>
+<ul>
+	<li>URI                                 <a class="external-link" href="http://purl.org/roh_edma#repositoryStatus" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#repositoryStatus+" rel="nofollow">http://w3id.org/roh#repositoryStatus+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                       repository status</li>
+	<li>In Data                          : repositoryStatus</li>
+	<li><strong>Dominio</strong>:   :Repository</li>
+	<li><strong>Rango</strong>:    Unión{Closed, Open}</li>
+	<li><strong>Inversa</strong>:   –</li>
+	<li><strong>Tipo de propiedad</strong>:  Object Property</li>
+</ul>
+
+
+<p>Esta Object Property nos permite saber si un repositorio es público (Open) o no (Closed). Dado un repositorio, x, cuyo estado es y, dónde y, puede ser una instancia de Open o Closed, la tripleta x :repositoryStatus y,  nos permite saber el estado del repositorio x. </p>
+<h1 id="Propiedades-_Toc74326230HasReadme"><span class="confluence-anchor-link" id="Propiedades-_Toc74326230"></span><strong>Has Readme</strong></h1>
+<ul>
+	<li>URI                                 <a class="external-link" href="http://purl.org/roh_edma#hasReadme" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#hasReadme+" rel="nofollow">http://w3id.org/roh#hasReadme+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                       has readme</li>
+	<li>In Data                          : hasReadme</li>
+	<li><strong>Dominio</strong>:   Unión{Software, Repository}</li>
+	<li><strong>Rango</strong>:    :README</li>
+	<li><strong>Inversa</strong>:   :readmeOf</li>
+	<li><strong>Tipo de propiedad</strong>:  Object Property</li>
+</ul>
+
+
+<p>Esta propiedad nos permite, dado un software o repositorio, identificar el documento README que suelen tener asociados.  De este modo, si el Software, y, tiene asociado el README x, entonces la tripleta  y :hasReadme x, permite saber cuál es el Readme de dicho Software. Lo mismo en el caso en el que tengamos un Repositorio. <br/>
+<strong>Axioma de existencia del README</strong>: Toda instancia de la entidad README debe estar asociada, mediante la propiedad readmeOf a una instancia de Repository o Software para existir. Véase <a href="598147259.html#ProcesoseguidoenlaespecificacióndelosmetadatosnecesariosparacadatipodeRO–versión2-bookmark=id.41mghml"><span style="color: rgb(0,0,255);"><span style="text-decoration: underline;">ilustración 4</span></span></a>. </p>
+<h1 id="Propiedades-_Toc74326231Readmeof"><span class="confluence-anchor-link" id="Propiedades-_Toc74326231"></span><strong>Readme of</strong></h1>
+<ul>
+	<li>URI                                 <a class="external-link" href="http://purl.org/roh_edma#readmeOf" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#readmeOf+" rel="nofollow">http://w3id.org/roh#readmeOf+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                       readme of</li>
+	<li>In Data                          : readmeOf</li>
+	<li><strong>Dominio</strong>:   :README</li>
+	<li><strong>Rango</strong>:    Unión{Software, Repository}</li>
+	<li><strong>Inversa</strong>:   :hasReadme</li>
+	<li><strong>Tipo de propiedad</strong>:  Object Property</li>
+</ul>
+
+
+<p>Esta propiedad nos permite, dado un documento del tipo README, identificar el software o repositorio que describe este documento. De este modo, si el Software, y, tiene asociado el README x, entonces la tripleta:  x :readmeOf y, permite saber cuál es el Readme de dicho Software. Lo mismo en el caso en el que tengamos un Repositorio. <br/>
+<strong>Axioma de existencia del README</strong>: Toda instancia de la entidad README debe estar asociada, mediante la propiedad readmeOf a una instancia de Repository o Software para existir. Véase <a href="598147259.html#ProcesoseguidoenlaespecificacióndelosmetadatosnecesariosparacadatipodeRO–versión2-bookmark=id.41mghml"><span style="color: rgb(0,0,255);"><span style="text-decoration: underline;">ilustración 4</span></span></a>. </p>
+<h1 id="Propiedades-_Toc74326232HasSucessor"><span class="confluence-anchor-link" id="Propiedades-_Toc74326232"></span><strong>Has Sucessor</strong></h1>
+<ul>
+	<li> URI                                 <a class="external-link" href="http://purl.org/roh_edma#hasSucessor" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#hasSucessor+" rel="nofollow">http://w3id.org/roh#hasSucessor+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                       has sucessor</li>
+	<li>In Data                          : hasSucessor</li>
+	<li><strong>Dominio</strong>:   –</li>
+	<li><strong>Rango</strong>:    –</li>
+	<li><strong>Inversa</strong>:   :hasPredecessor</li>
+	<li><strong>Tipo de propiedad</strong>:  Object Property</li>
+</ul>
+
+
+<p>La información que nos permite definir es la siguiente: x es sucesora de y, o en tripletas x :hasSucessor y, donde x e y pueden ser instancias de cualquier entidad de nuestra ontología. Como subfunción de esta propiedad está la propiedad 'vivo:successor organization' (<a class="external-link" href="http://purl.org/roh_edma/mirror/vivo#hasSuccessorOrganization" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh/mirror/vivo#hasSuccessorOrganization+" rel="nofollow">http://w3id.org/roh/mirror/vivo#hasSuccessorOrganization+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a>)  que sirve para definir la organización sucesora de otra organización.<br/>
+<strong>Axiom</strong>a: Todas las instancias de Software, bibo:Document, Repository, Experimental Protocol  y Research Object sólo puede tener como sucesora una instancia perteneciente a la misma entidad.  </p>
+<h1 id="Propiedades-_Toc74326233HasPredecessor"><span class="confluence-anchor-link" id="Propiedades-_Toc74326233"></span><strong>Has Predecessor</strong></h1>
+<ul>
+	<li> URI                                 <a class="external-link" href="http://purl.org/roh_edma#hasPredecessor" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#hasPredecessor+" rel="nofollow">http://w3id.org/roh#hasPredecessor+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li> Label                       has predecessor</li>
+	<li>In Data                          : hasPredecessor</li>
+	<li><strong>Dominio</strong>    –</li>
+	<li><strong>Rengo</strong>    –</li>
+	<li><strong>Inversa</strong>:   :hasSucessor</li>
+	<li><strong>Tipo de propiedad</strong>:  Object Property</li>
+</ul>
+
+
+<p>La información que nos permite definir es la siguiente: x es predecesora de y, o en tripletas x :hasPredecessor y, donde x e y pueden ser instancias de cualquier entidad de nuestra ontología. Como subfunción de esta propiedad está la propiedad 'vivo:predecessor organization'  (<a class="external-link" href="http://purl.org/roh_edma/mirror/vivo#hasPredecessorOrganization" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh/mirror/vivo#hasPredecessorOrganization+" rel="nofollow">http://w3id.org/roh/mirror/vivo#hasPredecessorOrganization+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a>)  que sirve para definir la organización predecesora de otra organización.<br/>
+<strong>Axiom</strong>a: Todas las instancias de Software, bibo:Document, Repository, Experimental Protocol  y Research Result sólo puede tener como sucesora una instancia perteneciente a la misma entidad.  </p>
+<h1 id="Propiedades-_Toc74326234HasLicence"><span class="confluence-anchor-link" id="Propiedades-_Toc74326234"></span><strong>Has Licence </strong></h1>
+<ul>
+	<li>URI                                 <a class="external-link" href="http://purl.org/roh_edma#hasLicense" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#hasLicense+" rel="nofollow">http://w3id.org/roh#hasLicense+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a> </li>
+	<li> Label                       has license</li>
+	<li>In Data                          : hasLicense</li>
+	<li>Dominio:   –</li>
+	<li><strong>Rango</strong>:    vivo:License</li>
+	<li><strong>Inversa</strong>:   —</li>
+	<li><strong>Tipo de propiedad</strong>:  Object Property</li>
+</ul>
+
+
+<p>Esta propiedad nos permite modelizar cuando una instancia tiene licencia. De este modo, si el Software, y, tiene una licencia x, entonces la tripleta  y :hasLicense x, permite saber cuál es la licencia de dicho Software. Lo mismo en el caso en el que tengamos instancias de otra entidad. </p>
+<h1 id="Propiedades-_Toc74326235DocumentStatus"><span class="confluence-anchor-link" id="Propiedades-_Toc74326235"></span><strong>Document Status</strong></h1>
+<ul>
+	<li>URI                                 <a class="external-link" href="http://purl.org/roh_edma#documentStatus" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#documentStatus+" rel="nofollow">http://w3id.org/roh#documentStatus+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                       document status</li>
+	<li>In Data                          : documentStatus</li>
+	<li><strong>Dominio</strong>:   Bibo:Document</li>
+	<li><strong>Rango</strong>:   Union{ Accepted, Rejected}</li>
+	<li><strong>Inversa</strong>:   –</li>
+	<li><strong>Tipo de propiedad</strong>:  Object Property</li>
+</ul>
+
+
+<p>Se modificaron los labels de esta entidad con el propósito de poder definir el estado de otras entidades como por ejemplo de Repository o Software. </p>
+<h1 id="Propiedades-_Toc74326236Languageofthecertificate"><span class="confluence-anchor-link" id="Propiedades-_Toc74326236"></span><strong>Language of the certificate</strong></h1>
+<ul>
+	<li>URI                              <a class="external-link" href="http://purl.org/roh_edma#languageOfTheCertificate" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#languageOfTheCertificate+" rel="nofollow">http://w3id.org/roh#languageOfTheCertificate+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                       language of the certificate</li>
+	<li>In Data                          : languageOfTheCertificate</li>
+	<li><strong>Dominio</strong>:   :LanguageCertificate</li>
+	<li><strong>Rango</strong>:   xsd:string</li>
+	<li><strong>Inversa</strong>:   –</li>
+	<li><strong>Tipo de propiedad</strong>:  Data Property</li>
+</ul>
+
+
+<p>Se modificaron los label y la URI de esta propiedad para permitir añadir otras que permitieran definir el lenguaje de una instancia. Por tanto, se concretó tanto la URI como los labels de dicha propiedad.  Esta propiedad es subclase de 'language skills'.</p>
+<h1 id="Propiedades-_Toc74326237Language"><span class="confluence-anchor-link" id="Propiedades-_Toc74326237"></span><strong>Language</strong></h1>
+<ul>
+	<li>URI                                 <a class="external-link" href="http://purl.org/roh_edma#language" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#language+" rel="nofollow">http://w3id.org/roh#language+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                       language</li>
+	<li>In Data                          : language</li>
+	<li><strong>Dominio</strong>:   –</li>
+	<li><strong>Rango</strong>:    xsd:string</li>
+	<li><strong>Inversa</strong>:   –</li>
+	<li><strong>Tipo de propiedad</strong>:  Data Property</li>
+</ul>
+
+
+<p>Lo que nos permite modelizar esta propiedad es lo siguiente: x tiene idioma y, ó en tripletas x :language y, donde x es una instancia de cualquiera de las entidades de nuestra ontología,  e y es un String en él que se especifica el idioma.</p>
+<h1 id="Propiedades-_Toc74326238ProgrammingLanguage"><span class="confluence-anchor-link" id="Propiedades-_Toc74326238"></span><strong>Programming Language</strong></h1>
+<ul>
+	<li>URI                                 <a class="external-link" href="http://purl.org/roh_edma#programmingLanguage" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#programmingLanguage+" rel="nofollow">http://w3id.org/roh#programmingLanguage+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></li>
+	<li>Label                       programming language</li>
+	<li>In Data                          :programmingLanguage</li>
+	<li><strong>Dominio</strong>:   ero:Software</li>
+	<li><strong>Rango</strong>:   xsd:string</li>
+	<li><strong>Inversa</strong>:   –</li>
+	<li><strong>Tipo de propiedad</strong>:  Data Property</li>
+</ul>
+
+
+<p>Esta data property nos permite definir el lenguaje de programación usado en un Software. (C, C++, java, Python…). De este modo, si el Software, y, tiene un lenguaje de programación declarado en el string x, entonces la tripleta  y :programmingLanguage x, permite saber cuál es el lenguaje de dicho Software. </p>
+<h1 id="Propiedades-_Toc74326239correspondingOrganization"><span class="confluence-anchor-link" id="Propiedades-_Toc74326239"></span><strong>correspondingOrganization</strong></h1>
+
+<p>●URI                                 <a class="external-link" href="http://w3id.org/roh#correspondingOrganization" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#correspondingOrganization+" rel="nofollow">http://w3id.org/roh#correspondingOrganization+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a> <br/>
+●Label                        corresponding organizacion<br/>
+●In Data                          :correspondingOrganization<br/>
+●Dominio:   –<br/>
+●Rango:    –<br/>
+●Inversa:   roh:correspondingOrganizationOf<br/>
+●Tipo de propiedad:  Object Property
+<br class="atl-forced-newline"/>
+Esta object property nos permite definir la organización responsable de un ResearchObject. De modo que ahora no tienes que ir al autor y buscar su posición e trabajo en el momento de la publicación para poder saber a qué organización corresponde. </p>
+<h1 id="Propiedades-_Toc74326240correspondingOrganizationOf"><span class="confluence-anchor-link" id="Propiedades-_Toc74326240"></span><strong>correspondingOrganizationOf</strong></h1>
+
+<p>●URI                                 <a class="external-link" href="http://w3id.org/roh#correspondingOrganizationOf" rel="nofollow"><span style="color: rgb(0,0,255);">{+}</span></a><a class="external-link" href="http://w3id.org/roh#correspondingOrganizationOf+" rel="nofollow">http://w3id.org/roh#correspondingOrganizationOf+<sup><img class="rendericon" src="images/icons/linkext7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a>  <br/>
+●Label                        corresponding organización of<br/>
+●In Data                          :correspondingOrganizationOf<br/>
+●Dominio:   –<br/>
+●Rango:    –<br/>
+●Inversa:   roh:correspondingOrganization<br/>
+●Tipo de propiedad:  Object Property
+<br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+Esta object property nos permite saber los ResearchObject de los que es responsable una cierta organización. 
+<br class="atl-forced-newline"/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 12:00</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

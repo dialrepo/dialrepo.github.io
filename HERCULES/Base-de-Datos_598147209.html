@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Base de Datos</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="RPA_598147226.html">RPA</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147224.html">Módulo de Automatización y Gestión</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147223.html">Análisis y Procesos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147222.html">Sistema de Orquestación</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Base de Datos
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Juan Tardón Martínez</span>, last modified by <span class='editor'> Usuario genérico para HERCULES</span> on oct 10, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p align="justify">La persistencia será almacenada en una base de datos relacional. Se hará uso de PostgreSQL para su despliegue y su objetivo principal es dotar de robustez al sistema ante posibles caídas así como almacenar información útil de logs y procesos.</p><p align="justify">La siguiente ilustración es la implementación del esquema actual de la base de datos de PostgreSQL.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/598147209/598147784.png" data-image-src="attachments/598147209/598147784.png" data-unresolved-comment-count="0" data-linked-resource-id="598147784" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="bbdd.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147209" data-linked-resource-container-version="2" alt=""></span></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 98.0px;"/><col/><col style="width: 430.0px;"/></colgroup><tbody><tr><td colspan="3" style="text-align: center;" class="confluenceTd"><strong>Log</strong></td></tr><tr><th class="confluenceTh">Atributo</th><th colspan="1" class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd"><p>id</p></td><td colspan="1" class="confluenceTd">int</td><td colspan="1" class="confluenceTd">Identificador del log.</td></tr><tr><td colspan="1" class="confluenceTd">id_schedule</td><td colspan="1" class="confluenceTd">int</td><td colspan="1" class="confluenceTd">Identificador de la planificación de ejecución.</td></tr><tr><td colspan="1" class="confluenceTd">id_process</td><td colspan="1" class="confluenceTd">int</td><td colspan="1" class="confluenceTd">Identificador del proceso (extraer convocatoria, base reguladora...).</td></tr><tr><td colspan="1" class="confluenceTd">id_robot</td><td colspan="1" class="confluenceTd">int</td><td colspan="1" class="confluenceTd">Identificador del robot que ha creado el log.</td></tr><tr><td colspan="1" class="confluenceTd">log_file_path</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">ruta donde se encuentra el fichero del log.</td></tr><tr><td colspan="1" class="confluenceTd">data</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">Información que se extrae del proceso realizado.</td></tr><tr><td colspan="1" class="confluenceTd">start_time</td><td colspan="1" class="confluenceTd">timestamp</td><td colspan="1" class="confluenceTd">Cuando empezó la ejecución.</td></tr><tr><td colspan="1" class="confluenceTd">end_time</td><td colspan="1" class="confluenceTd">timestmap</td><td colspan="1" class="confluenceTd">Cuando terminó la ejecución.</td></tr><tr><td colspan="1" class="confluenceTd">state</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">Estado de la ejecución (OK, ERROR...).</td></tr><tr><td colspan="1" class="confluenceTd">finished</td><td colspan="1" class="confluenceTd">boolean</td><td colspan="1" class="confluenceTd">Ha finalizado la ejecución (True o False).</td></tr><tr><td colspan="1" class="confluenceTd">completed</td><td colspan="1" class="confluenceTd">int</td><td colspan="1" class="confluenceTd">0-100, numero para la monitorización del proceso.</td></tr></tbody></table></div><p align="justify"><br/></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 77.3467%;"><colgroup><col style="width: 16.6835%;"/><col style="width: 9.09441%;"/><col style="width: 74.2464%;"/></colgroup><tbody><tr><td colspan="3" style="text-align: center;" class="confluenceTd"><strong>Process</strong></td></tr><tr><th class="confluenceTh">Atributo</th><th colspan="1" class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td colspan="1" class="confluenceTd">int</td><td class="confluenceTd">Identificador del proceso.</td></tr><tr><td class="confluenceTd">class</td><td colspan="1" class="confluenceTd">string</td><td class="confluenceTd">Nombre de la clase del proceso, para poder ser invocado.</td></tr><tr><td class="confluenceTd">name</td><td colspan="1" class="confluenceTd">string</td><td class="confluenceTd">Nombre del proceso.</td></tr><tr><td colspan="1" class="confluenceTd">requirements</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">Librerías necesarias para la ejecución.</td></tr><tr><td colspan="1" class="confluenceTd">description</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">Descripción del proceso.</td></tr></tbody></table></div><p align="justify"><br/></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 77.3467%;"><colgroup><col style="width: 17.3096%;"/><col style="width: 14.0377%;"/><col style="width: 68.6771%;"/></colgroup><tbody><tr><td colspan="3" style="text-align: center;" class="confluenceTd"><strong>Schedule</strong></td></tr><tr><th class="confluenceTh">Atributo</th><th colspan="1" class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td colspan="1" class="confluenceTd">int</td><td class="confluenceTd">Identificador de la planificación de ejecución.</td></tr><tr><td class="confluenceTd">id_robot</td><td colspan="1" class="confluenceTd">int</td><td class="confluenceTd">Robot que ha realizado o realizará esa ejecución.</td></tr><tr><td class="confluenceTd">schedule_json</td><td colspan="1" class="confluenceTd">string</td><td class="confluenceTd">JSON con la estructura de lanzamiento ().</td></tr><tr><td colspan="1" class="confluenceTd">active</td><td colspan="1" class="confluenceTd">boolean</td><td colspan="1" class="confluenceTd">La planificación de ejecución sigue activa (true, false) para procesos que queramos planificar cada día.</td></tr><tr><td colspan="1" class="confluenceTd">next_run</td><td colspan="1" class="confluenceTd">timestamp</td><td colspan="1" class="confluenceTd">Timestamp de la siguiente ejecución.</td></tr></tbody></table></div><p align="justify"><br/></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 77.597%;"><colgroup><col style="width: 18.5763%;"/><col style="width: 14.059%;"/><col style="width: 67.3889%;"/></colgroup><tbody><tr><td colspan="3" style="text-align: center;" class="confluenceTd"><strong>Robot</strong></td></tr><tr><th class="confluenceTh">Atributo</th><th colspan="1" class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td colspan="1" class="confluenceTd">int</td><td class="confluenceTd">Identificador del robot.</td></tr><tr><td class="confluenceTd">name</td><td colspan="1" class="confluenceTd">string</td><td class="confluenceTd">Nombre del robot.</td></tr><tr><td class="confluenceTd">ip_address</td><td colspan="1" class="confluenceTd">string</td><td class="confluenceTd">Dirección IP del robot.</td></tr><tr><td colspan="1" class="confluenceTd">address</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">Donde se encuentra el robot.</td></tr><tr><td colspan="1" class="confluenceTd">mac</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">Dirección MAC del robot.</td></tr><tr><td colspan="1" class="confluenceTd">python_version</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">Versión de Python del robot.</td></tr><tr><td colspan="1" class="confluenceTd">os</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">Sistema operativo del robot.</td></tr><tr><td colspan="1" class="confluenceTd">features</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">Librerías instaladas del robot.</td></tr><tr><td colspan="1" class="confluenceTd">connected</td><td colspan="1" class="confluenceTd">boolean</td><td colspan="1" class="confluenceTd">Conectado (True o false).</td></tr><tr><td colspan="1" class="confluenceTd">last_seen</td><td colspan="1" class="confluenceTd">timestamp</td><td colspan="1" class="confluenceTd">Última vez visto.</td></tr><tr><td colspan="1" class="confluenceTd">created</td><td colspan="1" class="confluenceTd">timestamp</td><td colspan="1" class="confluenceTd">Timestamp de cuando se creó ese robot.</td></tr></tbody></table></div><p align="justify">A continuación, se muestra un ejemplo de información que estaría almacenada en la base de datos.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Tabla Process</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: json; gutter: false; theme: DJango" data-custom-language-resource="com.atlassian.confluence.ext.code.custom.JSON.2159564286376668345:custom-code-syntax-resources" data-theme="DJango">{
+   &quot;process&quot;:[
+      {
+         &quot;id&quot;:1,
+         &quot;class&quot;:&quot;ProcessBoletines&quot;,
+         &quot;name&quot;:&quot;Proceso Boletines&quot;,
+         &quot;requirements&quot;:&quot;&quot;,
+         &quot;description&quot;:&quot;Proceso que Segmenta y Crea boletines para la ayuda a la transferencia de investigación&quot;
+      }
+   ]
+} </pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Tabla Log</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: json; gutter: false; theme: DJango" data-custom-language-resource="com.atlassian.confluence.ext.code.custom.JSON.2159564286376668345:custom-code-syntax-resources" data-theme="DJango">{
+   &quot;log&quot;:[
+      {
+         &quot;id&quot;:1,
+         &quot;id_schedule&quot;:1,
+         &quot;id_process&quot;:1,
+         &quot;id_robot&quot;:&quot;robot1&quot;,
+         &quot;log_file_path&quot;:&quot;08-09-2021-13:28:37ProcessBoletines.log&quot;,
+         &quot;data&quot;:&quot;Información sobre la ejecución del proceso&quot;&quot;start_time&quot;:&quot;2021-12-08T11:28:38.727Z&quot;,
+         &quot;end_time&quot;:&quot;2021-12-08T11:28:48.862Z&quot;,
+         &quot;state&quot;:&quot;OK&quot;,
+         &quot;finished&quot;:true,
+         &quot;completed&quot;:100
+      }
+   ]
+}</pre>
+</div></div><p align="justify"><br/></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Tabla Schedule</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: json; gutter: false; theme: DJango" data-custom-language-resource="com.atlassian.confluence.ext.code.custom.JSON.2159564286376668345:custom-code-syntax-resources" data-theme="DJango">{
+   &quot;schedule&quot;:[
+      {
+         &quot;id&quot;:1,
+         &quot;id_robot&quot;:&quot; robot1&quot;,
+         &quot;schedule_json&quot;:&quot;Parametros del proceso a ejecutar&quot;,
+         &quot;active&quot;:false,
+         &quot;created&quot;:&quot;2021-12-08T11:28:38.727Z&quot;,
+         &quot;next_run&quot;:null
+      }
+   ]
+}</pre>
+</div></div><p align="justify"><br/></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Tabla Robot</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: json; gutter: false; theme: DJango" data-custom-language-resource="com.atlassian.confluence.ext.code.custom.JSON.2159564286376668345:custom-code-syntax-resources" data-theme="DJango">{
+   &quot;robot&quot;:[
+      {
+         &quot;id&quot;:&quot;robotWindows&quot;,
+         &quot;name&quot;:&quot;Robot Windows&quot;,
+         &quot;ip_address&quot;:&quot;10.208.3.112&quot;,
+         &quot;address&quot;:&quot;Universidad de Murcia&quot;,
+         &quot;registrations&quot;:&quot;ATICA&quot;,
+         &quot;mac&quot;:&quot;8d:a0:4f:4d:d1:8e&quot;,
+         &quot;python_version&quot;:&quot;3.8.5 (default, Sep 4 2020, 07:30:14) \n[GCC 7.3.0]&quot;,
+         &quot;os&quot;:&quot;Linux&quot;,
+         &quot;features&quot;:&quot;aiormq,aio-pika,absl-py&quot;,
+         &quot;connected&quot;:&quot;2021-11-09T12:43:36.471Z&quot;,
+         &quot;last_seen&quot;:&quot;2021-11-09T12:47:40.679Z&quot;,
+         &quot;created&quot;:&quot;2021-10-14T11:27:30.418Z&quot;
+      }
+   ]
+}</pre>
+</div></div><p align="justify">Toda la información contenida en la persistencia podrá ser consultada mediante una API.</p><p><br/></p><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147209/598147782.jpg">bbdd.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147209/598147783.png">image2022-1-12_10-24-50.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147209/598147784.png">bbdd.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 12:02</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

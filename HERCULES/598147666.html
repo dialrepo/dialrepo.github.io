@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : SGI - Grupos de investigación</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147612.html">APIs de Integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147535.html">SGI: Servicios propios que expone</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : SGI - Grupos de investigación
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span>, last modified on sep 03, 2024
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728467810321 {padding: 0px;}
+div.rbtoc1728467810321 ul {margin-left: 0px;}
+div.rbtoc1728467810321 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728467810321'>
+<ul class='toc-indentation'>
+<li><a href='#SGIGruposdeinvestigación-SistemadeGestiónInvestigación'>Sistema de Gestión Investigación</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIGruposdeinvestigación-Entidades'>Entidades</a></li>
+<li><a href='#SGIGruposdeinvestigación-Modelológico'>Modelo lógico</a></li>
+<li><a href='#SGIGruposdeinvestigación-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIGruposdeinvestigación-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIGruposdeinvestigación-Grupo'>Grupo</a></li>
+<li><a href='#SGIGruposdeinvestigación-GrupoEquipo'>GrupoEquipo</a></li>
+<li><a href='#SGIGruposdeinvestigación-RolProyecto'>RolProyecto</a></li>
+<li><a href='#SGIGruposdeinvestigación-GrupoPalabraClave'>GrupoPalabraClave</a></li>
+</ul>
+</li>
+<li><a href='#SGIGruposdeinvestigación-Servicios'>Servicios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><hr/><h1 id="SGIGruposdeinvestigación-SistemadeGestiónInvestigación">Sistema de Gestión Investigación</h1><h2 id="SGIGruposdeinvestigación-Entidades">Entidades</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">Grupo</td><td class="confluenceTd"><p>Contiene los datos generales de un grupo de investigación. De esta entidad se pueden obtener los campos:</p><ul><li>Nombre del grupo</li><li>Fecha de inicio</li><li>Fecha de finalización</li><li>Código</li><li>Tipo</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">GrupoEquipo</td><td colspan="1" class="confluenceTd"><p>Contiene la información de las personas que forman parte del equipo del grupo de investigación. De esta entidad de puede obtener los campos:</p><ul><li>Nombre del miembro</li><li>Apellidos del miembro</li><li>Fecha inicio de la participación</li><li>Fecha fin de la participación</li><li>Rol con el que participa</li><li>Nº de componentes grupo (contando los distintos miembros del equipo)</li><li>Nombre del investigador/a principal (personaRef con un rol que tenga el flag de &quot;principal&quot; a true y el &quot;orden&quot; igual a &quot;PRIMARIO&quot;)</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">RolProyecto</td><td colspan="1" class="confluenceTd">Entidad que tiene la información sobre el rol que tiene el miembro en el equipo.</td></tr><tr><td colspan="1" class="confluenceTd">GrupoPalabraClave</td><td colspan="1" class="confluenceTd">Contiene las palabras claves del grupo de investigación</td></tr></tbody></table></div><h2 id="SGIGruposdeinvestigación-Modelológico">Modelo lógico</h2><p><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=CSP-GIN+-+Modelo+l%C3%B3gico+-+Documentaci%C3%B3n">CSP-GIN - Modelo l&oacute;gico - Documentaci&oacute;n</a></p><h2 id="SGIGruposdeinvestigación-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Consultas+filtradas+y+paginadas">Consultas filtradas y paginadas</a></li><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Formatos+de+datos+API">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="SGIGruposdeinvestigación-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="SGIGruposdeinvestigación-Grupo">Grupo</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del grupo.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del grupo.</td></tr><tr><td colspan="1" class="confluenceTd">fechaInicio</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de inicio del grupo.</td></tr><tr><td colspan="1" class="confluenceTd">fechaFin</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de finalización del grupo.</td></tr><tr><td colspan="1" class="confluenceTd">proyectoSgeRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del proyecto económico asociado en el sistema de gestión económico.</td></tr><tr><td colspan="1" class="confluenceTd">solicitudId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la solicitud de convocatoria que originó el grupo.</td></tr><tr><td colspan="1" class="confluenceTd">codigo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Código del grupo.</td></tr><tr><td colspan="1" class="confluenceTd">tipo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Tipo del grupo. Posibles valores:</p><ul><li>EMERGENTE</li><li>CONSOLIDADO</li><li>PRECOMPETITIVO</li><li>ALTO_RENDIMIENTO</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">especialInvestigación</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si el grupo es un grupo especial de investigación o no.</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><span>Indica si esta activo o no. En caso de no estar activo se </span><span>considera</span><span> como un grupo eliminado del sistema. Se realizan borrados lógicos por si el gestor o administrador desean recuperar un grupo eliminado.</span></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Grupo</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{  
+	"id": 2,
+	"nombre": "Grupo investigación 2",
+	"fechaInicio": "2022-02-14T23:00:00Z",
+	"fechaFin": "2022-11-01T22:59:59Z",
+	"proyectoSgeRef": "33939",
+	"solicitudId": null,
+	"codigo": "E0B9-1",
+	"tipo": "ALTO_RENDIMIENTO",
+	"especialInvestigacion": false,
+	"activo": true
+}</pre>
+ </div>
+</div><h4 id="SGIGruposdeinvestigación-GrupoEquipo">GrupoEquipo</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la entidad grupo equipo.</td></tr><tr><td colspan="1" class="confluenceTd">grupoId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del grupo.</td></tr><tr><td colspan="1" class="confluenceTd">personaRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador o Referencia de la persona miembro del equipo de grupo. Es el identificador de la persona en el sistema de personas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">rol</td><td colspan="1" class="confluenceTd">RolProyecto</td><td colspan="1" class="confluenceTd"><p>Entidad que representa el rol. Son los roles que puede tener el equipo de grupo.</p><p>Ejemplos:</p><ul><li>Investigador/a principal</li><li>Co-Investigador/a PrincipalColaborador</li><li>Asesor científico</li><li>Colaborador E.I.</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">fechaInicio</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de inicio para la participación del miembro del equipo de grupo con el rol seleccionado.</td></tr><tr><td colspan="1" class="confluenceTd">fechaFin</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de inicio para la participación del miembro del equipo de grupo con el rol seleccionado.</td></tr><tr><td colspan="1" class="confluenceTd">dedicacion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Dedicación del miembro del equipo de grupo. Posibles valores:</p><ul><li>PARCIAL</li><li>COMPLETA</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">participacion</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Porcentaje de dedicación al grupo.</td></tr></tbody></table></div><h4 id="SGIGruposdeinvestigación-RolProyecto">RolProyecto</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del rol proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">abreviatura</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Abreviatura identificativa del rol.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del rol.</td></tr><tr><td colspan="1" class="confluenceTd">rolPrincipal</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si el rol es el rol principal. No se limita el número de roles para los que se marque el indicador de rol principal, pudiendo estar mas de un rol con el indicador marcado.</td></tr><tr><td colspan="1" class="confluenceTd">equipo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Tipo Equipo Proyecto. Tiene los siguientes valores:<ul><li>INVESTIGACION</li><li>TRABAJO</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">orden</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Tipo de Orden. El orden sólo se indica para aquellos roles que tengan marcado el flag de investigador principal, para indicar si es de orden 1 o de orden 2. Tiene los siguientes valores:<ul><li>PRIMARIO</li><li>SECUNDARIO</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si esta activo o no. En caso de no estar activo no se podrá asignar a ningún miembro del equipo de una solicitud ni a los miembros del equipo de los socios de una solicitud.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoEquipo</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">	{
+		"id": 35,
+		"grupoId": 1,
+		"personaRef": "27477512",
+ &nbsp; &nbsp; &nbsp; &nbsp;"fechaInicio": "2022-02-14T23:00:00Z",
+		"fechaFin": null,
+     &nbsp; &nbsp;"rolProyecto": {
+			"id": 1,
+			"abreviatura": "IP",
+			"nombre": "Investigador/a principal",
+			"rolPrincipal": true,
+			"orden": "PRIMARIO",
+			"equipo": "INVESTIGACION",
+			"activo": true
+		},
+		
+		"dedicacion": "COMPLETA",
+        "participacion":100
+	}
+</pre>
+ </div>
+</div><h4 id="SGIGruposdeinvestigación-GrupoPalabraClave">GrupoPalabraClave</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la entidad grupo palabra clave.</td></tr><tr><td colspan="1" class="confluenceTd">palabraClaveRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Palabra o conjunto de palabras clave definido en el grupo</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">GrupoPalabraClave</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+     "id": 35,
+	 "palabraClaveRef": "ciencias sociales"
+}
+</pre>
+ </div>
+</div><h3 id="SGIGruposdeinvestigación-Servicios">Servicios</h3><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 99.8801%;"><colgroup><col style="width: 7.80243%;"/><col style="width: 18.0308%;"/><col style="width: 13.9657%;"/><col style="width: 16.9162%;"/><col style="width: 43.274%;"/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/grupos/modificados-ids</td><td class="confluenceTd"><p>q+s</p><p>La query estará formada por:</p><ul><li>fechaModificacion</li></ul></td><td class="confluenceTd">Lista[Long]</td><td class="confluenceTd"><p>Listado de Identificadores de Grupo que han sido modificados en los datos generales (tabla Grupo), en el equipo (tabla GrupoEquipo) o en las palabras claves (tabla GrupoPalabraClave)</p><p>Se utilizarán los siguiente parámetros en la llamada al servicio</p><ul><li>fechaModificacion: se le pasará la fecha a partir de la cual se quieren ver los cambios</li></ul><p>Ejemplo:</p><ul><li>fechaModificacion=ge=<span>&quot;2021-08-18T22:00:00Z&quot;</span></li></ul></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span>/grupos/<span class="url-filename">{id}</span></span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Grupo</td><td class="confluenceTd">Datos generales de un Grupo</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span><span class="url-filename">/grupos/{id}</span></span>/<span>miembrosequipo</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[GrupoEquipo]</td><td class="confluenceTd">Listado de miembros del equipo de un Grupo</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span><span class="url-filename">/grupos/{id}</span></span>/palabrasclave</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[GrupoPalabraClave]</td><td class="confluenceTd">Listado de palabras clave de un Grupo</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/grupos/eliminados-ids</td><td class="confluenceTd"><p>q+s</p><p>La query estará formada por:</p><ul><li>fechaEliminacion: se le pasará la fecha a partir de la cual se quieren ver los proyectos eliminados o bien un rango entre las que se quiere buscar</li></ul></td><td class="confluenceTd">Lista[String]</td><td class="confluenceTd"><p>Listado de Identificadores de Grupo que han sido eliminados (campo activo = false) a partir de una fecha.</p><p>Ejemplo1:</p><ul><li>fechaEliminacion=ge=<span>&quot;2024-01-01T22:00:00Z&quot;</span>;</li></ul><p>Ejemplo2:</p><ul><li>fechaEliminacion=ge=<span>&quot;2024-01-01T22:00:00Z&quot;</span>;fechaEliminacion=le=<span>&quot;2024-12-31T22:00:00Z&quot;</span></li></ul></td></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:56</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Comunicación AMQP (Orquestador-Robot Robot-Orquestador)</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="RPA_598147226.html">RPA</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147224.html">Módulo de Automatización y Gestión</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147223.html">Análisis y Procesos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147222.html">Sistema de Orquestación</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Comunicación AMQP (Orquestador-Robot Robot-Orquestador)
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Juan Tardón Martínez</span>, last modified by <span class='editor'> Usuario genérico para HERCULES</span> on oct 10, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p align="justify">En las secciones anteriores se ha comentado que la comunicación con los robots será bajo el protocolo AMQP. De esta forma se definen diferentes tipos de mensajes, para que tanto el orquestador como el robot sepan lo que tienen que hacer. Los mensajes serán enviados a las colas que se generan cuando un robot o el orquestador se ejecutan.</p><p align="justify">A continuación, se muestra una serie de ejemplos de comunicación:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Inicialización de la conexión</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: DJango" data-theme="DJango">El robot manda a la cola del orquestador el mensaje:
+
+{
+ &quot;TYPE_MSG&quot;: INIT,
+ &quot;DESCRIPTION&quot;: &quot;HELLO ORCHESTRATOR&quot;,
+  &quot;ROBOT&quot; : INFORMACIÓN Y ESTADO
+}
+
+El orquestador responde por la cola del robot que ha enviado el mensaje:
+
+{
+ &quot;TYPE_MSG&quot;: INIT,
+ &quot;DESCRIPTION&quot;: &quot;HELLO ROBOT&quot;
+}</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Keep Alive</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: DJango" data-theme="DJango">Con el objetivo de que el orquestador sea consciente de que no se ha perdido la comunicación,
+
+el robot mandará su estado e información cada X tiempo a la cola del orquestador:
+
+{ 
+  &quot;TYPE_MSG&quot;: KEEP_ALIVE,
+  &quot;DESCRIPTION&quot;: &quot;KEEP ORCHESTRATOR&quot;,
+  &quot;ROBOT&quot; : INFORMACIÓN Y ESTADO
+}</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Solicitud de ejecución</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: DJango" data-theme="DJango">El orquestador mandará a la cola del robot que haya escogido para que trate de ejecutar el proceso X.
+
+{ 
+  &quot;TYPE_MSG&quot;: REQUEST_EXEC_PROCESS,
+  &quot;DESCRIPTION&quot;: &quot;REQUEST EXEC PROCESS&quot;,
+  &quot;PROCESS&quot;: &quot;PARAMETROS E INFORMACIÓN DEL PROCESO&quot;
+}
+
+El robot responderá indicando al orquestador que lo almacena en su cola de procesos
+
+{ 
+  &quot;TYPE_MSG&quot;: PENDING_PROCESS,
+  &quot;DESCRIPTION&quot;: &quot;PENDING&quot;, 
+  &quot;ROBOT&quot;: &quot;INFORMACIÓN Y ESTADO&quot;
+}</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Ejecución del proceso</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: DJango" data-theme="DJango">Cuando el robot empiece a ejecutar un proceso este se lo indicará al orquestador para que sea consciente de que lo está haciendo.
+
+{
+ &quot;TYPE_MSG&quot;: EXEC_PROCESS,
+ &quot;DESCRIPTION&quot;: &quot;EXECUTING PROCESS&quot;,
+ &quot;ROBOT&quot;: &quot;INFORMACIÓN y ESTADO&quot;
+}</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Envío de Logs</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: DJango" data-theme="DJango">El robot enviará la información de ejecución al orquestador.
+
+{
+  &quot;TYPE_MSG&quot;: LOG,
+  &quot;DESCRIPTION&quot;: &quot;LOG&quot;,
+  &quot;LOG&quot;: &quot;INFORMACIÓN GENERADA&quot;
+}</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Eliminar Proceso</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: DJango" data-theme="DJango">El orquestador enviará al robot correspondiente la petición de eliminar el proceso X que esta pendiente de ejecución en la cola de procesos del robot.
+
+{
+  &quot;TYPE_MSG&quot;: REMOVE_PROCESS,
+  &quot;DESCRIPTION&quot;: &quot;REMOVE&quot;,
+  &quot;SCHEDULE&quot;: ID_SCHEDULE
+}
+
+El robot responderá con un mensaje al orquestador informandole de su estado.
+{
+	&quot;TYPE_MSG&quot;: UPDATE_INFO, 
+	&quot;DESCRIPTION&quot;: &quot;UPDATE INFO&quot;
+	&quot;ROBOT&quot;: &quot;INFORMACIÓN y ESTADO&quot;
+}</pre>
+</div></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 12:02</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

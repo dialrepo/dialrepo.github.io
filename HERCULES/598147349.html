@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Proceso de carga y actualización de revistas</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147272.html">Herramienta de CV. Hércules ED - Enriquecimiento de Datos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147273.html">Análisis funcional. Herramienta de CV. Hércules ED - Enriquecimiento de Datos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Servicios-centrales.-Core-services_598147270.html">Servicios centrales. Core services</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Proceso de carga y actualización de revistas
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para SGI HERCULES (CATOLICA VALENCIA)</span>, last modified on sep 26, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728467996622 {padding: 0px;}
+div.rbtoc1728467996622 ul {margin-left: 0px;}
+div.rbtoc1728467996622 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728467996622'>
+<ul class='toc-indentation'>
+<li><a href='#Procesodecargayactualizaciónderevistas-Formatodelainformación'>Formato de la información</a>
+<ul class='toc-indentation'>
+<li><a href='#Procesodecargayactualizaciónderevistas-ProcesodecomprobacióndelosficherosExceldelosorígenesdedatos'>Proceso de comprobación de los ficheros Excel de los orígenes de datos</a></li>
+</ul>
+</li>
+<li><a href='#Procesodecargayactualizaciónderevistas-Procesodecarga'>Proceso de carga</a>
+<ul class='toc-indentation'>
+<li><a href='#Procesodecargayactualizaciónderevistas-Condicionesdecargadelosdatos'>Condiciones de carga de los datos</a></li>
+</ul>
+</li>
+</ul>
+</div></p><h1 id="Procesodecargayactualizaciónderevistas-Formatodelainformación">Formato de la información</h1><p>El proceso comienza con la unificación de los ficheros Excel con los datos de las revistas de WoS y Scopus en un ÚNICO fichero llamado &quot;Revistas.xlsx&quot;. El formato sería el siguiente:</p><ul><li style="text-align: left;">El archivo resultante tiene que tener la extensión .xlsx</li><li style="text-align: left;">El fichero únicamente tendrá una hoja llamada &quot;revistas&quot; con los datos indicados.</li><li style="text-align: left;">La tabla debe tener el siguiente formato:<ul><li style="text-align: left;"><strong>TITLE</strong>: Nombre completo de la revista. (texto)</li><li style="text-align: left;"><strong>PUBLISHER_NAME</strong>: Nombre completo del publicador/editor de la revista. (texto)</li><li style="text-align: left;"><strong>ISSN</strong>: Identificador ISSN de la revista. Importante que esté formado por 8 dígitos separados por un ‘-’ en el cuarto. En el caso que no tengan, se dejará vacío. (texto)<span> </span><em>Ejemplo: 1234-5678 </em></li><li style="text-align: left;"><strong>EISSN</strong>: Identificador EISSN de la revista. Importante que esté formado por 8 dígitos separados por un ‘-’ en el cuarto. En el caso que no tengan, se dejará vacío. (texto)<span> </span><em>Ejemplo: 8765-4321 </em></li><li style="text-align: left;"><strong>CATEGORY_DESCRIPTION</strong>: Nombre de la categoría que tiene la revista. (texto)</li><li style="text-align: left;"><strong>IMPACT_FACTOR</strong>: Factor de impacto de la revista en la categoría. (decimal)</li><li style="text-align: left;"><strong>RANK</strong>: Posición dónde se sitúa la revista en la categoría. (numérico)</li><li style="text-align: left;"><strong>RANK_OUT_OF</strong>: Número total de revistas que hay en la categoría. (numérico)</li><li style="text-align: left;"><strong>QUARTILE_RANK</strong>: Cuartil de la revista en esa categoría. Ha de ser un número entre el 1 y el 4. (numérico)</li><li style="text-align: left;"><strong>SOURCE</strong>: Fuente del dato de la revista. Posibles valores: 'WOS' o 'SCOPUS'</li><li style="text-align: left;"><strong>YEAR</strong>: Año del dato de la revista. (numérico)<span> </span><em>Ejemplo: 2010</em></li></ul></li></ul><h2 style="text-align: left;" id="Procesodecargayactualizaciónderevistas-ProcesodecomprobacióndelosficherosExceldelosorígenesdedatos">Proceso de comprobación de los ficheros Excel de los orígenes de datos</h2><p>Para conseguir un fichero unificado con datos válidos hay que conseguir que las revistas no estén duplicadas y que sus datos sean coherentes. Para detectar posibles problemas en los datos hay que revisar los siguientes aspectos en cada fichero fuente y entre los dos orígenes de información (WoS y Scopus):</p><ul><li style="text-align: left;">Que el ISSN y EISSN estén bien formados. 8 dígitos separados por un ‘-’ en el cuarto. <em>Ejemplo: 1234-5678</em></li><li style="text-align: left;">Que la misma revista no cambie de ISSN y EISSN de un año a otro.<ul><li style="text-align: left;">En el caso de que el ISSN o EISSN hubieran cambiado, habría que actualizar al nuevo dato en las revistas de los años anteriores.<ul><li style="text-align: left;">Para saber que ISSN o EISSN es el válido, habría que hacer un proceso de búsqueda de la revista por internet y quedarse con el correcto.</li></ul></li></ul></li><li style="text-align: left;">Que la revista no esté en categorías duplicadas en el mismo año.<ul><li style="text-align: left;">En el caso de que se encontrasen duplicados, habría que decidir con cual de los dos registros quedarse y eliminar el otro.<ul><li style="text-align: left;">Habría que quedarse con el registro cuyo cuartil sea más bajo. En el caso de que el cuartil sea el mismo, habría que quedarse con el registro cuyo 'RANK' sea más bajo.</li></ul></li></ul></li></ul><h1 style="text-align: left;" id="Procesodecargayactualizaciónderevistas-Procesodecarga">Proceso de carga</h1><p style="text-align: left;">El programa desarrollado leerá un único fichero y cargará los datos en la BBDD. Para considerar que dos revistas son iguales, aplicamos estas condiciones:</p><ul><li style="text-align: left;">Si tienen el mismo ISSN.</li><li style="text-align: left;">Si el título y el editor es el mismo.</li><li style="text-align: left;">Si el título y el EISSN es el mismo.</li></ul><h2 style="text-align: left;" id="Procesodecargayactualizaciónderevistas-Condicionesdecargadelosdatos">Condiciones de carga de los datos</h2><p>Para realizar la carga de los datos el programa desarrollado exige que los datos cumplan las siguientes condiciones:</p><ul><li>El título y el publicador de la revista son obligatorios.</li><li>Las revistas han de tener ISSN o EISSN (o ambos). Si los dos campos están vacíos, se considera una revista no válida.</li><li>Si una revista tiene el mismo ISSN y EISSN, se considera que la revista únicamente tiene EISSN.</li><li>No puede existir un registro con los mismos valores en 'TITLE', 'PUBLISHER_NAME', 'ISSN', 'EISSN', 'SOURCE', 'YEAR' y el mismo 'CATEGORY_DESCRIPTION'.</li></ul><p style="text-align: left;"><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:59</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

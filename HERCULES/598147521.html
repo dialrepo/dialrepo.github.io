@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Gestión proyectos</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147612.html">APIs de Integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147535.html">SGI: Servicios propios que expone</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Gestión proyectos
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span>, last modified on sep 03, 2024
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728467815467 {padding: 0px;}
+div.rbtoc1728467815467 ul {margin-left: 0px;}
+div.rbtoc1728467815467 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728467815467'>
+<ul class='toc-indentation'>
+<li><a href='#Gestiónproyectos-SistemadeGestiónInvestigación'>Sistema de Gestión Investigación</a>
+<ul class='toc-indentation'>
+<li><a href='#Gestiónproyectos-Entidades'>Entidades</a></li>
+<li><a href='#Gestiónproyectos-Modelológico'>Modelo lógico</a></li>
+<li><a href='#Gestiónproyectos-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#Gestiónproyectos-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#Gestiónproyectos-Proyecto'>Proyecto</a></li>
+<li><a href='#Gestiónproyectos-EstadoProyecto'>EstadoProyecto</a></li>
+<li><a href='#Gestiónproyectos-ModeloEjecucion'>ModeloEjecucion</a></li>
+<li><a href='#Gestiónproyectos-TipoFinalidad'>TipoFinalidad</a></li>
+<li><a href='#Gestiónproyectos-TipoAmbitoGeografico'>TipoAmbitoGeografico</a></li>
+<li><a href='#Gestiónproyectos-ProyectoIva'>ProyectoIva</a></li>
+<li><a href='#Gestiónproyectos-ProyectoContexto'>ProyectoContexto</a></li>
+<li><a href='#Gestiónproyectos-AreaTematica'>AreaTematica</a></li>
+<li><a href='#Gestiónproyectos-ProyectoEquipo'>ProyectoEquipo</a></li>
+<li><a href='#Gestiónproyectos-RolProyecto'>RolProyecto</a></li>
+<li><a href='#Gestiónproyectos-ProyectoEntidadGestora'>ProyectoEntidadGestora</a></li>
+<li><a href='#Gestiónproyectos-ProyectoEntidadConvocante'>ProyectoEntidadConvocante</a></li>
+<li><a href='#Gestiónproyectos-Programa'>Programa</a></li>
+<li><a href='#Gestiónproyectos-ProyectoEntidadFinancidora'>ProyectoEntidadFinancidora</a></li>
+<li><a href='#Gestiónproyectos-FuenteFinanciacion'>FuenteFinanciacion</a></li>
+<li><a href='#Gestiónproyectos-TipoOrigenFuenteFinanciacion'>TipoOrigenFuenteFinanciacion</a></li>
+<li><a href='#Gestiónproyectos-TipoFinanciacion'>TipoFinanciacion</a></li>
+<li><a href='#Gestiónproyectos-ProyectoAnualidadResumen'>ProyectoAnualidadResumen</a></li>
+<li><a href='#Gestiónproyectos-ProyectoPresupuestoTotales'>ProyectoPresupuestoTotales</a></li>
+<li><a href='#Gestiónproyectos-ProyectoClasificacion'>ProyectoClasificacion</a></li>
+<li><a href='#Gestiónproyectos-NotificacionProyecto'>NotificacionProyecto</a></li>
+<li><a href='#Gestiónproyectos-EntidadFinanciadora'>EntidadFinanciadora</a></li>
+<li><a href='#Gestiónproyectos-PalabraClave'>PalabraClave</a></li>
+<li><a href='#Gestiónproyectos-ProyectoAreaConocimiento'>ProyectoAreaConocimiento</a></li>
+</ul>
+</li>
+<li><a href='#Gestiónproyectos-Servicios'>Servicios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><hr/><h1 id="Gestiónproyectos-SistemadeGestiónInvestigación">Sistema de Gestión Investigación</h1><h2 id="Gestiónproyectos-Entidades">Entidades</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">Proyecto</td><td class="confluenceTd"><p>Contiene los datos generales de un proyecto. De esta entidad se pueden obtener los campos:</p><ul><li>Nombre del proyecto</li><li>Fecha de inicio</li><li>Fecha de finalización</li><li>Ámbito geográfico</li><li>Cod. según financiadora</li><li>Tipo de proyecto</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">ContextoProyecto</td><td colspan="1" class="confluenceTd"><p>Contiene información del contexto del proyecto. De esta entidad se puede obtener el campo:</p><ul><li>Resultados relevantes</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">ProyectoEquipo</td><td colspan="1" class="confluenceTd"><p>Contiene la información de las personas que forman parte del equipo del proyecto. De esta entidad de puede obtener los campos:</p><ul><li>Número de investigadores/as participantes</li><li>Grado de contribución</li><li>Tipo de participación</li><li>Posición</li><li>Nombre</li><li>Apellidos</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">ProyectoEntidadGestora</td><td colspan="1" class="confluenceTd"><p>Contiene los datos de una entidad gestora. Un proyecto sólo se le permite tener una entidad gestora. De esta entidad se puede obtener el campo:</p><ul><li>Entidad realización</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">ProyectoEntidadConvocante</td><td colspan="1" class="confluenceTd"><p>Contiene los datos de una entidad convocante. Un proyecto puede tener varian entidades convocantes. De esta entidad de puede obtener los campos:</p><ul><li>Nombre del programa</li><li>Entidad</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">ProyectoEntidadFinanciadora</td><td colspan="1" class="confluenceTd"><p>Contiene los datos de una entidad financiadora. Un proyecto puede tener varian entidades financiadoras. De esta entidad de puede obtener los campos:</p><ul><li>Porcentaje en subvención</li><li>Porcentaje en crédito</li><li>Porcentaje mixto</li><li>Entidad</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">ProyectoClasificacion</td><td colspan="1" class="confluenceTd">Contiene la referencia a la clasificación. Para ver el detalle de la clasificación habria que consultar al SGO (<span><span class="url-filename">sgo/clasificaciones/{refencia})</span></span></td></tr></tbody></table></div><h2 id="Gestiónproyectos-Modelológico">Modelo lógico</h2><p><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=CSP-PRO+-+Modelo+l%C3%B3gico+-+Diagrama">CSP - PRO - Modelo l&oacute;gico</a></p><h2 id="Gestiónproyectos-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Consultas+filtradas+y+paginadas">Consultas filtradas y paginadas</a></li><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Formatos+de+datos+API">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="Gestiónproyectos-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="Gestiónproyectos-Proyecto">Proyecto</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">convocatoriaId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la convocatoria del proyecto en caso de que la convocatoria este registrada en el SGI.</td></tr><tr><td colspan="1" class="confluenceTd">solicitudId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la solicitud de convocatoria que dió lugar al proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">estado</td><td colspan="1" class="confluenceTd">EstadoProyecto</td><td colspan="1" class="confluenceTd">Entidad que representa un estado del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">titulo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Título del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">acronimo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p style="margin-left: 0.48cm;" align="left">Identificador corto del proyecto.</p></td></tr><tr><td colspan="1" class="confluenceTd">codigoExterno</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p style="margin-left: 0.48cm;" align="left">Código o referencia con el que se identifica el proyecto en la entidad convocante externa (en caso de existir).</p></td></tr><tr><td colspan="1" class="confluenceTd">fechaInicio</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p style="margin-left: 0.48cm;" align="left">Fecha de inicio del proyecto.</p></td></tr><tr><td colspan="1" class="confluenceTd">fechaFin</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p style="margin-left: 0.48cm;" align="left">Fecha de fin del proyecto.</p></td></tr><tr><td colspan="1" class="confluenceTd">fechaFinDefinitiva</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p style="margin-left: 0.48cm;" align="left">Fecha de fin definitiva del proyecto. Se informará de esta fecha en el caso de situaciones como rescisiones o renuncias al proyecto, o bien puede ser informada automáticamente por el sistema al registrar una prórroga sobre el proyecto. Si está informada prevalecerá sobre la fecha de fin y será la considerada como fecha de finalización del proyecto, independientemente de que sea mayor o menor que la fecha de fin inicial.</p></td></tr><tr><td colspan="1" class="confluenceTd">unidadGestionRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p style="margin-left: 0.48cm;" align="left">Identificador de la Unidad de gestión (OTRI, OPE, UGI, etc) a la que pertenece el proyecto.</p></td></tr><tr><td colspan="1" class="confluenceTd">modeloEjecucion</td><td colspan="1" class="confluenceTd">ModeloEjecucion</td><td colspan="1" class="confluenceTd">Entidad que representa un modelo de ejecución.</td></tr><tr><td colspan="1" class="confluenceTd">finalidad</td><td colspan="1" class="confluenceTd">TipoFinalidad</td><td colspan="1" class="confluenceTd">Entidad que representa la finalidad del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">convocatoriaExterna</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p style="margin-left: 0.48cm;" align="left">Permite mostrar o recoger la identificación externa de la convocatoria, dependiendo si el proyecto se asocia o no a una convocatoria registrada en el SGI.</p></td></tr><tr><td colspan="1" class="confluenceTd">ambitoGeografico</td><td colspan="1" class="confluenceTd">TipoAmbitoGeografico</td><td colspan="1" class="confluenceTd">Entidad que representa el ámbito geográfico.</td></tr><tr><td colspan="1" class="confluenceTd">confidencial</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p style="margin-left: 0.48cm;" align="left">Indica si el proyecto es confidencial.</p></td></tr><tr><td colspan="1" class="confluenceTd">clasificacionCVN</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p style="margin-left: 0.48cm;" align="left">Indica el apartado del CVN al que correspondería el proyecto. Tiene los siguientes valores:</p><ul><li><p align="left">AYUDAS</p></li><li><p align="left">COMPETITIVOS</p></li></ul><ul><li><p align="left">NO_COMPETITIVOS</p></li></ul></td></tr><tr><td colspan="1" class="confluenceTd">coordinado</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si el proyecto se realizará de forma coordinada con otros socios.</td></tr><tr><td colspan="1" class="confluenceTd">colaborativo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si un proyecto coordinado es además colaborativo (alguno de los socios participantes es una empresa privada).</td></tr><tr><td colspan="1" class="confluenceTd">coordinadorExterno</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica quién actúa como coordinador del proyecto. Un valor &quot;false&quot; indica que es la propia universidad quien actúa en calidad de coordinador del proyecto. En caso que quien coordine el proyecto no sea la universidad sino uno de los socios, se indicará en este campo el valor &quot;true&quot;.</td></tr><tr><td colspan="1" class="confluenceTd">timesheet</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si el proyecto requiere gestión de Timesheet.</td></tr><tr><td colspan="1" class="confluenceTd">permitePaquetesTrabajo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si el proyecto requiere gestión de paquetes de trabajo en los Timesheet.</td></tr><tr><td colspan="1" class="confluenceTd">costeHora</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si el proyecto requerirá realizar el cálculo de coste de hora de personal.</td></tr><tr><td colspan="1" class="confluenceTd">tipoHorasAnuales</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Sólo se informará si se el campo &quot;costeHora&quot; tiene valor &quot;true&quot;.Indica el criterio de las horas anuales para el cálculo del coste/hora.Tiene los siguientes valores:<ul><li>CATEGORIA</li><li>FIJO</li><li>REAL</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">iva</td><td colspan="1" class="confluenceTd">ProyectoIva</td><td colspan="1" class="confluenceTd">Entidad que representa el IVA del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">causaExencion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Indica la causa de exención de IVA.Tiene los siguientes valores:<ul><li>NO_SUJETO</li><li>NO_SUJETO_CON_DEDUCCION</li><li>NO_SUJETO_SIN_DEDUCCION</li><li>SUJETO_EXENTO</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">observaciones</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Observaciones de carácter interno del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">anualidades</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si en el presupuesto se va a introducir por anualidades o no.</td></tr><tr><td colspan="1" class="confluenceTd">importePresupuesto</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Es el importe presupuesto correspondiente al proyecto a desarrollar por la Universidad en caso de que lo deseen introducir de forma manual y no a través del detalle del presupuesto (<span>entidad</span> &quot;AnualidadGasto&quot;).</td></tr><tr><td colspan="1" class="confluenceTd">importeConcedido</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd"><span>Es el importe concedido correspondiente al proyecto a desarrollar por la Universidad en caso de que lo deseen introducir de forma manual y no a través del detalle del presupuesto (entidad &quot;AnualidadGasto&quot;)</span><span>.</span></td></tr><tr><td colspan="1" class="confluenceTd">importePresupuestoSocios</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Es el importe total presupuestado por todos los socios (adicionales a la Universidad) que participan en el proyecto en caso de que lo deseen introducir de forma manual y no a través del importe presupuestdo de los socios (<span>entidad</span> &quot;ProyectoSocio&quot;).</td></tr><tr><td colspan="1" class="confluenceTd">importeConcedidoSocios</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Es el importe total concedido por todos los socios (adicionales a la Universidad) que participan en el proyecto en caso de que lo deseen introducir de forma manual y no a través del importe concedido de los socios (<span>entidad</span> &quot;ProyectoSocio&quot;).</td></tr><tr><td colspan="1" class="confluenceTd">totalImportePresupuesto</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Es el importe total presupuestado del proyecto (Universidad y socios) en caso de que lo deseen introducir de forma manual y no a través del detalle del presupuesto (<span>entidad</span> &quot;AnualidadGasto&quot;) y del importe presupuestado de los socios (<span>entidad</span> &quot;ProyectoSocio&quot;).</td></tr><tr><td colspan="1" class="confluenceTd">totalImporteConcedido</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Es el importe total concedido del proyecto (Universidad y socios) en caso de que lo deseen introducir de forma manual y no a través del detalle del presupuesto (<span>entidad</span> &quot;AnualidadGasto&quot;) y del importe presupuestado de los socios (<span>entidad</span> &quot;ProyectoSocio&quot;).</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><span>Indica si esta activa o no. En caso de no estar activo se </span><span>considera</span><span> como un proyecto eliminado del sistema. Se realizan borrados lógicos por si el gesto o administrador desean recuperar un proyecto eliminado.</span></td></tr></tbody></table></div><h4 id="Gestiónproyectos-EstadoProyecto">EstadoProyecto</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del estado del proyecto</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">proyectoId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">estado</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Estado del proyecto. Tiene los siguientes valores:</p><ul><li>BORRADO</li><li>CONCEDIDO</li><li>RENUNCIADO</li><li>RESCINDIDO</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">fechaEstado</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha en la que se alcanzó el estado.</td></tr><tr><td colspan="1" class="confluenceTd">comentario</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Comentario que se pude añadir cuando se produce el cambio de estado para recoger cualquier observación.</td></tr></tbody></table></div><h4 id="Gestiónproyectos-ModeloEjecucion">ModeloEjecucion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del modelo de ejecución</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del modelo de ejecución</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción del modelo de ejecución</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Indica si el registro está activo o no. A través de este atributo se da cobertura al borrado lógico de los registros de esta entidad.</p></td></tr><tr><td colspan="1" class="confluenceTd">externo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Flag que distingue los modelos de ejecución que representan proyectos externos (proyectos registrados en el SGI en los que participa personal investigador de la Universidad pero cuya gestión y responsabilidad recae sobre otra Universidad).</p></td></tr><tr><td colspan="1" class="confluenceTd">contrato</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Flag que distingue los modelos de ejecución basados en facturación (contratos). El SGI utiliza este campo para mostrar determinados apartados.</p></td></tr></tbody></table></div><h4 id="Gestiónproyectos-TipoFinalidad">TipoFinalidad</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del tipo de finalidad.</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del tipo de finalidad.</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción del tipo de finalidad.</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Flag con el que se da cobertura al borrado lógico de los registros de esta tabla. Un tipo de finalidad con al flag &quot;activo&quot; a &quot;false&quot; no estará disponible para su vinculación a los modelos de ejecución</p></td></tr></tbody></table></div><h4 id="Gestiónproyectos-TipoAmbitoGeografico">TipoAmbitoGeografico</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del tipo de ámbito geográfico.</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del ámbito geográfico</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Campo utilizado para dar soporte al borrado lógico de los registros de esta entidad. Un ámbito geográfico no activo no se está disponible para su selección a nivel de interface de usuario.</p></td></tr></tbody></table></div><h4 id="Gestiónproyectos-ProyectoIva">ProyectoIva</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del tipo de finalidad.</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">proyectoId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del proyecto</td></tr><tr><td colspan="1" class="confluenceTd">iva</td><td colspan="1" class="confluenceTd">Integer</td><td colspan="1" class="confluenceTd">Valor del porcentaje del IVA.</td></tr><tr><td colspan="1" class="confluenceTd">fechaInicio</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de inicio en la que empieza a aplicarse el porcentaje de IVA al que refiere el registro.</td></tr><tr><td colspan="1" class="confluenceTd">fechaFin</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Fecha de fin en la que deja de aplicarse el porcentaje de IVA al que refiere el registro.</p></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Proyecto</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": null,
+	"creationDate": null,
+	"lastModifiedBy": "06275880",
+	"lastModifiedDate": "2021-08-19T10:17:29.386Z",
+	"id": 1,
+	"convocatoriaId": 2,
+	"solicitudId": null,
+	"estado": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 1,
+		"proyectoId": 1,
+		"estado": "BORRADOR",
+		"fechaEstado": "2021-01-31T23:00:00Z",
+		"comentario": null
+	},
+	"titulo": "Proyecto 1 CGF/OPE-1",
+	"acronimo": "PCGFOPE1",
+	"codigoExterno": "PCGFOPE1",
+	"fechaInicio": "2021-01-31T23:00:00Z",
+	"fechaBase": "2021-04-30T22:00:00Z",
+	"fechaFin": "2022-12-31T22:59:59Z",
+	"fechaFinDefinitiva": null,
+	"unidadGestionRef": "2",
+	"modeloEjecucion": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 7,
+		"nombre": "Proyecto OPE",
+		"descripcion": "",
+		"activo": true,
+        "externo": false,
+        "contrato": false
+	},
+	"finalidad": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 1,
+		"nombre": "Proyecto I+D",
+		"descripcion": null,
+		"activo": true
+	},
+	"convocatoriaExterna": "CGF/OPE-01",
+	"ambitoGeografico": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"activo": true,
+		"id": 5,
+		"nombre": "Europeo"
+	},
+	"confidencial": false,
+	"clasificacionCVN": "COMPETITIVOS",
+	"coordinado": false,
+	"colaborativo": null,
+	"coordinadorExterno": null,
+	"timesheet": true,
+	"permitePaquetesTrabajo": false,
+	"costeHora": true,
+	"tipoHorasAnuales": "CATEGORIA",
+	"iva": {
+		"createdBy": "06275880",
+		"creationDate": "2021-08-19T10:17:29.384Z",
+		"lastModifiedBy": "06275880",
+		"lastModifiedDate": "2021-08-19T10:17:29.384Z",
+		"id": 10,
+		"proyectoId": 1,
+		"iva": 11,
+		"fechaInicio": "2021-08-20T00:00:00.384Z",
+		"fechaFin": null
+	},
+	"causaExencion": null,
+	"observaciones": "",
+	"anualidades": true,
+	"importePresupuesto": null,
+	"importeConcedido": null,
+	"importePresupuestoSocios": null,
+	"importeConcedidoSocios": null,
+	"totalImportePresupuesto": null,
+	"totalImporteConcedido": null,
+	"activo": true
+}</pre>
+ </div>
+</div><h4 id="Gestiónproyectos-ProyectoContexto">ProyectoContexto</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del proyecto.</td></tr><tr><td class="confluenceTd">createdBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">objetivos</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Texto libre para recoger cuales serán los objetivos del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">intereses</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Texto libre para recoger los motivos que justifican el desarrollo del proyecto y/o los intereses del mismo.</td></tr><tr><td colspan="1" class="confluenceTd">resultadosPrevistos</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Texto libre para recoger los resultados esperados del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">propiedadResultados</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Permitirá recoger quién es el propietario de los resultados que se generen a raíz de la ejecución del proyecto.Tiene los siguientes valores:<ul><li>COMPARTIDA</li><li>ENTIDAD_FINANCIADORA</li><li>SIN_RESULTADOS</li><li>UNIVERSIDAD</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">areaTematicaConvocatoria</td><td colspan="1" class="confluenceTd">AreaTematica</td><td colspan="1" class="confluenceTd">Entidad que representa el área temática elegida en la convocatoria en caso de que el proyecto este relacionado con una convocatoria del SGI.</td></tr><tr><td colspan="1" class="confluenceTd">areaTematica</td><td colspan="1" class="confluenceTd">AreaTematica</td><td colspan="1" class="confluenceTd">Entidad que representa el área temática en la que se enmarca el proyecto.</td></tr></tbody></table></div><p><br/></p><h4 id="Gestiónproyectos-AreaTematica">AreaTematica</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del área temática</td></tr><tr><td class="confluenceTd">createdBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del área temática. El nombre del nodo raíz del árbol da el nombre al listado de áreas temáticas.</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción del área temática.</td></tr><tr><td colspan="1" class="confluenceTd">padre</td><td colspan="1" class="confluenceTd">AreaTematica</td><td colspan="1" class="confluenceTd"><p>Entidad que representa el área temática padre.</p><p>El listado de áreas temáticas se implementa con una estructura de árbol jerárquico. Este campo establece la jerarquía del registro actual con su superior. El registro para el que este campo tome el valor &quot;null&quot; será el nodo raíz y será el que otorgue el nombre al listado de áreas temáticas</p></td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Flag a través del que se implementa el borrado lógico de los registros de esta tabla. Un elemento con el flag &quot;activo&quot; a &quot;false&quot; no estará disponible para su vinculación a las convocatorias, solicitudes y proyectos. Si el elemento que no está activo es el nodo raíz del árbol será el listado completo que no esté visible. Si el elemento que no está activo es un nodo interno, será este nodo y todos sus descendientes los que no estén disponibles.</p></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ContextoProyecto</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": null,
+	"creationDate": null,
+	"lastModifiedBy": "06275880",
+	"lastModifiedDate": "2021-08-19T08:40:16.806Z",
+	"id": 1,
+	"proyectoId": 1,
+	"objetivos": "explicación de los objetivos del proyecto",
+	"intereses": "explicación de la Justificación e intereses",
+	"resultadosPrevistos": "descripción de los resultados esperados",
+	"propiedadResultados": "UNIVERSIDAD",
+	"areaTematicaConvocatoria": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 61,
+		"nombre": "BIO",
+		"descripcion": "Biociencias y biotecnología",
+		"padre": {
+			"createdBy": null,
+			"creationDate": null,
+			"lastModifiedBy": null,
+			"lastModifiedDate": null,
+			"id": 1,
+			"nombre": "AEI",
+			"descripcion": "Estructura de áreas y paneles científico técnicos de la Agencia Estatal de Investigación",
+			"padre": null,
+			"activo": true
+		},
+		"activo": true
+	},
+	"areaTematica": {
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 62,
+		"nombre": "BIF",
+		"descripcion": "Biología integrativa y fisiología",
+		"padre": {
+			"createdBy": null,
+			"creationDate": null,
+			"lastModifiedBy": null,
+			"lastModifiedDate": null,
+			"id": 61,
+			"nombre": "BIO",
+			"descripcion": "Biociencias y biotecnología",
+			"padre": {
+				"createdBy": null,
+				"creationDate": null,
+				"lastModifiedBy": null,
+				"lastModifiedDate": null,
+				"id": 1,
+				"nombre": "AEI",
+				"descripcion": "Estructura de ¡reas y paneles cientÃ­fico tÃ©cnicos de la Agencia Estatal de InvestigaciÃ³n",
+				"padre": null,
+				"activo": true
+			},
+			"activo": true
+		},
+		"activo": true
+	}
+}</pre>
+ </div>
+</div><h4 id="Gestiónproyectos-ProyectoEquipo">ProyectoEquipo</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la entidad proyecto equipo.</td></tr><tr><td class="confluenceTd">createdBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">proyectoId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identifcador del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">personaRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador o Referencia de la persona miembro del equipo de proyecto. Es el identificador de la persona en el sistema de personas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">rolProyecto</td><td colspan="1" class="confluenceTd">RolProyecto</td><td colspan="1" class="confluenceTd"><p>Entidad que representa el rol. Son los roles que puede tener el equipo de proyecto.</p><p>Ejemplos:</p><ul><li>Investigador/a principal</li><li>Co-Investigador/a PrincipalColaborador</li><li>Asesor científico</li><li>Colaborador E.I.</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">fechaInicio</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de inicio para la participación del miembro del equipo de proyecto con el rol seleccionado.</td></tr><tr><td colspan="1" class="confluenceTd">fechaFin</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de inicio para la participación del miembro del equipo de proyecto con el rol seleccionado.</td></tr><tr><td colspan="1" class="confluenceTd">horasDedicacion</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Horas totales de dedicación al proyecto. Se utiliza para realizar la propuesta de distribución del timesheet.</td></tr></tbody></table></div><h4 id="Gestiónproyectos-RolProyecto">RolProyecto</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del rol proyecto.</td></tr><tr><td class="confluenceTd">createdBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">abreviatura</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Abreviatura identificativa del rol.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre identificativo del rol.</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Campo de texto de introducción libre para descripción ampliada.</td></tr><tr><td colspan="1" class="confluenceTd">rolPrincipal</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si el rol es el rol principal. No se limita el número de roles para los que se marque el indicador de rol principal, pudiendo estar mas de un rol con el indicador marcado.</td></tr><tr><td colspan="1" class="confluenceTd">equipo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Tipo Equipo Proyecto. Tiene los siguientes valores:<ul><li>INVESTIGACION</li><li>TRABAJO</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">orden</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Tipo de Orden. El orden sólo se indica para aquellos roles que tengan marcado el flag de investigador principal, para indicar si es de orden 1 o de orden 2. Tiene los siguientes valores:<ul><li>PRIMARIO</li><li>SECUNDARIO</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si esta activo o no. En caso de no estar activo no se podrá asignar a ningún miembro del equipo de una solicitud ni a los miembros del equipo de los socios de una solicitud.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ProyectoEquipo</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">	{
+		"createdBy": "06275880",
+		"creationDate": "2021-08-19T08:37:32.853Z",
+		"lastModifiedBy": "06275880",
+		"lastModifiedDate": "2021-08-19T08:37:32.853Z",
+		"id": 35,
+		"proyectoId": 1,
+		"personaRef": "27477512",
+		"rolProyecto": {
+			"createdBy": null,
+			"creationDate": null,
+			"lastModifiedBy": null,
+			"lastModifiedDate": null,
+			"id": 1,
+			"abreviatura": "IP",
+			"nombre": "Investigador/a principal",
+			"descripcion": "Investigador/a principal",
+			"rolPrincipal": true,
+			"orden": "PRIMARIO",
+			"equipo": "INVESTIGACION",
+			"activo": true
+		},
+		"fechaInicio": null,
+		"fechaFin": null,
+		"horasDedicacion": null
+	}
+</pre>
+ </div>
+</div><h4 id="Gestiónproyectos-ProyectoEntidadGestora">ProyectoEntidadGestora</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la entidad gestora del proyecto.</td></tr><tr><td class="confluenceTd">createdBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td class="confluenceTd">proyectoId</td><td class="confluenceTd">Long</td><td class="confluenceTd">Identifcador del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">entidadRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Referencia o Identificador de la entidad en el sistema externo de Empresas.</p><p>Ver diseño del API de empresas para obtener el detalle de una empresa a a partir de su identificador: <a class="external-link" href="https://confluence.treelogic.com/display/HERCULES/SGI+-+ESB+-+SGEMP" rel="nofollow">SGI - ESB - SGEMP</a></p></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ProyectoEntidadGestora</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">	{
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 1,
+		"proyectoId": 1,
+		"entidadRef": "G0021150"
+	}
+
+</pre>
+ </div>
+</div><p><br/></p><h4 id="Gestiónproyectos-ProyectoEntidadConvocante">ProyectoEntidadConvocante</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la entidad convocante del proyecto.</td></tr><tr><td class="confluenceTd">createdBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td class="confluenceTd">proyectoId</td><td class="confluenceTd">Long</td><td class="confluenceTd">Identifcador del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">entidadRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Referencia o Identificador de la entidad en el sistema externo de Empresas.</p><p>Ver diseño del API de empresas para obtener el detalle de una empresa a a partir de su identificador: <a class="external-link" href="https://confluence.treelogic.com/display/HERCULES/SGI+-+ESB+-+SGEMP" rel="nofollow">SGI - ESB - SGEMP</a></p></td></tr><tr><td colspan="1" class="confluenceTd">programaConvocatoria</td><td colspan="1" class="confluenceTd">Programa</td><td colspan="1" class="confluenceTd">Entidad que representa el Programa al que se asocia la entidad convocante en la Convocatoria. En el caso de que el proyecto este relacionado con una convocatoria del SGI, en este campo se guarda el programa que se haya definido en la convocatoria para la entidad convocante.</td></tr><tr><td colspan="1" class="confluenceTd">programa</td><td colspan="1" class="confluenceTd">Programa</td><td colspan="1" class="confluenceTd">Entidad que representa el del Programa al que se asocia la entidad convocante en el proyecto.</td></tr></tbody></table></div><h4 id="Gestiónproyectos-Programa">Programa</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del programa.</td></tr><tr><td class="confluenceTd">createdBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del programa, el que se mostrará en la visualización del árbol del plan de investigación en la gestión de convocatorias y proyectos.</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción del programa.</td></tr><tr><td colspan="1" class="confluenceTd">padre</td><td colspan="1" class="confluenceTd">Programa</td><td colspan="1" class="confluenceTd"><p>Entidad que representa el programa padre.</p><p>Los planes de investigación se implementan con una estructura de árbol jerárquico. Este campo establece la jerarquía del registro actual con su superior. El registro para el que este campo tome el valor &quot;null&quot; será el nodo raíz y será el que otorgue el nombre al plan de investigación.</p></td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Flag con el que se da cobertura al borrado lógico de los registros de esta tabla. Un programa con el flag &quot;activo&quot; a &quot;false&quot; no estará disponible para ser seleccionado en convocatorias/proyectos. Si un elemento del árbol no está activo no estará disponible ni el propio elemento ni ninguno de sus descendientes. Si el elemento no activo es el nodo raíz del árbol el será el plan de investigación al completo el que no esté disponible.</p></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ProyectoEntidadConvocante</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">	{
+		"id": 1,
+		"entidadRef": "G0021150",
+		"programaConvocatoria": {
+			"createdBy": null,
+			"creationDate": null,
+			"lastModifiedBy": null,
+			"lastModifiedDate": null,
+			"id": 34,
+			"nombre": "Energy efficiency",
+			"descripcion": null,
+			"padre": {
+				"createdBy": null,
+				"creationDate": null,
+				"lastModifiedBy": null,
+				"lastModifiedDate": null,
+				"id": 27,
+				"nombre": "Energía segura, limpia y eficiente",
+				"descripcion": null,
+				"padre": {
+					"createdBy": null,
+					"creationDate": null,
+					"lastModifiedBy": null,
+					"lastModifiedDate": null,
+					"id": 25,
+					"nombre": "Retos sociales",
+					"descripcion": null,
+					"padre": {
+						"createdBy": null,
+						"creationDate": null,
+						"lastModifiedBy": null,
+						"lastModifiedDate": null,
+						"id": 22,
+						"nombre": "Horizonte 2020",
+						"descripcion": "Programa Marco de Investigación e Innovación de la UE 2014-2020",
+						"padre": null,
+						"activo": true
+					},
+					"activo": true
+				},
+				"activo": true
+			},
+			"activo": true
+		},
+		"programa": {
+			"createdBy": null,
+			"creationDate": null,
+			"lastModifiedBy": null,
+			"lastModifiedDate": null,
+			"id": 43,
+			"nombre": "LC-SC3-EE-10-2018-2019-2020",
+			"descripcion": "Mainstreaming energy efficiency finance",
+			"padre": {
+				"createdBy": null,
+				"creationDate": null,
+				"lastModifiedBy": null,
+				"lastModifiedDate": null,
+				"id": 34,
+				"nombre": "Energy efficiency",
+				"descripcion": null,
+				"padre": {
+					"createdBy": null,
+					"creationDate": null,
+					"lastModifiedBy": null,
+					"lastModifiedDate": null,
+					"id": 27,
+					"nombre": "Energía segura, limpia y eficiente",
+					"descripcion": null,
+					"padre": {
+						"createdBy": null,
+						"creationDate": null,
+						"lastModifiedBy": null,
+						"lastModifiedDate": null,
+						"id": 25,
+						"nombre": "Retos sociales",
+						"descripcion": null,
+						"padre": {
+							"createdBy": null,
+							"creationDate": null,
+							"lastModifiedBy": null,
+							"lastModifiedDate": null,
+							"id": 22,
+							"nombre": "Horizonte 2020",
+							"descripcion": "Programa Marco de Investigación e Innovación de la UE 2014-2020",
+							"padre": null,
+							"activo": true
+						},
+						"activo": true
+					},
+					"activo": true
+				},
+				"activo": true
+			},
+			"activo": true
+		}
+	}
+
+	
+		</pre>
+ </div>
+</div><h4 id="Gestiónproyectos-ProyectoEntidadFinancidora">ProyectoEntidadFinancidora</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la entidad financiadora del proyecto.</td></tr><tr><td class="confluenceTd">createdBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td class="confluenceTd">proyectoId</td><td class="confluenceTd">Long</td><td class="confluenceTd">Identifcador del proyecto.</td></tr><tr><td class="confluenceTd">entidadRef</td><td class="confluenceTd">String</td><td class="confluenceTd"><p>Referencia o Identificador de la entidad en el sistema externo de Empresas.</p><p>Ver diseño del API de empresas para obtener el detalle de una empresa a a partir de su identificador: <a class="external-link" href="https://confluence.treelogic.com/display/HERCULES/SGI+-+ESB+-+SGEMP" rel="nofollow">SGI - ESB - SGEMP</a></p></td></tr><tr><td colspan="1" class="confluenceTd">fuenteFinanciacion</td><td colspan="1" class="confluenceTd">FuenteFinanciacion</td><td colspan="1" class="confluenceTd">Entidad que representa una fuente de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">tipoFinanciacion</td><td colspan="1" class="confluenceTd">TipoFinanciacion</td><td colspan="1" class="confluenceTd">Entidad que representa un tipo de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">porcentajeFinanciacion</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Porcentaje de financiación de la entidad financiadora.</td></tr><tr><td colspan="1" class="confluenceTd">importeFinanciacion</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Importe de financiación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">ajena</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si se trata de una entidad financiadora ajena a la convocatoria o no.</td></tr></tbody></table></div><p><br/></p><h4 id="Gestiónproyectos-FuenteFinanciacion">FuenteFinanciacion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la fuente de financiación</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre identificativo de la fuente de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción de la fuente de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">fondoEstructural</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Flag que identifica si la fuente de financiación procede o no de fondos estructurales europeos.</td></tr><tr><td colspan="1" class="confluenceTd">tipoAmbitoGeografico</td><td colspan="1" class="confluenceTd">TipoAmbitoGeografico</td><td colspan="1" class="confluenceTd">Entidad que representa un ámbito geográfico.</td></tr><tr><td colspan="1" class="confluenceTd">tipoOrigenFuenteFinanciacion</td><td colspan="1" class="confluenceTd">TipoOrigenFuenteFinanciacion</td><td colspan="1" class="confluenceTd">Entidad que representa un tipo de origen de fuente de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Flag con el que se da cobertura al borrado lógico de los registros de esta tabla. Una fuente de financiación con el campo &quot;activo&quot; a &quot;false&quot; no estará disponible para ser asociada a ninguna entidad financiadora en convocatorias/proyectos.</p></td></tr></tbody></table></div><h4 id="Gestiónproyectos-TipoOrigenFuenteFinanciacion">TipoOrigenFuenteFinanciacion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 127.0px;"/><col style="width: 72.0px;"/><col style="width: 1050.0px;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del tipo de origen de fuente de financiación</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del tipo de origen de fuente de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Flag a través del que se implementa el borrado lógico de los registros de esta tabla. Un tipo de origen de fuente de financiación con el campo &quot;activo&quot; a &quot;false&quot; no estará disponible para la creación/modificación de las fuentes de financiación.</p></td></tr></tbody></table></div><h4 id="Gestiónproyectos-TipoFinanciacion">TipoFinanciacion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del tipo de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del tipo de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción del tipo de financiación.</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd"><p>Flag a través del que se implementa el borrado lógico de los registros de esta tabla.</p></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ProyectoEntidadFinancidora</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">	{
+		"createdBy": null,
+		"creationDate": null,
+		"lastModifiedBy": null,
+		"lastModifiedDate": null,
+		"id": 1,
+		"proyectoId": 1,
+		"entidadRef": "G0021150",
+		"fuenteFinanciacion": {
+			"createdBy": null,
+			"creationDate": null,
+			"lastModifiedBy": "02221287",
+			"lastModifiedDate": "2021-07-20T09:14:57.558Z",
+			"activo": true,
+			"id": 4,
+			"nombre": "Horizonte 2020",
+			"descripcion": null,
+			"fondoEstructural": false,
+			"tipoAmbitoGeografico": {
+				"createdBy": null,
+				"creationDate": null,
+				"lastModifiedBy": null,
+				"lastModifiedDate": null,
+				"activo": true,
+				"id": 5,
+				"nombre": "Europeo"
+			},
+			"tipoOrigenFuenteFinanciacion": {
+				"createdBy": null,
+				"creationDate": null,
+				"lastModifiedBy": null,
+				"lastModifiedDate": null,
+				"activo": true,
+				"id": 1,
+				"nombre": "Público"
+			}
+		},
+		"tipoFinanciacion": {
+			"createdBy": null,
+			"creationDate": null,
+			"lastModifiedBy": null,
+			"lastModifiedDate": null,
+			"id": 1,
+			"nombre": "Subvención",
+			"descripcion": null,
+			"activo": true
+		},
+		"porcentajeFinanciacion": 80,
+		"importeFinanciacion": null,
+		"ajena": false
+	}
+
+</pre>
+ </div>
+</div><h4 id="Gestiónproyectos-ProyectoAnualidadResumen">ProyectoAnualidadResumen</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la anualidad del proyecto.</td></tr><tr><td class="confluenceTd">anio</td><td class="confluenceTd">Long</td><td class="confluenceTd">Año de la anualidad</td></tr><tr><td class="confluenceTd">fechaInicio</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de inicio de la anualidad</td></tr><tr><td colspan="1" class="confluenceTd">fechaFin</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Fecha de fin de la anualidad</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">totalGastosPresupuesto</span></td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Total de los gastos presupuestados de la anualidad.</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">totalGastosConcedido</span></td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Total de los gastos concedidos de la anualidad.</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">totalIngresos</span></td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd">Total de los ingresos de la anualidad.</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">presupuestar</span></td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si es necesario notificar al sistema de gestión económica el presupuesto de la anualidad. Si toma el valor &quot;Sí&quot; indica que se debe de notificar al sistema de gestión económica el detalle del presupuesto para la anualidad.</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">enviadoSge</span></td><td colspan="1" class="confluenceTd">Boolean</td><td colspan="1" class="confluenceTd">Indica si el presupuesto de la anualidad ha sido notificado o no al sistema de gestión económica.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ProyectoAnualidadResumen</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">	{
+		"id": 1,
+		"anio": 20121,
+		"fechaInicio": "2020-12-31T23:00:00Z"
+		"fechaFin": "2021-12-31T22:59:59Z"
+		"totalGastosPresupuesto": 5000,
+		"totalGastosConcedido": 5000,
+		"totalIngresos": null,
+		"presupuestar": false,
+        "enviadoSge": false
+	}
+
+</pre>
+ </div>
+</div><h4 id="Gestiónproyectos-ProyectoPresupuestoTotales">ProyectoPresupuestoTotales</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 66.5755%;"><colgroup><col style="width: 30.5387%;"/><col style="width: 7.64803%;"/><col style="width: 61.8133%;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">importeTotalPresupuestoUniversidadSinCosteIndirecto</td><td class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe total (suma del importe de todas las anualidades) presupuestado a la Universidad para el desarrollo del proyecto, asociado a conceptos de gasto que no representan costes indirectos.</td></tr><tr><td colspan="1" class="confluenceTd">importeTotalPresupuestoSocios</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe total (suma del importe de todas las anualidades) presupuestado al resto de socios de la Universidad para el desarrollo del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">importeTotalConcedidoUniversidadSinCosteIndirecto</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe total (suma del importe de todas las anualidades) concedido a la Universidad para el desarrollo del proyecto, asociado a conceptos de gasto que no representan costes indirectos.</td></tr><tr><td colspan="1" class="confluenceTd">importeTotalConcedidoSocios</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe total (suma del importe de todas las anualidades) concedido al resto de socios de la Universidad para el desarrollo del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">importeTotalPresupuesto</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe total (suma del importe de todas las anualidades) presupuestado.</td></tr><tr><td colspan="1" class="confluenceTd">importeTotalConcedido</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe total (suma del importe de todas las anualidades) concedido.</td></tr><tr><td colspan="1" class="confluenceTd">importeTotalPresupuestoUniversidadCostesIndirectos</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe total (suma del importe de todas las anualidades) presupuestado a la Universidad para el desarrollo del proyecto, asociado a conceptos de gasto que representan costes indirectos.</td></tr><tr><td colspan="1" class="confluenceTd">importeTotalConcedidoUniversidadCostesIndirectos</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe total (suma del importe de todas las anualidades) concedido a la Universidad para el desarrollo del proyecto, asociado a conceptos de gasto que representan costes indirectos.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ProyectoPresupuestoTotales</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+    "importeTotalPresupuestoUniversidadSinCosteIndirecto": 71000.00,
+    "importeTotalPresupuestoSocios": 0,
+    "importeTotalConcedidoUniversidadSinCosteIndirecto": 63000.00,
+    "importeTotalConcedidoSocios": 0,
+    "importeTotalPresupuesto": 71000.00,
+    "importeTotalConcedido": 63000.00,
+    "importeTotalPresupuestoUniversidadCostesIndirectos": 0,
+    "importeTotalConcedidoUniversidadCostesIndirectos": 0
+}</pre>
+ </div>
+</div><h4 id="Gestiónproyectos-ProyectoClasificacion">ProyectoClasificacion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la entidad clasificación proyecto</td></tr><tr><td class="confluenceTd">createdBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha creado la entidad.</td></tr><tr><td class="confluenceTd">creationDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la creación de la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedBy</td><td class="confluenceTd">String</td><td class="confluenceTd">Nombre del usuario que ha modificado por última vez la entidad.</td></tr><tr><td class="confluenceTd">lastModifiedDate</td><td class="confluenceTd">String</td><td class="confluenceTd">Fecha de la última modificación de la entidad.</td></tr><tr><td class="confluenceTd">proyectoId</td><td class="confluenceTd">Long</td><td class="confluenceTd">Identificador del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">clasificacionRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Identificador de la clasificación.</p><p>Ver diseño del API de SGO para obtener el detalle de una clasificación a a partir de su identificador: <a class="external-link" href="https://confluence.treelogic.com/display/HERCULES/SGI+-+ESB+-+SGO" rel="nofollow">SGI - ESB - SGO</a></p></td></tr></tbody></table></div><h4 id="Gestiónproyectos-NotificacionProyecto">NotificacionProyecto</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#f4f5f7 confluenceTd" colspan="1" data-highlight-colour="#f4f5f7"><strong title="">Nombre</strong></td><td class="highlight-#f4f5f7 confluenceTd" colspan="1" data-highlight-colour="#f4f5f7"><strong title="">Tipo</strong></td><td class="highlight-#f4f5f7 confluenceTd" colspan="1" data-highlight-colour="#f4f5f7"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la entidad NotificacionProyectoExternoCVN</td></tr><tr><td colspan="1" class="confluenceTd">proyectoId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">proyectoCVNId</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador único o referencia del proyecto/contrato registrado en el CVN</td></tr><tr><td colspan="1" class="confluenceTd">solicitanteRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia de la persona dentro del sistema de gestión de personas corporativo a la que pertenece el ítem proyecto/contrato registrado en CVN.</td></tr><tr><td colspan="1" class="confluenceTd">autorizacionId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd"><span>Identificador de la solicitud de autorización previamente remitido por el SGI</span></td></tr><tr><td colspan="1" class="confluenceTd">titulo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Campo título del ítem proyecto/contrato registrado en CVN.</p><p><span>La correspondencia con la norma FECYT de CVN es: s</span>e corresponderá con el campo 050.020.010.010 - Nombre del proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.010 - Nombre del proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</p></td></tr><tr><td colspan="1" class="confluenceTd">codExterno</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Referencia que se le ha dado el proyecto en la entidad convocante/financiadora recogida en CVN.</p><p><span>La correspondencia con la norma FECYT de CVN es: s</span>e corresponderá con el campo 050.020.010.260 - Código de proyecto según la entidad financiadora, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.110 - Código de proyecto según la entidad financiadora, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</p></td></tr><tr><td colspan="1" class="confluenceTd">fechaInicio</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Fecha de inicio del proyecto/contrato recogido en CVN.</p><p><span>La correspondencia con la norma FECYT de CVN es: s</span>e corresponderá con el campo 050.020.010.270 - Fecha de inicio del proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.180 - Fecha de inicio del proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</p></td></tr><tr><td colspan="1" class="confluenceTd">fechaFin</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Fecha de fin del proyecto/contrato recogido en CVN.</p><p><span>La correspondencia con la norma FECYT de CVN es: s</span>e corresponderá con el campo 050.020.010.410 - Fecha de finalización, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas. En el caso de que el proyecto se registre bajo el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas, este campo no estará disponible, al no estar contemplado en la norma CVN.</p></td></tr><tr><td colspan="1" class="confluenceTd">ambitoGeografico</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Ámbito geográfico del proyecto/contrato recogido en CVN.</p><p><span>La correspondencia con la norma FECYT de CVN es: s</span>e corresponde con el campo 050.020.010.040 - Ámbito del proyecto (o 050.020.010.050 Ámbito del proyecto, otros si el valor es OTHERS) en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.040 Ámbito del proyecto (050.020.020.050 Ámbito del proyecto, otros) , en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</p><p>Se enviará el texto, no el código. Es decir:</p><ul><li>Autonómica</li><li>Nacional</li><li>Unión Europea</li><li>Internacional no UE</li><li>(texto del campo &quot;Ámbito del proyecto, otros&quot;)</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">responsableRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Referencia de la persona dentro del Sistema de gestión de personas corporativo asociado al dato recogido sobre el campo IP de CVN. </span></p><p><span>La correspondencia con la norma FECYT de CVN es: se corresponderá con el campo 050.020.010.140 Nombre del/de la investigador/a principal (IP, Co-IP,...), en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.250 Nombre del/de la investigador/a principal (IP, Co-IP,...), en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></p></td></tr><tr><td colspan="1" class="confluenceTd">datosResponsable</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Nombre de la persona que ocupa el cargo de IP del proyecto, recogida en CVN. <u>En caso de que el IP del proyecto no este dado de alta en el Sistema de gestión de personas.</u><br/></span></p><p><span>La correspondencia con la norma FECYT de CVN es: se corresponderá con el campo 050.020.010.140 Nombre del/de la investigador/a principal (IP, Co-IP,...), en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.250 Nombre del/de la investigador/a principal (IP, Co-IP,...), en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></p></td></tr><tr><td colspan="1" class="confluenceTd">entidadParticipacionRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Referencia de la entidad dentro del Sistema de gestión de empresas corporativo asociado al dato recogido sobre el campo Entidad donde se desarrolla del CVN.</span></p><p><span>La correspondencia con la norma FECYT será: campo  050.020.010.100 Entidad donde se desarrolla, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.370 Entidad donde se desarrolla, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></p></td></tr><tr><td colspan="1" class="confluenceTd">datosEntidadParticipacion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Nombre de la entidad recogido sobre el campo Entidad donde se desarrolla del CVN. <u>En caso de que la entidad no este dada de alta en el Sistema de gestión de empresas.</u></span></p><p><span>La correspondencia con la norma FECYT será: campo  050.020.010.100 Entidad donde se desarrolla, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.370 Entidad donde se desarrolla, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></p></td></tr><tr><td colspan="1" class="confluenceTd">nombrePrograma</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Nombre del programa de financiación recogido en el CVN. </span></p><p><span>Se corresponde con el campo 050.020.010.250 Nombre del programa de financiación, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.170 Nombre del programa asociado al proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></p></td></tr><tr><td colspan="1" class="confluenceTd">importeTotal</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd"><p><span>Importe total del proyecto/programa recogido en el CVN. </span></p><p>Se corresponde con el campo 050.020.010.290 Financiación del proyecto, cuantía total, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.200 Financiación del proyecto, cuantía total, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</p></td></tr><tr><td colspan="1" class="confluenceTd">porcentajeSubvencion</td><td colspan="1" class="confluenceTd">Numérico</td><td colspan="1" class="confluenceTd"><p>Porcentaje subvencionado recogido en el CVN.</p><p>Se corresponde con el campo 050.020.010.310 Financiación del proyecto, porcentaje en subvención, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.220 Financiación del proyecto, porcentaje en subvención, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</p></td></tr><tr><td colspan="1" class="confluenceTd">documentoRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del documento acreditativo de la concesión del proyecto</td></tr><tr><td colspan="1" class="confluenceTd">urlAcreditativa</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">URL acreditativa en repositorios ajenos a la Universidad</td></tr><tr><td colspan="1" class="confluenceTd">entidadesFinanciadoras</td><td colspan="1" class="confluenceTd">Lista[EntidadFinanciadora]</td><td colspan="1" class="confluenceTd">Listado de entidades financiadoras del CVN.</td></tr></tbody></table></div><h4 id="Gestiónproyectos-EntidadFinanciadora">EntidadFinanciadora</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">entidadFinanciadoraRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Referencia de la entidad dentro del Sistema de gestión de empresas corporativo asociado al dato recogido sobre el campo Entidades financiadoras del CVN. </span></p><p><span>Se corresponde con el campo 050.020.010.190 Entidad/es financiadora/s, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.120 Nombre/s entidad/es financiadora/s, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></p></td></tr><tr><td colspan="1" class="confluenceTd">datosEntidadFinanciadora</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Nombre de la entidad recogido sobre el campo Entidades financiadoras del CVN. <u>En caso de que la entidad no este dada de alta en el Sistema de gestión de empresas.</u></span></p><p><span>Se corresponde con el campo 050.020.010.190 Entidad/es financiadora/s, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.120 Nombre/s entidad/es financiadora/s, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></p></td></tr></tbody></table></div><h4 id="Gestiónproyectos-PalabraClave">PalabraClave</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 18.512%;"/><col style="width: 16.5633%;"/><col style="width: 64.9247%;"/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único autogenerado de la palabra clave.</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">proyectoId<br/></span></td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador del proyecto al que se asocia la palabra clave.</td></tr><tr><td class="confluenceTd">palabraClaveRef</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia a la palabra clave. Coincide con el texto de la palabra clave por ser único en el diccionario de todo el SGI.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">PalabraClave</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id": 12,	
+	"proyectoId": 1,
+	"palabraClaveRef": "Tratamiento experimental"
+}</pre>
+ </div>
+</div><h4 id="Gestiónproyectos-ProyectoAreaConocimiento">ProyectoAreaConocimiento</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 98.7965%;"><colgroup><col style="width: 8.03324%;"/><col style="width: 10.1385%;"/><col style="width: 81.8283%;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th colspan="1" class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al usuario creador del registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al último usuario que modificó el registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único del área de conocimiento del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">proyectoId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Referencia al proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">areaConocimientoRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Referencia al área de conocimiento en los sistemas de la Universidad.<br/></span></p></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">SolicitudAreaConocimiento</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark"> {
+    "createdBy": "03839481",
+    "creationDate": "2022-05-12T12:30:48.741Z",
+    "lastModifiedBy": "03839481",
+    "lastModifiedDate": "2022-05-12T12:30:48.741Z",
+    "id": 7,
+    "proyectoId": 3,
+	"areaConocimientoRef": "030"
+}</pre>
+ </div>
+</div><h3 id="Gestiónproyectos-Servicios">Servicios</h3><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">Para componer la URL llamada completa, se debe anteponer a lo indicado en la columna URL lo siguiente: <strong>{HOST}/api/sgicsp</strong>, donde <strong>{HOST}</strong> de deberá sustituir el dominio correspondiente al entorno al que se está accediendo y dicho acceso será por http o https según el caso.</div></div><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 99.8801%;"><colgroup><col style="width: 4.22044%;"/><col style="width: 12.6002%;"/><col style="width: 9.6642%;"/><col style="width: 16.1478%;"/><col style="width: 57.3124%;"/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/proyectos/modificados-ids</td><td class="confluenceTd"><p>q+s</p><p>La query estará formada por:</p><ul><li>fechaModificacion</li></ul></td><td class="confluenceTd">Lista[Long]</td><td class="confluenceTd"><p>Listado de Identificadores de Proyecto que han sido modificados (tanto la entidad Proyecto como todas sus entidades relacionadas: ProyectoEquipo, ContextoProyecto, ProyectoEntidadGestora, ProyectoEntidadConvocante y ProyectoEntidadFinanciadora, ProyectoAnualidad, AnualidadGasto)</p><p>Se utilizarán los siguiente parámetros en la llamada al servicio</p><ul><li>fechaModificacion: se le pasará la fecha a partir de la cual se quieren ver los cambios</li><li>estado: igual a concedido</li><li>clasificacionCVN: que tengan informado este campo con uno de los tres valores posibles</li></ul><p>Ejemplo:</p><ul><li>fechaModificacion=ge=<span>&quot;2021-08-18T22:00:00Z&quot;</span>;estado==&quot;CONCEDIDO&quot;;clasificacionCVN=in=(&quot;COMPETITIVOS&quot;,&quot;NO_COMPETITIVOS&quot;,&quot;AYUDAS&quot;)</li></ul></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span style="color: rgb(0,0,0);" title="">/proyectos</span></td><td class="confluenceTd"><p title="">q+s (query + sort)</p><p title="">La query estará formada por:</p><ul title=""><li>cualquiera de los campos del objeto Proyecto</li></ul></td><td class="confluenceTd">Lista[Proyecto]</td><td class="confluenceTd"><p style="text-align: left;" title="">Listado de proyectos.</p><p style="text-align: left;" title=""><em>Ejemplo</em>:</p><p style="text-align: left;" title="">activo==true</p></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span>/proyectos/<span class="url-filename">{id}</span></span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Proyecto</td><td class="confluenceTd">Datos generales de un Proyecto</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span><span class="url-filename">/proyectos/{id}/contexto</span></span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">ProyectoContexto</td><td class="confluenceTd">Datos del contexto de un Proyecto</td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">GET</span></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">/proyectos/{id}/<span style="color: rgb(33,33,33);">proyectoequipos</span></span></p></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Lista[ProyectoEquipo]</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Listado de miembros del equipo de un Proyecto</span></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span>/proyectos/<span class="url-filename">{id}</span>/proyectoentidadgestoras</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[ProyectoEntidadGestora]</td><td class="confluenceTd">Listado de entidades gestoras de un Proyecto</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span>/proyectos/<span class="url-filename">{id}</span>/entidadconvocantes</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[ProyectoEntidadConvocante]</td><td class="confluenceTd">Listado de entidades convocantes de un Proyecto</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span>/proyectos/<span class="url-filename">{id}</span>/proyectoentidadfinanciadoras</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[ProyectoEntidadFinanciadora]</td><td class="confluenceTd">Listado de entidades financiadoras de un Proyecto</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd"><span>/proyectos/<span class="url-filename">{id}</span>/anualidades</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[ProyectoAnualidadResumen]</td><td class="confluenceTd">Listado de anualidades de un Proyecto</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/<span style="color: rgb(0,51,102);" title="">proyectos/{id}/presupuesto-totales</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">ProyectoPresupuestoTotales</td><td class="confluenceTd"><p style="text-align: left;" title=""><span>Importes totales obtenidos de las anualidades de un proyecto (los importes del presupuesto introducidos manualmente se encuentran dentro del objeto Proyecto).</span></p><p style="text-align: left;" title=""><em>Ejemplo</em>:</p><p style="text-align: left;" title=""><span style="color: rgb(0,51,102);">/proyectos/1/presupuesto-totales</span></p></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/proyectos/{id}/proyectoclasificaciones</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[ProyectoClasificacion]</td><td class="confluenceTd">Listado de clasificaciones de un Proyecto</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/proyectos/{id}/notificacionesproyectos</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[NotificacionProyectoExternoCVN]</td><td class="confluenceTd">Listado de notificaciones de proyectos externos del CVN asociados a un Proyecto del SGI</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/proyectos/{id}/areasconocimento</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[ProyectoAreaConocimiento]</td><td class="confluenceTd"><p>Listado de áreas de conocimiento de un Proyecto.</p></td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/proyectos/{id}/palabrasclave</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lista[PalabraClave]</td><td class="confluenceTd">Listado de palabras clave de un Proyecto.</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/proyectos/eliminados-ids</td><td class="confluenceTd"><p>q+s</p><p>La query estará formada por:</p><ul><li>fechaEliminacion</li></ul></td><td class="confluenceTd">Lista[Long]</td><td class="confluenceTd"><p>Listado de Identificadores de Proyecto que han sido eliminados (campo activo = false) a partir de una fecha.</p><p>Se utilizará el siguiente parámetro en la llamada al servicio:</p><ul><li>fechaEliminacion: se le pasará la fecha a partir de la cual se quieren ver los proyectos eliminados o bien un rango entre las que se quiere buscar</li></ul><p>Ejemplo1:</p><ul><li>fechaEliminacion=ge=<span>&quot;2024-01-01T22:00:00Z&quot;</span>;</li></ul><p>Ejemplo2:</p><ul><li>fechaEliminacion=ge=<span>&quot;2024-01-01T22:00:00Z&quot;</span>;fechaEliminacion=le=<span>&quot;2024-12-31T22:00:00Z&quot;</span></li></ul></td></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:56</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

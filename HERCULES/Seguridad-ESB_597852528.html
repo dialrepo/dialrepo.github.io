@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Seguridad ESB</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853279.html">Diseño</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Componentes_597853271.html">Componentes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---ESB_597853273.html">SGI - ESB</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Seguridad ESB
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified on mar 15, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>Actualmente las peticiones realizadas al esb se harán enviando un token de acceso en la cabecera de <strong>authentication</strong>, aunque se seguirá trabando en la seguridad para realizar una comunicación máquina a máquina y no mediante usuario/contraseña sino a través de un secret.</p><h4 id="SeguridadESB-Seguridadconusuario/contraseña">Seguridad con usuario/contraseña</h4><p>Se utiliza OAuth 2 sobre el protocolo OpenID Connect (OIDC).</p><p>En <a class="external-link" href="http://sgi.ic.corp.treelogic.com/auth/realms/sgi/.well-known/openid-configuration" rel="nofollow">http://sgi.ic.corp.treelogic.com/auth/realms/sgi/.well-known/openid-configuration</a> se pueden consultar los endpoint disponibles de OIDC.</p><p>Mediante <strong>POST</strong> a <a class="external-link" href="http://sgi.ic.corp.treelogic.com/auth/realms/sgi/protocol/openid-connect/token" rel="nofollow">http://sgi.ic.corp.treelogic.com/auth/realms/sgi/protocol/openid-connect/token</a> se obtiene el token de acceso y el de refresco. Por defecto el token de acceso solo es válido 5 minutos, y el de refresco 30 minutos. Este mismo enpdoint permite refrescar los tokens. <span>El content-type de la petición ha de ser </span><strong>application/x-www-form-urlencoded</strong><span> </span></p><p><span>Para la obtención de los tokens se incluirán los siguientes campos:</span></p><div class="table-wrap"><table class="confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="confluenceTd">client_id</td><td class="confluenceTd">front</td><td class="confluenceTd">Identifica al cliente, por ahora el mismo que la web pero cambiará más adelante</td></tr><tr><td colspan="1" class="confluenceTd">username</td><td colspan="1" class="confluenceTd">visor-csp</td><td colspan="1" class="confluenceTd">Usuario de la autenticación, en el futuro ya no será necesario</td></tr><tr><td colspan="1" class="confluenceTd">password</td><td colspan="1" class="confluenceTd">visor-csp</td><td colspan="1" class="confluenceTd">Password del usuario, en el futuro ya no será necesario.</td></tr><tr><td colspan="1" class="confluenceTd">grant_type</td><td colspan="1" class="confluenceTd">password</td><td colspan="1" class="confluenceTd">Tipo de autenticación, más adelante cambiará.</td></tr></tbody></table></div><p>Para el refresco de los tokens se incluirán los siguientes campos:</p><div class="table-wrap"><table class="confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="confluenceTd">client_id</td><td class="confluenceTd">front</td><td class="confluenceTd">Identifica al cliente, por ahora el mismo que la web pero cambiará más adelante</td></tr><tr><td colspan="1" class="confluenceTd">grant_type</td><td colspan="1" class="confluenceTd">refresh_token</td><td colspan="1" class="confluenceTd">Tipo de autenticación.</td></tr><tr><td colspan="1" class="confluenceTd">refresh_token</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Se enviará el token de refresco que se disponga en ese momento.</td></tr></tbody></table></div><p><br/></p><p><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:37</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

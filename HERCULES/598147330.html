@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Arquitectura de Hércules RPA</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147532.html">Arquitectura de los proyectos Hércules</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Arquitectura de Hércules RPA
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span>, last modified on may 19, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>La arquitectura RPA propuesta la podemos dividir en tres principales componentes:</p><ul><li><p><strong>Orquestador. </strong>Es el Cerebro de la arquitectura, organiza y gestiona los robots a través del protocolo AMQP, dispondrá de una API para la ejecución y planificación de procesos, y la monitorización de lo mismo junto con los robots.</p></li><li><p><strong>Robot. </strong>Desligado de los procesos, por lo que puede ejecutar cualquier tarea, mantiene una constante comunicación con el orquestador.</p></li><li><p><strong>Proceso. </strong>Encargados de ejecutar las tareas automatizadas, su desarrollo será lo más modular posible para que sea fácil y flexible tanto la reutilización como la ampliación.</p></li></ul><p>En la siguiente imagen podemos ver un esquema global de la arquitectura.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/598147330/598148611.png" data-image-src="attachments/598147330/598148611.png" data-unresolved-comment-count="0" data-linked-resource-id="598148611" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-2-15_9-44-53.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147330" data-linked-resource-container-version="2" alt=""></span></p><p class="western"><br/><br/></p><p class="western">El despliegue del orquestador y todos los servicios con los que está comunicados, pueden ser desplegados como contenedores de kubernetes,  cuyos servicios serán accesibles por los robots. Además, será necesario que algunos servicios tengan acceso a internet. En principio, aún esta <strong>por determinar los servicios que necesitarán acceso a internet son el backend y el frontend. </strong>Esto no quiere decir, que no tengan que tener acceso fuera del cluster el resto de servicios, todo lo contrario, <strong>todos los servicios deben ser accesibles al menos dentro de la red de la UMU.</strong></p><p class="western">En la siguiente imagen podemos ver la arquitectura en kubernetes.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1121" src="attachments/598147330/598148612.png" data-image-src="attachments/598147330/598148612.png" data-unresolved-comment-count="0" data-linked-resource-id="598148612" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="arquitecturak8s.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="598147330" data-linked-resource-container-version="2" alt=""></span></p><p><br/></p><p>La arquitectura se compone:</p><ul><li>5 statefulset, esto es necesario ya que queremos tener pods que sean persistentes. Por tanto, todo despliegue que se haga con statefulset requerirá de un volumen persistente.</li><li>2 deployments, en este estado preliminar no se ha visto la necesidad de que estos dos servicios requieran de persistencia.</li><li>7 configmaps, uno para cada servicio.</li><li>Proxy-svc (si fuera necesario) para cada servicio que necesite acceso a internet, como anteriormente se ha cometado, en este estado preliminar el acceso a internet será necesario solamente para el backend y frontend.</li></ul>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147330/598148611.png">image2022-2-15_9-44-53.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/598147330/598148612.png">arquitecturak8s.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:56</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

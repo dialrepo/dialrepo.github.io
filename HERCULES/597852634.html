@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-0060-001 - Buscar y listar listados de áreas temáticas</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852632.html">CU-CSP-0060 - Gestión de áreas temáticas</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-0060-001 - Buscar y listar listados de áreas temáticas
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified on mar 18, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong>CU-CSP-0060-001 - Buscar y listar listados de áreas temáticas</strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline">LIBERADO_</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-CSP-003-Gestor, ACT-CSP-004-Administrador</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Media</td></tr></tbody></table></div><p><br/><br/></p></div><h2 id="CUCSP0060001Buscarylistarlistadosdeáreastemáticas-Descripción">Descripción</h2><p>Búsqueda y listado de listados/grupos de áreas temáticas. Se entiende por listado una clasificación o agrupación de áreas temáticas. Normalmente, existirá un listado de áreas temáticas independiente por cada convocatoria, sin embargo, se independiza su gestión para que, si así fuera necesario, se puedan compartir los listados/clasificaciones entre varias convocatorias. Las áreas tendrán una estructura jerárquica de árbol. La raíz del árbol es el nombre del Listado de áreas. Los nodos de primer nivel del árbol serán las áreas. Las ramas del árbol, áreas,  podrán tener diferentes profundidades. No existirá límite de anidamiento. No se distinguirá el nombre en función del nivel, por lo que genéricamente lo que hará este caso de uso será Añadir un ítem al árbol de áreas temáticas.</p><h2 id="CUCSP0060001Buscarylistarlistadosdeáreastemáticas-Actores">Actores</h2><h3 id="CUCSP0060001Buscarylistarlistadosdeáreastemáticas-Actorprincipal">Actor principal</h3><p><span>ACT-CSP-003-Gestor, <span>ACT-CSP-004-Administrador</span></span></p><h3 id="CUCSP0060001Buscarylistarlistadosdeáreastemáticas-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><p>ACT- CSP-001-Investigador que requiere que en las convocatorias se identifiquen las áreas temáticas para las que pudieran  estar restringidos, así como indicar el área temática seleccionada en sus solicitudes y proyectos..</p><h2 id="CUCSP0060001Buscarylistarlistadosdeáreastemáticas-Precondiciones">Precondiciones</h2><p>El usuario ACT-CSP-004-Administrador o ACT-CSP-003-Gestor se autentica a través del usuario de dominio corporativo.</p><p>A través del servicio de integración con el directorio activo y de la información del usuario almacenada en el propio SGI, se obtiene su rol y las unidades de gestión sobre las que tiene disponible el rol. El usuario está autorizado sobre la funcionalidades asociadas a esta gestión.</p><h2 id="CUCSP0060001Buscarylistarlistadosdeáreastemáticas-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>Se presenta la la tabla con los listados de áreas temáticas de acuerdo a los filtros introducidos.</p><h2 id="CUCSP0060001Buscarylistarlistadosdeáreastemáticas-Escenarioprincipal(flujobásico)-Noseaplicanfiltrosdebúsqueda">Escenario principal (flujo básico) - No se aplican filtros de búsqueda</h2><ol><li>El usuario accede a la opción Áreas temáticas del módulo CSP</li><li>El usuario pulsa Buscar, sin modificar los filtros por defecto del buscador</li><li>Se muestra la tabla de resultados conteniendo los datos de los listados de áreas temáticas incluyendo solamente aquellos que tengan el campo &quot;activo&quot; a True. </li></ol><p><br/></p><h2 id="CUCSP0060001Buscarylistarlistadosdeáreastemáticas-Extensiones(flujosalternativos)-Seaplicanfiltrosdebúsqueda">Extensiones (flujos alternativos) - Se aplican filtros de búsqueda</h2><ol><li>El usuario accede a la opción Áreas temáticas del módulo CSP</li><li>El usuario pulsa Buscar, indicando algún valor en los campos disponibles</li><li>Se muestra  la tabla de resultados conteniendo los datos de los listados de áreas temáticas de acuerdo a los filtros introducidos. </li></ol><p><br/></p><h2 id="CUCSP0060001Buscarylistarlistadosdeáreastemáticas-Requisitosespeciales">Requisitos especiales</h2><p>N/A</p><h2 id="CUCSP0060001Buscarylistarlistadosdeáreastemáticas-Listadetecnologíayvariacionesdedatos">Lista de tecnología y variaciones de datos</h2><p>N/A</p><p><br/><br/><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

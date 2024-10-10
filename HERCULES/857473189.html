@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : UM - Crear unidad de gestión</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853447.html">Guia de Implantación - Checklist</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="UM----Universidad-de-Murcia_597853451.html">UM -  Universidad de Murcia</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : UM - Crear unidad de gestión
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Jorge Carrillo Lova</span>, last modified on jun 13, 2024
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>Sirva como guía en la creación de nuevas unidades de gestión.</p><p>Pasos a seguir:</p><p>1) Crear nuevo grupo en Keycloak: ADMINISTRADOR-CSP-XXX/GESTOR-CSP-XXX/VISOR-CSP-XXX</p><p><br/></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" draggable="false" height="250" src="attachments/857473189/857473193.png" data-image-src="attachments/857473189/857473193.png" data-unresolved-comment-count="0" data-linked-resource-id="857473193" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-2023-11-14_12-57-9.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="857473189" data-linked-resource-container-version="6" alt=""></span></p><p><br/></p><p>2) Asignar los permisos pertinentes al nuevo grupo. Existen ciertos permisos que contienen al final el de identificador del grupo:</p><p>CSP-ME-E_4     <br/>CSP-ME-R_4     <br/>CSP-SJUS-V_4 <br/>CSP-SOL-B_4 <br/>CSP-CON-B_4 <br/>CSP-PRO-V_4 <br/>CSP-EJEC-V_4 <br/>CSP-ME-B_4 <br/>CSP-ME-C_4 <br/>CSP-CON-V_4 <br/>CSP-EJEC-E_4     <br/>CSP-PRO-R_4     <br/>CSP-SJUS-E_4 <br/>CSP-CON-C_4 <br/>CSP-PRO-B_4 <br/>CSP-CON-R_4 <br/>CSP-CON-E_4 <br/>CSP-ME-V_4     <br/>CSP-PRO-C_4 <br/>CSP-PRO-E_4<br/>CSP-SOL-C_4<br/>CSP-SOL-E_4<br/>CSP-SOL-R_4<br/>CSP-SOL-V_4</p><p>Estos roles deben crearse nuevos para cada unidad. Tener en cuenta que el número final se corresponde al identificador de la tabla URS_SGI.UNIDAD (el 4 por ejemplo es ARI)</p><p><br/></p><p>3) Modificar el group-mapper, asignando el grupo creado (ADMINISTRADOR-CSP-XXX/GESTOR-CSP-XXX/VISOR-CSP-XXX) a los usuarios para los que el CAS devuelva el código de unidad correspondiente.</p><p>5) Añadir los registros correspondientes en USR_SGI.UNIDAD (secuencia UNIDAD_SEQ) y CSP_SGI.MODELO_UNIDAD (secuencia MODELO_UNIDAD_SEQ)</p><p>4) Comprobar que aparece la nueva unidad en las búsquedas:</p><p><br/></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="250" src="attachments/857473189/857473197.png" data-image-src="attachments/857473189/857473197.png" data-unresolved-comment-count="0" data-linked-resource-id="857473197" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-2023-11-14_13-1-58.png" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="857473189" data-linked-resource-container-version="6" alt=""></span></p><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/857473189/857473193.png">image-2023-11-14_12-57-9.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/857473189/857473197.png">image-2023-11-14_13-1-58.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:56</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-0020 - Gestión de modelos de ejecución</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-0020 - Gestión de modelos de ejecución
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified by <span class='editor'> Isabel Martinez Hernandez</span> on dic 05, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong>CU-CSP-0020 - Gestión de modelos de ejecución</strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline">LIBERADO_</span></div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-CSP-004-Administrador</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Baja</td></tr></tbody></table></div></div><h2 id="CUCSP0020Gestióndemodelosdeejecución-Descripción">Descripción</h2><p>Agrupación de casos de uso que permitirá realizar la gestión de los modelos de ejecución <a href="597853566.html">CSP - Modelo de ejecuci&oacute;n</a>. Los modelos de ejecución definirán una categoría que permitirá la clasificación de las convocatorias y proyectos/contratos en función del mecanismo administrativo que ampara su realización. Es una tipología genérica que no implica la particularización de los campos de la convocatoria ni de su ciclo de gestión. </p><p>Ejemplo de listado de categorías: Ayudas y subvenciones, contrato, convenio.</p><h2 id="CUCSP0020Gestióndemodelosdeejecución-Actores">Actores</h2><h3 id="CUCSP0020Gestióndemodelosdeejecución-Actorprincipal">Actor principal</h3><p>ACT-CSP-004-Administrador</p><h3 id="CUCSP0020Gestióndemodelosdeejecución-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><p>Gestores (ACT-CSP-003-Gestor) de las unidades UGI, OTRI, OPE que requieren que al registrar una convocatoria o proyecto, los modelos de ejecución ya estén disponibles en el listado de categorización.</p><p>Personal investigador (ACT- CSP-001-Investigador, ACT-CSP-002-InvestigadorExterno) que requiere que se creen las convocatorias para presentar solicitudes sobre las mismas.</p><h2 id="CUCSP0020Gestióndemodelosdeejecución-Precondiciones">Precondiciones</h2><p>El usuario ACT-CSP-004-Administrador se autentica a través del usuario de dominio corporativo.</p><p>A través del servicio de integración con el directorio activo y de la información del usuario almacenada en el propio SGI, se obtiene su rol y las unidades de gestión sobre las que tiene disponible el rol. El usuario está autorizado sobre la funcionalidad asociada a esta operación.</p><p><br/></p><p>Si bien no es imprescindible para todas las operaciones de gestión, sí debieran estar realizada la gestión de las siguientes entidades relacionadas:</p><ul><li>Tipos de fases <a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=221381977">CU-CSP-0005 - Gesti&oacute;n de tipos de fase</a></li><li>Tipos de documentos (<a href="https://confluence.um.es/confluence/pages/viewpage.action?pageId=85632141" rel="nofollow">CU-CSP-0006 - Gestión de tipos de documentos</a>) </li><li>Tipos de enlaces  <a href="597852664.html">CU-CSP-0007 - Gesti&oacute;n de tipos de enlace</a></li><li>Tipos de finalidad <a href="597852669.html">CU-CSP-0008 - Gesti&oacute;n de tipos de finalidad</a></li><li>Unidades de gestión (<a class="createlink" href="/confluence/pages/createpage.action?spaceKey=HERCULES&amp;title=CU-USR-0020+-+Gesti%C3%B3n+de+%22unidad+de+gesti%C3%B3n%22&amp;linkCreation=true&amp;fromPageId=597853536">CU-USR-0020 - Gesti&oacute;n de &quot;unidad de gesti&oacute;n&quot;</a>)</li></ul><p><br/></p><h2 id="CUCSP0020Gestióndemodelosdeejecución-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>Los modelos de ejecución se encuentran correctamente configurados y el personal ACT-CSP-003-Gestor puede disponer de los mismos para realizar la gestión de las convocatorias y proyectos.</p><p><br/></p><h2 id="CUCSP0020Gestióndemodelosdeejecución-Listadodecasosdeuso">Listado de casos de uso</h2><p><ul class='childpages-macro'><li><a href="597852680.html">CU-CSP-0020-001 - Buscar y listar modelos de ejecuci&oacute;n</a></li><li><a href="597853770.html">CU-CSP-0020-002 - Crear modelo de ejecuci&oacute;n</a></li><li><a href="597852679.html">CU-CSP-0020-003 - Modificar modelo de ejecuci&oacute;n</a></li><li><a href="597852691.html">CU-CSP-0020-004 - Eliminar modelo de ejecuci&oacute;n</a></li></ul></p><p style="margin-left: 30.0px;"><span><br/></span></p><p style="margin-left: 30.0px;"><span><br/></span></p><h2 id="CUCSP0020Gestióndemodelosdeejecución-Requisitosespeciales">Requisitos especiales</h2><p>N/A</p><h2 id="CUCSP0020Gestióndemodelosdeejecución-Listadetecnologíayvariacionesdedatos">Lista de tecnología y variaciones de datos</h2><p>N/A</p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : REQ-INT-0020-SGP-0069 - Consulta actividad docente de una persona</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="GEN---Aspectos-generales_597853747.html">GEN - Aspectos generales</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853257.html">INT - Requisitos de integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852797.html">REQ-INT-0020-SGP - Integración con Sistema de gestión de personas</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : REQ-INT-0020-SGP-0069 - Consulta actividad docente de una persona
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified by <span class='editor'> Usuario desconocido (alicia.alvarez)</span> on jun 23, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Cod. REQ</th><td class="confluenceTd"><p><strong>REQ-INT-0020-SGP-0069 - Consulta actividad docente de una persona<br/></strong></p></td></tr><tr><th class="confluenceTh">Ver. Objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Ver. REQ</th><td colspan="1" class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span> </div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Frecuencia</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Características</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh"><span>M. Consumidor</span></th><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div></div><h2 id="REQINT0020SGP0069Consultaactividaddocentedeunapersona-Definiciónyobjetivos">Definición y objetivos</h2><p>El SGI deberá disponer de una función que permita consultar la actividad docente una persona de la Universidad. Se le podrá pasar como parámetro el tipo de actividad a través del código CVN.</p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0020SGP0069Consultaactividaddocentedeunapersona-Descripciónintegración">Descripción integración</h2><p>Parámetros de entrada:</p><ul><li><span>Referencia de persona (código de identificación de la persona para intercambio de información entre ESB y SGI)</span></li><li>Tipo actividad: se le pasa el tipo de actividad que se quiere consultar, usando los códigos de CVN:<br/><ul><li>030.040.000.000 para consultar las Dirección de tesis doctorales y/o proyectos fin de carrera</li><li>030.010.000.000 para consultar la Formación académica impartida</li><li><p>030.060.000.000 para consultar los Cursos y seminarios impartidos orientados a la formación docente universitaria</p></li><li>030.070.000.000 para consultar las Publicaciones docentes o de carácter pedagógico, libros, artículos, etc.</li><li>030.080.000.000 para consultar la Participación en proyectos de innovación docente</li><li>060.030.080.000 para consultar los Premios de innovación docente recibidos</li></ul></li></ul><p>Parámetros de salida:</p><ul><li>Listado de actividades docentes de la persona pasada por parámetro y del tipo de actividad que se la ha pasado por parámetro. Cada registro tendrá la siguiente información:<br/><ul><li>Si Tipo actividad = 030.040.000.000<br/><ul><li>Identificador del doctorado</li><li>Título del trabajo</li><li>Fecha de obtención del título</li><li>Alumno</li><li><span style="color: rgb(23,43,77);">Entidad que concede el título</span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Ciudad en la que se obtenido el título</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">País en el que se ha obtenido el título</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Región/comunidad autónoma en la que se ha obtenido el título</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Tipo del trabajo dirigido (Proyecto de fin de carrera, Tesina, Tesis doctoral, Trabajo conducente a la obtención de DEA u Otros)<br/></span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Calificación obtenida</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Codirectores/as que han intervenido</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Si se ha recibido una mención europea</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Fecha de la mención del doctorado europeo</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Si el doctorado ha recibido una mención de calidad</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Fecha de la homologación del doctorado extranjero</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Si tiene mención internacional</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Si tiene mención industrial</span></span></li></ul></li><li>Si Tipo formación = 030.010.000.000<br/><ul><li>Identificador de la actividad docente</li><li>Titulación universitaria</li><li>Nombre de la asignatura del curso</li><li>Fecha de inicio</li><li>Fecha finalización</li><li><span style="color: rgb(23,43,77);">Entidad que concede el título</span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Ciudad en la que se obtenido el título</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">País en el que se ha obtenido el título</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Región/comunidad autónoma en la que se ha obtenido el título</span></span></li><li>Tipo de la labor de docente (Docencia internacional, Docencia oficial, Docencia no oficial)</li><li>Número horas crédito</li><li>Frecuencia actividad</li><li>Tipo de programa (Arquitectura, Arquitectura técnica, Diplomatura, Doctorado, Ingeniería, Ingeniería Técnica, Licenciatura, Máster oficial, Otros)</li><li>Tipo de docencia (Clínico, Otros, Práctica (Aula-Problemas), Prácticas de Laboratorio, Teórica presencial, Virtual)</li><li>Departamento</li><li>Tipo de asignatura ( Doctorado/a, Libre configuración, Obligatoria, Optativa, Otros, Troncal)</li><li>Curso</li><li>Tipo de horas o créditos (Horas, Créditos)</li><li>Idioma</li><li>Competencias</li><li>Categoría profesional</li></ul></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Si Tipo formación = 030.060.000.000<br/></span></span><ul><li>Identificador de la actividad</li><li>Nombre del evento</li><li>Tipo evento (Congreso, Jornada, Seminario u Otros)</li><li>Fecha de obtención del título</li><li><span style="color: rgb(23,43,77);">Entidad que concede el título</span></li><li><span style="color: rgb(23,43,77);">Tipo entidad que concede el título</span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Ciudad en la que se obtenido el título</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">País en el que se ha obtenido el título</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Región/comunidad autónoma en la que se ha obtenido el título</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Objetivos curso</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Idioma</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">ISBN</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">ISSN</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Autor correspondencia</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Tipo Identificador (DOI, Handle, PMID, Otros)<br/></span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Descripción del perfil de destinatarios</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Tipo participación</span></span></li></ul></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Si Tipo formación = 030.070.000.000<br/></span></span><ul><li>Identificador de la publicación</li><li><span style="color: rgb(51,51,51);">Nombre del material docente elaborado</span></li><li><span style="color: rgb(51,51,51);">Fecha en que ha finalizado la elaboración del material docente</span></li><li><span style="color: rgb(51,51,51);">Título de la publicación</span></li><li><span style="color: rgb(51,51,51);">Tipo de soporte en el que se ha plasmado el material docente</span></li><li><span style="color: rgb(51,51,51);">Lista de autores de la publicación</span></li><li><span style="color: rgb(51,51,51);">Si la persona es el autor de correspondencia</span></li><li><span style="color: rgb(51,51,51);">Título de la publicación principal (libro, revista, etc.) en la que se ha publicado el trabajo</span></li><li><span style="color: rgb(51,51,51);">Volumen del trabajo publicado</span></li><li><span style="color: rgb(51,51,51);">Número del trabajo publicado</span></li><li><span style="color: rgb(51,51,51);">Número de la página inicial donde se localiza el trabajo dentro de la publicación</span></li><li><span style="color: rgb(51,51,51);">Número de la página final donde se localiza el trabajo dentro de la publicación</span></li><li><span style="color: rgb(51,51,51);">Editorial de la publicación</span></li><li><span style="color: rgb(51,51,51);">Posición que ocupa la persona referenciada entre los autores de la publicación</span></li><li><span style="color: rgb(51,51,51);">ISBN</span></li><li><span style="color: rgb(51,51,51);">ISSN</span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Tipo Identificador (DOI, Handle, PMID, Otros)<br/></span></span></li><li><span style="color: rgb(51,51,51);">Número del deposito legal del trabajo publicado</span></li><li><span style="color: rgb(51,51,51);">Dirección de la publicación</span></li><li><span style="color: rgb(51,51,51);">País en el que se ha publicado el trabajo</span></li><li><span style="color: rgb(51,51,51);">Región/comunidad autónoma en la que se ha publicado el trabajo</span></li><li><span style="color: rgb(51,51,51);">Perfil profesional de los destinatarios/as del material docente elaborado</span></li><li><span style="color: rgb(51,51,51);">Justificación del carácter pedagógico del material docente elaborado</span></li><li><span style="color: rgb(51,51,51);">Fecha en el que se ha publicado el trabajo</span></li></ul></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Si Tipo formación = 030.080.000.000<br/></span></span><ul><li>Identificador del proyecto</li><li>Título del proyecto</li><li><span style="color: rgb(51,51,51);">Modalidad de participación en el proyecto</span></li><li><span style="color: rgb(51,51,51);">Nombre oficial de la entidad que ha financiado el proyecto de innovación docente</span></li><li><span style="color: rgb(51,51,51);">Fecha en la que comenzó su participación en el proyecto de innovación docente</span></li><li><span style="color: rgb(51,51,51);">Fecha en la que finalizó su participación en el proyecto de innovación docente</span></li><li><span style="color: rgb(51,51,51);">Modalidad temporal en que se desarrolló el proyecto de innovación</span></li><li>Tiempo de duración de la participación del proyecto</li><li><span style="color: rgb(51,51,51);">País en el que se localiza la entidad donde ha desarrollado el proyecto de innovación</span></li><li><span style="color: rgb(51,51,51);">Comunidad autónoma/región en la que se localiza la entidad donde ha desarrollado el proyecto de innovación docente</span></li><li><span style="color: rgb(51,51,51);">Procedimiento de concesión de las subvenciones y/o ayudas</span></li><li><span style="color: rgb(51,51,51);">Cobertura geográfica del proyecto de innovación docente</span></li><li><span style="color: rgb(51,51,51);">Justificación de las aportaciones realizadas</span></li><li><span style="color: rgb(51,51,51);">Tiempo dedicado al proyecto de innovación docente</span></li><li><span style="color: rgb(51,51,51);">Nombre del investigador responsable/principal (IP) de proyecto de innovación docente</span></li><li><span style="color: rgb(51,51,51);">Número de personas que han formado parte del proyecto de innovación docente</span></li><li><span style="color: rgb(51,51,51);">Importe (en euros) de la financiación recibida por el proyecto de innovación docente</span></li><li><span style="color: rgb(51,51,51);">Lista de nombres oficiales de las entidades que han participado en el proyecto de innovación docente</span></li></ul></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Si Tipo formación = 060.030.080.000<br/></span></span><ul><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Identificador del premio</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Nombre del premio de innovación docente que le ha sido otorgado</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Nombre de la persona o entidad que, en su caso, haya propuesto la concesión del premio de innovación docente descrito</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Fecha en la que se otorgó el premio de innovación docente</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Nombre oficial de la entidad que ha concedido el premio de innovación docente</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">País en el que se localiza la entidad que ha concedido el premio de innovación</span></span></li><li><span style="color: rgb(23,43,77);"><span style="color: rgb(51,51,51);">Comunidad autónoma/región en la que se localiza la entidad que ha concedido el premio de innovación docente</span></span></li></ul></li></ul></li></ul><h2 id="REQINT0020SGP0069Consultaactividaddocentedeunapersona-Diseñotécnico">Diseño técnico</h2><p>En el siguiente enlace se muestra el diseño del modelo lógico y el diseño de la API del Sistema de Gestión de Personas y, en concreto, de los Servicios Pasarela: <a href="SGI---ESB---SGP---Servicios-Pasarela_597853001.html">SGI - ESB - SGP - Servicios Pasarela</a>.</p><p>El servicio concreto del API que cubre este requisito es <a href="SGI---ESB---SGP---Personas---Actividad-docente---Consultar-detalle_597853213.html">SGI - ESB - SGP - Personas - Actividad docente - Consultar detalle</a>.</p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout three-equal" data-layout="three-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0020SGP0069Consultaactividaddocentedeunapersona-Interfacesdeusuariorelacionados">Interfaces de usuario relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0020SGP0069Consultaactividaddocentedeunapersona-Informesrelacionados">Informes relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0020SGP0069Consultaactividaddocentedeunapersona-Casosdeusorelacionados">Casos de uso relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:26</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

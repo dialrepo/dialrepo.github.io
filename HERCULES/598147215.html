@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Data Lake - Base de datos no relacional para explotación de datos</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="RPA_598147226.html">RPA</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147224.html">Módulo de Automatización y Gestión</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147223.html">Análisis y Procesos</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147222.html">Sistema de Orquestación</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Data Lake - Base de datos no relacional para explotación de datos
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Juan Tardón Martínez</span>, last modified by <span class='editor'> Usuario genérico para HERCULES</span> on oct 10, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p align="justify">Apache Cassandra es una base de datos NoSQL distribuida y basada en un modelo de almacenamiento de clave-valor. Esta base de datos tiene como fin la introducción de datos en crudo con el objetivo de realizar procesos de ETL, para posteriormente crear cuadros de mando que nos muestren estadísticas y monitorización en tiempo real de lo que pasa en el sistema. </p><p align="justify">La estructura de esta base de datos se compondría de tres tablas principales.</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">CREATE TABLE hercules.robot_by_activity (<br/>    id text,<br/>    name text,<br/>    address text,<br/>    ip_address text,<br/>    online boolean,<br/>    state text,<br/>    process FROZEN&lt;process&gt;,<br/>    process_queue list&lt;FROZEN&lt;process&gt;&gt;,<br/>    time bigint,<br/>    orch FROZEN&lt;orchestrator&gt;,<br/>    PRIMARY KEY ((id,orch),time)<br/>) WITH CLUSTERING ORDER BY (time DESC);</th><th class="confluenceTh">CREATE TABLE hercules.robot_by_performance (<br/>    id text,<br/>    name text,<br/>    address text,<br/>    ip_address text,<br/>    time bigint,<br/>    orch FROZEN&lt;orchestrator&gt;,<br/>    process FROZEN&lt;process&gt;,<br/>    performance FROZEN&lt;robot_performance&gt;,<br/>    PRIMARY KEY ((id,orch),time)<br/>) WITH CLUSTERING ORDER BY (time DESC);</th><th class="confluenceTh">CREATE TABLE hercules.execution_by_process (<br/>    id int,<br/>    process FROZEN&lt;process&gt;,<br/>    id_robot text,<br/>    active boolean,<br/>    schedule_json text,<br/>    created bigint,<br/>    time bigint,<br/>    log FROZEN&lt;log&gt;,<br/>    orch FROZEN&lt;orchestrator&gt;,<br/>    PRIMARY KEY ((id,orch), time, active)<br/>) WITH CLUSTERING ORDER BY (time DESC);</th></tr></tbody></table></div><p>Con estas tres tablas tendremos datos sobre la actividad de los robots, rendimiento de los mismos e información sobre las ejecuciones y procesos. </p><p>Por otro lado, se han definido los siguientes tipos:</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">CREATE TYPE hercules.orchestrator(<br/>    id text,<br/>    name text,<br/>    company text<br/>);</th><th class="confluenceTh">CREATE TYPE hercules.process(<br/>    id int,<br/>    name text<br/>);</th><th class="confluenceTh">CREATE TYPE hercules.robot_performance(<br/>    cpu float,<br/>    ram float,<br/>    disk float<br/>);</th><th class="confluenceTh">CREATE TYPE hercules.log(<br/>    id int,<br/>    start_time bigint,<br/>    end_time bigint,<br/>    state text<br/>);</th></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 12:02</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : CU-CSP-0060-003 - Añadir área temática a un Listado de áreas</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853832.html">CSP - Módulo de convocatorias, ayudas, solicitudes, proyectos y contratos y grupos de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CSP---Casos-de-uso_597853765.html">CSP - Casos de uso</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852632.html">CU-CSP-0060 - Gestión de áreas temáticas</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : CU-CSP-0060-003 - Añadir área temática a un Listado de áreas
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified on mar 18, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class='plugin-tabmeta-details'><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 75.1988%;"><colgroup><col style="width: 15.8843%;"/><col style="width: 84.1235%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Cod. CU</th><td colspan="1" class="confluenceTd"><p><strong>CU-CSP-0060-003 - Añadir área temática a un Listado de áreas</strong></p></td></tr><tr><th class="confluenceTh">Ver. objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Ver. CU</th><td class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline">LIBERADO_</span></div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Actores</th><td colspan="1" class="confluenceTd">ACT-CSP-004-Administrador, ACT-CSP-003-Gestor</td></tr><tr><th colspan="1" class="confluenceTh"><p>Frecuencia</p></th><td colspan="1" class="confluenceTd">Media</td></tr></tbody></table></div></div><h2 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Descripción">Descripción</h2><p>Se añade un área o subarea temática a un Listado de áreas. Las áreas tendrán una estructura jerárquica de árbol. Los nodos de primer nivel serán las áreas. Las ramas del árbol, subáreas, podrán tener diferentes profundidades. No existirá límite de anidamiento. No se distinguirá el nombre en función del nivel, por lo que genéricamente lo que hará este caso de uso será Añadir un ítem al árbol de áreas temáticas.</p><h2 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Actores">Actores</h2><h3 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Actorprincipal">Actor principal</h3><p>ACT-CSP-004-Administrador, ACT-CSP-003-Gestor</p><h3 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Personalinvolucradoeintereses">Personal involucrado e intereses</h3><p>ACT- CSP-001-Investigador que requiere que en las convocatorias se identifiquen las áreas temáticas para las que pudieran  estar restringidos, así como indicar el área temática seleccionada en sus solicitudes y proyectos.</p><h2 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Precondiciones">Precondiciones</h2><p>El usuario ACT-CSP-004-Administrador o ACT-CSP-003-Gestor se autentica a través del usuario de dominio corporativo.</p><p>A través del servicio de integración con el directorio activo y de la información del usuario almacenada en el propio SGI, se obtiene su rol y las unidades de gestión sobre las que tiene disponible el rol. El usuario está autorizado sobre la funcionalidades asociadas a esta gestión.</p><h2 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Garantíasdeéxito(postcondiciones)">Garantías de éxito (postcondiciones)</h2><p>El área o subárea temática se ha añadido conformando parte del árbol de áreas de acuerdo al nivel de profundidad en el que haya sido incluido.</p><h2 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Escenarioprincipal(flujobásico)-Creacióndeprimerelemento(áreatemática)">Escenario principal (flujo básico) - Creación de primer elemento (área temática)</h2><ol><li>El usuario accede a la opción Añadir área temática dentro de un Listado de áreas temáticas</li><li>El usuario introduce la Abreviatura del área, de forma que tome un valor que no exista en la tabla de áreas temáticas para ningún elemento activo del árbol de áreas del Listado concreto</li><li>El usuario introduce el nombre del área, de forma que tome un valor que no exista en la tabla de áreas temáticas para ningún elemento activo del árbol de áreas del Listado concreto</li><li>El usuario pulsa Guardar</li><li>Se muestra un mensaje de acción positiva</li><li>Se vuelve a la pantalla de creación/modificación del Listado de áreas temáticas<br/><br/><br/></li></ol><h2 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Extensiones(flujosalternativos)-Creacióndeítemdeprimernivel(áreatemática)">Extensiones (flujos alternativos) - Creación de ítem de primer nivel (área temática)</h2><ol><li>El usuario selecciona la opción Añadir área temática dentro de un Listado de áreas temáticas</li><li>El usuario introduce la Abreviatura del área, de forma que tome un valor que no exista en la tabla de áreas temáticas para ningún elemento activo del árbol de áreas del Listado concreto</li><li>El usuario introduce el nombre del área, de forma que tome un valor que no exista en la tabla de áreas temáticas para ningún elemento activo del árbol de áreas del Listado concreto</li><li>El usuario no selecciona ningún ítem del árbol como elemento padre del nuevo elemento a introducir</li><li>El usuario pulsa Guardar</li><li>Se muestra un mensaje de acción positiva</li><li>Se  vuelve a la pantalla de creación/modificación del Listado de áreas temáticas</li></ol><p><br/></p><h2 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Extensiones(flujosalternativos)-Creacióndeítemdecualquiernivelinferior(subáreatemática)">Extensiones (flujos alternativos) - Creación de ítem de cualquier nivel inferior (subárea temática)</h2><ol><li>El usuario selecciona la opción Añadir área temática dentro de un Listado de áreas temáticas</li><li>El usuario introduce la Abreviatura del área, de forma que tome un valor que no exista en la tabla de áreas temáticas para ningún elemento activo del árbol de áreas del Listado concreto</li><li>El usuario introduce el nombre del área, de forma que tome un valor que no exista en la tabla de áreas temáticas para ningún elemento activo del árbol de áreas del Listado concreto</li><li>El usuario selecciona un ítem del árbol como elemento padre del nuevo elemento a introducir</li><li>El usuario pulsa Guardar</li><li>Se muestra un mensaje de acción positiva</li><li>Se  vuelve a la pantalla de creación/modificación del Listado de áreas temáticas</li></ol><h2 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Extensiones(flujosalternativos)-Creacióndeítem-Errordeunicidad">Extensiones (flujos alternativos) - Creación de ítem - Error de unicidad</h2><ol><li>El usuario ha introducido una Abreviatura o un Nombre que ya existían entre las Abreviaturas o Nombre de alguno de los ítems activos del árbol de áreas del Listado concreto</li><li>El usuario introduce el resto de datos del ítem</li><li>El usuario pulsa Guardar</li><li>Se muestra un error al usuario</li><li>El usuario introduce una nueva Abreviatura o Nombre para el ítem</li><li>El usuario pulsa Guardar</li><li>El usuario es informado del resultado positivo de la acción</li><li><p>Se  vuelve a la pantalla de creación/modificación del Listado de áreas temáticas<br/><br/></p></li></ol><h2 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Requisitosespeciales">Requisitos especiales</h2><p>N/A</p><h2 id="CUCSP0060003AñadiráreatemáticaaunListadodeáreas-Listadetecnologíayvariacionesdedatos">Lista de tecnología y variaciones de datos</h2><p>N/A</p><p><br/><br/><br/></p>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:27</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : SGI - ESB - SGO</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853279.html">Diseño</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Componentes_597853271.html">Componentes</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SGI---ESB_597853273.html">SGI - ESB</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : SGI - ESB - SGO
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (lorena.alvarez)</span>, last modified by <span class='editor'> Usuario desconocido (alicia.alvarez)</span> on jun 23, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <hr/><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728466686387 {padding: 0px;}
+div.rbtoc1728466686387 ul {margin-left: 0px;}
+div.rbtoc1728466686387 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728466686387'>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGO-SistemadeGestióndelaestructuraOrgánica'>Sistema de Gestión de la estructura Orgánica</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGO-Entidades'>Entidades</a></li>
+<li><a href='#SGIESBSGO-Enumerados'>Enumerados</a></li>
+<li><a href='#SGIESBSGO-Modelológico'>Modelo lógico</a></li>
+<li><a href='#SGIESBSGO-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGO-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#SGIESBSGO-AreaConocimiento'>AreaConocimiento</a></li>
+<li><a href='#SGIESBSGO-Departamento'>Departamento</a></li>
+<li><a href='#SGIESBSGO-Pais'>Pais</a></li>
+<li><a href='#SGIESBSGO-ComunidadAutonoma'>ComunidadAutonoma</a></li>
+<li><a href='#SGIESBSGO-Provincia'>Provincia</a></li>
+<li><a href='#SGIESBSGO-Clasificacion'>Clasificacion</a></li>
+<li><a href='#SGIESBSGO-Centro'>Centro</a></li>
+</ul>
+</li>
+<li><a href='#SGIESBSGO-Servicios'>Servicios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><hr/><h1 id="SGIESBSGO-SistemadeGestióndelaestructuraOrgánica">Sistema de Gestión de la estructura Orgánica</h1><h2 id="SGIESBSGO-Entidades">Entidades</h2><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 86.0503%;"><colgroup><col style="width: 12.659%;"/><col style="width: 87.341%;"/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">AreaConocimiento</td><td class="confluenceTd">Listado con las áreas de conocimiento de la Universidad. Se entiende que las áreas de conocimiento de primer nivel son las ramas de conocimiento.</td></tr><tr><td colspan="1" class="confluenceTd">Departamento</td><td colspan="1" class="confluenceTd">Listado con los departamentos que tiene la Universidad.</td></tr><tr><td class="confluenceTd">Pais</td><td class="confluenceTd"><p>Listado con los países que utiliza el SGI.</p><p>Se necesita un mapeo con los valores de la Fecyt para poder mostrarlo en el módulo CVN.</p><p>Se necesita un mapeo con los valores del sistema externo de la Universidad. Se hará en fase de implantación, se tendrá una tabla de traducción de los códigos del SGI y los códigos del sistema externo en caso de no ser los mismos.</p></td></tr><tr><td class="confluenceTd">ComunidadAutonoma</td><td class="confluenceTd"><p>Listado con las comunidades autónomas que utiliza el SGI.</p><p>Se necesita un mapeo con los valores de la Fecyt para poder mostrarlo en el módulo CVN.</p><p>Se necesita un mapeo con los valores del sistema externo de la Universidad. Se hará en fase de implantación, se tendrá una tabla de traducción de los códigos del SGI y los códigos del sistema externo en caso de no ser los mismos.</p></td></tr><tr><td class="confluenceTd">Provincia</td><td class="confluenceTd"><div class="content-wrapper"><p>Listado con las provincias que utiliza el SGI.</p><p>Se necesita un mapeo con los valores de la Fecyt para poder mostrarlo en el módulo CVN.</p><p>Se necesita un mapeo con los valores del sistema externo de la Universidad. Se hará en fase de implantación, se tendrá una tabla de traducción de los códigos del SGI y los códigos del sistema externo en caso de no ser los mismos.</p></div></td></tr><tr><td colspan="1" class="confluenceTd">Clasificacion</td><td colspan="1" class="confluenceTd"><p>Clasificaciones definidas en el SGI para su uso en los distintos módulos.</p><p><span>Ejemplos de clasificaciones:</span></p><ul><li><span><span><strong>CNAE</strong>: c</span></span><span>lasificación tomada de los códigos CNAE (Clasificación Nacional de Actividades Económicas). Referencias:</span><span> </span><ul><li><span><a class="external-link" href="https://www.cnae.com.es/lista-actividades.php" rel="nofollow">https://www.cnae.com.es/lista-actividades.php</a></span></li><li><a class="external-link" href="https://www.ine.es/daco/daco42/clasificaciones/cnae09/estructura_cnae2009.xls" rel="nofollow">https://www.ine.es/daco/daco42/clasificaciones/cnae09/estructura_cnae2009.xls</a></li></ul></li><li><span><span><strong>NABS</strong>: n</span></span>omenclatura para el análisis y programas y presupuestos científicos (NABS) de Eurostat para identificación de objetivos socio-económicos. Referencia:<ul><li><a class="external-link" href="https://www.ciencia.gob.es/stfls/MICINN/Ayudas/PN_2008_2011/LIA_Infraestructuras_CCyTec/FICHERO/FEDER_2010/Nueva_clasificacion_NABS-2007.pdf" rel="nofollow">https://www.ciencia.gob.es/stfls/MICINN/Ayudas/PN_2008_2011/LIA_Infraestructuras_CCyTec/FICHERO/FEDER_2010/Nueva_clasificacion_NABS-2007.pdf</a></li></ul></li><li><span><strong>UNESCO</strong>: Nomenclatura Internacional de la UNESCO para los campos de Ciencia y Tecnología. Referencia:<br/></span><ul><li><span><a class="external-link" href="https://www.ciencia.gob.es/portal/site/MICINN/menuitem.8ce192e94ba842bea3bc811001432ea0/?vgnextoid=363ac9487fb02210VgnVCM1000001d04140aRCRD" rel="nofollow">https://www.ciencia.gob.es/portal/site/MICINN/menuitem.8ce192e94ba842bea3bc811001432ea0/?vgnextoid=363ac9487fb02210VgnVCM1000001d04140aRCRD</a></span></li></ul></li><li><strong>ANEP:</strong> clasificación de las áreas temáticas de la agencia estatal de investigación: <ul><li><a class="external-link" href="https://www.universidades.gob.es/stfls/universidades/Ensenanzas/becas_ayudas_premios/pdi/Documentos/Descriptores_Areas_Tematicas_AEI.pdf" rel="nofollow">https://www.universidades.gob.es/stfls/universidades/Ensenanzas/becas_ayudas_premios/pdi/Documentos/Descriptores_Areas_Tematicas_AEI.pdf</a></li></ul></li></ul></td></tr><tr><td colspan="1" class="confluenceTd">PalabraClave</td><td colspan="1" class="confluenceTd">Diccionario de palabras clave común a todo el SGI.</td></tr><tr><td colspan="1" class="confluenceTd">Centro</td><td colspan="1" class="confluenceTd">Listado con los centros de la Universidad.</td></tr></tbody></table></div><h2 id="SGIESBSGO-Enumerados">Enumerados</h2><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">Para la definición de los enumerados en el código seguir lo indicado en: <a href="Enumerados_753926200.html">Enumerados</a></div></div><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 86.3239%;"><colgroup><col style="width: 14.6481%;"/><col style="width: 85.3519%;"/></colgroup><tbody><tr><th class="confluenceTh">Enumerado</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">TipoClasificacion</td><td colspan="1" class="confluenceTd"><p>Existirá una agrupación de clasificaciones, el tipo de clasificación, que permitirá, en caso de ser necesario, restringir las clasificaciones a utilizar en las gestiones que lo necesiten.</p><p>Esta agrupación será un enumerado interno &quot;TipoClasificacion&quot; que a priori solamente tendrá los valores, &quot;Sectores industriales&quot; y &quot;Áreas ANEP&quot;. El tipo de clasificación &quot;Sectores industriales&quot; tendrá asociada la clasificación relacionada &quot;CNAE&quot; y el tipo de clasificación &quot;Áreas ANEP&quot; tendrá asociada la clasificación &quot;ANEP&quot;</p></td></tr></tbody></table></div><h2 id="SGIESBSGO-Modelológico">Modelo lógico</h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/597853249/597862490.jpg" data-image-src="attachments/597853249/597862490.jpg" data-unresolved-comment-count="0" data-linked-resource-id="597862490" data-linked-resource-version="6" data-linked-resource-type="attachment" data-linked-resource-default-alias="ESB SGO Logical Model.jpg" data-base-url="https://confluence.um.es/confluence" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="597853249" data-linked-resource-container-version="52" alt=""></span></p><h2 id="SGIESBSGO-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a href="https://confluence.um.es/confluence/display/HERCULES/Consultas+filtradas+y+paginadas" rel="nofollow">Consultas filtradas y paginadas</a></li><li><a href="https://confluence.um.es/confluence/display/HERCULES/Formatos+de+datos+API" rel="nofollow">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="SGIESBSGO-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="SGIESBSGO-AreaConocimiento">AreaConocimiento</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" title="Background colour : Grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" title="Background colour : Grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" title="Background colour : Grey"><strong title="">Descripción</strong></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del área de conocimiento.</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del área de conocimiento.</td></tr><tr><td colspan="1" class="confluenceTd">padreId</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la entidad padre del área de conocimiento.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">AreaConocimiento</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">  {
+        "id": "11",
+        "nombre": "Medicina Preventiva y Salud Pública",
+        "padreId": "1"
+	    
+    }</pre>
+ </div>
+</div><h4 id="SGIESBSGO-Departamento">Departamento</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th class="confluenceTh">Tipo</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del departamento.</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del departamento.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Departamento</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">  {
+        "id":"dpt-1",
+         "nombre":"Departamento Ciencias de la tecnología"
+	    
+    }</pre>
+ </div>
+</div><h4 id="SGIESBSGO-Pais">Pais</h4><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 22.593%;"><colgroup><col style="width: 18.2039%;"/><col style="width: 14.3608%;"/><col style="width: 67.4353%;"/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td class="confluenceTd">id</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del país.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del país.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Pais</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">  {
+        "id": "33",
+		"nombre": "Francia"
+  }</pre>
+ </div>
+</div><h4 id="SGIESBSGO-ComunidadAutonoma">ComunidadAutonoma</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la comunidad autónoma/región.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre de la comunidad autónoma/región.</td></tr><tr><td class="confluenceTd">paisId</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador del país.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">ComunidadAutonoma</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">  {
+        "id": "1",
+        "nombre": "Región central",
+        "paisId":"33"
+	    
+    }</pre>
+ </div>
+</div><h4 id="SGIESBSGO-Provincia">Provincia</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la provincia.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre de la provincia.</td></tr><tr><td class="confluenceTd">comunidadAutonomaId</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la comunidad autónoma.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Provincia</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">   {
+        "id": "1",
+		"nombre": "Provincia central",
+        "comunidadAutonomaId":"15"
+	    
+    }</pre>
+ </div>
+</div><h4 id="SGIESBSGO-Clasificacion">Clasificacion</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong title="">Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la clasificación.</td></tr><tr><td colspan="1" class="confluenceTd">codigo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Código de la clasificación.</td></tr><tr><td class="confluenceTd">nombre</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre de la clasificación.</td></tr><tr><td colspan="1" class="confluenceTd">padreId</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador de la entidad padre de la clasificación.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Clasificación padre</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">   {
+        "id": "1",
+		"codigo": "0",
+        "nombre":"UNESCO",
+        "padreId": null
+    }</pre>
+ </div>
+</div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Clasificación hija de primer nivel</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">   {
+        "id": "2",
+		"codigo":"01"
+        "nombre":"Lógica deductiva", 
+        "padreId": "1"
+    }</pre>
+ </div>
+</div><h4 id="SGIESBSGO-Centro"><span style="color: rgb(0,0,0);">Centro</span></h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 59.7374%;"><colgroup><col style="width: 8.79927%;"/><col style="width: 6.96609%;"/><col style="width: 84.2347%;"/></colgroup><tbody><tr><th class="confluenceTh"><span style="color: rgb(0,0,0);" title="">Nombre</span></th><th class="confluenceTh"><span style="color: rgb(0,0,0);" title="">Tipo</span></th><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);" title="">Descripción</span></th></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);" title="">id</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);" title="">String</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);" title="">Identificador de la entidad Centro.<br/></span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);" title="">nombre</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);" title="">String</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);"><span title="">Nombre del centro.</span><s><span title=""><br/></span></s></span></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Centro</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id":"cen-1",
+    "nombre":"Centro 1 de la Universidad de Murcia"
+}</pre>
+ </div>
+</div><h3 id="SGIESBSGO-Servicios">Servicios</h3><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">Para componer la URL llamada completa, se debe anteponer a lo indicado en la columna URL lo siguiente: <strong>{HOST}/api/sgo</strong>, donde <strong>{HOST}</strong> de deberá sustituir el dominio correspondiente al entorno al que se está accediendo y dicho acceso será por http o https según el caso.</div></div><p><div class="table-wrap"><table class="aui metadata-summary-macro null" data-cql="label = &quot;servicios&quot; and space = currentSpace() and ancestor = currentContent()" data-details-space-key="HERCULES"  data-details-content-id="597853249"  data-headings="Método, URL, Parámetros, Respuesta, Descripción" data-first-column-heading="Servicio" data-count-comments="false" data-count-likes="false" data-total-pages="1" data-page-size="1000" data-sort-by="null" data-reverse-sort="false" data-blueprint-present="false"><thead><tr><th class="sorter-text">Servicio</th><th>M&eacute;todo</th><th>URL</th><th>Par&aacute;metros</th><th>Respuesta</th><th>Descripci&oacute;n</th></tr></thead><tbody><tr><td class="title" data-content-id="597852992"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGO+-+Centros+-+Consultar+detalle">SGI - ESB - SGO - Centros - Consultar detalle</a></td><td>GET</td><td>/<span title="">centros</span>/{id}</td><td><br/></td><td><a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-Centro" rel="nofollow">Centro</a></td><td>Detalle del centro cuyo identificador se indica por parámetro.</td></tr><tr><td class="title" data-content-id="597852991"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGO+-+Centros+-+Listar">SGI - ESB - SGO - Centros - Listar</a></td><td>GET</td><td>/<span title="">centros</span></td><td><br/></td><td>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-Centro" rel="nofollow">Centro</a>]</td><td>Listado de centros.</td></tr><tr><td class="title" data-content-id="597852984"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGO+-+Palabras+clave+-+Buscar">SGI - ESB - SGO - Palabras clave - Buscar</a></td><td>GET</td><td>/palabras-clave</td><td><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>palabra</li></ul></td><td>Lista[String]</td><td>Busca/Lista palabras clave.</td></tr><tr><td class="title" data-content-id="597852983"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGO+-+Palabras+clave+-+Crear">SGI - ESB - SGO - Palabras clave - Crear</a></td><td>POST</td><td>/palabras-clave</td><td><p>Lista[String]</p></td><td><br/></td><td>Crea palabras clave si no existen previamente.</td></tr><tr><td class="title" data-content-id="597852997"><a href="/confluence/pages/viewpage.action?pageId=597852997">SGI - ESB - SGO - Áreas de conocimiento - Buscar</a></td><td>GET</td><td>/<span>areas-conocimiento</span></td><td><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>padreId</li></ul></td><td>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-AreaConocimiento" rel="nofollow">AreaConocimiento</a>]</td><td><p>Listado de áreas de conocimiento.<span><br/></span></p><p>Nota: en el caso de no recibirse un padreId en la query, se devolverán todas las áreas de conocimiento y en caso de indicarse en la query que se quieren solo las que tengan un padreId con valor &quot;null&quot; se devolverán únicamente las de primer nivel o nivel raíz.</p><p><em>Ejemplo de query para obtener solo áreas de conocimiento raíz (su padre es null)</em>:</p><p style="margin-left: 30.0px;">padreId=na=</p></td></tr><tr><td class="title" data-content-id="597852993"><a href="/confluence/pages/viewpage.action?pageId=597852993">SGI - ESB - SGO - Áreas de conocimiento - Consultar detalle</a></td><td>GET</td><td>/<span>areas-conocimiento</span>/{id}</td><td><br/></td><td><span><a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-AreaConocimiento" rel="nofollow">AreaConocimiento</a></span></td><td>Detalle del área de conocimiento cuyo identificador se indica por parámetro.</td></tr><tr><td class="title" data-content-id="597852994"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGO+-+Departamentos+-+Listar">SGI - ESB - SGO - Departamentos - Listar</a></td><td>GET</td><td>/<span>departamentos</span></td><td><br/></td><td>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-Departamento" rel="nofollow">Departamento</a>]</td><td>Listado de departamentos.</td></tr><tr><td class="title" data-content-id="597852995"><a href="/confluence/pages/viewpage.action?pageId=597852995">SGI - ESB - SGO - Países - Listar</a></td><td>GET</td><td>/<span>paises</span></td><td><br/></td><td>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-Pais" rel="nofollow">Pais</a>]</td><td>Listado de países del SGI.</td></tr><tr><td class="title" data-content-id="597852996"><a href="/confluence/pages/viewpage.action?pageId=597852996">SGI - ESB - SGO - Países - Consultar detalle</a></td><td>GET</td><td>/<span title="">paises</span>/{id}</td><td><br/></td><td><span title=""><a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-Pais" rel="nofollow">Pais</a></span></td><td>Detalle del país cuyo identificador se indica por parámetro.</td></tr><tr><td class="title" data-content-id="597852985"><a href="/confluence/pages/viewpage.action?pageId=597852985">SGI - ESB - SGO - Comunidades autónomas - Buscar</a></td><td>GET</td><td>/<span title="">comunidades-autonomas</span></td><td><p title="">q+s (query + sort)</p><p title="">La query estará formada por:</p><ul title=""><li><span>paisId</span></li></ul></td><td>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-ComunidadAutonoma" rel="nofollow">ComunidadAutonoma</a>]</td><td><p title="">Listado de comunidades autónomas.</p><p title="">Nota: en el caso de recibirse un país como parámetro se devolverán todas las comunidades autónomas de ese país.</p></td></tr><tr><td class="title" data-content-id="597852986"><a href="/confluence/pages/viewpage.action?pageId=597852986">SGI - ESB - SGO - Comunidades autónomas - Consultar detalle</a></td><td>GET</td><td>/<span title="">comunidades-autonomas</span>/{id}</td><td><p><br/></p></td><td><a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-ComunidadAutonoma" rel="nofollow">ComunidadAutonoma</a></td><td>Detalle de la comunidad autónoma cuyo identificador se indica por parámetro.</td></tr><tr><td class="title" data-content-id="597852987"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGO+-+Provincias+-+Buscar">SGI - ESB - SGO - Provincias - Buscar</a></td><td>GET</td><td>/<span title="">provincias</span></td><td><p title="">q+s (query + sort)</p><p title="">La query estará formada por:</p><ul title=""><li><span>comunidadAutonomaId</span></li></ul></td><td>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-Provincia" rel="nofollow">Provincia</a>]</td><td><p title="">Listado de provincias. </p><p title="">Nota: en el caso de recibirse una comunidad autónoma como parámetro se devolverán todas las provincias de esa comunidad autónoma.</p></td></tr><tr><td class="title" data-content-id="597852988"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGO+-+Provincias+-+Consultar+detalle">SGI - ESB - SGO - Provincias - Consultar detalle</a></td><td>GET</td><td>/<span title="">provincias</span>/{id}</td><td><p title="">q+s (query + sort)</p><p title="">La query estará formada por:</p><ul title=""><li><span>comunidadAutonomaId</span></li></ul></td><td><a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-Provincia" rel="nofollow">Provincia</a></td><td>Detalle de la provincia cuyo identificador se indica por parámetro.</td></tr><tr><td class="title" data-content-id="597852989"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGO+-+Clasificaciones+-+Buscar">SGI - ESB - SGO - Clasificaciones - Buscar</a></td><td>GET</td><td>/clasificaciones</td><td><p>q+s (query + sort)</p><p>La query estará formada por:</p><ul><li>tipoClasificacion</li><li>padreId</li></ul></td><td>Lista[<a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-Clasificacion" rel="nofollow">Clasificacion</a>]</td><td><p>Listado de clasificaciones.</p><p>Nota: en el caso de no recibirse un padreId en la query, se devolverán todas las clasificaciones y en caso de indicarse en la query que se quieren solo las que tengan un padreId con valor &quot;null&quot; se devolverán únicamente las de primer nivel o nivel raíz. Sobre estas clasificaciones se aplicará además el filtro indicado en tipoClasificacion (en caso de venir informado).</p><p><em>Ejemplo de query para obtener sólo las clasificaciones raíz (su padre es null) del tipo de clasificación &quot;Sectores Industriales&quot;</em>:</p><p style="margin-left: 30.0px;">tipoClasificacion==(SECTORES_INDUSTRIALES);padreId=na=</p></td></tr><tr><td class="title" data-content-id="597852990"><a href="/confluence/display/HERCULES/SGI+-+ESB+-+SGO+-+Clasificaciones+-+Consultar+detalle">SGI - ESB - SGO - Clasificaciones - Consultar detalle</a></td><td>GET</td><td>/<span>clasificaciones</span>/{id}</td><td><p><br/></p></td><td><a href="https://confluence.um.es/confluence/display/HERCULES/SGI+-+ESB+-+SGO#SGIESBSGO-Clasificacion" rel="nofollow">Clasificacion</a></td><td>Detalle de la clasificación cuyo identificador se indica por parámetro.</td></tr></tbody></table></div></p><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597884858.png">ESB SGE Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597884859.png">ESB SGDOC Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597884860.jpg">ESB SGL Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597862489.jpg">ESB SGE Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597862233.jpg">ESB SGO Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597862297.jpg">ESB SGO Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597861878.jpg">ESB SGO Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597861816.jpg">ESB SGO Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597858835.jpg">ESB SGO Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597860452.png">ESB SGO Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597856061.png">ESB SGO Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597867535.png">ESB SGO Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597868683.png">ESB SGO Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597884624.png">ESB SGO Logical Model.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/597853249/597862490.jpg">ESB SGO Logical Model.jpg</a> (image/jpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:38</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

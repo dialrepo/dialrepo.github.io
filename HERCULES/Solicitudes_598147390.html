@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : Solicitudes</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147612.html">APIs de Integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="598147535.html">SGI: Servicios propios que expone</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : Solicitudes
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario genérico para HERCULES</span>, last modified on sep 03, 2024
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <hr/><p class="content-wrapper"><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1728467813530 {padding: 0px;}
+div.rbtoc1728467813530 ul {margin-left: 0px;}
+div.rbtoc1728467813530 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1728467813530'>
+<ul class='toc-indentation'>
+<li><a href='#Solicitudes-SistemadeGestiónInvestigación'>Sistema de Gestión Investigación</a>
+<ul class='toc-indentation'>
+<li><a href='#Solicitudes-Entidades'>Entidades</a></li>
+<li><a href='#Solicitudes-Enumerados'>Enumerados</a></li>
+<li><a href='#Solicitudes-Modelológico'>Modelo lógico</a></li>
+<li><a href='#Solicitudes-API'>API</a>
+<ul class='toc-indentation'>
+<li><a href='#Solicitudes-Definicióndelosobjetos'>Definición de los objetos</a>
+<ul class='toc-indentation'>
+<li><a href='#Solicitudes-Solicitud'>Solicitud</a></li>
+<li><a href='#Solicitudes-Estado'>Estado</a></li>
+<li><a href='#Solicitudes-SolicitudProyecto'>SolicitudProyecto</a></li>
+<li><a href='#Solicitudes-PalabraClave'>PalabraClave</a></li>
+<li><a href='#Solicitudes-AreaTematica'>AreaTematica</a></li>
+<li><a href='#Solicitudes-SolicitudAreaConocimiento'>SolicitudAreaConocimiento</a></li>
+<li><a href='#Solicitudes-SolicitudClasificacion'>SolicitudClasificacion</a></li>
+</ul>
+</li>
+<li><a href='#Solicitudes-Servicios'>Servicios</a>
+<ul class='toc-indentation'>
+<li><a href='#Solicitudes-Consultarsolicitudes'>Consultar solicitudes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><hr/><h1 id="Solicitudes-SistemadeGestiónInvestigación">Sistema de Gestión Investigación</h1><h2 id="Solicitudes-Entidades">Entidades</h2><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 66.1926%;"><colgroup><col style="width: 17.7833%;"/><col style="width: 82.2167%;"/></colgroup><tbody><tr><th class="confluenceTh">Entidad</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">Solicitud</td><td colspan="1" class="confluenceTd">Contiene los datos generales de una solicitud.</td></tr><tr><td colspan="1" class="confluenceTd">Estado</td><td colspan="1" class="confluenceTd">Contiene los datos del estado de una solicitud.</td></tr><tr><td colspan="1" class="confluenceTd">SolicitudProyecto</td><td colspan="1" class="confluenceTd">Contiene la extensión de datos para las solicitudes de tipo Proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">AreaTematica</td><td colspan="1" class="confluenceTd">Contiene los datos de un área temática.</td></tr><tr><td colspan="1" class="confluenceTd">SolicitudAreaConocimiento</td><td colspan="1" class="confluenceTd">Contiene la relación entre una solicitud y un área de conocimiento para las solicitudes de tipo Proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">SolicitudClasificacion</td><td colspan="1" class="confluenceTd">Contiene la relación entre una solicitud y una clasificación para las solicitudes de tipo Proyecto.</td></tr></tbody></table></div><h2 id="Solicitudes-Enumerados">Enumerados</h2><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 66.3567%;"><colgroup><col style="width: 17.5743%;"/><col style="width: 82.4257%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Entidad</th><th colspan="1" class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd"><span>TipoFormularioSolicitud</span></td><td colspan="1" class="confluenceTd"><p>Puede tomar los siguientes valores:</p><ul><li><span>PROYECTO</span></li><li><span>GRUPO</span></li><li><span>RRHH</span></li></ul></td></tr><tr><td colspan="1" class="confluenceTd">TipoSolicitudGrupo</td><td colspan="1" class="confluenceTd"><p>Puede tomar los siguientes valores:</p><ul><li>MODIFICACION (<span>Modificación grupo</span><span>)</span></li><li>CONSTITUCION (Constitución de grupo)</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">TipoEstadoSolicitud</td><td colspan="1" class="confluenceTd"><p>Puede tomar los siguientes valores:</p><ul><li><span>ADMITIDA_DEFINITIVA</span><span> </span></li><li><span>ADMITIDA_PROVISIONAL</span><span> </span></li><li><span>ALEGACION_FASE_ADMISION</span><span> </span></li><li><span>ALEGACION_FASE_PROVISIONAL</span><span> </span></li><li><span>BORRADOR</span><span> </span></li><li><span>CONCEDIDA</span><span> </span></li><li><span>CONCEDIDA_PROVISIONAL</span><span> </span></li><li><span>CONCEDIDA_PROVISIONAL_ALEGADA</span><span> </span></li><li><span>CONCEDIDA_PROVISIONAL_NO_ALEGADA</span><span> </span></li><li><span>DENEGADA</span><span> </span></li><li><span>DENEGADA_PROVISIONAL</span><span> </span></li><li><span>DENEGADA_PROVISIONAL_ALEGADA</span><span> </span></li><li><span>DENEGADA_PROVISIONAL_NO_ALEGADA</span><span> </span></li><li><span>DESISTIDA</span><span> </span></li><li><span>EXCLUIDA_DEFINITIVA</span><span> </span></li><li><span>EXCLUIDA_PROVISIONAL</span><span> </span></li><li><span>FIRMADA</span><span> </span></li><li><span>NEGOCIACION</span><span> </span></li><li><span>PRESENTADA_SUBSANACION</span><span> </span></li><li><span>RECURSO_FASE_ADMISION</span><span> </span></li><li><span>RECURSO_FASE_CONCESION</span><span> </span></li><li><span>RENUNCIADA</span><span> </span></li><li><span>RESERVA</span><span> </span></li><li><span>RESERVA_PROVISIONAL</span><span> </span></li><li><span>SOLICITADA</span><span> </span></li><li><span>SUBSANACION</span></li></ul></td></tr><tr><td colspan="1" class="confluenceTd">TipoPresupuesto</td><td colspan="1" class="confluenceTd"><p>Puede tomar los siguientes valores:</p><ul><li><span>GLOBAL</span><span> (El presupuesto del proyecto solicitado se indicará de manera global, sin distinguir el presupuesto para cada entidad financiadora)</span></li><li><span>INDIVIDUAL</span><span> (Se detallará el presupuesto solicitado a cada una de las entidades financiadoras, tanto las entidades que participan en la convocatoria como e otras entidades ajenas a la convocatoria a las que se solicite financiación)</span></li><li><span>MIXTO</span><span> (Se detallará un presupuesto único para todas las entidades financiadoras de la convocatoria y un presupuesto individual por cada entidad financiadora ajena a la convocatoria. El presupuesto de las entidades financiadoras de la convocatoria se asociará a la entidad que figure como entidad gestora de la convocatoria)</span></li></ul></td></tr></tbody></table></div><h2 id="Solicitudes-Modelológico">Modelo lógico</h2><p><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=CSP-SOL+-+Modelo+l%C3%B3gico+-+Diagrama">CSP-SOL - Modelo l&oacute;gico - Diagrama</a></p><h2 id="Solicitudes-API">API</h2><p>Características generales que todas las API REST deben de cumplir:</p><ul><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Consultas+filtradas+y+paginadas">Consultas filtradas y paginadas</a></li><li><a class="createlink" href="/confluence/pages/createpage.action?spaceKey=TEMP001&amp;title=Formatos+de+datos+API">Formatos de datos API</a></li></ul><h3 class="content-wrapper" id="Solicitudes-Definicióndelosobjetos">Definición de los objetos</h3><h4 id="Solicitudes-Solicitud">Solicitud</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 98.7965%;"><colgroup><col style="width: 8.03324%;"/><col style="width: 10.1385%;"/><col style="width: 81.8283%;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th colspan="1" class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al usuario creador del registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al último usuario que modificó el registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único de la solicitud</td></tr><tr><td colspan="1" class="confluenceTd">titulo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Título de la solicitud</td></tr><tr><td colspan="1" class="confluenceTd">convocatoriaId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la convocatoria a la que corresponde la solicitud.</td></tr><tr><td colspan="1" class="confluenceTd">codigoExterno</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Código externo de la solicitud. Será el código de registro de la solicitud en la entidad convocante, en caso que la solicitud se haya registrado/presentado de forma paralela en la entidad convocante.</td></tr><tr><td colspan="1" class="confluenceTd">codigoRegistroInterno</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Código de registro interno de la solicitud en el SGI.</td></tr><tr><td colspan="1" class="confluenceTd">estado</td><td colspan="1" class="confluenceTd">Estado</td><td colspan="1" class="confluenceTd">Estado actual de la solicitud.</td></tr><tr><td colspan="1" class="confluenceTd">creadorRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al usuario creador de la solicitud en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">solicitanteRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia a la persona solicitante de la solicitud en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">observaciones</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Observaciones relativas a la solicitud.</td></tr><tr><td colspan="1" class="confluenceTd">convocatoriaExterna</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Código o referencia de la convocatoria externa (no registrada en el SGI) sobre la que se presenta la solicitud.  </td></tr><tr><td colspan="1" class="confluenceTd">unidadGestionRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia a la unidad de gestión a la que corresponde la solicitud.</td></tr><tr><td colspan="1" class="confluenceTd">formularioSolicitud</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Discrimina el tipo de solicitud. Toma un valor del enumerado TipoFormularioSolicitud.</span></p></td></tr><tr><td colspan="1" class="confluenceTd">tipoSolicitudGrupo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Subtipo de la solicitud en caso de que la solicitud sea de tipo grupo (valor del campo formularioSolicitud). Es un valor del enumerado TipoSolicitudGrupo.</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Booleano</td><td colspan="1" class="confluenceTd">Indicador de si la solicitud está activa o no en el SGI.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Solicitud</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": null,
+	"creationDate": null,
+	"lastModifiedBy": "03839481",
+	"lastModifiedDate": "2022-03-30T13:12:07.166Z",
+	"id": 1,
+	"titulo": "Solicitud 1",
+	"convocatoriaId": 1,
+	"codigoExterno": "COD-001",
+	"codigoRegistroInterno": "SGI_SLC1202102011617",
+	"estado": {
+		"createdBy": "03839481",
+		"creationDate": "2022-03-30T13:12:04.440Z",
+		"lastModifiedBy": "03839481",
+		"lastModifiedDate": "2022-03-30T13:12:04.440Z",
+		"id": 8,
+		"solicitudId": 1,
+		"estado": "CONCEDIDA",
+		"fechaEstado": "2022-03-30T13:12:01.304Z",
+		"comentario": ""
+	},
+	"creadorRef": "09020119",
+	"solicitanteRef": "01889311",
+	"observaciones": "",
+	"convocatoriaExterna": "",
+	"unidadGestionRef": "3",
+	"formularioSolicitud": "PROYECTO",
+	"tipoSolicitudGrupo": null,
+	"activo": true
+}</pre>
+ </div>
+</div><h4 id="Solicitudes-Estado">Estado</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 98.7965%;"><colgroup><col style="width: 8.03324%;"/><col style="width: 10.1385%;"/><col style="width: 81.8283%;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th colspan="1" class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al usuario creador del registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al último usuario que modificó el registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único del estado de la solicitud.</td></tr><tr><td colspan="1" class="confluenceTd">solicitudId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Referencia a la solicitud a la que corresponde el estado.</td></tr><tr><td colspan="1" class="confluenceTd">estado</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Estado de la solicitud. Toma un valor del enumerado TipoEstadoSolicitud.</span></p></td></tr><tr><td colspan="1" class="confluenceTd">fechaEstado</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha en la que la solicitud alcanza el estado.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">comentario</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Comentario incluido al realizar el cambio de estado.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">Estado</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": "03839481",
+	"creationDate": "2022-03-30T13:12:04.440Z",
+	"lastModifiedBy": "03839481",
+	"lastModifiedDate": "2022-03-30T13:12:04.440Z",
+	"id": 8,
+	"solicitudId": 1,
+	"estado": "CONCEDIDA",
+	"fechaEstado": "2022-03-30T13:12:01.304Z",
+	"comentario": ""
+}</pre>
+ </div>
+</div><h4 id="Solicitudes-SolicitudProyecto">SolicitudProyecto</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 98.7965%;"><colgroup><col style="width: 8.03324%;"/><col style="width: 10.1385%;"/><col style="width: 81.8283%;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th colspan="1" class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al usuario creador del registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al último usuario que modificó el registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único de la solicitud.</td></tr><tr><td colspan="1" class="confluenceTd">acronimo</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Acrónimo del proyecto solicitado.</td></tr><tr><td colspan="1" class="confluenceTd">codExterno</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Código alfanumérico que la entidad convocante asigna al proyecto solicitado. A partir de este campo se informa el campo &quot;código externo&quot; de la tabla &quot;proyecto&quot; (modelo lógico CSP Proyecto).  </td></tr><tr><td colspan="1" class="confluenceTd">duracion</td><td colspan="1" class="confluenceTd">Numérico entero</td><td colspan="1" class="confluenceTd">Duración del proyecto solicitado expresada en meses. </td></tr><tr><td colspan="1" class="confluenceTd">colaborativo</td><td colspan="1" class="confluenceTd">Booleano</td><td colspan="1" class="confluenceTd"> Indica si un proyecto coordinado es además colaborativo (alguno de los socios participantes es una empresa privada). </td></tr><tr><td colspan="1" class="confluenceTd">coordinadorExterno</td><td colspan="1" class="confluenceTd">Booleano</td><td colspan="1" class="confluenceTd">Indica qué socio (entidad) actuará como coordinador del proyecto solicitado. Un valor &quot;false&quot; indica que será la propia Universidad quien actuará en calidad de coordinador del proyecto. Un valor &quot;true&quot; indicará que el coordinador será uno de los socios que participará en el proyecto. </td></tr><tr><td colspan="1" class="confluenceTd">coordinado</td><td colspan="1" class="confluenceTd">Booleano</td><td colspan="1" class="confluenceTd"><p><span>Indica si el proyecto se realizará de forma coordinada con otros socios. Un valor &quot;true&quot; en este campo activará la disponibilidad de los campos:</span><span> </span></p><ul><li><span>coordinador externo</span><span> </span></li><li><span>colaborativo</span><span> </span></li><li><span>y del apartado &quot;socios proyecto&quot;</span><span> </span></li></ul></td></tr><tr><td colspan="1" class="confluenceTd">objetivos</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Objetivos del proyecto solicitado.</td></tr><tr><td colspan="1" class="confluenceTd">intereses</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Intereses perseguidos con el proyecto solicitado. </td></tr><tr><td colspan="1" class="confluenceTd">resultadosPrevistos</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Resultados esperados del proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">areaTematica</td><td colspan="1" class="confluenceTd">AreaTematica</td><td colspan="1" class="confluenceTd">Área temática con la que se vincula el proyecto solicitado.</td></tr><tr><td colspan="1" class="confluenceTd">checklistRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p>Identificador o referencia del registro de autoevaluación de ética.</p></td></tr><tr><td colspan="1" class="confluenceTd">peticionEvaluacionRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Identificador o referencia de la solicitud de petición de evaluación de ética creada a partir de la solicitud del proyecto de investigación.</td></tr><tr><td colspan="1" class="confluenceTd">tipoPresupuesto</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Indica la forma en la que se va a detallar el presupuesto del proyecto solicitado. Toma un valor del enumerado TipoPresupuesto.  </td></tr><tr><td colspan="1" class="confluenceTd">importeSolicitado</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe que se solicita a las entidades financiadoras para el proyecto solicitado correspondiente únicamente a la Universidad (no al resto de socios) y asociado a conceptos de gasto que no representan costes indirectos. Este valor está desvinculado del presupuesto detallado del proyecto solicitado que se haya podido introducir. El campo es de utilidad en caso de el usuario prefiera no introducir el detalle del presupuesto. </td></tr><tr><td colspan="1" class="confluenceTd">importeSolicitadoCostesIndirectos</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe que se solicita a las entidades financiadoras para el proyecto solicitado correspondiente únicamente a la Universidad (no al resto de socios) y asociado a conceptos de gasto que representan costes indirectos. Este valor está desvinculado del presupuesto detallado del proyecto solicitado que se haya podido introducir. El campo es de utilidad en caso de el usuario prefiera no introducir el detalle del presupuesto. </td></tr><tr><td colspan="1" class="confluenceTd">importePresupuestado</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe presupuestado para el proyecto solicitado correspondiente únicamente a la Universidad (no al resto de socios) y asociado a conceptos de gasto que no representan costes indirectos. Este valor está desvinculado del presupuesto detallado del proyecto solicitado que se haya podido introducir. El campo es de utilidad en caso de el usuario prefiera no introducir el detalle del presupuesto.  </td></tr><tr><td colspan="1" class="confluenceTd">importePresupuestadoCostesIndirectos</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Importe presupuestado para el proyecto solicitado correspondiente únicamente a la Universidad (no al resto de socios) y asociado a conceptos de gasto que representan costes indirectos. Este valor está desvinculado del presupuesto detallado del proyecto solicitado que se haya podido introducir. El campo es de utilidad en caso de el usuario prefiera no introducir el detalle del presupuesto.)  </td></tr><tr><td colspan="1" class="confluenceTd">importeSolicitadoSocios</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Es el importe que se solicita a las entidades financiadoras para el proyecto solicitado de manera global por el resto socios (adicionales a la Universidad) que participarán en el proyecto. Es un valor desvinculado de la información que podría haberse introducido de manera individual para cada uno de los socios. Este campo es de utilidad en caso de que el usuario prefiera no indicar el desglose del importe para cada uno de los socios. </td></tr><tr><td colspan="1" class="confluenceTd">importePresupuestadoSocios</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Es el importe presupuestado para el proyecto solicitado para el total del resto socios (adicionales a la Universidad) que participarán en el proyecto. Es un valor desvinculado de la información que podría haberse introducido de manera individual para cada uno de los socios. Este campo es de utilidad en caso de que el usuario prefiera no indicar el desglose del importe para cada uno de los socios. </td></tr><tr><td colspan="1" class="confluenceTd">totalImporteSolicitado</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Es el importe total que se solicita a las entidades financiadoras para el proyecto solicitado incluyendo tanto el presupuesto de la Universidad como el del resto de socios participantes. Este valor está desvinculado del presupuesto detallado del proyecto que se hubiera podido introducir. El campo es de utilidad en caso de el usuario prefiera no introducir el detalle del presupuesto </td></tr><tr><td colspan="1" class="confluenceTd">totalImportePresupuestado</td><td colspan="1" class="confluenceTd">BigDecimal</td><td colspan="1" class="confluenceTd">Es el importe total presupuestado para el proyecto solicitado incluyendo tanto el presupuesto de la Universidad como el del resto de socios participantes. Este valor está desvinculado del presupuesto detallado del proyecto que se hubiera podido introducir. El campo es de utilidad en caso de el usuario prefiera no introducir el detalle del presupuesto. </td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">SolicitudProyecto</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+    "createdBy": null,
+    "creationDate": null,
+    "lastModifiedBy": "03839481",
+    "lastModifiedDate": "2022-05-12T12:47:56.671Z",
+    "id": 3,
+    "acronimo": "PS1OPE1",
+    "codExterno": null,
+    "duracion": 36,
+    "colaborativo": true,
+    "coordinadorExterno": false,
+    "coordinado": true,
+    "objetivos": null,
+    "intereses": null,
+    "resultadosPrevistos": null,
+    "areaTematica": {
+        "createdBy": null,
+        "creationDate": null,
+        "lastModifiedBy": null,
+        "lastModifiedDate": null,
+        "id": 63,
+        "nombre": "BMC",
+        "descripcion": "Biología molecular y celular",
+        "padre": {
+            "createdBy": null,
+            "creationDate": null,
+            "lastModifiedBy": null,
+            "lastModifiedDate": null,
+            "id": 61,
+            "nombre": "BIO",
+            "descripcion": "Biociencias y biotecnología",
+            "padre": {
+                "createdBy": null,
+                "creationDate": null,
+                "lastModifiedBy": null,
+                "lastModifiedDate": null,
+                "id": 1,
+                "nombre": "AEI",
+                "descripcion": "Estructura de áreas y paneles científico técnicos de la Agencia Estatal de Investigación",
+                "padre": null,
+                "activo": true
+            },
+            "activo": true
+        },
+        "activo": true
+    },
+    "checklistRef": "6",
+    "peticionEvaluacionRef": "19",
+    "tipoPresupuesto": "GLOBAL",
+    "importeSolicitado": null,
+    "importeSolicitadoCostesIndirectos": null,
+    "importePresupuestado": null,
+    "importePresupuestadoCostesIndirectos": null,
+    "importeSolicitadoSocios": null,
+    "importePresupuestadoSocios": null,
+    "totalImporteSolicitado": null,
+    "totalImportePresupuestado": null
+}</pre>
+ </div>
+</div><h4 id="Solicitudes-PalabraClave">PalabraClave</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 18.512%;"/><col style="width: 16.5633%;"/><col style="width: 64.9247%;"/></colgroup><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Nombre</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Tipo</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey"><strong>Descripción</strong></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único autogenerado de la palabra clave.</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">solicitudId</span></td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador de la solicitud a la que se asocia la palabra clave.</td></tr><tr><td class="confluenceTd">palabraClaveRef</td><td class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia a la palabra clave. Coincide con el texto de la palabra clave por ser único en el diccionario de todo el SGI.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">PalabraClave</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"id": 12,	
+	"solicitudId": 1,
+	"palabraClaveRef": "Tratamiento experimental"
+}</pre>
+ </div>
+</div><h4 id="Solicitudes-AreaTematica">AreaTematica</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 98.7965%;"><colgroup><col style="width: 8.03324%;"/><col style="width: 10.1385%;"/><col style="width: 81.8283%;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th colspan="1" class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al usuario creador del registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al último usuario que modificó el registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único del área temática.</td></tr><tr><td colspan="1" class="confluenceTd">nombre</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Nombre del área temática. Será el campo mostrado en los árboles y tablas donde se presente.</td></tr><tr><td colspan="1" class="confluenceTd">descripcion</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Descripción del área temática.</td></tr><tr><td colspan="1" class="confluenceTd">padre</td><td colspan="1" class="confluenceTd">AreaTematica</td><td colspan="1" class="confluenceTd">Área temática padre en el caso de que disponga de uno (si no es un nodo raíz).</td></tr><tr><td colspan="1" class="confluenceTd">activo</td><td colspan="1" class="confluenceTd">Booleano</td><td colspan="1" class="confluenceTd">Indicador de si el área temática está activa o no en el SGI.</td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">AreaTematica</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+    "createdBy": null,
+    "creationDate": null,
+    "lastModifiedBy": null,
+    "lastModifiedDate": null,
+    "id": 63,
+    "nombre": "BMC",
+    "descripcion": "Biología molecular y celular",
+    "padre": {
+        "createdBy": null,
+        "creationDate": null,
+        "lastModifiedBy": null,
+        "lastModifiedDate": null,
+        "id": 61,
+        "nombre": "BIO",
+        "descripcion": "Biociencias y biotecnología",
+        "padre": {
+            "createdBy": null,
+            "creationDate": null,
+            "lastModifiedBy": null,
+            "lastModifiedDate": null,
+            "id": 1,
+            "nombre": "AEI",
+            "descripcion": "Estructura de áreas y paneles científico técnicos de la Agencia Estatal de Investigación",
+            "padre": null,
+            "activo": true
+        },
+        "activo": true
+    },
+    "activo": true
+}</pre>
+ </div>
+</div><h4 id="Solicitudes-SolicitudAreaConocimiento">SolicitudAreaConocimiento</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 98.7965%;"><colgroup><col style="width: 8.03324%;"/><col style="width: 10.1385%;"/><col style="width: 81.8283%;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th colspan="1" class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al usuario creador del registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al último usuario que modificó el registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único del estado de la solicitud.</td></tr><tr><td colspan="1" class="confluenceTd">solicitudProyectoId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Referencia a la extensión de información para una solicitud de tipo proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">areaConocimientoRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Referencia al área de conocimiento en los sistemas de la Universidad.<br/></span></p></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">SolicitudAreaConocimiento</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark"> {
+    "createdBy": "03839481",
+    "creationDate": "2022-05-12T12:30:48.741Z",
+    "lastModifiedBy": "03839481",
+    "lastModifiedDate": "2022-05-12T12:30:48.741Z",
+    "id": 7,
+    "solicitudProyectoId": 3,
+	"areaConocimientoRef": "030"
+}</pre>
+ </div>
+</div><h4 id="Solicitudes-SolicitudClasificacion">SolicitudClasificacion</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 98.7965%;"><colgroup><col style="width: 8.03324%;"/><col style="width: 10.1385%;"/><col style="width: 81.8283%;"/></colgroup><tbody><tr><th class="confluenceTh">Nombre</th><th colspan="1" class="confluenceTh">Tipo</th><th class="confluenceTh">Descripción</th></tr><tr><td colspan="1" class="confluenceTd">createdBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al usuario creador del registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedBy</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd">Referencia al último usuario que modificó el registro en los sistemas de la Universidad.</td></tr><tr><td colspan="1" class="confluenceTd">lastModifiedDate</td><td colspan="1" class="confluenceTd">Fecha + Hora</td><td colspan="1" class="confluenceTd"><p>Fecha y hora de creación del registro.</p><p>Formato UTC.</p></td></tr><tr><td colspan="1" class="confluenceTd">id</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Identificador único del estado de la solicitud.</td></tr><tr><td colspan="1" class="confluenceTd">solicitudProyectoId</td><td colspan="1" class="confluenceTd">Long</td><td colspan="1" class="confluenceTd">Referencia a la extensión de información para una solicitud de tipo proyecto.</td></tr><tr><td colspan="1" class="confluenceTd">clasificacionRef</td><td colspan="1" class="confluenceTd">String</td><td colspan="1" class="confluenceTd"><p><span>Referencia a la clasificación en los sistemas de la Universidad o en el SGI, según el caso.<br/></span></p></td></tr></tbody></table></div><div class="code panel pdl" style="border-width: 1px;">
+ <div class="codeHeader panelHeader pdl hide-border-bottom" style="border-bottom-width: 1px;">
+  <b class="code-title">SolicitudClasificacion</b><span class="collapse-source expand-control" style="display:none;"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Ampliar origen</span></span><span class="collapse-spinner-wrapper"></span>
+ </div>
+ <div class="codeContent panelContent pdl hide-toolbar">
+  <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: js; gutter: false; theme: RDark; collapse: true" data-theme="RDark">{
+	"createdBy": "03839481",
+    "creationDate": "2022-05-12T12:23:55.643Z",
+    "lastModifiedBy": "03839481",
+    "lastModifiedDate": "2022-05-12T12:23:55.643Z",
+    "id": 3,
+    "solicitudProyectoId": 3,
+    "clasificacionRef": "2576"
+}</pre>
+ </div>
+</div><h3 id="Solicitudes-Servicios">Servicios</h3><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">Para componer la URL llamada completa, se debe anteponer a lo indicado en la columna URL lo siguiente: <strong>{HOST}/api/sgicsp</strong>, donde <strong>{HOST}</strong> de deberá sustituir el dominio correspondiente al entorno al que se está accediendo y dicho acceso será por http o https según el caso.</div></div><h4 id="Solicitudes-Consultarsolicitudes">Consultar solicitudes</h4><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 5.56647%;"/><col style="width: 18.926%;"/><col style="width: 16.5029%;"/><col style="width: 18.5986%;"/><col style="width: 40.4715%;"/></colgroup><thead><tr><th class="confluenceTh"><p>Método</p></th><th class="confluenceTh"><p>URL</p></th><th class="confluenceTh"><p>Parámetros</p></th><th class="confluenceTh"><p>Respuesta</p></th><th class="confluenceTh"><p>Descripción</p></th></tr></thead><tbody><tr><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">GET</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><span style="color: rgb(0,0,0);" title="">/solicitudes</span></td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><p title="">q+s (query + sort)</p><p title="">La query estará formada por:</p><ul title=""><li>cualquiera de los campos del objeto Solicitud</li></ul></td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">Lista[Solicitud]</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><p style="text-align: left;" title="">Listado de solicitudes.</p><p style="text-align: left;" title=""><em>Ejemplo</em>:</p><p style="text-align: left;" title=""><span style="color: rgb(0,51,102);">/solicitudes/todos?q=formularioSolicitud==PROYECTO;codigoExterno=ik=COD;solicitanteRef==01889311</span></p></td></tr><tr><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">GET</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">/solicitudes<span style="color: rgb(0,51,102);" title="">/{id}</span></td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><br/></td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><span title="">Solicitud</span></td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><p title=""><span>Detalle de la solicitud.</span></p><p style="text-align: left;" title=""><em>Ejemplo</em>:</p><p style="text-align: left;" title="">/solicitud<span style="color: rgb(0,51,102);">/1</span></p></td></tr><tr><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">GET</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">/solicitudproyecto/{id}</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><br/></td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><span title="">SolicitudProyecto</span></td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><p title="">Detalle extendido de la solicitud con los datos generales adicionales para las solicitudes de tipo proyecto.</p><p style="text-align: left;" title=""><em>Ejemplo</em>:</p><p style="text-align: left;" title="">/solicitudproyecto<span style="color: rgb(0,51,102);">/1</span></p></td></tr><tr><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">GET</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><span style="color: rgb(0,0,0);" title="">/solicitudes/{id}/palabrasclave</span></td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><br/></td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">Lista[PalabraClave]</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">Listado de palabras clave de una solicitud de tipo proyecto.</td></tr><tr><td class="highlight-grey confluenceTd" colspan="5" data-highlight-colour="grey"><br/></td></tr><tr><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">GET</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">/solicitudes/{id}/solicitud-proyecto-areas-conocimiento</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><br/></td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">Lista[SolicitudAreaConocimiento]</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">Listado de las áreas de conocimiento de la solicitud.</td></tr><tr><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">GET</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">/solicitudes/{id}/solicitud-proyecto-clasificaciones</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef"><br/></td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">Lista[SolicitudClasificacion]</td><td class="highlight-#e3fcef confluenceTd" data-highlight-colour="#e3fcef">Listado de las clasificaciones de la solicitud.</td></tr><tr><td class="confluenceTd">GET</td><td class="confluenceTd">/solicitudes/eliminadas-ids</td><td class="confluenceTd"><p>q+s</p><p>La query estará formada por:</p><ul><li>fechaEliminacion</li></ul></td><td class="confluenceTd">Lista[Long]</td><td class="confluenceTd"><p>Listado de Identificadores de Solicitudes que han sido eliminadas (campo activo = false) a partir de una fecha.</p><p>Se utilizará el siguiente parámetro en la llamada al servicio:</p><ul><li>fechaEliminacion: se le pasará la fecha a partir de la cual se quieren ver las solicitudes eliminadas o bien un rango entre las que se quiere buscar</li></ul><p>Ejemplo1:</p><ul><li>fechaEliminacion=ge=<span>&quot;2024-01-01T22:00:00Z&quot;</span>;</li></ul><p>Ejemplo2:</p><ul><li>fechaEliminacion=ge=<span>&quot;2024-01-01T22:00:00Z&quot;</span>;fechaEliminacion=le=<span>&quot;2024-12-31T22:00:00Z&quot;</span></li></ul></td></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:56</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

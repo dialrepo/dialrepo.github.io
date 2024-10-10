@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hércules : REQ-INT-0060-EDMA-CVN-0002 - Notificaciones proyectos CVN</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853529.html">Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852519.html">SGI. Sistema de gestión de investigación</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597852497.html">Requisitos y análisis funcional</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853748.html">Análisis Funcional SGI - Hércules</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="GEN---Aspectos-generales_597853747.html">GEN - Aspectos generales</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853257.html">INT - Requisitos de integración</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="597853410.html">REQ-INT-0060-EDMA-CVN - Integración con el sistema de Enriquecimiento de datos y métodos de análisis y gestión de CVN</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Hércules : REQ-INT-0060-EDMA-CVN-0002 - Notificaciones proyectos CVN
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Usuario desconocido (covadonga.garcia)</span>, last modified by <span class='editor'> Usuario desconocido (alicia.alvarez)</span> on jun 24, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class='plugin-tabmeta-details'><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Cod. REQ</th><td class="confluenceTd"><p><strong>REQ-INT-0060-EDMA-CVN-0002 - Notificaciones proyectos CVN</strong></p></td></tr><tr><th class="confluenceTh">Ver. Objetivo</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Ver. REQ</th><td colspan="1" class="confluenceTd">1.0.0</td></tr><tr><th class="confluenceTh">Estado</th><td class="confluenceTd"><div class="content-wrapper"><span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline">IN PROGRESS</span></div></td></tr><tr><th class="confluenceTh">Fec. Aprobación</th><td class="confluenceTd"><br/></td></tr><tr><th class="confluenceTh">Épica, historia</th><td class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Frecuencia</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh">Características</th><td colspan="1" class="confluenceTd"><br/></td></tr><tr><th colspan="1" class="confluenceTh"><span>M. Consumidor</span></th><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div></div><h2 id="REQINT0060EDMACVN0002NotificacionesproyectosCVN-Definiciónyobjetivos">Definición y objetivos</h2><p>El SGI deberá disponer de una función que permita recibir desde el módulo de CVN (parte del sistema EDMA) la información de los proyectos que el personal investigador haya introducido en su CVN. El SGI visualizará esta información para que las unidades de gestión decidan o no crear un nuevo proyecto/contrato en el apartado proyectos del módulo CSP. El módulo CVN junto con los datos registrados deberá remitir el vínculo con la solicitud de autorización que previamente el SGI informó a través de <a href="REQ-INT-0060-EDMA-CVN-0001---Autorizaciones-modificadas_597853424.html">REQ-INT-0060-EDMA-CVN-0001 - Autorizaciones modificadas</a></p><h2 id="REQINT0060EDMACVN0002NotificacionesproyectosCVN-Descripciónintegración"><span>Descripción integración</span></h2><p>Parámetros de entrada:</p><ul><li>No se requieren parámetros de entrada.</li></ul><p>Parámetros de salida:</p><ul><li>Referencia de persona. Referencia de la persona dentro del sistema de gestión de personas corporativo a la que pertenece el ítem proyecto/contrato registrado en CVN.</li><li><span style="color: rgb(0,0,0);">Documento acreditativo de la concesión del proyecto: identificador en el SGDOC del documento que contenga la acreditación de la concesión del proyecto/contrato.</span></li><li><span style="color: rgb(0,0,0);">URL acreditativa: url donde está contenida la acreditación de la concesión del proyecto/contrato.</span></li><li>Título del proyecto. Campo título del ítem proyecto/contrato registrado en CVN. <span>La correspondencia con la norma FECYT de CVN es: s</span>e corresponderá con el campo 050.020.010.010 - Nombre del proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.010 - Nombre del proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</li><li>Referencia en entidad convocante.  Referencia que se le ha dado el proyecto en la entidad convocante/financiadora recogida en CVN. <span>La correspondencia con la norma FECYT de CVN es: s</span>e corresponderá con el campo 050.020.010.260 - Código de proyecto según la entidad financiadora, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.110 - Código de proyecto según la entidad financiadora, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</li><li>Fecha inicio. Fecha de inicio del proyecto/contrato recogido en CVN. <span>La correspondencia con la norma FECYT de CVN es: s</span>e corresponderá con el campo 050.020.010.270 - Fecha de inicio del proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.180 - Fecha de inicio del proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</li><li>Fecha fin. Fecha de fin del proyecto/contrato recogido en CVN. <span>La correspondencia con la norma FECYT de CVN es: s</span>e corresponderá con el campo 050.020.010.410 - Fecha de finalización, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas. En el caso de que el proyecto se registre bajo el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas, este campo no estará disponible, al no estar contemplado en la norma CVN.</li><li>Ámbito geográfico. Ámbito geográfico del proyecto/contrato recogido en CVN. <span>La correspondencia con la norma FECYT de CVN es: s</span>e corresponde con el campo 050.020.010.040 - Ámbito del proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.040 Ámbito del proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</li><li>Grado de contribución. Tipo de participación en el proyecto/contrato. La correspondencia con la norma FECTY de CVN es: se corresponde con el campo 050.020.010.170 - Grado de contribución, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas y con el campo 050.020.020.280 - Grado de contribución, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</li><li><span style="letter-spacing: 0.0px;">Referencia Responsable (IP). El módulo de CVN remitirá la referencia a la persona dentro del Sistema de gestión de personas corporativo asociado al dato recogido sobre el campo IP de CVN. La correspondencia con la norma FECYT de CVN es: se corresponderá con el campo 050.020.010.140 Nombre del/de la investigador/a principal (IP, Co-IP,...), en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.250 Nombre del/de la investigador/a principal (IP, Co-IP,...), en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></li><li><span>Datos responsable (IP). Nombre de la persona que ocupa el cargo de IP del proyecto, recogida en CVN. La correspondencia con la norma FECYT de CVN es: se corresponderá con el campo 050.020.010.140 Nombre del/de la investigador/a principal (IP, Co-IP,...), en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.250 Nombre del/de la investigador/a principal (IP, Co-IP,...), en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></li><li><span>Referencia de la entidad de participación. El módulo de CVN remitirá la referencia a la entidad dentro del Sistema de gestión de empresas corporativo asociado al dato recogido sobre el campo Entidad donde se desarrolla del CVN. La correspondencia con la norma FECYT será: campo  050.020.010.100 Entidad donde se desarrolla, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.370 Entidad donde se desarrolla, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></li><li><span>Datos de la entidad de participación.  Nombre de la entidad recogido sobre el campo Entidad donde se desarrolla del CVN. La correspondencia con la norma FECYT será: campo  050.020.010.100 Entidad donde se desarrolla, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.370 Entidad donde se desarrolla, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></li><li><span style="letter-spacing: 0.0px;">Listado de referencias de entidades financiadoras. <span>El módulo de CVN remitirá un listado incluyendo la referencia de las entidades dentro del Sistema de gestión de empresas corporativo asociado al dato recogido sobre el campo Entidades financiadoras del CVN. </span>Se corresponde con el campo 050.020.010.190 Entidad/es financiadora/s, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.120 Nombre/s entidad/es financiadora/s, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></li><li><span>Listado entidades financiadoras. Listado con el nombre de las entidades recogido sobre el campo Entidades financiadoras del CVN. Se corresponde con el campo 050.020.010.190 Entidad/es financiadora/s, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.120 Nombre/s entidad/es financiadora/s, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></li><li><span style="letter-spacing: 0.0px;">Nombre del programa. Nombre del programa de financiación recogido en el CVN. Se corresponde con el campo 050.020.010.250 Nombre del programa de financiación, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.170 Nombre del programa asociado al proyecto, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</span></li><li>Importe total. <span>Importe total del proyecto/programa recogido en el CVN. </span>Se corresponde con el campo 050.020.010.290 Financiación del proyecto, cuantía total, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.200 Financiación del proyecto, cuantía total, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</li><li>Porcentaje subvencionado. Porcentaje subvencionado recogido en el CVN. Se corresponde con el campo 050.020.010.310 Financiación del proyecto, porcentaje en subvención, en el caso de que el proyecto se registre en el epígrafe 050.020.010.000 - Proyectos de I+D+i financiados en convocatorias competitivas de Administraciones o entidades públicas y privadas, o con el campo 050.020.020.220 Financiación del proyecto, porcentaje en subvención, en el caso de que el proyecto se registre en el epígrafe 050.020.020.000 - Contratos, convenios o proyectos de I+D+i no competitivos con Administraciones o entidades públicas o privadas.</li><li><span style="letter-spacing: 0.0px;">Identificador de la solicitud de autorización previamente remitido por el SGI a través de </span><a href="REQ-INT-0060-EDMA-CVN-0001---Autorizaciones-modificadas_597853424.html">REQ-INT-0060-EDMA-CVN-0001 - Autorizaciones modificadas</a></li><li>Identificador del ítem en el sistema de CVN. Dato obligatorio</li></ul><h2 id="REQINT0060EDMACVN0002NotificacionesproyectosCVN-Diseñotécnico">Diseño técnico</h2><p>En el siguiente enlace se muestra el diseño del modelo lógico y el diseño de la API del SGI para la gestión de autorizaciones y proyectos externos <a href="ESB---SGI---Autorizaciones-y-notificaciones-Proyectos-externos_597853364.html">ESB - SGI - Autorizaciones y notificaciones Proyectos externos</a>.</p><p>El servicio concreto del API que cubre este requisito es <a href="ESB---SGI---Notificaciones-Proyectos-externos---Dar-de-alta_597853369.html">ESB - SGI - Notificaciones Proyectos externos - Dar de alta</a>.</p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout three-equal" data-layout="three-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0060EDMACVN0002NotificacionesproyectosCVN-Interfacesdeusuariorelacionados">Interfaces de usuario relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0060EDMACVN0002NotificacionesproyectosCVN-Informesrelacionados">Informes relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="REQINT0060EDMACVN0002NotificacionesproyectosCVN-Casosdeusorelacionados">Casos de uso relacionados</h2><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on oct 09, 2024 11:26</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>
