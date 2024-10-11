@@ -62,8 +62,6 @@
 }
 
 
-@import "colors.less";
-
 /* PDL master.less */
 /* Generic */
 fieldset {
@@ -716,7 +714,6 @@ a.blogHeading {
     margin-top: 0;
 }
 
-@import "colors.less";
 
 /* wiki-content.css */
 
@@ -1206,7 +1203,6 @@ div.large + div.sidebars,
     font-size: 10pt;
 }
 
-@import "colors.less";
 
 /*Style of <time> in both view & editor mode*/
 
@@ -1604,8 +1600,6 @@ ul.tab-navigation .current a:hover {
 
 /*End PDL menu.css*/
 
-
-@import "colors.less";
 
 /* PDL master.less */
 /* Generic */
@@ -2901,7 +2895,6 @@ body.spaces .aui-tabs > .tabs-menu .menu-item a:visited {
 
 /* @end Diff colours */
 
-@import "colors.less";
 
 /* PDL default-theme.less */
 #breadcrumbs {
